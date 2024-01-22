@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --lba05: 1rem;
+        --lba08: 1.6rem;
+        --lba1: 2rem;
+        --lba101: 2.2rem;
+        --lba102: 2.4rem;
+        --lba103: 2.6rem;
+        --lba104: 2.8rem;
+        --lba105: 3rem;
+        --lba106: 3.2rem;
+        --lba2: 4rem;
+        --lba3: 6rem;
+        --lba4: 8rem;
+        --lba5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --lba05: 0.75rem;
+        --lba08: 1.2rem;
+        --lba1: 1.5rem;
+        --lba101: 1.6rem;
+        --lba102: 1.7rem;
+        --lba103: 1.9rem;
+        --lba104: 2rem;
+        --lba105: 2.2rem;
+        --lba106: 2.3rem;
+        --lba2: 3rem;
+        --lba3: 4.5rem;
+        --lba4: 6rem;
+        --lba5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --lba05: 0.625rem;
+        --lba08: 1rem;
+        --lba1: 1.25rem;
+        --lba101: 1.3rem;
+        --lba102: 1.5rem;
+        --lba103: 1.6rem;
+        --lba104: 1.7rem;
+        --lba105: 1.8rem;
+        --lba106: 1.9rem;
+        --lba2: 2.5rem;
+        --lba3: 3.75rem;
+        --lba4: 5rem;
+        --lba5: 6.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --lba05: 0.5rem;
+        --lba08: 0.8rem;
+        --lba1: 1rem;
+        --lba101: 1.1rem;
+        --lba102: 1.2rem;
+        --lba103: 1.3rem;
+        --lba104: 1.4rem;
+        --lba105: 1.5rem;
+        --lba106: 1.6rem;
+        --lba2: 2rem;
+        --lba3: 3rem;
+        --lba4: 4rem;
+        --lba5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --lba05: 0.35rem;
+        --lba08: 0.56rem;
+        --lba1: 0.7rem;
+        --lba101: 0.8rem;
+        --lba102: 0.9rem;
+        --lba103: 1rem;
+        --lba104: 1.2rem;
+        --lba105: 1.3rem;
+        --lba106: 1.4rem;
+        --lba2: 1.4rem;
+        --lba3: 2.1rem;
+        --lba4: 2.8rem;
+        --lba5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --lba05: 0.25rem;
+        --lba08: 0.4rem;
+        --lba1: 0.5rem;
+        --lba101: 0.55rem;
+        --lba102: 0.8rem;
+        --lba103: 0.85rem;
+        --lba104: 0.7rem;
+        --lba105: 0.75rem;
+        --lba106: 0.8rem;
+        --lba2: 1rem;
+        --lba3: 1.5rem;
+        --lba4: 2rem;
+        --lba5: 2.5rem;
+    }
+    body .lsbaltcont .lsbaimgcont {
+        width: 30%;
+    }
+    body .lsbaltcont .lsbatxtcont {
+        width: 90%;
+    }
+    body .lsbartcont .lsbaimgcont {
+        width: 30%;
+    }
+    body .lsbartcont .lsbatxtcont {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --lba05: 0.25rem;
+        --lba08: 0.4rem;
+        --lba1: 0.5rem;
+        --lba101: 0.8rem;
+        --lba102: 0.9rem;
+        --lba103: 1rem;
+        --lba104: 1.2rem;
+        --lba105: 1.3rem;
+        --lba106: 1.4rem;
+        --lba2: 1.4rem;
+        --lba3: 1.5rem;
+        --lba4: 2rem;
+        --lba5: 2.5rem;
+    }
+    body .lsbah1 {
+        font-size: var(--lba104);
+    }
+    body .lsbaltcont .lsbaimgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .lsbaltcont .lsbatxtcont {
+        display: block;
+        width: 90%;
+    }
+    body .lsbartcont .lsbaimgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .lsbartcont .lsbatxtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .lsbaltcont .lsbatxtcont span {
+        display: contents;
+    }
+    body .lsbartcont .lsbatxtcont span {
+        display: contents;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --lba05: 0.25rem;
+        --lba08: 0.4rem;
+        --lba1: 0.5rem;
+        --lba101: 0.8rem;
+        --lba102: 0.9rem;
+        --lba103: 1rem;
+        --lba104: 1.2rem;
+        --lba105: 1.3rem;
+        --lba106: 1.4rem;
+        --lba2: 1.4rem;
+        --lba3: 1.5rem;
+        --lba4: 2rem;
+        --lba5: 2.5rem;
+    }
+    body .lsbah1 {
+        font-size: var(--lba104);
+    }
+    body .lsbaltcont .lsbaimgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .lsbaltcont .lsbatxtcont {
+        display: block;
+        width: 90%;
+    }
+    body .lsbartcont .lsbaimgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .lsbartcont .lsbatxtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .lsbaltcont .lsbatxtcont span {
+        display: contents;
+    }
+    body .lsbartcont .lsbatxtcont span {
+        display: contents;
+    }
+}
+.lsbah1 {
+    margin: auto;
+    text-align: center;
+    color: #012060;
+    font-size: var(--lba2);
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+.lsbaltcont a {
+    display: contents;
+}
+.lsbartcont a {
+    display: contents;
+}
+.lsbaltcont .lsbaimgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.lsbaltcont .lsbatxtcont {
+    width: 88%;
+    display: flex;
+    margin: auto;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--lba2);
+    margin-bottom: var(--lba2);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--lba102);
+    font-family: "Raleway", sans-serif;
+}
+.lsbaltcont .lsbatxtcont span {
+    display: block;
+    max-width: 60%;
+}
+.lsbartcont .lsbaimgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.lsbartcont .lsbatxtcont {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding: 1%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--lba2);
+    margin-bottom: var(--lba2);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--lba102);
+    font-family: "Raleway", sans-serif;
+}
+.lsbartcont .lsbatxtcont span {
+    display: block;
+    max-width: 60%;
+}
+.lsbartcont strong,
+.lsbaltcont strong,
+.lsbaltcont b,
+.lsbartcont b {
+    font-family: "El Messiri", sans-serif;
+    font-size: var(--lba103);
+    display: contents;
+}
+.lsbagdwl {
+    width: 85%;
+    display: block;
+    margin: auto;
+}

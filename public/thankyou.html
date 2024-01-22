@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Thank You</title>
+        <meta charset="utf-8" />
+        <link rel="icon" href="logo.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="apple-touch-icon" href="logo.png" />
+        <link rel="stylesheet" href="ty.css" />
+    </head>
+    <body>
+        <div class="cont">
+            <img src="logo.png" alt="" />
+            <div>
+                <p>Your Message Has Been Sent</p>
+                <p>Thank You For Getting In Touch With Us</p>
+                <p>
+                    You Are Being Redirected To:
+                    <a
+                        id="rdr"
+                        href="https://test.damansolutions.com"
+                        >test.damansolutions.com</a
+                    >
+                </p>
+            </div>
+        </div>
+        <script>
+            function x() {
+                setTimeout(() => {
+                    document.getElementById("rdr").click();
+                }, 3000);
+            }
+            x();
+        </script>
+    </body>
+</html>

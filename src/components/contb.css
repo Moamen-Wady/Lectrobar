@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --contbnr05: 1rem;
+        --contbnr08: 1.6rem;
+        --contbnr1: 2rem;
+        --contbnr101: 2.2rem;
+        --contbnr102: 2.4rem;
+        --contbnr103: 2.6rem;
+        --contbnr104: 2.8rem;
+        --contbnr105: 3rem;
+        --contbnr106: 3.2rem;
+        --contbnr2: 4rem;
+        --contbnr3: 6rem;
+        --contbnr4: 8rem;
+        --contbnr5: 10rem;
+    }
+    body .contbanw {
+        height: 41rem;
+    }
+    body .contvid video {
+        height: 41rem;
+    }
+    body .contvid img {
+        height: 41rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --contbnr05: 0.75rem;
+        --contbnr08: 1.2rem;
+        --contbnr1: 1.5rem;
+        --contbnr101: 1.6rem;
+        --contbnr102: 1.7rem;
+        --contbnr103: 1.9rem;
+        --contbnr104: 2rem;
+        --contbnr105: 2.2rem;
+        --contbnr106: 2.3rem;
+        --contbnr2: 3rem;
+        --contbnr3: 4.5rem;
+        --contbnr4: 6rem;
+        --contbnr5: 7.5rem;
+    }
+    body .contbanw {
+        height: 36rem;
+    }
+    body .contvid video {
+        height: 36rem;
+    }
+    body .contvid img {
+        height: 36rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --contbnr05: 0.625rem;
+        --contbnr08: 1rem;
+        --contbnr1: 1.25rem;
+        --contbnr101: 1.3rem;
+        --contbnr102: 1.5rem;
+        --contbnr103: 1.6rem;
+        --contbnr104: 1.7rem;
+        --contbnr105: 1.8rem;
+        --contbnr106: 1.9rem;
+        --contbnr2: 2.5rem;
+        --contbnr3: 3.75rem;
+        --contbnr4: 5rem;
+        --contbnr5: 6.25rem;
+    }
+    body .contbanw {
+        height: 33rem;
+    }
+    body .contvid video {
+        height: 33rem;
+    }
+    body .contvid img {
+        height: 33rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --contbnr05: 0.5rem;
+        --contbnr08: 0.8rem;
+        --contbnr1: 1rem;
+        --contbnr101: 1.1rem;
+        --contbnr102: 1.2rem;
+        --contbnr103: 1.3rem;
+        --contbnr104: 1.4rem;
+        --contbnr105: 1.5rem;
+        --contbnr106: 1.6rem;
+        --contbnr2: 2rem;
+        --contbnr3: 3rem;
+        --contbnr4: 4rem;
+        --contbnr5: 5rem;
+    }
+    body .contbanw {
+        height: 28rem;
+    }
+    body .contvid video {
+        height: 28rem;
+    }
+    body .contvid img {
+        height: 28rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --contbnr05: 0.35rem;
+        --contbnr08: 0.56rem;
+        --contbnr1: 0.7rem;
+        --contbnr101: 0.8rem;
+        --contbnr102: 0.9rem;
+        --contbnr103: 1rem;
+        --contbnr104: 1.2rem;
+        --contbnr105: 1.3rem;
+        --contbnr106: 1.4rem;
+        --contbnr2: 1.4rem;
+        --contbnr3: 2.1rem;
+        --contbnr4: 2.8rem;
+        --contbnr5: 3.5rem;
+    }
+    body .contbanw {
+        height: 25rem;
+    }
+    body .contvid video {
+        height: 25rem;
+    }
+    body .contvid img {
+        height: 25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --contbnr05: 0.25rem;
+        --contbnr08: 0.4rem;
+        --contbnr1: 0.5rem;
+        --contbnr101: 0.55rem;
+        --contbnr102: 0.6rem;
+        --contbnr103: 0.7rem;
+        --contbnr104: 0.7rem;
+        --contbnr105: 0.75rem;
+        --contbnr106: 0.8rem;
+        --contbnr2: 1rem;
+        --contbnr3: 1.5rem;
+        --contbnr4: 2rem;
+        --contbnr5: 2.5rem;
+    }
+    body .contbanw {
+        height: 19rem;
+    }
+    body .contvid video {
+        height: 19rem;
+    }
+    body .contvid img {
+        height: 19rem;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --contbnr05: 0.17rem;
+        --contbnr08: 0.26rem;
+        --contbnr1: 0.33rem;
+        --contbnr101: 0.4rem;
+        --contbnr102: 0.5rem;
+        --contbnr103: 0.5rem;
+        --contbnr104: 0.5rem;
+        --contbnr105: 0.6rem;
+        --contbnr106: 0.6rem;
+        --contbnr2: 0.7rem;
+        --contbnr3: 1rem;
+        --contbnr4: 1.3rem;
+        --contbnr5: 1.65rem;
+    }
+    body .contbanw {
+        height: 14rem;
+    }
+    body .contvid video {
+        height: 14rem;
+    }
+    body .contvid img {
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --contbnr05: 0.17rem;
+        --contbnr08: 0.2rem;
+        --contbnr1: 0.33rem;
+        --contbnr101: 0.4rem;
+        --contbnr102: 0.5rem;
+        --contbnr103: 0.5rem;
+        --contbnr104: 0.5rem;
+        --contbnr105: 0.6rem;
+        --contbnr106: 0.6rem;
+        --contbnr2: 0.7rem;
+        --contbnr3: 1rem;
+        --contbnr4: 1.3rem;
+        --contbnr5: 1.65rem;
+    }
+    body .contbanw {
+        height: 11.3rem;
+    }
+    body .contvid video {
+        height: 11.3rem;
+    }
+    body .contvid img {
+        height: 11.3rem;
+    }
+}
+
+/*/////////////////////////
+////////////////
+////////////////////*/
+
+.contbanw {
+    position: relative;
+    z-index: 29;
+}
+.contvid {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 28;
+}
+.contvid video {
+    object-fit: cover;
+    width: 100%;
+    z-index: 27;
+}
+.contvid img {
+    position: absolute;
+    width: 100%;
+    z-index: 26;
+}
+.conth1 {
+    font-size: var(--contbnr3);
+    color: white;
+    font-weight: bold;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+    margin: auto;
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.conth1p {
+    font-size: var(--contbnr103);
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+    margin: auto;
+    z-index: 30;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+pre {
+    margin: 0;
+}

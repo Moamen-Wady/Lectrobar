@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --lb205: 1rem;
+        --lb208: 1.6rem;
+        --lb21: 2rem;
+        --lb2101: 2.2rem;
+        --lb2102: 2.4rem;
+        --lb2103: 2.6rem;
+        --lb2104: 2.8rem;
+        --lb2105: 3rem;
+        --lb2106: 3.2rem;
+        --lb22: 4rem;
+        --lb23: 6rem;
+        --lb24: 8rem;
+        --lb25: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --lb205: 0.75rem;
+        --lb208: 1.2rem;
+        --lb21: 1.5rem;
+        --lb2101: 1.6rem;
+        --lb2102: 1.7rem;
+        --lb2103: 1.9rem;
+        --lb2104: 2rem;
+        --lb2105: 2.2rem;
+        --lb2106: 2.3rem;
+        --lb22: 3rem;
+        --lb23: 4.5rem;
+        --lb24: 6rem;
+        --lb25: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --lb205: 0.625rem;
+        --lb208: 1rem;
+        --lb21: 1.25rem;
+        --lb2101: 1.3rem;
+        --lb2102: 1.5rem;
+        --lb2103: 1.6rem;
+        --lb2104: 1.7rem;
+        --lb2105: 1.8rem;
+        --lb2106: 1.9rem;
+        --lb22: 2.5rem;
+        --lb23: 3.75rem;
+        --lb24: 5rem;
+        --lb25: 6.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --lb205: 0.5rem;
+        --lb208: 0.8rem;
+        --lb21: 1rem;
+        --lb2101: 1.1rem;
+        --lb2102: 1.2rem;
+        --lb2103: 1.3rem;
+        --lb2104: 1.4rem;
+        --lb2105: 1.5rem;
+        --lb2106: 1.6rem;
+        --lb22: 2rem;
+        --lb23: 3rem;
+        --lb24: 4rem;
+        --lb25: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --lb205: 0.35rem;
+        --lb208: 0.56rem;
+        --lb21: 0.7rem;
+        --lb2101: 0.8rem;
+        --lb2102: 0.9rem;
+        --lb2103: 1rem;
+        --lb2104: 1.2rem;
+        --lb2105: 1.3rem;
+        --lb2106: 1.4rem;
+        --lb22: 1.4rem;
+        --lb23: 2.1rem;
+        --lb24: 2.8rem;
+        --lb25: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --lb205: 0.25rem;
+        --lb208: 0.4rem;
+        --lb21: 0.5rem;
+        --lb2101: 0.55rem;
+        --lb2102: 0.8rem;
+        --lb2103: 0.85rem;
+        --lb2104: 0.7rem;
+        --lb2105: 0.75rem;
+        --lb2106: 0.8rem;
+        --lb22: 1rem;
+        --lb23: 1.5rem;
+        --lb24: 2rem;
+        --lb25: 2.5rem;
+    }
+    body .lsb2ltcont .lsb2imgcont {
+        width: 30%;
+    }
+    body .lsb2ltcont .lsb2txtcont {
+        width: 90%;
+    }
+    body .lsb2rtcont .lsb2imgcont {
+        width: 30%;
+    }
+    body .lsb2rtcont .lsb2txtcont {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --lb205: 0.25rem;
+        --lb208: 0.4rem;
+        --lb21: 0.5rem;
+        --lb2101: 0.8rem;
+        --lb2102: 0.9rem;
+        --lb2103: 1rem;
+        --lb2104: 1.2rem;
+        --lb2105: 1.3rem;
+        --lb2106: 1.4rem;
+        --lb22: 1.4rem;
+        --lb23: 1.5rem;
+        --lb24: 2rem;
+        --lb25: 2.5rem;
+    }
+    body .lsb2h1 {
+        font-size: var(--lb2104);
+    }
+    body .lsb2ltcont .lsb2imgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .lsb2ltcont .lsb2txtcont {
+        display: block;
+        width: 90%;
+    }
+    body .lsb2rtcont .lsb2imgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .lsb2rtcont .lsb2txtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .lsb2ltcont .lsb2txtcont span {
+        display: contents;
+    }
+    body .lsb2rtcont .lsb2txtcont span {
+        display: contents;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --lb205: 0.25rem;
+        --lb208: 0.4rem;
+        --lb21: 0.5rem;
+        --lb2101: 0.8rem;
+        --lb2102: 0.9rem;
+        --lb2103: 1rem;
+        --lb2104: 1.2rem;
+        --lb2105: 1.3rem;
+        --lb2106: 1.4rem;
+        --lb22: 1.4rem;
+        --lb23: 1.5rem;
+        --lb24: 2rem;
+        --lb25: 2.5rem;
+    }
+    body .lsb2h1 {
+        font-size: var(--lb2104);
+    }
+    body .lsb2ltcont .lsb2imgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .lsb2ltcont .lsb2txtcont {
+        display: block;
+        width: 90%;
+    }
+    body .lsb2rtcont .lsb2imgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .lsb2rtcont .lsb2txtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .lsb2ltcont .lsb2txtcont span {
+        display: contents;
+    }
+    body .lsb2rtcont .lsb2txtcont span {
+        display: contents;
+    }
+}
+.lsb2h1 {
+    margin: auto;
+    text-align: center;
+    color: #012060;
+    font-size: var(--lb22);
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+.lsb2ltcont a {
+    display: contents;
+}
+.lsb2rtcont a {
+    display: contents;
+}
+.lsb2ltcont .lsb2imgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.lsb2ltcont .lsb2txtcont {
+    width: 88%;
+    display: flex;
+    margin: auto;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--lb22);
+    margin-bottom: var(--lb22);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--lb2102);
+    font-family: "Raleway", sans-serif;
+}
+.lsb2ltcont .lsb2txtcont span {
+    display: block;
+    max-width: 60%;
+}
+.lsb2rtcont .lsb2imgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.lsb2rtcont .lsb2txtcont {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding: 1%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--lb22);
+    margin-bottom: var(--lb22);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--lb2102);
+    font-family: "Raleway", sans-serif;
+}
+.lsb2rtcont .lsb2txtcont span {
+    display: block;
+    max-width: 60%;
+}
+.lsb2rtcont strong,
+.lsb2ltcont strong,
+.lsb2ltcont b,
+.lsb2rtcont b {
+    font-family: "El Messiri", sans-serif;
+    font-size: var(--lb2103);
+    display: contents;
+}

@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --blogbnr05: 1rem;
+        --blogbnr08: 1.6rem;
+        --blogbnr1: 2rem;
+        --blogbnr101: 2.2rem;
+        --blogbnr102: 2.4rem;
+        --blogbnr103: 2.6rem;
+        --blogbnr104: 2.8rem;
+        --blogbnr105: 3rem;
+        --blogbnr106: 3.2rem;
+        --blogbnr2: 4rem;
+        --blogbnr3: 6rem;
+        --blogbnr4: 8rem;
+        --blogbnr5: 10rem;
+    }
+    body .blogbanw {
+        height: 41rem;
+    }
+    body .blogvid video {
+        height: 41rem;
+    }
+    body .blogvid img {
+        height: 41rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --blogbnr05: 0.75rem;
+        --blogbnr08: 1.2rem;
+        --blogbnr1: 1.5rem;
+        --blogbnr101: 1.6rem;
+        --blogbnr102: 1.7rem;
+        --blogbnr103: 1.9rem;
+        --blogbnr104: 2rem;
+        --blogbnr105: 2.2rem;
+        --blogbnr106: 2.3rem;
+        --blogbnr2: 3rem;
+        --blogbnr3: 4.5rem;
+        --blogbnr4: 6rem;
+        --blogbnr5: 7.5rem;
+    }
+    body .blogbanw {
+        height: 36rem;
+    }
+    body .blogvid video {
+        height: 36rem;
+    }
+    body .blogvid img {
+        height: 36rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --blogbnr05: 0.625rem;
+        --blogbnr08: 1rem;
+        --blogbnr1: 1.25rem;
+        --blogbnr101: 1.3rem;
+        --blogbnr102: 1.5rem;
+        --blogbnr103: 1.6rem;
+        --blogbnr104: 1.7rem;
+        --blogbnr105: 1.8rem;
+        --blogbnr106: 1.9rem;
+        --blogbnr2: 2.5rem;
+        --blogbnr3: 3.75rem;
+        --blogbnr4: 5rem;
+        --blogbnr5: 6.25rem;
+    }
+    body .blogbanw {
+        height: 33rem;
+    }
+    body .blogvid video {
+        height: 33rem;
+    }
+    body .blogvid img {
+        height: 33rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --blogbnr05: 0.5rem;
+        --blogbnr08: 0.8rem;
+        --blogbnr1: 1rem;
+        --blogbnr101: 1.1rem;
+        --blogbnr102: 1.2rem;
+        --blogbnr103: 1.3rem;
+        --blogbnr104: 1.4rem;
+        --blogbnr105: 1.5rem;
+        --blogbnr106: 1.6rem;
+        --blogbnr2: 2rem;
+        --blogbnr3: 3rem;
+        --blogbnr4: 4rem;
+        --blogbnr5: 5rem;
+    }
+    body .blogbanw {
+        height: 28rem;
+    }
+    body .blogvid video {
+        height: 28rem;
+    }
+    body .blogvid img {
+        height: 28rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --blogbnr05: 0.35rem;
+        --blogbnr08: 0.56rem;
+        --blogbnr1: 0.7rem;
+        --blogbnr101: 0.8rem;
+        --blogbnr102: 0.9rem;
+        --blogbnr103: 1rem;
+        --blogbnr104: 1.2rem;
+        --blogbnr105: 1.3rem;
+        --blogbnr106: 1.4rem;
+        --blogbnr2: 1.4rem;
+        --blogbnr3: 2.1rem;
+        --blogbnr4: 2.8rem;
+        --blogbnr5: 3.5rem;
+    }
+    body .blogbanw {
+        height: 25rem;
+    }
+    body .blogvid video {
+        height: 25rem;
+    }
+    body .blogvid img {
+        height: 25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --blogbnr05: 0.25rem;
+        --blogbnr08: 0.4rem;
+        --blogbnr1: 0.5rem;
+        --blogbnr101: 0.55rem;
+        --blogbnr102: 0.6rem;
+        --blogbnr103: 0.7rem;
+        --blogbnr104: 0.7rem;
+        --blogbnr105: 0.75rem;
+        --blogbnr106: 0.8rem;
+        --blogbnr2: 1rem;
+        --blogbnr3: 1.5rem;
+        --blogbnr4: 2rem;
+        --blogbnr5: 2.5rem;
+    }
+    body .blogbanw {
+        height: 19rem;
+    }
+    body .blogvid video {
+        height: 19rem;
+    }
+    body .blogvid img {
+        height: 19rem;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --blogbnr05: 0.17rem;
+        --blogbnr08: 0.26rem;
+        --blogbnr1: 0.33rem;
+        --blogbnr101: 0.4rem;
+        --blogbnr102: 0.5rem;
+        --blogbnr103: 0.5rem;
+        --blogbnr104: 0.5rem;
+        --blogbnr105: 0.6rem;
+        --blogbnr106: 0.6rem;
+        --blogbnr2: 0.7rem;
+        --blogbnr3: 1rem;
+        --blogbnr4: 1.3rem;
+        --blogbnr5: 1.65rem;
+    }
+    body .blogbanw {
+        height: 14rem;
+    }
+    body .blogvid video {
+        height: 14rem;
+    }
+    body .blogvid img {
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --blogbnr05: 0.17rem;
+        --blogbnr08: 0.2rem;
+        --blogbnr1: 0.33rem;
+        --blogbnr101: 0.4rem;
+        --blogbnr102: 0.5rem;
+        --blogbnr103: 0.5rem;
+        --blogbnr104: 0.5rem;
+        --blogbnr105: 0.6rem;
+        --blogbnr106: 0.6rem;
+        --blogbnr2: 0.7rem;
+        --blogbnr3: 1rem;
+        --blogbnr4: 1.3rem;
+        --blogbnr5: 1.65rem;
+    }
+    body .blogbanw {
+        height: 11.3rem;
+    }
+    body .blogvid video {
+        height: 11.3rem;
+    }
+    body .blogvid img {
+        height: 11.3rem;
+    }
+}
+
+/*/////////////////////////
+////////////////
+////////////////////*/
+
+.blogbanw {
+    position: relative;
+    z-index: 29;
+}
+.blogvid {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 28;
+}
+.blogvid video {
+    object-fit: cover;
+    width: 100%;
+    z-index: 27;
+}
+.blogvid img {
+    position: absolute;
+    width: 100%;
+    z-index: 26;
+}
+.blogh1 {
+    font-size: var(--blogbnr3);
+    color: white;
+    font-weight: bold;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+    margin: auto;
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.blogh1p {
+    font-size: var(--blogbnr103);
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+    margin: auto;
+    z-index: 30;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+pre {
+    margin: 0;
+}

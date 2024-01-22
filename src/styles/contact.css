@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --cr05: 1rem;
+        --cr08: 1.6rem;
+        --cr1: 2rem;
+        --cr101: 2.2rem;
+        --cr102: 2.4rem;
+        --cr103: 2.6rem;
+        --cr104: 2.8rem;
+        --cr105: 3rem;
+        --cr106: 3.2rem;
+        --cr2: 4rem;
+        --cr3: 6rem;
+        --cr4: 8rem;
+        --cr5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --cr05: 0.75rem;
+        --cr08: 1.2rem;
+        --cr1: 1.5rem;
+        --cr101: 1.6rem;
+        --cr102: 1.7rem;
+        --cr103: 1.9rem;
+        --cr104: 2rem;
+        --cr105: 2.2rem;
+        --cr106: 2.3rem;
+        --cr2: 3rem;
+        --cr3: 4.5rem;
+        --cr4: 6rem;
+        --cr5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --cr05: 0.5rem;
+        --cr08: 0.8rem;
+        --cr1: 1rem;
+        --cr101: 1.1rem;
+        --cr102: 1.2rem;
+        --cr103: 1.3rem;
+        --cr104: 1.4rem;
+        --cr105: 1.5rem;
+        --cr106: 1.6rem;
+        --cr2: 2rem;
+        --cr3: 3rem;
+        --cr4: 4rem;
+        --cr5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --cr05: 0.35rem;
+        --cr08: 0.56rem;
+        --cr1: 0.7rem;
+        --cr101: 0.8rem;
+        --cr102: 0.9rem;
+        --cr103: 1rem;
+        --cr104: 1.2rem;
+        --cr105: 1.3rem;
+        --cr106: 1.4rem;
+        --cr2: 1.4rem;
+        --cr3: 2.1rem;
+        --cr4: 2.8rem;
+        --cr5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --cr05: 0.25rem;
+        --cr08: 0.4rem;
+        --cr1: 0.5rem;
+        --cr101: 0.55rem;
+        --cr102: 0.6rem;
+        --cr103: 0.7rem;
+        --cr104: 0.7rem;
+        --cr105: 0.75rem;
+        --cr106: 0.8rem;
+        --cr2: 1rem;
+        --cr3: 1.5rem;
+        --cr4: 2rem;
+        --cr5: 2.5rem;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --cr05: 0.25rem;
+        --cr08: 0.4rem;
+        --cr1: 0.5rem;
+        --cr101: 0.8rem;
+        --cr102: 0.9rem;
+        --cr103: 1rem;
+        --cr104: 1.2rem;
+        --cr105: 1.3rem;
+        --cr106: 1.4rem;
+        --cr2: 1.4rem;
+        --cr3: 1.5rem;
+        --cr4: 2rem;
+        --cr5: 2.5rem;
+    }
+    body .contactmap {
+        width: 90%;
+        margin-top: var(--cr1);
+    }
+    body .contactinfocont {
+        width: 95%;
+    }
+    body .contactinfo {
+        border-radius: 3%;
+        width: 100%;
+    }
+    body .contactinfo > h1 {
+        width: 80%;
+        margin: auto;
+        margin-top: var(--cr1);
+    }
+    body .contactinfo > div > a {
+        font-size: var(--cr101);
+    }
+    body .contactinfo > div > img.phn {
+        margin-top: var(--cr103);
+    }
+    body .contactinfo > div > img.eml {
+        margin-top: var(--cr08);
+    }
+    body .contactinfo > div > img {
+        width: 3.9%;
+    }
+    body .contactcform {
+        border-radius: 3%;
+        width: 100%;
+        margin: auto;
+        margin-top: var(--cr1);
+    }
+    body .contactform input:nth-last-child(1) {
+        font-size: var(--cr101);
+        bottom: 2%;
+    }
+    body .contactcsales {
+        width: 55%;
+    }
+    body .contactcslsrt a {
+        font-size: var(--cr101);
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --cr05: 0.25rem;
+        --cr08: 0.4rem;
+        --cr1: 0.5rem;
+        --cr101: 0.7rem;
+        --cr102: 0.9rem;
+        --cr103: 1rem;
+        --cr104: 1.2rem;
+        --cr105: 1.3rem;
+        --cr106: 1.4rem;
+        --cr2: 1.4rem;
+        --cr3: 1.5rem;
+        --cr4: 2rem;
+        --cr5: 2.5rem;
+    }
+    body .contactmap {
+        width: 90%;
+        margin-top: var(--cr1);
+    }
+    body .contactinfocont {
+        width: 95%;
+    }
+    body .contactinfo {
+        border-radius: 3%;
+        width: 100%;
+    }
+    body .contactinfo > h1 {
+        width: 80%;
+        margin: auto;
+        margin-top: var(--cr1);
+    }
+    body .contactinfo > div > a {
+        font-size: var(--cr101);
+    }
+    body .contactinfo > div > img.lctn {
+        margin-top: calc(var(--cr1) * -1);
+    }
+    body .contactinfo > div > img.phn {
+        margin-top: var(--cr103);
+    }
+    body .contactinfo > div > img.eml {
+        margin-top: var(--cr05);
+    }
+    body .contactinfo > div > img {
+        width: 6%;
+    }
+    body .contactcform {
+        border-radius: 3%;
+        width: 100%;
+        margin: auto;
+        margin-top: var(--cr1);
+    }
+    body .contactform input:nth-last-child(1) {
+        font-size: var(--cr101);
+        bottom: 2%;
+    }
+    body .contactcsales {
+        width: 70%;
+    }
+    body .contactcslsrt a {
+        font-size: var(--cr101);
+    }
+}
+
+.contactmap {
+    width: 85%;
+    margin: auto;
+}
+.contactmap iframe {
+    width: 100%;
+    height: calc(var(--cr5) * 5);
+}
+.contactinfocont {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: var(--cr2);
+    margin-bottom: var(--cr2);
+    overflow: visible;
+}
+.contactinfo {
+    width: 30%;
+    background-color: #00395f;
+    color: white;
+    padding: var(--cr05);
+}
+.contactinfo > h1 {
+    text-align: left;
+    font-size: var(--cr2);
+    font-family: "Raleway", sans-serif;
+    margin-left: var(--cr1);
+    margin-bottom: 0;
+    padding: 0;
+}
+.contactinfo h2 {
+    width: 100%;
+    text-align: left;
+    font-size: var(--cr105);
+    font-family: "Raleway", sans-serif;
+}
+.contactinfo > div {
+    width: 80%;
+    margin: auto;
+    border-top: 1px outset whitesmoke;
+    padding: var(--cr05);
+}
+.contactinfo > div > a:hover {
+    color: blue;
+}
+.contactinfo > div > a {
+    font-size: var(--cr1);
+    display: inline;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.contactinfo > div > img {
+    width: 10%;
+    filter: invert(1);
+    float: left;
+    margin: var(--cr1);
+    margin-top: 0;
+    display: inline;
+    vertical-align: super;
+}
+.contactcform {
+    width: 60%;
+}
+.contactform {
+    display: block;
+    height: calc(var(--cr5) * 5);
+    width: 95%;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 2%;
+    border: 1px solid #00395f;
+    margin: auto;
+    padding: var(--cr1);
+    position: relative;
+}
+.contactform input {
+    display: inline-block;
+    width: 40%;
+    margin: var(--cr05);
+    margin-top: var(--cr1);
+    margin-bottom: var(--cr1);
+    background-color: #c4dbe9;
+    color: black;
+    height: max-content;
+    font-size: var(--cr101);
+    border: 1px solid grey;
+    padding: 1%;
+}
+.contactform textarea {
+    display: block;
+    padding: 1%;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #c4dbe9;
+    color: black;
+    height: calc(var(--cr2) + var(--cr5));
+    font-size: var(--cr101);
+}
+.contactform input:nth-last-child(1) {
+    font-size: var(--cr104);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 15%;
+    height: max-content;
+    padding: 1%;
+    background-color: #00395f;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 3%;
+    color: white;
+}
+.contactform input:hover {
+    background-color: #a0aec9;
+}
+.contactcsales {
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: var(--cr1);
+    margin-bottom: var(--cr1);
+    height: calc(var(--cr5) * 5);
+    background-color: #00395f;
+    border-radius: 1%;
+    border: 0;
+}
+.contactcslslt {
+    background-image: url("./ss.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(var(--cr5) * 5);
+    width: 54%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    position: relative;
+}
+.contactcslslt h1 {
+    font-size: calc(var(--cr05) * 5);
+    background: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Raleway", sans-serif;
+}
+.contactcslsrt {
+    width: 46%;
+    height: calc(var(--cr5) * 5);
+    border-radius: 1%;
+}
+.contactcslsrt a {
+    font-size: var(--cr105);
+    text-align: center;
+    font-family: sans-serif;
+    display: block;
+    padding-left: var(--cr05);
+    color: white;
+    width: fit-content;
+    height: 20%;
+    border-radius: 3%;
+    cursor: pointer;
+    transform: translateY(50%);
+    text-decoration: none;
+}
+.contactcslsrt a:hover {
+    color: blue;
+}

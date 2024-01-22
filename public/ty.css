@@ -1,0 +1,26 @@
+.cont {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    color: rgb(26, 22, 22);
+}
+img {
+    width: 20%;
+}
+.cont > div {
+    border: 2px dashed #00395f;
+    max-width: fit-content;
+    margin: auto;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+    display: inline;
+}
+p {
+    color: #00395f;
+    font-size: 1.8rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}

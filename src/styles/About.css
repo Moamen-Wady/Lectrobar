@@ -1,0 +1,816 @@
+@media only screen and (min-width: 2001px) {
+    :root {
+        --ar05: 1rem;
+        --ar08: 1.6rem;
+        --ar1: 2rem;
+        --ar101: 2.2rem;
+        --ar102: 2.4rem;
+        --ar103: 2.6rem;
+        --ar104: 2.8rem;
+        --ar105: 3rem;
+        --ar106: 3.2rem;
+        --ar2: 4rem;
+        --ar3: 6rem;
+        --ar4: 8rem;
+        --ar5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --ar05: 0.75rem;
+        --ar08: 1.2rem;
+        --ar1: 1.5rem;
+        --ar101: 1.6rem;
+        --ar102: 1.7rem;
+        --ar103: 1.9rem;
+        --ar104: 2rem;
+        --ar105: 2.2rem;
+        --ar106: 2.3rem;
+        --ar2: 3rem;
+        --ar3: 4.5rem;
+        --ar4: 6rem;
+        --ar5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --ar05: 0.5rem;
+        --ar08: 0.8rem;
+        --ar1: 1rem;
+        --ar101: 1.1rem;
+        --ar102: 1.2rem;
+        --ar103: 1.3rem;
+        --ar104: 1.4rem;
+        --ar105: 1.5rem;
+        --ar106: 1.6rem;
+        --ar2: 2rem;
+        --ar3: 3rem;
+        --ar4: 4rem;
+        --ar5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --ar05: 0.35rem;
+        --ar08: 0.56rem;
+        --ar1: 0.7rem;
+        --ar101: 0.8rem;
+        --ar102: 0.9rem;
+        --ar103: 1rem;
+        --ar104: 1.2rem;
+        --ar105: 1.3rem;
+        --ar106: 1.4rem;
+        --ar2: 1.4rem;
+        --ar3: 2.1rem;
+        --ar4: 2.8rem;
+        --ar5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    :root {
+        --ar05: 0.35rem;
+        --ar08: 0.56rem;
+        --ar1: 0.7rem;
+        --ar101: 0.8rem;
+        --ar102: 0.9rem;
+        --ar103: 1rem;
+        --ar104: 1.2rem;
+        --ar105: 1.3rem;
+        --ar106: 1.4rem;
+        --ar2: 1.4rem;
+        --ar3: 2.1rem;
+        --ar4: 2.8rem;
+        --ar5: 3.5rem;
+    }
+    body .aboutcertificates > div > div img {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --ar05: 0.35rem;
+        --ar08: 0.56rem;
+        --ar1: 0.7rem;
+        --ar101: 0.8rem;
+        --ar102: 0.9rem;
+        --ar103: 1rem;
+        --ar104: 1.2rem;
+        --ar105: 1.3rem;
+        --ar106: 1.4rem;
+        --ar2: 1.4rem;
+        --ar3: 2.1rem;
+        --ar4: 2.8rem;
+        --ar5: 3.5rem;
+    }
+    body .aboutfactorytxt a {
+        font-size: var(--ar103);
+    }
+    body .aboutdistribution {
+        width: 100%;
+    }
+    body .aboutvalues > div {
+        width: 100%;
+    }
+    body .aboutcertificates {
+        margin-top: var(--ar2);
+    }
+    body .aboutcertificates > div > div {
+        width: 100%;
+    }
+    body .aboutcertificates > div > div img {
+        width: 70%;
+    }
+    body .aboutmanagers > div {
+        width: 100%;
+    }
+    body .aboutmission p {
+        width: 90%;
+        max-width: unset;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --ar05: 0.25rem;
+        --ar08: 0.4rem;
+        --ar1: 0.7rem;
+        --ar101: 0.8rem;
+        --ar102: 0.9rem;
+        --ar103: 1rem;
+        --ar104: 1.2rem;
+        --ar105: 1.3rem;
+        --ar106: 1.4rem;
+        --ar2: 1.4rem;
+        --ar3: 1.5rem;
+        --ar4: 2rem;
+        --ar5: 2.5rem;
+    }
+    body .aboutunderbanner {
+        width: 90%;
+    }
+    body .aboutfactory > div {
+        width: 100%;
+    }
+    body .aboutdistribution {
+        width: 100%;
+    }
+    body .aboutdot span {
+        width: calc(var(--ar4) * 2);
+    }
+    body .aboutvalues > div {
+        width: 100%;
+    }
+    body .aboutcertificates {
+        margin-top: var(--ar2);
+    }
+    body .aboutcertificates > div > div {
+        width: 100%;
+    }
+    body .aboutmanagers > div {
+        width: 100%;
+    }
+    body .aboutmanagersimg1 {
+        width: 100%;
+    }
+    body .aboutmanagersimg2 {
+        width: 100%;
+    }
+    body .aboutmanagersimg3 {
+        width: 100%;
+    }
+    body .aboutmission p {
+        width: 90%;
+        max-width: unset;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --ar05: 0.25rem;
+        --ar08: 0.4rem;
+        --ar1: 0.5rem;
+        --ar101: 0.7rem;
+        --ar102: 0.8rem;
+        --ar103: 0.9rem;
+        --ar104: 1rem;
+        --ar105: 1.1rem;
+        --ar106: 1.2rem;
+        --ar2: 1.4rem;
+        --ar3: 1.5rem;
+        --ar4: 2rem;
+        --ar5: 2.5rem;
+    }
+    body .aboutunderbanner {
+        width: 90%;
+    }
+    body .aboutfactory > div {
+        width: 100%;
+    }
+    body .aboutdistribution {
+        width: 100%;
+    }
+    body .aboutdot span {
+        width: calc(var(--ar4) * 2);
+    }
+    body .aboutvalues > div {
+        width: 100%;
+    }
+    body .aboutcertificates {
+        margin-top: var(--ar2);
+    }
+    body .aboutcertificates > div > div {
+        width: 100%;
+    }
+    body .aboutmanagers > div {
+        width: 100%;
+    }
+    body .aboutmission p {
+        width: 90%;
+        max-width: unset;
+    }
+}
+.aboutwrap {
+    position: relative;
+}
+.aboutunderbanner {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: var(--ar2);
+    margin-bottom: var(--ar3);
+}
+.aboutunderbanner h1 {
+    display: block;
+    margin: auto;
+    color: #012060;
+    font-size: calc(var(--ar101) * 2);
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+.aboutunderbanner p {
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-align-last: center;
+    font-size: var(--ar103);
+    color: rgb(28, 28, 28);
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.aboutfactory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: var(--ar3);
+}
+.aboutfactory > div {
+    width: 45%;
+}
+.aboutfactorytxt p b {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+.aboutfactorytxt p {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: var(--ar4);
+    font-size: var(--ar3);
+    text-align: center;
+    color: #012060;
+    font-weight: bolder;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+.aboutfactorytxt a:hover {
+    background-color: #126196;
+    color: whitesmoke;
+}
+.aboutfactorytxt a {
+    font-size: var(--ar105);
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    text-decoration: none;
+    text-align: center;
+    background: #00395f;
+    border-radius: 5%;
+    color: white;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding: var(--ar1);
+}
+.aboutfactoryimg {
+    border-radius: 5%;
+}
+.aboutfactoryimg img {
+    width: 100%;
+    border-radius: 5%;
+}
+.aboutdistribution {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+.aboutdistribution > div {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.aboutdistribution p {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: var(--ar4);
+    font-size: calc(var(--ar101) * 2);
+    text-align: center;
+    color: #012060;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.aboutwmap {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.aboutdot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 1.8%;
+    z-index: 24;
+}
+.aboutdot span {
+    width: calc(var(--ar3) * 2);
+    position: absolute;
+    visibility: hidden;
+    background-color: #126196;
+    color: #fff;
+    font-size: var(--ar102);
+    text-align: center;
+    border-radius: 10%;
+    padding: var(--ar05) 0;
+    z-index: 26;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition-property: all;
+    transition-timing-function: ease;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes ezhar {
+    faboutrom {
+        opacity: 0;
+    }
+    tabouto {
+        opacity: 1;
+    }
+}
+.aboutdot span::after {
+    transform: translate(-50%, 0);
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #126196 transparent transparent transparent;
+}
+.aboutdot img {
+    width: 100%;
+    z-index: 25;
+}
+.aboutdot:hover span {
+    visibility: visible;
+    animation-name: ezhar;
+    cursor: pointer;
+}
+.aboutdot:hover {
+    cursor: pointer;
+    width: 3%;
+    z-index: 25;
+}
+.aboutdot1 {
+    top: 31%;
+    left: 46.6%;
+}
+.aboutdot2 {
+    top: 24.24%;
+    left: 49.4%;
+}
+.aboutdot3 {
+    left: 75%;
+    top: 46%;
+}
+.aboutdot4 {
+    left: 59.08%;
+    top: 38.6%;
+}
+.aboutdot5 {
+    left: 58.6%;
+    top: 51.5%;
+}
+.aboutdot6 {
+    left: 58.8%;
+    top: 45.67%;
+}
+.aboutdot7 {
+    left: 62.5%;
+    top: 48.5%;
+}
+.aboutdot8 {
+    left: 61.68%;
+    top: 54%;
+}
+.aboutdot9 {
+    left: 54.4%;
+    top: 48.5%;
+}
+.aboutdot10 {
+    left: 47.6%;
+    top: 48.1%;
+}
+.aboutdot11 {
+    left: 54.8%;
+    top: 55%;
+}
+.aboutdot12 {
+    left: 51.8%;
+    top: 56.7%;
+}
+.aboutdot13 {
+    left: 48.6%;
+    top: 58.36%;
+}
+.aboutdot14 {
+    left: 56.6%;
+    top: 73.3%;
+}
+.aboutdot15 {
+    left: 57%;
+    top: 69.1%;
+}
+.aboutdot16 {
+    left: 82%;
+    top: 43.9%;
+}
+.aboutdot17 {
+    left: 60%;
+    top: 49.1%;
+}
+.aboutdot18 {
+    left: 61%;
+    top: 50.6%;
+}
+.aboutdot19 {
+    left: 62%;
+    top: 51.1%;
+}
+.aboutdot20 {
+    left: 49.5%;
+    top: 52.1%;
+}
+.aboutdot21 {
+    left: 51%;
+    top: 63.1%;
+}
+.aboutdot22 {
+    left: 54.27%;
+    top: 70.1%;
+}
+/* .aboutbranchesl {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-bottom: var(--ar3);
+}
+.aboutbranchesl > div {
+    width: 45%;
+}
+
+.aboutbranchesltxt p {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: var(--ar4);
+    font-size: var(--ar103);
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+.aboutbrancheslcont {
+    width: 90%;
+    margin: auto;
+}
+.aboutbrancheslcont h1 {
+    color: #012060;
+    display: block;
+    max-width: fit-content;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    font-size: var(--ar2);
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    padding: var(--ar1);
+    padding-left: var(--ar3);
+}
+.aboutbranchesl h2 {
+    display: block;
+    max-width: fit-content;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    font-size: var(--ar105);
+    text-decoration: none;
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding: var(--ar1);
+}
+.aboutbrancheslimg {
+    border-radius: 5%;
+}
+.aboutbrancheslimg img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.aboutbranchesr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: var(--ar3);
+}
+.aboutbranchesr > div {
+    width: 45%;
+}
+.aboutbranchesrtxt p b {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.aboutbranchesrtxt {
+    margin-right: 5%;
+}
+.aboutbranchesrtxt p {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: var(--ar4);
+    font-size: var(--ar103);
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+.aboutbranchesr h2 {
+    display: block;
+    max-width: fit-content;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    font-size: var(--ar105);
+    text-decoration: none;
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding: var(--ar1);
+}
+.aboutbranchesrimg {
+    border-radius: 5%;
+}
+.aboutbranchesrimg img {
+    width: 100%;
+    border-radius: 5%;
+}
+ */
+.aboutvalues {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutvalues > div {
+    width: 50%;
+}
+.aboutvalues h1 {
+    color: #012060;
+    font-size: calc(var(--ar101) * 2);
+    font-family: "Raleway", sans-serif;
+}
+.aboutvalues p {
+    color: #232323;
+    font-size: var(--ar105);
+    font-family: "Raleway", sans-serif;
+}
+.aboutbotr,
+.aboutbotl,
+.abouttopl,
+.abouttopr,
+.aboutmiddle {
+    cursor: pointer;
+}
+.aboutcertificates {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.aboutcertificates h1 {
+    display: block;
+    margin: auto;
+    color: #012060;
+    font-size: calc(var(--ar101) * 2);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.aboutcertificates > div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: var(--ar2);
+    margin-bottom: var(--ar2);
+}
+.aboutcertificates > div > div {
+    width: 45%;
+}
+.aboutcertificates > div > div img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.aboutcertificates p {
+    color: #232323;
+    font-size: var(--ar105);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.aboutcertificates p ul li {
+    text-align: left;
+    list-style-type: none;
+}
+.aboutmanagerscont {
+    width: 90%;
+    margin: auto;
+    background-color: #00395f;
+    border-radius: 2%;  
+    padding-bottom: 1%;
+}
+.aboutmanagerscont h1 {
+    color: white;
+    display: block;
+    margin: auto;
+    max-width: fit-content;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    font-size: calc(var(--ar101) * 2);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    padding: var(--ar1);
+    padding-left: var(--ar3);
+}
+.aboutmanagers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: var(--ar3);
+}
+.aboutmanagers > div {
+    width: 90%;
+    margin: auto;
+}
+.aboutmanagers h2 {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: var(--ar1);
+    margin-bottom: var(--ar1);
+    font-size: var(--ar106);
+    text-shadow: 3px 3px 8px #126196;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: var(--ar1);
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.aboutmanagers h3 {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--ar106);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    padding-bottom: 0;
+}
+.aboutmanagersimg p b {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+.aboutmanagersimg p {
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: var(--ar4);
+    font-size: var(--ar103);
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.aboutmanagersimg1 {
+    width: fit-content;
+    border-radius: 5%;
+    margin-right: auto;
+}
+.aboutmanagersimg2 {
+    width: fit-content;
+    border-radius: 5%;
+    margin: auto;
+}
+.aboutmanagersimg3 {
+    width: fit-content;
+    border-radius: 5%;
+    margin-left: auto;
+}
+.aboutmanagersimg_cont img {
+    width: calc(var(--ar5) * 2.5);
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    border: 5px solid #5d92b6;
+    box-shadow: 5px 5px 8px rgb(51, 51, 51);
+}
+.aboutmission {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-image: url("./missionbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(var(--ar5) * 5);
+    margin-top: var(--ar2);
+    margin-bottom: var(--ar2);
+}
+.aboutmission > div {
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128, 128, 128, 0.2);
+    z-index: 1;
+}
+.aboutmission p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    font-size: var(--ar104);
+    color: white;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}

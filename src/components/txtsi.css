@@ -1,0 +1,337 @@
+@media only screen and (min-width: 2001px) {
+    :root {
+        --tsi05: 1rem;
+        --tsi08: 1.6rem;
+        --tsi1: 2rem;
+        --tsi101: 2.2rem;
+        --tsi102: 2.4rem;
+        --tsi103: 2.6rem;
+        --tsi104: 2.8rem;
+        --tsi105: 3rem;
+        --tsi106: 3.2rem;
+        --tsi2: 4rem;
+        --tsi3: 6rem;
+        --tsi4: 8rem;
+        --tsi5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --tsi05: 0.75rem;
+        --tsi08: 1.2rem;
+        --tsi1: 1.5rem;
+        --tsi101: 1.6rem;
+        --tsi102: 1.7rem;
+        --tsi103: 1.9rem;
+        --tsi104: 2rem;
+        --tsi105: 2.2rem;
+        --tsi106: 2.3rem;
+        --tsi2: 3rem;
+        --tsi3: 4.5rem;
+        --tsi4: 6rem;
+        --tsi5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --tsi05: 0.625rem;
+        --tsi08: 1rem;
+        --tsi1: 1.25rem;
+        --tsi101: 1.3rem;
+        --tsi102: 1.5rem;
+        --tsi103: 1.6rem;
+        --tsi104: 1.7rem;
+        --tsi105: 1.8rem;
+        --tsi106: 1.9rem;
+        --tsi2: 2.5rem;
+        --tsi3: 3.75rem;
+        --tsi4: 5rem;
+        --tsi5: 6.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --tsi05: 0.5rem;
+        --tsi08: 0.8rem;
+        --tsi1: 1rem;
+        --tsi101: 1.1rem;
+        --tsi102: 1.2rem;
+        --tsi103: 1.3rem;
+        --tsi104: 1.4rem;
+        --tsi105: 1.5rem;
+        --tsi106: 1.6rem;
+        --tsi2: 2rem;
+        --tsi3: 3rem;
+        --tsi4: 4rem;
+        --tsi5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --tsi05: 0.35rem;
+        --tsi08: 0.56rem;
+        --tsi1: 0.7rem;
+        --tsi101: 0.8rem;
+        --tsi102: 0.9rem;
+        --tsi103: 1rem;
+        --tsi104: 1.2rem;
+        --tsi105: 1.3rem;
+        --tsi106: 1.4rem;
+        --tsi2: 1.4rem;
+        --tsi3: 2.1rem;
+        --tsi4: 2.8rem;
+        --tsi5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --tsi05: 0.35rem;
+        --tsi08: 0.56rem;
+        --tsi1: 0.7rem;
+        --tsi101: 0.8rem;
+        --tsi102: 0.9rem;
+        --tsi103: 1rem;
+        --tsi104: 1.2rem;
+        --tsi105: 1.3rem;
+        --tsi106: 1.4rem;
+        --tsi2: 1.4rem;
+        --tsi3: 2.1rem;
+        --tsi4: 2.8rem;
+        --tsi5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --tsi05: 0.25rem;
+        --tsi08: 0.4rem;
+        --tsi1: 0.5rem;
+        --tsi101: 0.8rem;
+        --tsi102: 0.9rem;
+        --tsi103: 1rem;
+        --tsi104: 1.2rem;
+        --tsi105: 1.3rem;
+        --tsi106: 1.4rem;
+        --tsi2: 1.4rem;
+        --tsi3: 1.5rem;
+        --tsi4: 2rem;
+        --tsi5: 2.5rem;
+    }
+    body .find-input {
+        height: var(--tsi101);
+    }
+    body .find-box {
+        height: var(--tsi3);
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --tsi05: 0.25rem;
+        --tsi08: 0.4rem;
+        --tsi1: 0.5rem;
+        --tsi101: 0.8rem;
+        --tsi102: 0.9rem;
+        --tsi103: 1rem;
+        --tsi104: 1.2rem;
+        --tsi105: 1.3rem;
+        --tsi106: 1.4rem;
+        --tsi2: 1.4rem;
+        --tsi3: 1.5rem;
+        --tsi4: 2rem;
+        --tsi5: 2.5rem;
+    }
+    body .find-input {
+        height: var(--tsi101);
+    }
+    body .find-box {
+        height: var(--tsi3);
+    }
+}
+/*//////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+*/
+@media only screen and (min-width: 2250px) {
+    body .find-box {
+        top: 0.45rem;
+        right: 0.45rem;
+    }
+}
+@media only screen and (max-width: 2249px) {
+    body .find-box {
+        top: 0.35rem;
+        right: 0.35rem;
+    }
+}
+@media only screen and (max-width: 1999px) {
+    body .find-box {
+        top: 0.3rem;
+        right: 0.3rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    body .find-box {
+        top: 0.25rem;
+        right: 0.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    body .find-box {
+        top: 0.25rem;
+        right: 0.25rem;
+    }
+}
+@media only screen and (max-width: 1124px) {
+    body .find-box {
+        top: 0.25rem;
+        right: 0.25rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    body .find-box {
+        top: 0.2rem;
+        right: 0.2rem;
+    }
+}
+
+.find-box {
+    top: 0.25rem;
+    right: 0.25rem;
+    direction: ltr;
+    position: absolute;
+    z-index: 3001;
+    height: calc(var(--tsi2));
+    display: flex;
+    align-items: center;
+    box-sizing: border-box !important;
+    padding: var(--tsi05);
+    visibility: visible;
+    background: #00395f;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+}
+
+.find-input {
+    height: var(--tsi101);
+    width: calc(var(--tsi5) * 2);
+    border: 1px solid #aaa;
+    background: #fff;
+    margin-right: var(--tsi05);
+    border-radius: 2px;
+    color: #000;
+}
+
+.find-matches {
+    font-size: var(--tsi1);
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tsi4);
+    overflow: hidden;
+    margin-right: calc(var(--tsi05) * 0.5);
+}
+
+.find-case {
+    font-size: var(--tsi1);
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    color: #aaa;
+    padding: 0px 2px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    margin-right: calc(var(--tsi05) * 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.find-back {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    height: var(--tsi102);
+    width: var(--tsi102);
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-block;
+    background: #fff;
+    border: 0px solid #fff;
+    margin: 0 2px;
+}
+
+.find-back:hover {
+    background: #f2f0f4;
+}
+
+.find-forward {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    height: var(--tsi102);
+    width: var(--tsi102);
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-block;
+    background: #fff;
+    border: 0px solid #fff;
+    margin: 0 2px;
+}
+
+.find-forward:hover {
+    background: #f2f0f4;
+}
+
+.find-close {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    height: var(--tsi102);
+    width: var(--tsi102);
+    overflow: hidden;
+    display: inline-block;
+    background: #fff;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+
+.find-close img {
+    width: 80%;
+    transform: rotate(-90deg);
+    display: block;
+    margin: 10% auto;
+}
+
+.find-close:hover {
+    background: #f2f0f4;
+}
+.find-back img {
+    width: 50%;
+    transform: rotate(-90deg);
+    display: block;
+    margin: 20% auto;
+}
+.find-forward img {
+    width: 50%;
+    transform: rotate(90deg);
+    display: block;
+    margin: 20% auto;
+}
+.lock {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.unlock {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.onCase {
+    border-color: #f2f0f4 !important;
+    background-color: #f2f0f4 !important;
+}
+
+.offCase {
+    border-color: transparent !important;
+    background-color: transparent !important;
+}

@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "target": "ES2015",
+        "jsx": "react",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "declaration": true
+    },
+    "include": ["./src", "tsconfig.json"]
+}

@@ -1,0 +1,26 @@
+<svg id="untitled" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <g id="botr"
+        transform="matrix(-.707107-.707107 0.707107-.707107 235.161527 365.762126)">
+        <path id="untitled-s-path1" d="M192.07367,160.664115v-100.157704l-100,100.157704h100Z"
+            fill="none" stroke="#3f5787" stroke-width="0.6" />
+    </g>
+    <g id="botl"
+        transform="matrix(.707107 0.707107-.707107 0.707107 108.003371-62.262238)">
+        <path id="untitled-s-path2" d="M192.07367,160.664115v-100.157704l-100,100.157704h100Z"
+            fill="none" stroke="#3f5787" stroke-width="0.6" />
+    </g>
+    <g id="topl" transform="matrix(-1 0 0-1 222.342707 200.482939)">
+        <path id="untitled-s-path3" d="M192.07367,160.664115v-100.157704l-100,100.157704h100Z"
+            fill="none" stroke="#3f5787" stroke-width="0.6" />
+    </g>
+    <g id="topr" transform="matrix(0-1 1 0 93.881656 231.892496)">
+        <path id="untitled-s-path4" d="M192.07367,160.664115v-100.157704l-100,100.157704h100Z"
+            fill="none" stroke="#3f5787" stroke-width="0.6" />
+    </g>
+    <g id="middle"
+        transform="matrix(-.707107-.707107 0.707107-.707107 164.339335 289.242106)">
+        <path id="untitled-s-path5" d="M192.07367,160.664115v-100.157704l-100,100.157704h100Z"
+            fill="none" stroke="#3f5787" stroke-width="0.6" />
+    </g>
+</svg>

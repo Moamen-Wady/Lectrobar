@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --llb05: 1rem;
+        --llb08: 1.6rem;
+        --llb1: 2rem;
+        --llb101: 2.2rem;
+        --llb102: 2.4rem;
+        --llb103: 2.6rem;
+        --llb104: 2.8rem;
+        --llb105: 3rem;
+        --llb106: 3.2rem;
+        --llb2: 4rem;
+        --llb3: 6rem;
+        --llb4: 8rem;
+        --llb5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --llb05: 0.75rem;
+        --llb08: 1.2rem;
+        --llb1: 1.5rem;
+        --llb101: 1.6rem;
+        --llb102: 1.7rem;
+        --llb103: 1.9rem;
+        --llb104: 2rem;
+        --llb105: 2.2rem;
+        --llb106: 2.3rem;
+        --llb2: 3rem;
+        --llb3: 4.5rem;
+        --llb4: 6rem;
+        --llb5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --llb05: 0.625rem;
+        --llb08: 1rem;
+        --llb1: 1.25rem;
+        --llb101: 1.3rem;
+        --llb102: 1.5rem;
+        --llb103: 1.6rem;
+        --llb104: 1.7rem;
+        --llb105: 1.8rem;
+        --llb106: 1.9rem;
+        --llb2: 2.5rem;
+        --llb3: 3.75rem;
+        --llb4: 5rem;
+        --llb5: 6.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --llb05: 0.5rem;
+        --llb08: 0.8rem;
+        --llb1: 1rem;
+        --llb101: 1.1rem;
+        --llb102: 1.2rem;
+        --llb103: 1.3rem;
+        --llb104: 1.4rem;
+        --llb105: 1.5rem;
+        --llb106: 1.6rem;
+        --llb2: 2rem;
+        --llb3: 3rem;
+        --llb4: 4rem;
+        --llb5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --llb05: 0.35rem;
+        --llb08: 0.56rem;
+        --llb1: 0.7rem;
+        --llb101: 0.8rem;
+        --llb102: 0.9rem;
+        --llb103: 1rem;
+        --llb104: 1.2rem;
+        --llb105: 1.3rem;
+        --llb106: 1.4rem;
+        --llb2: 1.4rem;
+        --llb3: 2.1rem;
+        --llb4: 2.8rem;
+        --llb5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --llb05: 0.25rem;
+        --llb08: 0.4rem;
+        --llb1: 0.5rem;
+        --llb101: 0.55rem;
+        --llb102: 0.8rem;
+        --llb103: 0.85rem;
+        --llb104: 0.7rem;
+        --llb105: 0.75rem;
+        --llb106: 0.8rem;
+        --llb2: 1rem;
+        --llb3: 1.5rem;
+        --llb4: 2rem;
+        --llb5: 2.5rem;
+    }
+    body .llbltcont .llbimgcont {
+        width: 30%;
+    }
+    body .llbltcont .llbtxtcont {
+        width: 90%;
+    }
+    body .llbrtcont .llbimgcont {
+        width: 30%;
+    }
+    body .llbrtcont .llbtxtcont {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --llb05: 0.25rem;
+        --llb08: 0.4rem;
+        --llb1: 0.5rem;
+        --llb101: 0.8rem;
+        --llb102: 0.9rem;
+        --llb103: 1rem;
+        --llb104: 1.2rem;
+        --llb105: 1.3rem;
+        --llb106: 1.4rem;
+        --llb2: 1.4rem;
+        --llb3: 1.5rem;
+        --llb4: 2rem;
+        --llb5: 2.5rem;
+    }
+    body .llbh1 {
+        font-size: var(--llb104);
+    }
+    body .llbltcont .llbimgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .llbltcont .llbtxtcont {
+        display: block;
+        width: 90%;
+    }
+    body .llbrtcont .llbimgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .llbrtcont .llbtxtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .llbltcont .llbtxtcont span {
+        display: contents;
+    }
+    body .llbrtcont .llbtxtcont span {
+        display: contents;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --llb05: 0.25rem;
+        --llb08: 0.4rem;
+        --llb1: 0.5rem;
+        --llb101: 0.8rem;
+        --llb102: 0.9rem;
+        --llb103: 1rem;
+        --llb104: 1.2rem;
+        --llb105: 1.3rem;
+        --llb106: 1.4rem;
+        --llb2: 1.4rem;
+        --llb3: 1.5rem;
+        --llb4: 2rem;
+        --llb5: 2.5rem;
+    }
+    body .llbh1 {
+        font-size: var(--llb104);
+    }
+    body .llbltcont .llbimgcont {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+    body .llbltcont .llbtxtcont {
+        display: block;
+        width: 90%;
+    }
+    body .llbrtcont .llbimgcont {
+        margin: 2%;
+        width: 45%;
+        float: right;
+    }
+    body .llbrtcont .llbtxtcont {
+        display: block;
+        width: 90%;
+        height: max-content;
+        align-items: center;
+    }
+    body .llbltcont .llbtxtcont span {
+        display: contents;
+    }
+    body .llbrtcont .llbtxtcont span {
+        display: contents;
+    }
+}
+.llbh1 {
+    margin: auto;
+    text-align: center;
+    color: #012060;
+    font-size: var(--llb2);
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+.llbltcont a {
+    display: contents;
+}
+.llbrtcont a {
+    display: contents;
+}
+.llbltcont .llbimgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.llbltcont .llbtxtcont {
+    width: 88%;
+    display: flex;
+    margin: auto;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--llb2);
+    margin-bottom: var(--llb2);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--llb102);
+    font-family: "Raleway", sans-serif;
+}
+.llbltcont .llbtxtcont span {
+    display: block;
+    max-width: 60%;
+}
+.llbrtcont .llbimgcont {
+    width: 25%;
+    height: max-content;
+    text-align: center;
+    object-fit: contain;
+}
+.llbrtcont .llbtxtcont {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    padding: 1%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--llb2);
+    margin-bottom: var(--llb2);
+    height: max-content;
+    text-align: left;
+    color: #121212;
+    font-size: var(--llb102);
+    font-family: "Raleway", sans-serif;
+}
+.llbrtcont .llbtxtcont span {
+    display: block;
+    max-width: 60%;
+}
+.llbrtcont strong,
+.llbltcont strong,
+.llbltcont b,
+.llbrtcont b {
+    font-family: "El Messiri", sans-serif;
+    font-size: var(--llb103);
+    display: contents;
+}
+.llbgdwl {
+    width: 85%;
+    display: block;
+    margin: auto;
+}

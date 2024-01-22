@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --fr05: 1rem;
+        --fr08: 1.6rem;
+        --fr1: 2rem;
+        --fr101: 2.2rem;
+        --fr102: 2.4rem;
+        --fr103: 2.6rem;
+        --fr104: 2.8rem;
+        --fr105: 3rem;
+        --fr106: 3.2rem;
+        --fr2: 4rem;
+        --fr3: 6rem;
+        --fr4: 8rem;
+        --fr5: 10rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --fr05: 0.75rem;
+        --fr08: 1.2rem;
+        --fr1: 1.5rem;
+        --fr101: 1.6rem;
+        --fr102: 1.7rem;
+        --fr103: 1.9rem;
+        --fr104: 2rem;
+        --fr105: 2.2rem;
+        --fr106: 2.3rem;
+        --fr2: 3rem;
+        --fr3: 4.5rem;
+        --fr4: 6rem;
+        --fr5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --fr05: 0.625rem;
+        --fr08: 1rem;
+        --fr1: 1.25rem;
+        --fr101: 1.3rem;
+        --fr102: 1.5rem;
+        --fr103: 1.6rem;
+        --fr104: 1.7rem;
+        --fr105: 1.8rem;
+        --fr106: 1.9rem;
+        --fr2: 2.5rem;
+        --fr3: 3.75rem;
+        --fr4: 5rem;
+        --fr5: 6.25rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --fr05: 0.5rem;
+        --fr08: 0.8rem;
+        --fr1: 1rem;
+        --fr101: 1.1rem;
+        --fr102: 1.2rem;
+        --fr103: 1.3rem;
+        --fr104: 1.4rem;
+        --fr105: 1.5rem;
+        --fr106: 1.6rem;
+        --fr2: 2rem;
+        --fr3: 3rem;
+        --fr4: 4rem;
+        --fr5: 5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --fr05: 0.35rem;
+        --fr08: 0.56rem;
+        --fr1: 0.7rem;
+        --fr101: 0.8rem;
+        --fr102: 0.9rem;
+        --fr103: 1rem;
+        --fr104: 1.2rem;
+        --fr105: 1.3rem;
+        --fr106: 1.4rem;
+        --fr2: 1.4rem;
+        --fr3: 2.1rem;
+        --fr4: 2.8rem;
+        --fr5: 3.5rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    :root {
+        --fr05: 0.35rem;
+        --fr08: 0.56rem;
+        --fr1: 0.7rem;
+        --fr101: 0.8rem;
+        --fr102: 0.9rem;
+        --fr103: 1rem;
+        --fr104: 1.2rem;
+        --fr105: 1.3rem;
+        --fr106: 1.4rem;
+        --fr2: 1.2rem;
+        --fr3: 2.1rem;
+        --fr4: 2.8rem;
+        --fr5: 3.5rem;
+    }
+    body .ff {
+        height: 95dvh;
+    }
+    body .xcon {
+        flex-wrap: wrap;
+    }
+    body .portion:first-child {
+        width: 100%;
+    }
+    body .imx {
+        display: inline-block;
+        width: 80%;
+    }
+    body .contact {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    body .contact > h1 {
+        display: block;
+        width: 40%;
+        margin: auto;
+    }
+    body .content {
+        display: block;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --fr05: 0.35rem;
+        --fr08: 0.56rem;
+        --fr1: 0.7rem;
+        --fr101: 0.8rem;
+        --fr102: 0.9rem;
+        --fr103: 1rem;
+        --fr104: 1.2rem;
+        --fr105: 1.3rem;
+        --fr106: 1.4rem;
+        --fr2: 1.2rem;
+        --fr3: 2.1rem;
+        --fr4: 2.8rem;
+        --fr5: 3.5rem;
+    }
+    body .portion {
+        width: 50%;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --fr05: 0.25rem;
+        --fr08: 0.4rem;
+        --fr1: 0.7rem;
+        --fr101: 0.8rem;
+        --fr102: 0.9rem;
+        --fr103: 1rem;
+        --fr104: 1rem;
+        --fr105: 1rem;
+        --fr106: 1rem;
+        --fr2: 1rem;
+        --fr3: 1.5rem;
+        --fr4: 2rem;
+        --fr5: 2.5rem;
+    }
+}
+
+.content {
+    display: contents;
+}
+.ff {
+    background: #00395f;
+    border-top: 1px solid darkblue;
+    width: 100%;
+    margin: auto;
+}
+.xcon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #00395f;
+    padding: var(--fr1);
+}
+.portion > h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: var(--fr2);
+    color: whitesmoke;
+}
+.portion {
+    display: inline-block;
+    width: 20%;
+    color: white;
+}
+.ful {
+    display: inline-block;
+    overflow: hidden;
+    margin: auto;
+    z-index: 5000;
+    font-size: var(--fr1);
+    font-family: "El Messiri", sans-serif;
+    color: black;
+    text-indent: 0;
+    padding: 0;
+}
+.xl {
+    display: block;
+    padding: calc(var(--fr05) * 0.5);
+}
+.xl::before {
+    content: "";
+}
+.ll {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.xl .ll:hover {
+    color: #3f48cc;
+}
+.imx {
+    margin: 0;
+    width: 90%;
+    vertical-align: top;
+}
+.contact h1 {
+    font-size: var(--fr2);
+    font-family: "El Messiri", sans-serif;
+}
+.content p {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+    font-size: var(--fr1);
+    color: white;
+    text-decoration: none;
+    font-family: "El Messiri", sans-serif;
+    margin-right: var(--fr1);
+}
+.content a {
+    font-size: var(--fr1);
+    color: white;
+    text-decoration: none;
+}
+.content > p > img {
+    width: var(--fr105);
+    height: var(--fr106);
+    margin: var(--fr05);
+    display: inline-block;
+    vertical-align: middle;
+}

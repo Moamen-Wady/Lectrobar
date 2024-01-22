@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@media only screen and (min-width: 2001px) {
+    :root {
+        --vbnr05: 1rem;
+        --vbnr08: 1.6rem;
+        --vbnr1: 2rem;
+        --vbnr101: 2.2rem;
+        --vbnr102: 2.4rem;
+        --vbnr103: 2.6rem;
+        --vbnr104: 2.8rem;
+        --vbnr105: 3rem;
+        --vbnr106: 3.2rem;
+        --vbnr2: 4rem;
+        --vbnr3: 6rem;
+        --vbnr4: 8rem;
+        --vbnr5: 10rem;
+    }
+    body .vidbanw {
+        height: 41rem;
+    }
+    body .vidvid video {
+        height: 41rem;
+    }
+    body .vidvid img {
+        height: 41rem;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    :root {
+        --vbnr05: 0.75rem;
+        --vbnr08: 1.2rem;
+        --vbnr1: 1.5rem;
+        --vbnr101: 1.6rem;
+        --vbnr102: 1.7rem;
+        --vbnr103: 1.9rem;
+        --vbnr104: 2rem;
+        --vbnr105: 2.2rem;
+        --vbnr106: 2.3rem;
+        --vbnr2: 3rem;
+        --vbnr3: 4.5rem;
+        --vbnr4: 6rem;
+        --vbnr5: 7.5rem;
+    }
+    body .vidbanw {
+        height: 36rem;
+    }
+    body .vidvid video {
+        height: 36rem;
+    }
+    body .vidvid img {
+        height: 36rem;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    :root {
+        --vbnr05: 0.625rem;
+        --vbnr08: 1rem;
+        --vbnr1: 1.25rem;
+        --vbnr101: 1.3rem;
+        --vbnr102: 1.5rem;
+        --vbnr103: 1.6rem;
+        --vbnr104: 1.7rem;
+        --vbnr105: 1.8rem;
+        --vbnr106: 1.9rem;
+        --vbnr2: 2.5rem;
+        --vbnr3: 3.75rem;
+        --vbnr4: 5rem;
+        --vbnr5: 6.25rem;
+    }
+    body .vidbanw {
+        height: 33rem;
+    }
+    body .vidvid video {
+        height: 33rem;
+    }
+    body .vidvid img {
+        height: 33rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    :root {
+        --vbnr05: 0.5rem;
+        --vbnr08: 0.8rem;
+        --vbnr1: 1rem;
+        --vbnr101: 1.1rem;
+        --vbnr102: 1.2rem;
+        --vbnr103: 1.3rem;
+        --vbnr104: 1.4rem;
+        --vbnr105: 1.5rem;
+        --vbnr106: 1.6rem;
+        --vbnr2: 2rem;
+        --vbnr3: 3rem;
+        --vbnr4: 4rem;
+        --vbnr5: 5rem;
+    }
+    body .vidbanw {
+        height: 28rem;
+    }
+    body .vidvid video {
+        height: 28rem;
+    }
+    body .vidvid img {
+        height: 28rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        --vbnr05: 0.35rem;
+        --vbnr08: 0.56rem;
+        --vbnr1: 0.7rem;
+        --vbnr101: 0.8rem;
+        --vbnr102: 0.9rem;
+        --vbnr103: 1rem;
+        --vbnr104: 1.2rem;
+        --vbnr105: 1.3rem;
+        --vbnr106: 1.4rem;
+        --vbnr2: 1.4rem;
+        --vbnr3: 2.1rem;
+        --vbnr4: 2.8rem;
+        --vbnr5: 3.5rem;
+    }
+    body .vidbanw {
+        height: 25rem;
+    }
+    body .vidvid video {
+        height: 25rem;
+    }
+    body .vidvid img {
+        height: 25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --vbnr05: 0.25rem;
+        --vbnr08: 0.4rem;
+        --vbnr1: 0.5rem;
+        --vbnr101: 0.55rem;
+        --vbnr102: 0.6rem;
+        --vbnr103: 0.7rem;
+        --vbnr104: 0.7rem;
+        --vbnr105: 0.75rem;
+        --vbnr106: 0.8rem;
+        --vbnr2: 1rem;
+        --vbnr3: 1.5rem;
+        --vbnr4: 2rem;
+        --vbnr5: 2.5rem;
+    }
+    body .vidbanw {
+        height: 19rem;
+    }
+    body .vidvid video {
+        height: 19rem;
+    }
+    body .vidvid img {
+        height: 19rem;
+    }
+}
+@media only screen and (max-width: 530px) {
+    :root {
+        --vbnr05: 0.17rem;
+        --vbnr08: 0.26rem;
+        --vbnr1: 0.33rem;
+        --vbnr101: 0.4rem;
+        --vbnr102: 0.5rem;
+        --vbnr103: 0.5rem;
+        --vbnr104: 0.5rem;
+        --vbnr105: 0.6rem;
+        --vbnr106: 0.6rem;
+        --vbnr2: 0.7rem;
+        --vbnr3: 1rem;
+        --vbnr4: 1.3rem;
+        --vbnr5: 1.65rem;
+    }
+    body .vidbanw {
+        height: 14rem;
+    }
+    body .vidvid video {
+        height: 14rem;
+    }
+    body .vidvid img {
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root {
+        --vbnr05: 0.17rem;
+        --vbnr08: 0.2rem;
+        --vbnr1: 0.33rem;
+        --vbnr101: 0.4rem;
+        --vbnr102: 0.5rem;
+        --vbnr103: 0.5rem;
+        --vbnr104: 0.5rem;
+        --vbnr105: 0.6rem;
+        --vbnr106: 0.6rem;
+        --vbnr2: 0.7rem;
+        --vbnr3: 1rem;
+        --vbnr4: 1.3rem;
+        --vbnr5: 1.65rem;
+    }
+    body .vidbanw {
+        height: 11.3rem;
+    }
+    body .vidvid video {
+        height: 11.3rem;
+    }
+    body .vidvid img {
+        height: 11.3rem;
+    }
+}
+
+/*/////////////////////////
+////////////////
+////////////////////*/
+
+.vidbanw {
+    position: relative;
+    z-index: 29;
+}
+.vidvid {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 28;
+}
+.vidvid video {
+    object-fit: cover;
+    width: 100%;
+    z-index: 27;
+}
+.vidvid img {
+    position: absolute;
+    width: 100%;
+    z-index: 26;
+}
+.vidh1 {
+    font-size: var(--vbnr4);
+    color: white;
+    font-weight: bold;
+    font-family: "ubuntu", sans-serif;
+    display: block;
+    margin: auto;
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
