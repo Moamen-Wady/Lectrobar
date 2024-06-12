@@ -1,5 +1,4 @@
 import './styles/contact.css'
-import "animate.css/animate.min.css";
 import ContB from './components/ContB'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { memo, useEffect } from 'react';

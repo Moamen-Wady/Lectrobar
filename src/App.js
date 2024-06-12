@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './styles.css'
+import "animate.css/animate.min.css";
 import Home from './Home';
 import Projects from './Projects';
 import Contact from './Contact';

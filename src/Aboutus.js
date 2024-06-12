@@ -1,6 +1,5 @@
 import './styles/About.css'
 import { memo, useEffect, useState } from 'react'
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import VidBanner from './components/vidBanner'
 

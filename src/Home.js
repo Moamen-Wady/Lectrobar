@@ -4,7 +4,6 @@ import { memo, useEffect, useState } from 'react'
 import useIntersectionObserver from '@react-hook/intersection-observer'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 var IntroA = memo( function IntroA( { sliding } ) {
