@@ -1,86 +1,86 @@
 @media only screen and (min-width: 2001px) {
     :root {
-        --ar05: 1rem;
-        --ar08: 1.6rem;
-        --ar1: 2rem;
-        --ar101: 2.2rem;
-        --ar102: 2.4rem;
-        --ar103: 2.6rem;
-        --ar104: 2.8rem;
-        --ar105: 3rem;
-        --ar106: 3.2rem;
-        --ar2: 4rem;
-        --ar3: 6rem;
-        --ar4: 8rem;
-        --ar5: 10rem;
+        --r05: 1rem;
+        --r08: 1.6rem;
+        --r1: 2rem;
+        --r101: 2.2rem;
+        --r102: 2.4rem;
+        --r103: 2.6rem;
+        --r104: 2.8rem;
+        --r105: 3rem;
+        --r106: 3.2rem;
+        --r2: 4rem;
+        --r3: 6rem;
+        --r4: 8rem;
+        --r5: 10rem;
     }
 }
 @media only screen and (max-width: 2000px) {
     :root {
-        --ar05: 0.75rem;
-        --ar08: 1.2rem;
-        --ar1: 1.5rem;
-        --ar101: 1.6rem;
-        --ar102: 1.7rem;
-        --ar103: 1.9rem;
-        --ar104: 2rem;
-        --ar105: 2.2rem;
-        --ar106: 2.3rem;
-        --ar2: 3rem;
-        --ar3: 4.5rem;
-        --ar4: 6rem;
-        --ar5: 7.5rem;
+        --r05: 0.75rem;
+        --r08: 1.2rem;
+        --r1: 1.5rem;
+        --r101: 1.6rem;
+        --r102: 1.7rem;
+        --r103: 1.9rem;
+        --r104: 2rem;
+        --r105: 2.2rem;
+        --r106: 2.3rem;
+        --r2: 3rem;
+        --r3: 4.5rem;
+        --r4: 6rem;
+        --r5: 7.5rem;
     }
 }
 @media only screen and (max-width: 1670px) {
     :root {
-        --ar05: 0.5rem;
-        --ar08: 0.8rem;
-        --ar1: 1rem;
-        --ar101: 1.1rem;
-        --ar102: 1.2rem;
-        --ar103: 1.3rem;
-        --ar104: 1.4rem;
-        --ar105: 1.5rem;
-        --ar106: 1.6rem;
-        --ar2: 2rem;
-        --ar3: 3rem;
-        --ar4: 4rem;
-        --ar5: 5rem;
+        --r05: 0.5rem;
+        --r08: 0.8rem;
+        --r1: 1rem;
+        --r101: 1.1rem;
+        --r102: 1.2rem;
+        --r103: 1.3rem;
+        --r104: 1.4rem;
+        --r105: 1.5rem;
+        --r106: 1.6rem;
+        --r2: 2rem;
+        --r3: 3rem;
+        --r4: 4rem;
+        --r5: 5rem;
     }
 }
 @media only screen and (max-width: 1024px) {
     :root {
-        --ar05: 0.35rem;
-        --ar08: 0.56rem;
-        --ar1: 0.7rem;
-        --ar101: 0.8rem;
-        --ar102: 0.9rem;
-        --ar103: 1rem;
-        --ar104: 1.2rem;
-        --ar105: 1.3rem;
-        --ar106: 1.4rem;
-        --ar2: 1.4rem;
-        --ar3: 2.1rem;
-        --ar4: 2.8rem;
-        --ar5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
 }
 @media only screen and (max-width: 900px) {
     :root {
-        --ar05: 0.35rem;
-        --ar08: 0.56rem;
-        --ar1: 0.7rem;
-        --ar101: 0.8rem;
-        --ar102: 0.9rem;
-        --ar103: 1rem;
-        --ar104: 1.2rem;
-        --ar105: 1.3rem;
-        --ar106: 1.4rem;
-        --ar2: 1.4rem;
-        --ar3: 2.1rem;
-        --ar4: 2.8rem;
-        --ar5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
     body .aboutcertificates > div > div img {
         width: 90%;
@@ -88,22 +88,22 @@
 }
 @media only screen and (max-width: 768px) {
     :root {
-        --ar05: 0.35rem;
-        --ar08: 0.56rem;
-        --ar1: 0.7rem;
-        --ar101: 0.8rem;
-        --ar102: 0.9rem;
-        --ar103: 1rem;
-        --ar104: 1.2rem;
-        --ar105: 1.3rem;
-        --ar106: 1.4rem;
-        --ar2: 1.4rem;
-        --ar3: 2.1rem;
-        --ar4: 2.8rem;
-        --ar5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
     body .aboutfactorytxt a {
-        font-size: var(--ar103);
+        font-size: var(--r103);
     }
     body .aboutdistribution {
         width: 100%;
@@ -112,7 +112,7 @@
         width: 100%;
     }
     body .aboutcertificates {
-        margin-top: var(--ar2);
+        margin-top: var(--r2);
     }
     body .aboutcertificates > div > div {
         width: 100%;
@@ -130,19 +130,19 @@
 }
 @media only screen and (max-width: 530px) {
     :root {
-        --ar05: 0.25rem;
-        --ar08: 0.4rem;
-        --ar1: 0.7rem;
-        --ar101: 0.8rem;
-        --ar102: 0.9rem;
-        --ar103: 1rem;
-        --ar104: 1.2rem;
-        --ar105: 1.3rem;
-        --ar106: 1.4rem;
-        --ar2: 1.4rem;
-        --ar3: 1.5rem;
-        --ar4: 2rem;
-        --ar5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .aboutunderbanner {
         width: 90%;
@@ -154,13 +154,13 @@
         width: 100%;
     }
     body .aboutdot span {
-        width: calc(var(--ar4) * 2);
+        width: calc(var(--r4) * 2);
     }
     body .aboutvalues > div {
         width: 100%;
     }
     body .aboutcertificates {
-        margin-top: var(--ar2);
+        margin-top: var(--r2);
     }
     body .aboutcertificates > div > div {
         width: 100%;
@@ -184,19 +184,19 @@
 }
 @media only screen and (max-width: 400px) {
     :root {
-        --ar05: 0.25rem;
-        --ar08: 0.4rem;
-        --ar1: 0.5rem;
-        --ar101: 0.7rem;
-        --ar102: 0.8rem;
-        --ar103: 0.9rem;
-        --ar104: 1rem;
-        --ar105: 1.1rem;
-        --ar106: 1.2rem;
-        --ar2: 1.4rem;
-        --ar3: 1.5rem;
-        --ar4: 2rem;
-        --ar5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.7rem;
+        --r102: 0.8rem;
+        --r103: 0.9rem;
+        --r104: 1rem;
+        --r105: 1.1rem;
+        --r106: 1.2rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .aboutunderbanner {
         width: 90%;
@@ -208,13 +208,13 @@
         width: 100%;
     }
     body .aboutdot span {
-        width: calc(var(--ar4) * 2);
+        width: calc(var(--r4) * 2);
     }
     body .aboutvalues > div {
         width: 100%;
     }
     body .aboutcertificates {
-        margin-top: var(--ar2);
+        margin-top: var(--r2);
     }
     body .aboutcertificates > div > div {
         width: 100%;
@@ -234,14 +234,14 @@
     width: 80%;
     display: block;
     margin: auto;
-    margin-top: var(--ar2);
-    margin-bottom: var(--ar3);
+    margin-top: var(--r2);
+    margin-bottom: var(--r3);
 }
 .aboutunderbanner h1 {
     display: block;
     margin: auto;
     color: #012060;
-    font-size: calc(var(--ar101) * 2);
+    font-size: calc(var(--r101) * 2);
     font-family: "Raleway", sans-serif;
     text-align: left;
 }
@@ -250,7 +250,7 @@
     width: 100%;
     text-align: left;
     text-align-last: center;
-    font-size: var(--ar103);
+    font-size: var(--r103);
     color: rgb(28, 28, 28);
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
@@ -263,7 +263,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    margin-bottom: var(--ar3);
+    margin-bottom: var(--r3);
 }
 .aboutfactory > div {
     width: 45%;
@@ -276,8 +276,8 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-bottom: var(--ar4);
-    font-size: var(--ar3);
+    margin-bottom: var(--r4);
+    font-size: var(--r3);
     text-align: center;
     color: #012060;
     font-weight: bolder;
@@ -289,12 +289,12 @@
     color: whitesmoke;
 }
 .aboutfactorytxt a {
-    font-size: var(--ar105);
+    font-size: var(--r105);
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
     text-decoration: none;
     text-align: center;
     background: #00395f;
@@ -303,7 +303,7 @@
     font-weight: bold;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-    padding: var(--ar1);
+    padding: var(--r1);
 }
 .aboutfactoryimg {
     border-radius: 5%;
@@ -328,8 +328,8 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-bottom: var(--ar4);
-    font-size: calc(var(--ar101) * 2);
+    margin-bottom: var(--r4);
+    font-size: calc(var(--r101) * 2);
     text-align: center;
     color: #012060;
     font-weight: bold;
@@ -347,15 +347,15 @@
     z-index: 24;
 }
 .aboutdot span {
-    width: calc(var(--ar3) * 2);
+    width: calc(var(--r3) * 2);
     position: absolute;
     visibility: hidden;
     background-color: #126196;
     color: #fff;
-    font-size: var(--ar102);
+    font-size: var(--r102);
     text-align: center;
     border-radius: 10%;
-    padding: var(--ar05) 0;
+    padding: var(--r05) 0;
     z-index: 26;
     bottom: 100%;
     left: 50%;
@@ -492,7 +492,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    margin-bottom: var(--ar3);
+    margin-bottom: var(--r3);
 }
 .aboutbranchesl > div {
     width: 45%;
@@ -502,8 +502,8 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-bottom: var(--ar4);
-    font-size: var(--ar103);
+    margin-bottom: var(--r4);
+    font-size: var(--r103);
     text-align: left;
     color: rgb(51, 51, 51);
     font-weight: bold;
@@ -518,29 +518,29 @@
     color: #012060;
     display: block;
     max-width: fit-content;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
-    font-size: var(--ar2);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
+    font-size: var(--r2);
     text-decoration: none;
     text-align: left;
     font-weight: bold;
     font-family: "Raleway", sans-serif;
-    padding: var(--ar1);
-    padding-left: var(--ar3);
+    padding: var(--r1);
+    padding-left: var(--r3);
 }
 .aboutbranchesl h2 {
     display: block;
     max-width: fit-content;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
-    font-size: var(--ar105);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
+    font-size: var(--r105);
     text-decoration: none;
     text-align: left;
     color: rgb(51, 51, 51);
     font-weight: bold;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-    padding: var(--ar1);
+    padding: var(--r1);
 }
 .aboutbrancheslimg {
     border-radius: 5%;
@@ -557,7 +557,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    margin-bottom: var(--ar3);
+    margin-bottom: var(--r3);
 }
 .aboutbranchesr > div {
     width: 45%;
@@ -574,8 +574,8 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-bottom: var(--ar4);
-    font-size: var(--ar103);
+    margin-bottom: var(--r4);
+    font-size: var(--r103);
     text-align: left;
     color: rgb(51, 51, 51);
     font-weight: bold;
@@ -585,16 +585,16 @@
 .aboutbranchesr h2 {
     display: block;
     max-width: fit-content;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
-    font-size: var(--ar105);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
+    font-size: var(--r105);
     text-decoration: none;
     text-align: left;
     color: rgb(51, 51, 51);
     font-weight: bold;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-    padding: var(--ar1);
+    padding: var(--r1);
 }
 .aboutbranchesrimg {
     border-radius: 5%;
@@ -617,12 +617,12 @@
 }
 .aboutvalues h1 {
     color: #012060;
-    font-size: calc(var(--ar101) * 2);
+    font-size: calc(var(--r101) * 2);
     font-family: "Raleway", sans-serif;
 }
 .aboutvalues p {
     color: #232323;
-    font-size: var(--ar105);
+    font-size: var(--r105);
     font-family: "Raleway", sans-serif;
 }
 .aboutbotr,
@@ -641,7 +641,7 @@
     display: block;
     margin: auto;
     color: #012060;
-    font-size: calc(var(--ar101) * 2);
+    font-size: calc(var(--r101) * 2);
     font-family: "Raleway", sans-serif;
     text-align: center;
 }
@@ -652,8 +652,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: var(--ar2);
-    margin-bottom: var(--ar2);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
 }
 .aboutcertificates > div > div {
     width: 45%;
@@ -665,7 +665,7 @@
 }
 .aboutcertificates p {
     color: #232323;
-    font-size: var(--ar105);
+    font-size: var(--r105);
     font-family: "Raleway", sans-serif;
     text-align: center;
 }
@@ -685,15 +685,15 @@
     display: block;
     margin: auto;
     max-width: fit-content;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
-    font-size: calc(var(--ar101) * 2);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
+    font-size: calc(var(--r101) * 2);
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     font-family: "Raleway", sans-serif;
-    padding: var(--ar1);
-    padding-left: var(--ar3);
+    padding: var(--r1);
+    padding-left: var(--r3);
 }
 .aboutmanagers {
     display: flex;
@@ -702,7 +702,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    margin-bottom: var(--ar3);
+    margin-bottom: var(--r3);
 }
 .aboutmanagers > div {
     width: 90%;
@@ -712,14 +712,14 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-top: var(--ar1);
-    margin-bottom: var(--ar1);
-    font-size: var(--ar106);
+    margin-top: var(--r1);
+    margin-bottom: var(--r1);
+    font-size: var(--r106);
     text-shadow: 3px 3px 8px #126196;
     text-align: center;
     color: white;
     font-weight: bold;
-    padding: var(--ar1);
+    padding: var(--r1);
     font-weight: bold;
     font-family: "Raleway", sans-serif;
 }
@@ -729,7 +729,7 @@
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: var(--ar106);
+    font-size: var(--r106);
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -747,8 +747,8 @@
     display: block;
     max-width: fit-content;
     margin: auto;
-    margin-bottom: var(--ar4);
-    font-size: var(--ar103);
+    margin-bottom: var(--r4);
+    font-size: var(--r103);
     text-align: left;
     color: rgb(51, 51, 51);
     font-weight: bold;
@@ -770,7 +770,7 @@
     margin-left: auto;
 }
 .aboutmanagersimg_cont img {
-    width: calc(var(--ar5) * 2.5);
+    width: calc(var(--r5) * 2.5);
     display: block;
     margin: auto;
     border-radius: 100%;
@@ -781,13 +781,13 @@
     width: 100%;
     position: relative;
     margin: auto;
-    background-image: url("./missionbg.jpg");
+    background-image: url("/missionbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(var(--ar5) * 5);
-    margin-top: var(--ar2);
-    margin-bottom: var(--ar2);
+    height: calc(var(--r5) * 5);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
 }
 .aboutmission > div {
     position: absolute;
@@ -808,7 +808,7 @@
     display: block;
     max-width: 80%;
     margin: auto;
-    font-size: var(--ar104);
+    font-size: var(--r104);
     color: white;
     font-weight: bold;
     font-family: "Raleway", sans-serif;

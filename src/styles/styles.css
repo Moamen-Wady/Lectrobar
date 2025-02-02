@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+@media only screen and (min-width: 1701px) {
+  :root {
+    --x: 30rem;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  :root {
+    --x: 25rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  :root {
+    --x: 18rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  :root {
+    --x: 15rem;
+  }
+}
+* {
+  text-transform: capitalize;
+}
+* a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+.load {
+  overflow: hidden;
+  width: 100svw;
+  height: 100svh;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+}
+.load img {
+  width: var(--x);
+  height: calc(var(--x) * 2 / 3);
+  animation-name: loadout;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+@keyframes loadout {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 2001px) {
+  :root {
+    --r05: 1rem;
+    --r08: 1.6rem;
+    --r1: 2rem;
+    --r101: 2.2rem;
+    --r102: 2.4rem;
+    --r103: 2.6rem;
+    --r104: 2.8rem;
+    --r105: 3rem;
+    --r106: 3.2rem;
+    --r2: 4rem;
+    --r3: 6rem;
+    --r4: 8rem;
+    --r5: 10rem;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  :root {
+    --r05: 0.75rem;
+    --r08: 1.2rem;
+    --r1: 1.5rem;
+    --r101: 1.6rem;
+    --r102: 1.7rem;
+    --r103: 1.9rem;
+    --r104: 2rem;
+    --r105: 2.2rem;
+    --r106: 2.3rem;
+    --r2: 3rem;
+    --r3: 4.5rem;
+    --r4: 6rem;
+    --r5: 7.5rem;
+  }
+}
+@media only screen and (max-width: 1670px) {
+  :root {
+    --r05: 0.625rem;
+    --r08: 1rem;
+    --r1: 1.25rem;
+    --r101: 1.3rem;
+    --r102: 1.5rem;
+    --r103: 1.6rem;
+    --r104: 1.7rem;
+    --r105: 1.8rem;
+    --r106: 1.9rem;
+    --r2: 2.5rem;
+    --r3: 3.75rem;
+    --r4: 5rem;
+    --r5: 6.25rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  :root {
+    --r05: 0.5rem;
+    --r08: 0.8rem;
+    --r1: 1rem;
+    --r101: 1.1rem;
+    --r102: 1.2rem;
+    --r103: 1.3rem;
+    --r104: 1.4rem;
+    --r105: 1.5rem;
+    --r106: 1.6rem;
+    --r2: 2rem;
+    --r3: 3rem;
+    --r4: 4rem;
+    --r5: 5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  :root {
+    --r05: 0.35rem;
+    --r08: 0.56rem;
+    --r1: 0.7rem;
+    --r101: 0.8rem;
+    --r102: 0.9rem;
+    --r103: 1rem;
+    --r104: 1.2rem;
+    --r105: 1.3rem;
+    --r106: 1.4rem;
+    --r2: 1.4rem;
+    --r3: 2.1rem;
+    --r4: 2.8rem;
+    --r5: 3.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    --r05: 0.25rem;
+    --r08: 0.4rem;
+    --r1: 0.5rem;
+    --r101: 0.55rem;
+    --r102: 0.6rem;
+    --r103: 0.7rem;
+    --r104: 0.7rem;
+    --r105: 0.75rem;
+    --r106: 0.8rem;
+    --r2: 1rem;
+    --r3: 1.5rem;
+    --r4: 2rem;
+    --r5: 2.5rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  :root {
+    --r05: 0.25rem;
+    --r08: 0.4rem;
+    --r1: 0.5rem;
+    --r101: 0.8rem;
+    --r102: 0.9rem;
+    --r103: 1rem;
+    --r104: 1.2rem;
+    --r105: 1.3rem;
+    --r106: 1.4rem;
+    --r2: 1.4rem;
+    --r3: 1.5rem;
+    --r4: 2rem;
+    --r5: 2.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    --r05: 0.18rem;
+    --r08: 0.3rem;
+    --r1: 0.375rem;
+    --r101: 0.4rem;
+    --r102: 0.45rem;
+    --r103: 0.48rem;
+    --r104: 0.5rem;
+    --r105: 0.54rem;
+    --r106: 0.58rem;
+    --r2: 0.7rem;
+    --r3: 1rem;
+    --r4: 1.4rem;
+    --r5: 1.7rem;
+  }
+}

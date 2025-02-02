@@ -1,108 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
 
 @media only screen and (min-width: 2001px) {
     :root {
-        --llb05: 1rem;
-        --llb08: 1.6rem;
-        --llb1: 2rem;
-        --llb101: 2.2rem;
-        --llb102: 2.4rem;
-        --llb103: 2.6rem;
-        --llb104: 2.8rem;
-        --llb105: 3rem;
-        --llb106: 3.2rem;
-        --llb2: 4rem;
-        --llb3: 6rem;
-        --llb4: 8rem;
-        --llb5: 10rem;
+        --r05: 1rem;
+        --r08: 1.6rem;
+        --r1: 2rem;
+        --r101: 2.2rem;
+        --r102: 2.4rem;
+        --r103: 2.6rem;
+        --r104: 2.8rem;
+        --r105: 3rem;
+        --r106: 3.2rem;
+        --r2: 4rem;
+        --r3: 6rem;
+        --r4: 8rem;
+        --r5: 10rem;
     }
 }
 @media only screen and (max-width: 2000px) {
     :root {
-        --llb05: 0.75rem;
-        --llb08: 1.2rem;
-        --llb1: 1.5rem;
-        --llb101: 1.6rem;
-        --llb102: 1.7rem;
-        --llb103: 1.9rem;
-        --llb104: 2rem;
-        --llb105: 2.2rem;
-        --llb106: 2.3rem;
-        --llb2: 3rem;
-        --llb3: 4.5rem;
-        --llb4: 6rem;
-        --llb5: 7.5rem;
+        --r05: 0.75rem;
+        --r08: 1.2rem;
+        --r1: 1.5rem;
+        --r101: 1.6rem;
+        --r102: 1.7rem;
+        --r103: 1.9rem;
+        --r104: 2rem;
+        --r105: 2.2rem;
+        --r106: 2.3rem;
+        --r2: 3rem;
+        --r3: 4.5rem;
+        --r4: 6rem;
+        --r5: 7.5rem;
     }
 }
 @media only screen and (max-width: 1670px) {
     :root {
-        --llb05: 0.625rem;
-        --llb08: 1rem;
-        --llb1: 1.25rem;
-        --llb101: 1.3rem;
-        --llb102: 1.5rem;
-        --llb103: 1.6rem;
-        --llb104: 1.7rem;
-        --llb105: 1.8rem;
-        --llb106: 1.9rem;
-        --llb2: 2.5rem;
-        --llb3: 3.75rem;
-        --llb4: 5rem;
-        --llb5: 6.25rem;
+        --r05: 0.625rem;
+        --r08: 1rem;
+        --r1: 1.25rem;
+        --r101: 1.3rem;
+        --r102: 1.5rem;
+        --r103: 1.6rem;
+        --r104: 1.7rem;
+        --r105: 1.8rem;
+        --r106: 1.9rem;
+        --r2: 2.5rem;
+        --r3: 3.75rem;
+        --r4: 5rem;
+        --r5: 6.25rem;
     }
 }
 @media only screen and (max-width: 1440px) {
     :root {
-        --llb05: 0.5rem;
-        --llb08: 0.8rem;
-        --llb1: 1rem;
-        --llb101: 1.1rem;
-        --llb102: 1.2rem;
-        --llb103: 1.3rem;
-        --llb104: 1.4rem;
-        --llb105: 1.5rem;
-        --llb106: 1.6rem;
-        --llb2: 2rem;
-        --llb3: 3rem;
-        --llb4: 4rem;
-        --llb5: 5rem;
+        --r05: 0.5rem;
+        --r08: 0.8rem;
+        --r1: 1rem;
+        --r101: 1.1rem;
+        --r102: 1.2rem;
+        --r103: 1.3rem;
+        --r104: 1.4rem;
+        --r105: 1.5rem;
+        --r106: 1.6rem;
+        --r2: 2rem;
+        --r3: 3rem;
+        --r4: 4rem;
+        --r5: 5rem;
     }
 }
 @media only screen and (max-width: 1024px) {
     :root {
-        --llb05: 0.35rem;
-        --llb08: 0.56rem;
-        --llb1: 0.7rem;
-        --llb101: 0.8rem;
-        --llb102: 0.9rem;
-        --llb103: 1rem;
-        --llb104: 1.2rem;
-        --llb105: 1.3rem;
-        --llb106: 1.4rem;
-        --llb2: 1.4rem;
-        --llb3: 2.1rem;
-        --llb4: 2.8rem;
-        --llb5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
 }
 @media only screen and (max-width: 768px) {
     :root {
-        --llb05: 0.25rem;
-        --llb08: 0.4rem;
-        --llb1: 0.5rem;
-        --llb101: 0.55rem;
-        --llb102: 0.8rem;
-        --llb103: 0.85rem;
-        --llb104: 0.7rem;
-        --llb105: 0.75rem;
-        --llb106: 0.8rem;
-        --llb2: 1rem;
-        --llb3: 1.5rem;
-        --llb4: 2rem;
-        --llb5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.55rem;
+        --r102: 0.8rem;
+        --r103: 0.85rem;
+        --r104: 0.7rem;
+        --r105: 0.75rem;
+        --r106: 0.8rem;
+        --r2: 1rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .llbltcont .llbimgcont {
         width: 30%;
@@ -119,22 +115,22 @@
 }
 @media only screen and (max-width: 530px) {
     :root {
-        --llb05: 0.25rem;
-        --llb08: 0.4rem;
-        --llb1: 0.5rem;
-        --llb101: 0.8rem;
-        --llb102: 0.9rem;
-        --llb103: 1rem;
-        --llb104: 1.2rem;
-        --llb105: 1.3rem;
-        --llb106: 1.4rem;
-        --llb2: 1.4rem;
-        --llb3: 1.5rem;
-        --llb4: 2rem;
-        --llb5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .llbh1 {
-        font-size: var(--llb104);
+        font-size: var(--r104);
     }
     body .llbltcont .llbimgcont {
         width: 45%;
@@ -165,22 +161,22 @@
 }
 @media only screen and (max-width: 400px) {
     :root {
-        --llb05: 0.25rem;
-        --llb08: 0.4rem;
-        --llb1: 0.5rem;
-        --llb101: 0.8rem;
-        --llb102: 0.9rem;
-        --llb103: 1rem;
-        --llb104: 1.2rem;
-        --llb105: 1.3rem;
-        --llb106: 1.4rem;
-        --llb2: 1.4rem;
-        --llb3: 1.5rem;
-        --llb4: 2rem;
-        --llb5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .llbh1 {
-        font-size: var(--llb104);
+        font-size: var(--r104);
     }
     body .llbltcont .llbimgcont {
         width: 45%;
@@ -213,7 +209,7 @@
     margin: auto;
     text-align: center;
     color: #012060;
-    font-size: var(--llb2);
+    font-size: var(--r2);
     font-family: "Raleway", sans-serif;
     position: relative;
 }
@@ -236,12 +232,12 @@
     padding: 1%;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: var(--llb2);
-    margin-bottom: var(--llb2);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
     height: max-content;
     text-align: left;
     color: #121212;
-    font-size: var(--llb102);
+    font-size: var(--r102);
     font-family: "Raleway", sans-serif;
 }
 .llbltcont .llbtxtcont span {
@@ -262,12 +258,12 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: var(--llb2);
-    margin-bottom: var(--llb2);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
     height: max-content;
     text-align: left;
     color: #121212;
-    font-size: var(--llb102);
+    font-size: var(--r102);
     font-family: "Raleway", sans-serif;
 }
 .llbrtcont .llbtxtcont span {
@@ -279,7 +275,7 @@
 .llbltcont b,
 .llbrtcont b {
     font-family: "El Messiri", sans-serif;
-    font-size: var(--llb103);
+    font-size: var(--r103);
     display: contents;
 }
 .llbgdwl {

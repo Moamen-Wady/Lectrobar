@@ -1,990 +1,988 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @media only screen and (min-width: 2001px) {
-    :root {
-        --hr05: 1rem;
-        --hr08: 1.6rem;
-        --hr1: 2rem;
-        --hr101: 2.2rem;
-        --hr102: 2.4rem;
-        --hr103: 2.6rem;
-        --hr104: 2.8rem;
-        --hr105: 3rem;
-        --hr106: 3.2rem;
-        --hr2: 4rem;
-        --hr3: 6rem;
-        --hr4: 8rem;
-        --hr5: 10rem;
-    }
-    body .homeintro > div {
-        width: 50%;
-    }
-    body .homeprodlowv > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodfuse > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
+  :root {
+    --r05: 1rem;
+    --r08: 1.6rem;
+    --r1: 2rem;
+    --r101: 2.2rem;
+    --r102: 2.4rem;
+    --r103: 2.6rem;
+    --r104: 2.8rem;
+    --r105: 3rem;
+    --r106: 3.2rem;
+    --r2: 4rem;
+    --r3: 6rem;
+    --r4: 8rem;
+    --r5: 10rem;
+  }
+  body .homeintro > div {
+    width: 50%;
+  }
+  body .homeprodlowv > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodfuse > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 2000px) {
-    :root {
-        --hr05: 0.75rem;
-        --hr08: 1.2rem;
-        --hr1: 1.5rem;
-        --hr101: 1.6rem;
-        --hr102: 1.7rem;
-        --hr103: 1.9rem;
-        --hr104: 2rem;
-        --hr105: 2.2rem;
-        --hr106: 2.3rem;
-        --hr2: 3rem;
-        --hr3: 4.5rem;
-        --hr4: 6rem;
-        --hr5: 7.5rem;
-    }
-    body .homeintro > div {
-        width: 50%;
-    }
-    body .homeprodlowv > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodfuse > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
+  :root {
+    --r05: 0.75rem;
+    --r08: 1.2rem;
+    --r1: 1.5rem;
+    --r101: 1.6rem;
+    --r102: 1.7rem;
+    --r103: 1.9rem;
+    --r104: 2rem;
+    --r105: 2.2rem;
+    --r106: 2.3rem;
+    --r2: 3rem;
+    --r3: 4.5rem;
+    --r4: 6rem;
+    --r5: 7.5rem;
+  }
+  body .homeintro > div {
+    width: 50%;
+  }
+  body .homeprodlowv > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodfuse > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 1670px) {
-    :root {
-        --hr05: 0.5rem;
-        --hr08: 0.8rem;
-        --hr1: 1rem;
-        --hr101: 1.1rem;
-        --hr102: 1.2rem;
-        --hr103: 1.3rem;
-        --hr104: 1.4rem;
-        --hr105: 1.5rem;
-        --hr106: 1.6rem;
-        --hr2: 2rem;
-        --hr3: 3rem;
-        --hr4: 4rem;
-        --hr5: 5rem;
-    }
-    body .homeintro > div {
-        width: 50%;
-    }
-    body .homeprodlowv > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodfuse > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
+  :root {
+    --r05: 0.5rem;
+    --r08: 0.8rem;
+    --r1: 1rem;
+    --r101: 1.1rem;
+    --r102: 1.2rem;
+    --r103: 1.3rem;
+    --r104: 1.4rem;
+    --r105: 1.5rem;
+    --r106: 1.6rem;
+    --r2: 2rem;
+    --r3: 3rem;
+    --r4: 4rem;
+    --r5: 5rem;
+  }
+  body .homeintro > div {
+    width: 50%;
+  }
+  body .homeprodlowv > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodfuse > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 1024px) {
-    :root {
-        --hr05: 0.35rem;
-        --hr08: 0.56rem;
-        --hr1: 0.7rem;
-        --hr101: 0.8rem;
-        --hr102: 0.9rem;
-        --hr103: 1rem;
-        --hr104: 1.2rem;
-        --hr105: 1.3rem;
-        --hr106: 1.4rem;
-        --hr2: 1.4rem;
-        --hr3: 2.1rem;
-        --hr4: 2.8rem;
-        --hr5: 3.5rem;
-    }
-    body .homeintro > div {
-        width: 50%;
-    }
-    body .homeprodlowv > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodfuse > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
+  :root {
+    --r05: 0.35rem;
+    --r08: 0.56rem;
+    --r1: 0.7rem;
+    --r101: 0.8rem;
+    --r102: 0.9rem;
+    --r103: 1rem;
+    --r104: 1.2rem;
+    --r105: 1.3rem;
+    --r106: 1.4rem;
+    --r2: 1.4rem;
+    --r3: 2.1rem;
+    --r4: 2.8rem;
+    --r5: 3.5rem;
+  }
+  body .homeintro > div {
+    width: 50%;
+  }
+  body .homeprodlowv > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodfuse > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
-    :root {
-        --hr05: 0.25rem;
-        --hr08: 0.4rem;
-        --hr1: 0.5rem;
-        --hr101: 0.55rem;
-        --hr102: 0.6rem;
-        --hr103: 0.7rem;
-        --hr104: 0.7rem;
-        --hr105: 0.75rem;
-        --hr106: 0.8rem;
-        --hr2: 1rem;
-        --hr3: 1.5rem;
-        --hr4: 2rem;
-        --hr5: 2.5rem;
-    }
-    body .homeintro > div {
-        width: 50%;
-    }
-    body .homeprodlowv > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodfuse > div > div {
-        height: calc(var(--hr4) * 3);
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
+  :root {
+    --r05: 0.25rem;
+    --r08: 0.4rem;
+    --r1: 0.5rem;
+    --r101: 0.55rem;
+    --r102: 0.6rem;
+    --r103: 0.7rem;
+    --r104: 0.7rem;
+    --r105: 0.75rem;
+    --r106: 0.8rem;
+    --r2: 1rem;
+    --r3: 1.5rem;
+    --r4: 2rem;
+    --r5: 2.5rem;
+  }
+  body .homeintro > div {
+    width: 50%;
+  }
+  body .homeprodlowv > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodfuse > div > div {
+    height: calc(var(--r4) * 3);
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 530px) {
-    :root {
-        --hr05: 0.25rem;
-        --hr08: 0.4rem;
-        --hr1: 0.5rem;
-        --hr101: 0.8rem;
-        --hr102: 0.9rem;
-        --hr103: 1rem;
-        --hr104: 1.2rem;
-        --hr105: 1.3rem;
-        --hr106: 1.4rem;
-        --hr2: 1.4rem;
-        --hr3: 1.5rem;
-        --hr4: 2rem;
-        --hr5: 2.5rem;
-    }
-    body .homeprodlowv > div > div {
-        height: auto;
-    }
-    body .homeprodfuse > div > div {
-        height: auto;
-    }
-    body .homeprodbus > div > div {
-        height: auto;
-    }
-    body .homeintro > div {
-        width: 100%;
-    }
-    body .homeintroanim {
-        height: calc(var(--hr4) * 7);
-    }
-    body .homecoun {
-        margin-bottom: var(--hr3);
-    }
-    body .homecoun p {
-        font-size: var(--hr101);
-        max-width: 30%;
-    }
-    body .homecoun p b {
-        font-size: var(--hr106);
-    }
-    body .homedk img {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-    body .homedk p {
-        display: block;
-        width: 90%;
-    }
-    body .homesidef {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        display: block;
-        width: 100%;
-        border-right: 1px solid rgb(51, 51, 51, 0.2);
-        border-left: 1px solid rgb(51, 51, 51, 0.2);
-    }
-    body .hometypef {
-        display: block;
-        width: 100%;
-        text-align: left;
-        margin: auto;
-    }
-    body .hometypef p {
-        margin: 0;
-        padding: var(--hr08);
-        font-size: var(--hr104);
-        font-family: sans-serif;
-        color: #012060;
-    }
-    body .homeprodbus {
-        width: 100%;
-    }
-    body .homeprodlowv {
-        width: 100%;
-    }
-    body .homeprodlowv > div:first-child {
-        width: 100%;
-    }
-    body .homeprodlowv > div:nth-child(2) {
-        width: 80%;
-        margin: auto;
-    }
-    body .homeprodlowv > div > div {
-        width: 100%;
-    }
-    body .homeprodlowv > div > div img {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        object-fit: contain;
-    }
-    body .homeprodfuse {
-        display: flex;
-        width: 100%;
-    }
-    body .homeprodfuse > div:first-child {
-        width: 100%;
-    }
-    body .homeprodfuse > div:nth-child(2) {
-        width: 80%;
-        margin: auto;
-    }
-    body .homeprodfuse > div > div {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-    body .homeprodfuse > div > div img {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        object-fit: contain;
-    }
-    body .homeservimg {
-        flex-wrap: wrap;
-    }
-    body .homeservimg > div:first-child {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeservimg > div:nth-child(2) {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeservimg > div:nth-child(3) {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeserv1 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 30vw;
-        display: block;
-    }
-    body .homeserv2 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin-right: 0;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-        display: block;
-    }
-    body .homeserv3 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-        display: block;
-    }
-    body .homeserv4 {
-        margin: auto;
-        margin-bottom: 0.25vw;
-        font-size: var(--hr105);
-        display: block;
-        width: 90%;
-        height: 40vw;
-    }
-    body .homeserv5 {
-        display: block;
-        margin: auto;
-        font-size: var(--hr105);
-        width: 90%;
-        height: 35vw;
-        margin-bottom: 0.25vw;
-    }
-    body .homeserv6 {
-        display: block;
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-    }
-    body .homeserv1 > div > p,
-    body .homeserv2 > div > p,
-    body .homeserv3 > div > p,
-    body .homeserv4 > div > p,
-    body .homeserv5 > div > p,
-    body .homeserv6 > div > p {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: whitesmoke;
-        font-size: var(--hr105);
-        font-family: "Raleway", sans-serif;
-    }
-    body .homeclientsimg > div {
-        width: 15%;
-    }
-    body .homeclientsimg {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 375px) {
-    :root {
-        --hr05: 0.2rem;
-        --hr08: 0.3rem;
-        --hr1: 0.4rem;
-        --hr101: 0.7rem;
-        --hr102: 0.8rem;
-        --hr103: 0.9rem;
-        --hr104: 1.1rem;
-        --hr105: 1.2rem;
-        --hr106: 1.3rem;
-        --hr2: 1.2rem;
-        --hr3: 1.2rem;
-        --hr4: 1.6rem;
-        --hr5: 2rem;
-    }
-
-    body .homeintro > div {
-        width: 100%;
-    }
-    body .homeintroanim {
-        height: calc(var(--hr4) * 7);
-    }
-    body .homecoun {
-        margin-bottom: var(--hr3);
-    }
-    body .homecoun p {
-        font-size: var(--hr101);
-        max-width: 30%;
-    }
-    body .homecoun p b {
-        font-size: var(--hr106);
-    }
-    body .homedk img {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-    body .homedk p {
-        display: block;
-        width: 90%;
-    }
-    body .homesidef {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        display: block;
-        width: 100%;
-        border-right: 1px solid rgb(51, 51, 51, 0.2);
-        border-left: 1px solid rgb(51, 51, 51, 0.2);
-    }
-    body .hometypef {
-        display: block;
-        width: 100%;
-        text-align: left;
-        margin: auto;
-    }
-    body .hometypef p {
-        margin: 0;
-        padding: var(--hr08);
-        font-size: var(--hr104);
-        font-family: sans-serif;
-        color: #012060;
-    }
-    body .homeprodbus {
-        width: 100%;
-    }
-    body .homeprodlowv {
-        width: 100%;
-    }
-    body .homeprodlowv > div:first-child {
-        width: 100%;
-    }
-    body .homeprodlowv > div:nth-child(2) {
-        width: 80%;
-        margin: auto;
-    }
-    body .homeprodlowv > div > div {
-        width: 100%;
-    }
-    body .homeprodlowv > div > div img {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        object-fit: contain;
-    }
-    body .homeprodfuse {
-        display: flex;
-        width: 100%;
-    }
-    body .homeprodfuse > div:first-child {
-        width: 100%;
-    }
-    body .homeprodfuse > div:nth-child(2) {
-        width: 80%;
-        margin: auto;
-    }
-    body .homeprodfuse > div > div {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-    body .homeprodfuse > div > div img {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        object-fit: contain;
-    }
-    body .homeservimg {
-        flex-wrap: wrap;
-    }
-    body .homeservimg > div:first-child {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeservimg > div:nth-child(2) {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeservimg > div:nth-child(3) {
-        display: block;
-        height: auto;
-        width: 100%;
-        border-radius: 4%;
-    }
-    body .homeserv1 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 30vw;
-        display: block;
-    }
-    body .homeserv2 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin-right: 0;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-        display: block;
-    }
-    body .homeserv3 {
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-        display: block;
-    }
-    body .homeserv4 {
-        margin: auto;
-        margin-bottom: 0.25vw;
-        font-size: var(--hr105);
-        display: block;
-        width: 90%;
-        height: 40vw;
-    }
-    body .homeserv5 {
-        display: block;
-        margin: auto;
-        font-size: var(--hr105);
-        width: 90%;
-        height: 35vw;
-        margin-bottom: 0.25vw;
-    }
-    body .homeserv6 {
-        display: block;
-        font-size: var(--hr105);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 0.25vw;
-        height: 35vw;
-    }
-    body .homeserv1 > div > p,
-    body .homeserv2 > div > p,
-    body .homeserv3 > div > p,
-    body .homeserv4 > div > p,
-    body .homeserv5 > div > p,
-    body .homeserv6 > div > p {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: whitesmoke;
-        font-size: var(--hr105);
-        font-family: "Raleway", sans-serif;
-    }
-    body .homeclientsimg > div {
-        width: 15%;
-    }
-    body .homeclientsimg {
-        width: 90%;
-    }
-}
-.homewrap {
-    position: relative;
-    overflow: hidden;
-}
-.homeintrocont {
-    display: block;
-    margin: auto;
+  :root {
+    --r05: 0.25rem;
+    --r08: 0.4rem;
+    --r1: 0.5rem;
+    --r101: 0.8rem;
+    --r102: 0.9rem;
+    --r103: 1rem;
+    --r104: 1.2rem;
+    --r105: 1.3rem;
+    --r106: 1.4rem;
+    --r2: 1.4rem;
+    --r3: 1.5rem;
+    --r4: 2rem;
+    --r5: 2.5rem;
+  }
+  body .homeprodlowv > div > div {
+    height: auto;
+  }
+  body .homeprodfuse > div > div {
+    height: auto;
+  }
+  body .homeprodbus > div > div {
+    height: auto;
+  }
+  body .homeintro > div {
     width: 100%;
-    margin-top: var(--hr2);
-    margin-bottom: var(--hr2);
-}
-.homeintrocont > h1 {
+  }
+  body .homeintroanim {
+    height: calc(var(--r4) * 7);
+  }
+  body .homecoun {
+    margin-bottom: var(--r3);
+  }
+  body .homecoun p {
+    font-size: var(--r101);
+    max-width: 30%;
+  }
+  body .homecoun p b {
+    font-size: var(--r106);
+  }
+  body .homedk img {
     display: block;
     margin: auto;
-    margin-top: var(--hr102);
-    margin-bottom: var(--hr102);
-    color: #012060;
-    font-size: var(--hr2);
-    text-align: center;
-    max-width: fit-content;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-}
-.homeintro {
-    margin-top: var(--hr1);
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: auto;
-    text-transform: capitalize;
-}
-.homeintro h1 {
-    font-size: var(--hr105);
-    color: #012060;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-}
-.homeintro p {
-    font-size: var(--hr102);
-    color: rgb(51, 51, 51);
-    font-family: sans-serif;
-}
-.homeintroanim {
-    height: calc(var(--hr4) * 4.5);
-    position: relative;
-    overflow: hidden;
-}
-.homeintroanim > div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition-property: all;
-    transition-delay: 0s;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-    animation-name: go;
-    animation-delay: 0s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-.homeintroanim > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-@keyframes come {
-    from {
-        right: -100%;
-    }
-    to {
-        right: 0;
-    }
-}
-@keyframes go {
-    from {
-        left: 0;
-    }
-    to {
-        left: -100%;
-    }
-}
-.homecoun {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-bottom: var(--hr3);
-    width: 90%;
-}
-.homecoun p {
-    font-size: var(--hr101);
-    color: #012060;
-    display: inline-block;
-    font-family: "Inter", sans-serif;
-    max-width: 15%;
-    text-align: center;
-}
-.homecoun p b {
-    font-size: var(--hr2);
-    color: #012060;
+    width: 80%;
+  }
+  body .homedk p {
     display: block;
-    font-family: "Inter", sans-serif;
-}
-.homeproducts {
     width: 90%;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-}
-.homeproducts h1 {
-    font-size: var(--hr106);
-    color: #012060;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-}
-.homeproducts p {
-    display: block;
-    font-size: var(--hr103);
-    color: rgb(51, 51, 51);
-    font-family: sans-serif;
-}
-.homedk {
-    margin: auto;
-    margin-bottom: var(--hr2);
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.homedk img {
-    width: calc(var(--hr4) * 5);
-    height: calc(var(--hr4) * 5);
-}
-.homedk p {
-    width: 60%;
-}
-.homesidefcont img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-.homesidefcont {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.homesidef {
+  }
+  body .homesidef {
     margin-left: 5%;
-    display: inline-block;
-    width: 25%;
+    margin-bottom: 5%;
+    display: block;
+    width: 100%;
     border-right: 1px solid rgb(51, 51, 51, 0.2);
     border-left: 1px solid rgb(51, 51, 51, 0.2);
-}
-.hometypef {
+  }
+  body .hometypef {
     display: block;
     width: 100%;
     text-align: left;
     margin: auto;
-}
-.hometypef p {
+  }
+  body .hometypef p {
     margin: 0;
-    padding: var(--hr08);
-    font-size: var(--hr104);
+    padding: var(--r08);
+    font-size: var(--r104);
     font-family: sans-serif;
     color: #012060;
+  }
+  body .homeprodbus {
+    width: 100%;
+  }
+  body .homeprodlowv {
+    width: 100%;
+  }
+  body .homeprodlowv > div:first-child {
+    width: 100%;
+  }
+  body .homeprodlowv > div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+  }
+  body .homeprodlowv > div > div {
+    width: 100%;
+  }
+  body .homeprodlowv > div > div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+  }
+  body .homeprodfuse {
+    display: flex;
+    width: 100%;
+  }
+  body .homeprodfuse > div:first-child {
+    width: 100%;
+  }
+  body .homeprodfuse > div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+  }
+  body .homeprodfuse > div > div {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  body .homeprodfuse > div > div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+  }
+  body .homeservimg {
+    flex-wrap: wrap;
+  }
+  body .homeservimg > div:first-child {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeservimg > div:nth-child(2) {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeservimg > div:nth-child(3) {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeserv1 {
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 30vw;
+    display: block;
+  }
+  body .homeserv2 {
+    font-size: var(--r105);
+    width: 90%;
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+    display: block;
+  }
+  body .homeserv3 {
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+    display: block;
+  }
+  body .homeserv4 {
+    margin: auto;
+    margin-bottom: 0.25vw;
+    font-size: var(--r105);
+    display: block;
+    width: 90%;
+    height: 40vw;
+  }
+  body .homeserv5 {
+    display: block;
+    margin: auto;
+    font-size: var(--r105);
+    width: 90%;
+    height: 35vw;
+    margin-bottom: 0.25vw;
+  }
+  body .homeserv6 {
+    display: block;
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+  }
+  body .homeserv1 > div > p,
+  body .homeserv2 > div > p,
+  body .homeserv3 > div > p,
+  body .homeserv4 > div > p,
+  body .homeserv5 > div > p,
+  body .homeserv6 > div > p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: var(--r105);
+    font-family: "Raleway", sans-serif;
+  }
+  body .homeclientsimg > div {
+    width: 15%;
+  }
+  body .homeclientsimg {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  :root {
+    --r05: 0.2rem;
+    --r08: 0.3rem;
+    --r1: 0.4rem;
+    --r101: 0.7rem;
+    --r102: 0.8rem;
+    --r103: 0.9rem;
+    --r104: 1.1rem;
+    --r105: 1.2rem;
+    --r106: 1.3rem;
+    --r2: 1.2rem;
+    --r3: 1.2rem;
+    --r4: 1.6rem;
+    --r5: 2rem;
+  }
+
+  body .homeintro > div {
+    width: 100%;
+  }
+  body .homeintroanim {
+    height: calc(var(--r4) * 7);
+  }
+  body .homecoun {
+    margin-bottom: var(--r3);
+  }
+  body .homecoun p {
+    font-size: var(--r101);
+    max-width: 30%;
+  }
+  body .homecoun p b {
+    font-size: var(--r106);
+  }
+  body .homedk img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  body .homedk p {
+    display: block;
+    width: 90%;
+  }
+  body .homesidef {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: block;
+    width: 100%;
+    border-right: 1px solid rgb(51, 51, 51, 0.2);
+    border-left: 1px solid rgb(51, 51, 51, 0.2);
+  }
+  body .hometypef {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+  }
+  body .hometypef p {
+    margin: 0;
+    padding: var(--r08);
+    font-size: var(--r104);
+    font-family: sans-serif;
+    color: #012060;
+  }
+  body .homeprodbus {
+    width: 100%;
+  }
+  body .homeprodlowv {
+    width: 100%;
+  }
+  body .homeprodlowv > div:first-child {
+    width: 100%;
+  }
+  body .homeprodlowv > div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+  }
+  body .homeprodlowv > div > div {
+    width: 100%;
+  }
+  body .homeprodlowv > div > div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+  }
+  body .homeprodfuse {
+    display: flex;
+    width: 100%;
+  }
+  body .homeprodfuse > div:first-child {
+    width: 100%;
+  }
+  body .homeprodfuse > div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+  }
+  body .homeprodfuse > div > div {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  body .homeprodfuse > div > div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+  }
+  body .homeservimg {
+    flex-wrap: wrap;
+  }
+  body .homeservimg > div:first-child {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeservimg > div:nth-child(2) {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeservimg > div:nth-child(3) {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+  }
+  body .homeserv1 {
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 30vw;
+    display: block;
+  }
+  body .homeserv2 {
+    font-size: var(--r105);
+    width: 90%;
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+    display: block;
+  }
+  body .homeserv3 {
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+    display: block;
+  }
+  body .homeserv4 {
+    margin: auto;
+    margin-bottom: 0.25vw;
+    font-size: var(--r105);
+    display: block;
+    width: 90%;
+    height: 40vw;
+  }
+  body .homeserv5 {
+    display: block;
+    margin: auto;
+    font-size: var(--r105);
+    width: 90%;
+    height: 35vw;
+    margin-bottom: 0.25vw;
+  }
+  body .homeserv6 {
+    display: block;
+    font-size: var(--r105);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.25vw;
+    height: 35vw;
+  }
+  body .homeserv1 > div > p,
+  body .homeserv2 > div > p,
+  body .homeserv3 > div > p,
+  body .homeserv4 > div > p,
+  body .homeserv5 > div > p,
+  body .homeserv6 > div > p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: var(--r105);
+    font-family: "Raleway", sans-serif;
+  }
+  body .homeclientsimg > div {
+    width: 15%;
+  }
+  body .homeclientsimg {
+    width: 90%;
+  }
+}
+.homewrap {
+  position: relative;
+  overflow: hidden;
+}
+.homeintrocont {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: var(--r2);
+  margin-bottom: var(--r2);
+}
+.homeintrocont > h1 {
+  display: block;
+  margin: auto;
+  margin-top: var(--r102);
+  margin-bottom: var(--r102);
+  color: #012060;
+  font-size: var(--r2);
+  text-align: center;
+  max-width: fit-content;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.homeintro {
+  margin-top: var(--r1);
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+  text-transform: capitalize;
+}
+.homeintro h1 {
+  font-size: var(--r105);
+  color: #012060;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.homeintro p {
+  font-size: var(--r102);
+  color: rgb(51, 51, 51);
+  font-family: sans-serif;
+}
+.homeintroanim {
+  height: calc(var(--r4) * 4.5);
+  position: relative;
+  overflow: hidden;
+}
+.homeintroanim > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition-property: all;
+  transition-delay: 0s;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-name: go;
+  animation-delay: 0s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+.homeintroanim > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@keyframes come {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes go {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+.homecoun {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: var(--r3);
+  width: 90%;
+}
+.homecoun p {
+  font-size: var(--r101);
+  color: #012060;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  max-width: 15%;
+  text-align: center;
+}
+.homecoun p b {
+  font-size: var(--r2);
+  color: #012060;
+  display: block;
+  font-family: "Inter", sans-serif;
+}
+.homeproducts {
+  width: 90%;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+}
+.homeproducts h1 {
+  font-size: var(--r106);
+  color: #012060;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.homeproducts p {
+  display: block;
+  font-size: var(--r103);
+  color: rgb(51, 51, 51);
+  font-family: sans-serif;
+}
+.homedk {
+  margin: auto;
+  margin-bottom: var(--r2);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homedk img {
+  width: calc(var(--r4) * 5);
+  height: calc(var(--r4) * 5);
+}
+.homedk p {
+  width: 60%;
+}
+.homesidefcont img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.homesidefcont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.homesidef {
+  margin-left: 5%;
+  display: inline-block;
+  width: 25%;
+  border-right: 1px solid rgb(51, 51, 51, 0.2);
+  border-left: 1px solid rgb(51, 51, 51, 0.2);
+}
+.hometypef {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+.hometypef p {
+  margin: 0;
+  padding: var(--r08);
+  font-size: var(--r104);
+  font-family: sans-serif;
+  color: #012060;
 }
 .hometypef:hover p {
-    color: white;
+  color: white;
 }
 .hometypef:hover {
-    background-color: #012060;
-    cursor: pointer;
+  background-color: #012060;
+  cursor: pointer;
 }
 .homeprodimg {
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 55%;
-    flex-wrap: wrap;
-    margin: auto;
-    height: max-content;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 55%;
+  flex-wrap: wrap;
+  margin: auto;
+  height: max-content;
 }
 .homeprodimg > b {
-    color: #012060;
-    font-size: var(--hr3);
+  color: #012060;
+  font-size: var(--r3);
 }
 .homeprodimg > div {
-    width: 22%;
-    height: max-content;
-    margin: 0;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    object-fit: contain;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 22%;
+  height: max-content;
+  margin: 0;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodimg > div:hover {
-    width: 25%;
+  width: 25%;
 }
 .homeprodimg > div > div {
-    width: 100%;
-    height: calc(var(--hr4) * 3);
-    margin: 0;
-    text-align: center;
+  width: 100%;
+  height: calc(var(--r4) * 3);
+  margin: 0;
+  text-align: center;
 }
 .homeprodimg > div > div img {
-    width: 90%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
 }
 .homeprodimg div p {
-    width: 100%;
-    display: block;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    text-align: center;
-    padding: auto;
-    color: whitesmoke;
-    background-color: #00395f;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  text-align: center;
+  padding: auto;
+  color: whitesmoke;
+  background-color: #00395f;
 }
 .homeprodbus {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 60%;
-    flex-wrap: wrap;
-    margin: auto;
-    height: max-content;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: auto;
+  height: max-content;
 }
 .homeprodbus b {
-    color: #012060;
-    font-size: var(--hr2);
-    font-family: "Raleway", sans-serif;
+  color: #012060;
+  font-size: var(--r2);
+  font-family: "Raleway", sans-serif;
 }
 .homeprodbus > div:first-child {
-    width: 100%;
-    height: max-content;
-    margin: 0;
-    margin-bottom: var(--hr1);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  margin-bottom: var(--r1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodbus > div {
-    width: 22%;
-    height: max-content;
-    margin: 0;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    object-fit: contain;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 22%;
+  height: max-content;
+  margin: 0;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodbus > div > div {
-    width: 100%;
-    margin: 0;
-    text-align: center;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 .homeprodbus > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
 }
 .homeprodbus div:first-child p {
-    width: 100%;
-    display: block;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    text-align: left;
-    text-align-last: center;
-    padding: 0;
-    color: rgb(51, 51, 51);
-    background-color: transparent;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  text-align: left;
+  text-align-last: center;
+  padding: 0;
+  color: rgb(51, 51, 51);
+  background-color: transparent;
 }
 .homeprodbus div p {
-    width: 100%;
-    display: block;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    text-align: center;
-    padding: auto;
-    color: whitesmoke;
-    background-color: #00395f;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  text-align: center;
+  padding: auto;
+  color: whitesmoke;
+  background-color: #00395f;
 }
 .homeprodlowv {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 60%;
-    flex-wrap: wrap;
-    margin: auto;
-    height: max-content;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: auto;
+  height: max-content;
 }
 .homeprodlowv b {
-    color: #012060;
-    font-size: var(--hr2);
-    font-family: "Raleway", sans-serif;
+  color: #012060;
+  font-size: var(--r2);
+  font-family: "Raleway", sans-serif;
 }
 .homeprodlowv > div:first-child {
-    width: 76%;
-    height: max-content;
-    margin: 0;
-    margin-bottom: var(--hr1);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 76%;
+  height: max-content;
+  margin: 0;
+  margin-bottom: var(--r1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodlowv > div:nth-child(2) {
-    width: 22%;
-    height: max-content;
-    margin: 0;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    object-fit: contain;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 22%;
+  height: max-content;
+  margin: 0;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodlowv > div > div {
-    width: 100%;
-    margin: 0;
-    text-align: center;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 .homeprodlowv > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
 }
 .homeprodlowv div p {
-    width: 100%;
-    display: block;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    text-align: left;
-    text-align-last: center;
-    padding: 0;
-    color: rgb(51, 51, 51);
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  text-align: left;
+  text-align-last: center;
+  padding: 0;
+  color: rgb(51, 51, 51);
 }
 .homeprodfuse {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 60%;
-    flex-wrap: wrap;
-    margin: auto;
-    height: max-content;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: auto;
+  height: max-content;
 }
 .homeprodfuse b {
-    color: #012060;
-    font-size: var(--hr2);
-    font-family: "Raleway", sans-serif;
+  color: #012060;
+  font-size: var(--r2);
+  font-family: "Raleway", sans-serif;
 }
 .homeprodfuse > div:first-child {
-    width: 76%;
-    height: max-content;
-    margin: 0;
-    margin-bottom: var(--hr1);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 76%;
+  height: max-content;
+  margin: 0;
+  margin-bottom: var(--r1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodfuse > div:nth-child(2) {
-    width: 22%;
-    height: max-content;
-    margin: 0;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    object-fit: contain;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  width: 22%;
+  height: max-content;
+  margin: 0;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .homeprodfuse > div > div {
-    width: 100%;
-    margin: 0;
-    text-align: center;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 .homeprodfuse > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
 }
 .homeprodfuse div p {
-    width: 100%;
-    display: block;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    text-align: left;
-    text-align-last: center;
-    padding: 0;
-    color: rgb(51, 51, 51);
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  text-align: left;
+  text-align-last: center;
+  padding: 0;
+  color: rgb(51, 51, 51);
 }
 /* .homeshowall {
     direction: rtl;
-    margin-left: var(--hr5);
+    margin-left: var(--r5);
 }
 .homeshowalllink {
     float: right;
     display: block;
     width: fit-content;
-    padding: var(--hr08);
+    padding: var(--r08);
     color: white;
     background-color: #00395f;
     text-decoration: none;
-    font-size: var(--hr101);
+    font-size: var(--r101);
 }
 .homeshowalllink:hover {
     background-color: white;
@@ -992,172 +990,172 @@
     border: 1px solid #00395f;
 } */
 .homeclients {
-    width: 100%;
-    margin: auto;
-    margin-top: var(--hr1);
-    margin-bottom: var(--hr1);
-    height: calc(var(--hr4) * 4);
+  width: 100%;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  height: calc(var(--r4) * 4);
 }
 .homeclients h1 {
-    font-size: var(--hr106);
-    color: #012060;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
+  font-size: var(--r106);
+  color: #012060;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 .homeclientsimg > div {
-    width: 12%;
-    border-radius: 6%;
-    margin-left: var(--hr05);
-    margin-right: var(--hr05);
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    position: absolute;
-    left: 100%;
-    transform: translateX(-50%);
-    z-index: 5;
+  width: 12%;
+  border-radius: 6%;
+  margin-left: var(--r05);
+  margin-right: var(--r05);
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 5;
 }
 .homeclientsimg > div > img {
-    width: 100%;
+  width: 100%;
 }
 .homeclientsimg p {
-    font-size: var(--hr1);
-    color: rgb(51, 51, 51);
-    text-align: center;
+  font-size: var(--r1);
+  color: rgb(51, 51, 51);
+  text-align: center;
 }
 .homeclientsimg {
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
 }
 .sslide {
-    opacity: 0;
+  opacity: 0;
 }
 .homebtn {
-    z-index: 55000;
-    height: calc(var(--hr4) * 2);
-    width: fit-content;
-    background: transparent;
-    border: 0;
-    display: inline;
-    cursor: pointer;
+  z-index: 55000;
+  height: calc(var(--r4) * 2);
+  width: fit-content;
+  background: transparent;
+  border: 0;
+  display: inline;
+  cursor: pointer;
 }
 .homebtn > img {
-    display: inline;
-    height: var(--hr2);
-    width: var(--hr2);
-    vertical-align: bottom;
+  display: inline;
+  height: var(--r2);
+  width: var(--r2);
+  vertical-align: bottom;
 }
 .homeserv {
-    display: block;
-    margin: auto;
-    width: 100%;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 .homeservimg {
-    display: flex;
-    margin: auto;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-evenly;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 .homeservimg > div:first-child {
-    display: inline-block;
-    height: 35.5vw;
-    width: 34%;
-    border-radius: 4%;
+  display: inline-block;
+  height: 35.5vw;
+  width: 34%;
+  border-radius: 4%;
 }
 .homeservimg > div:nth-child(2) {
-    display: inline-block;
-    height: 35.5vw;
-    width: 30%;
-    border-radius: 4%;
+  display: inline-block;
+  height: 35.5vw;
+  width: 30%;
+  border-radius: 4%;
 }
 .homeservimg > div:nth-child(3) {
-    display: inline-block;
-    height: 35.5vw;
-    width: 34%;
-    border-radius: 4%;
+  display: inline-block;
+  height: 35.5vw;
+  width: 34%;
+  border-radius: 4%;
 }
 .homeserv1 {
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    width: 100%;
-    margin-bottom: 0.25vw;
-    height: 17.5vw;
-    display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  width: 100%;
+  margin-bottom: 0.25vw;
+  height: 17.5vw;
+  display: inline-block;
 }
 .homeserv2 {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    margin-right: 2%;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    width: 49%;
-    height: 17.5vw;
-    display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  margin-right: 2%;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  width: 49%;
+  height: 17.5vw;
+  display: inline-block;
 }
 .homeserv3 {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    width: 49%;
-    height: 17.5vw;
-    display: inline-block;
-    margin: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  width: 49%;
+  height: 17.5vw;
+  display: inline-block;
+  margin: 0;
 }
 .homeserv4 {
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    display: block;
-    width: 100%;
-    height: 35.5vw;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  display: block;
+  width: 100%;
+  height: 35.5vw;
 }
 .homeserv5 {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    width: 100%;
-    height: 17.5vw;
-    margin-bottom: 0.25vw;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  width: 100%;
+  height: 17.5vw;
+  margin-bottom: 0.25vw;
 }
 .homeserv6 {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 4%;
-    text-align: center;
-    font-size: var(--hr105);
-    color: black;
-    width: 100%;
-    height: 17.5vw;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4%;
+  text-align: center;
+  font-size: var(--r105);
+  color: black;
+  width: 100%;
+  height: 17.5vw;
 }
 .homeserv1 > div > p,
 .homeserv2 > div > p,
@@ -1165,13 +1163,13 @@
 .homeserv4 > div > p,
 .homeserv5 > div > p,
 .homeserv6 > div > p {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: whitesmoke;
-    font-size: var(--hr105);
-    font-family: "Raleway", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-size: var(--r105);
+  font-family: "Raleway", sans-serif;
 }
 .homeserv1 > div,
 .homeserv2 > div,
@@ -1179,12 +1177,12 @@
 .homeserv4 > div,
 .homeserv5 > div,
 .homeserv6 > div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-    z-index: 10;
-    transition: all ease 0.25s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all ease 0.25s;
 }
 .homeserv1,
 .homeserv2,
@@ -1192,8 +1190,8 @@
 .homeserv4,
 .homeserv5,
 .homeserv6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .homeserv1 > img,
 .homeserv2 > img,
@@ -1201,121 +1199,121 @@
 .homeserv4 > img,
 .homeserv5 > img,
 .homeserv6 > img {
-    transition: all ease 0.25s;
-    width: 100%;
-    height: 100%;
-    display: inline;
-    object-fit: cover;
-    margin: 0;
-    z-index: 9;
+  transition: all ease 0.25s;
+  width: 100%;
+  height: 100%;
+  display: inline;
+  object-fit: cover;
+  margin: 0;
+  z-index: 9;
 }
 .homeserv1:hover img,
 .homeserv1:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 .homeserv2:hover img,
 .homeserv2:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 .homeserv3:hover img,
 .homeserv3:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 .homeserv4:hover img,
 .homeserv4:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 .homeserv5:hover img,
 .homeserv5:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 .homeserv6:hover img,
 .homeserv6:hover div {
-    transform: scale(120%);
-    cursor: pointer;
+  transform: scale(120%);
+  cursor: pointer;
 }
 @keyframes comefromright {
-    from {
-        left: 100%;
-        opacity: 0;
-    }
-    to {
-        left: 75%;
-        opacity: 1;
-    }
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 75%;
+    opacity: 1;
+  }
 }
 @keyframes gotoright {
-    from {
-        left: 75%;
-        opacity: 1;
-    }
-    to {
-        left: 100%;
-        opacity: 0;
-    }
+  from {
+    left: 75%;
+    opacity: 1;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
 }
 @keyframes comefromleft {
-    from {
-        opacity: 0;
-        left: -25%;
-    }
-    to {
-        left: 25%;
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+    left: -25%;
+  }
+  to {
+    left: 25%;
+    opacity: 1;
+  }
 }
 @keyframes gotoleft {
-    from {
-        opacity: 1;
-        left: 25%;
-    }
-    to {
-        left: -25%;
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+    left: 25%;
+  }
+  to {
+    left: -25%;
+    opacity: 0;
+  }
 }
 @keyframes midtoleft {
-    from {
-        left: 50%;
-        opacity: 1;
-    }
-    to {
-        left: 25%;
-        opacity: 1;
-    }
+  from {
+    left: 50%;
+    opacity: 1;
+  }
+  to {
+    left: 25%;
+    opacity: 1;
+  }
 }
 @keyframes lefttomid {
-    from {
-        opacity: 1;
-        left: 25%;
-    }
-    to {
-        left: 50%;
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+    left: 25%;
+  }
+  to {
+    left: 50%;
+    opacity: 1;
+  }
 }
 @keyframes righttomid {
-    from {
-        left: 75%;
-        opacity: 1;
-    }
-    to {
-        left: 50%;
-        opacity: 1;
-    }
+  from {
+    left: 75%;
+    opacity: 1;
+  }
+  to {
+    left: 50%;
+    opacity: 1;
+  }
 }
 @keyframes midtoright {
-    from {
-        opacity: 1;
-        left: 50%;
-    }
-    to {
-        left: 75%;
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+    left: 50%;
+  }
+  to {
+    left: 75%;
+    opacity: 1;
+  }
 }

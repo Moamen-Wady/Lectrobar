@@ -1,45 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
 .projbanner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 100%;
-    background-color: white;
-    position: relative;
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  position: relative;
 }
 .projbanner > img {
-    width: 10%;
-    display: inline;
+  width: 100%;
+  height: 100%;
 }
 .projshade > img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
+  width: 100%;
+  height: 100%;
 }
 .projshade {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .projshade h1 {
-    font-size: var(--r2);
-    color: white;
-    font-weight: bold;
-    font-family: "ubuntu", sans-serif;
-    display: block;
-    margin: auto;
-    z-index: 30;
-    width: 80%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  font-size: var(--r2);
+  color: white;
+  font-weight: bold;
+  font-family: "ubuntu", sans-serif;
+  display: block;
+  margin: auto;
+  z-index: 30;
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

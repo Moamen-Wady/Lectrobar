@@ -1,108 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
 
 @media only screen and (min-width: 2001px) {
     :root {
-        --lpr05: 1rem;
-        --lpr08: 1.6rem;
-        --lpr1: 2rem;
-        --lpr101: 2.2rem;
-        --lpr102: 2.4rem;
-        --lpr103: 2.6rem;
-        --lpr104: 2.8rem;
-        --lpr105: 3rem;
-        --lpr106: 3.2rem;
-        --lpr2: 4rem;
-        --lpr3: 6rem;
-        --lpr4: 8rem;
-        --lpr5: 10rem;
+        --r05: 1rem;
+        --r08: 1.6rem;
+        --r1: 2rem;
+        --r101: 2.2rem;
+        --r102: 2.4rem;
+        --r103: 2.6rem;
+        --r104: 2.8rem;
+        --r105: 3rem;
+        --r106: 3.2rem;
+        --r2: 4rem;
+        --r3: 6rem;
+        --r4: 8rem;
+        --r5: 10rem;
     }
 }
 @media only screen and (max-width: 2000px) {
     :root {
-        --lpr05: 0.75rem;
-        --lpr08: 1.2rem;
-        --lpr1: 1.5rem;
-        --lpr101: 1.6rem;
-        --lpr102: 1.7rem;
-        --lpr103: 1.9rem;
-        --lpr104: 2rem;
-        --lpr105: 2.2rem;
-        --lpr106: 2.3rem;
-        --lpr2: 3rem;
-        --lpr3: 4.5rem;
-        --lpr4: 6rem;
-        --lpr5: 7.5rem;
+        --r05: 0.75rem;
+        --r08: 1.2rem;
+        --r1: 1.5rem;
+        --r101: 1.6rem;
+        --r102: 1.7rem;
+        --r103: 1.9rem;
+        --r104: 2rem;
+        --r105: 2.2rem;
+        --r106: 2.3rem;
+        --r2: 3rem;
+        --r3: 4.5rem;
+        --r4: 6rem;
+        --r5: 7.5rem;
     }
 }
 @media only screen and (max-width: 1670px) {
     :root {
-        --lpr05: 0.625rem;
-        --lpr08: 1rem;
-        --lpr1: 1.25rem;
-        --lpr101: 1.3rem;
-        --lpr102: 1.5rem;
-        --lpr103: 1.6rem;
-        --lpr104: 1.7rem;
-        --lpr105: 1.8rem;
-        --lpr106: 1.9rem;
-        --lpr2: 2.5rem;
-        --lpr3: 3.75rem;
-        --lpr4: 5rem;
-        --lpr5: 6.25rem;
+        --r05: 0.625rem;
+        --r08: 1rem;
+        --r1: 1.25rem;
+        --r101: 1.3rem;
+        --r102: 1.5rem;
+        --r103: 1.6rem;
+        --r104: 1.7rem;
+        --r105: 1.8rem;
+        --r106: 1.9rem;
+        --r2: 2.5rem;
+        --r3: 3.75rem;
+        --r4: 5rem;
+        --r5: 6.25rem;
     }
 }
 @media only screen and (max-width: 1440px) {
     :root {
-        --lpr05: 0.5rem;
-        --lpr08: 0.8rem;
-        --lpr1: 1rem;
-        --lpr101: 1.1rem;
-        --lpr102: 1.2rem;
-        --lpr103: 1.3rem;
-        --lpr104: 1.4rem;
-        --lpr105: 1.5rem;
-        --lpr106: 1.6rem;
-        --lpr2: 2rem;
-        --lpr3: 3rem;
-        --lpr4: 4rem;
-        --lpr5: 5rem;
+        --r05: 0.5rem;
+        --r08: 0.8rem;
+        --r1: 1rem;
+        --r101: 1.1rem;
+        --r102: 1.2rem;
+        --r103: 1.3rem;
+        --r104: 1.4rem;
+        --r105: 1.5rem;
+        --r106: 1.6rem;
+        --r2: 2rem;
+        --r3: 3rem;
+        --r4: 4rem;
+        --r5: 5rem;
     }
 }
 @media only screen and (max-width: 1024px) {
     :root {
-        --lpr05: 0.35rem;
-        --lpr08: 0.56rem;
-        --lpr1: 0.7rem;
-        --lpr101: 0.8rem;
-        --lpr102: 0.9rem;
-        --lpr103: 1rem;
-        --lpr104: 1.2rem;
-        --lpr105: 1.3rem;
-        --lpr106: 1.4rem;
-        --lpr2: 1.4rem;
-        --lpr3: 2.1rem;
-        --lpr4: 2.8rem;
-        --lpr5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
 }
 @media only screen and (max-width: 768px) {
     :root {
-        --lpr05: 0.25rem;
-        --lpr08: 0.4rem;
-        --lpr1: 0.5rem;
-        --lpr101: 0.55rem;
-        --lpr102: 0.8rem;
-        --lpr103: 0.85rem;
-        --lpr104: 0.7rem;
-        --lpr105: 0.75rem;
-        --lpr106: 0.8rem;
-        --lpr2: 1rem;
-        --lpr3: 1.5rem;
-        --lpr4: 2rem;
-        --lpr5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.55rem;
+        --r102: 0.8rem;
+        --r103: 0.85rem;
+        --r104: 0.7rem;
+        --r105: 0.75rem;
+        --r106: 0.8rem;
+        --r2: 1rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .lsbproltcont .lsbproimgcont {
         width: 30%;
@@ -119,22 +115,22 @@
 }
 @media only screen and (max-width: 530px) {
     :root {
-        --lpr05: 0.25rem;
-        --lpr08: 0.4rem;
-        --lpr1: 0.5rem;
-        --lpr101: 0.8rem;
-        --lpr102: 0.9rem;
-        --lpr103: 1rem;
-        --lpr104: 1.2rem;
-        --lpr105: 1.3rem;
-        --lpr106: 1.4rem;
-        --lpr2: 1.4rem;
-        --lpr3: 1.5rem;
-        --lpr4: 2rem;
-        --lpr5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .lsbproh1 {
-        font-size: var(--lpr104);
+        font-size: var(--r104);
     }
     body .lsbproltcont .lsbproimgcont {
         width: 45%;
@@ -165,22 +161,22 @@
 }
 @media only screen and (max-width: 400px) {
     :root {
-        --lpr05: 0.25rem;
-        --lpr08: 0.4rem;
-        --lpr1: 0.5rem;
-        --lpr101: 0.8rem;
-        --lpr102: 0.9rem;
-        --lpr103: 1rem;
-        --lpr104: 1.2rem;
-        --lpr105: 1.3rem;
-        --lpr106: 1.4rem;
-        --lpr2: 1.4rem;
-        --lpr3: 1.5rem;
-        --lpr4: 2rem;
-        --lpr5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .lsbproh1 {
-        font-size: var(--lpr104);
+        font-size: var(--r104);
     }
     body .lsbproltcont .lsbproimgcont {
         width: 45%;
@@ -213,7 +209,7 @@
     margin: auto;
     text-align: center;
     color: #012060;
-    font-size: var(--lpr2);
+    font-size: var(--r2);
     font-family: "Raleway", sans-serif;
     position: relative;
 }
@@ -236,12 +232,12 @@
     padding: 1%;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: var(--lpr2);
-    margin-bottom: var(--lpr2);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
     height: max-content;
     text-align: left;
     color: #121212;
-    font-size: var(--lpr102);
+    font-size: var(--r102);
     font-family: "Raleway", sans-serif;
 }
 .lsbproltcont .lsbprotxtcont span {
@@ -262,12 +258,12 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: var(--lpr2);
-    margin-bottom: var(--lpr2);
+    margin-top: var(--r2);
+    margin-bottom: var(--r2);
     height: max-content;
     text-align: left;
     color: #121212;
-    font-size: var(--lpr102);
+    font-size: var(--r102);
     font-family: "Raleway", sans-serif;
 }
 .lsbprortcont .lsbprotxtcont span {
@@ -279,6 +275,6 @@
 .lsbproltcont b,
 .lsbprortcont b {
     font-family: "El Messiri", sans-serif;
-    font-size: var(--lpr103);
+    font-size: var(--r103);
     display: contents;
 }

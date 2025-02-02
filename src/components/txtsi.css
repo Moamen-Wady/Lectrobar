@@ -1,149 +1,149 @@
 @media only screen and (min-width: 2001px) {
     :root {
-        --tsi05: 1rem;
-        --tsi08: 1.6rem;
-        --tsi1: 2rem;
-        --tsi101: 2.2rem;
-        --tsi102: 2.4rem;
-        --tsi103: 2.6rem;
-        --tsi104: 2.8rem;
-        --tsi105: 3rem;
-        --tsi106: 3.2rem;
-        --tsi2: 4rem;
-        --tsi3: 6rem;
-        --tsi4: 8rem;
-        --tsi5: 10rem;
+        --r05: 1rem;
+        --r08: 1.6rem;
+        --r1: 2rem;
+        --r101: 2.2rem;
+        --r102: 2.4rem;
+        --r103: 2.6rem;
+        --r104: 2.8rem;
+        --r105: 3rem;
+        --r106: 3.2rem;
+        --r2: 4rem;
+        --r3: 6rem;
+        --r4: 8rem;
+        --r5: 10rem;
     }
 }
 @media only screen and (max-width: 2000px) {
     :root {
-        --tsi05: 0.75rem;
-        --tsi08: 1.2rem;
-        --tsi1: 1.5rem;
-        --tsi101: 1.6rem;
-        --tsi102: 1.7rem;
-        --tsi103: 1.9rem;
-        --tsi104: 2rem;
-        --tsi105: 2.2rem;
-        --tsi106: 2.3rem;
-        --tsi2: 3rem;
-        --tsi3: 4.5rem;
-        --tsi4: 6rem;
-        --tsi5: 7.5rem;
+        --r05: 0.75rem;
+        --r08: 1.2rem;
+        --r1: 1.5rem;
+        --r101: 1.6rem;
+        --r102: 1.7rem;
+        --r103: 1.9rem;
+        --r104: 2rem;
+        --r105: 2.2rem;
+        --r106: 2.3rem;
+        --r2: 3rem;
+        --r3: 4.5rem;
+        --r4: 6rem;
+        --r5: 7.5rem;
     }
 }
 @media only screen and (max-width: 1670px) {
     :root {
-        --tsi05: 0.625rem;
-        --tsi08: 1rem;
-        --tsi1: 1.25rem;
-        --tsi101: 1.3rem;
-        --tsi102: 1.5rem;
-        --tsi103: 1.6rem;
-        --tsi104: 1.7rem;
-        --tsi105: 1.8rem;
-        --tsi106: 1.9rem;
-        --tsi2: 2.5rem;
-        --tsi3: 3.75rem;
-        --tsi4: 5rem;
-        --tsi5: 6.25rem;
+        --r05: 0.625rem;
+        --r08: 1rem;
+        --r1: 1.25rem;
+        --r101: 1.3rem;
+        --r102: 1.5rem;
+        --r103: 1.6rem;
+        --r104: 1.7rem;
+        --r105: 1.8rem;
+        --r106: 1.9rem;
+        --r2: 2.5rem;
+        --r3: 3.75rem;
+        --r4: 5rem;
+        --r5: 6.25rem;
     }
 }
 @media only screen and (max-width: 1440px) {
     :root {
-        --tsi05: 0.5rem;
-        --tsi08: 0.8rem;
-        --tsi1: 1rem;
-        --tsi101: 1.1rem;
-        --tsi102: 1.2rem;
-        --tsi103: 1.3rem;
-        --tsi104: 1.4rem;
-        --tsi105: 1.5rem;
-        --tsi106: 1.6rem;
-        --tsi2: 2rem;
-        --tsi3: 3rem;
-        --tsi4: 4rem;
-        --tsi5: 5rem;
+        --r05: 0.5rem;
+        --r08: 0.8rem;
+        --r1: 1rem;
+        --r101: 1.1rem;
+        --r102: 1.2rem;
+        --r103: 1.3rem;
+        --r104: 1.4rem;
+        --r105: 1.5rem;
+        --r106: 1.6rem;
+        --r2: 2rem;
+        --r3: 3rem;
+        --r4: 4rem;
+        --r5: 5rem;
     }
 }
 @media only screen and (max-width: 1024px) {
     :root {
-        --tsi05: 0.35rem;
-        --tsi08: 0.56rem;
-        --tsi1: 0.7rem;
-        --tsi101: 0.8rem;
-        --tsi102: 0.9rem;
-        --tsi103: 1rem;
-        --tsi104: 1.2rem;
-        --tsi105: 1.3rem;
-        --tsi106: 1.4rem;
-        --tsi2: 1.4rem;
-        --tsi3: 2.1rem;
-        --tsi4: 2.8rem;
-        --tsi5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
 }
 @media only screen and (max-width: 768px) {
     :root {
-        --tsi05: 0.35rem;
-        --tsi08: 0.56rem;
-        --tsi1: 0.7rem;
-        --tsi101: 0.8rem;
-        --tsi102: 0.9rem;
-        --tsi103: 1rem;
-        --tsi104: 1.2rem;
-        --tsi105: 1.3rem;
-        --tsi106: 1.4rem;
-        --tsi2: 1.4rem;
-        --tsi3: 2.1rem;
-        --tsi4: 2.8rem;
-        --tsi5: 3.5rem;
+        --r05: 0.35rem;
+        --r08: 0.56rem;
+        --r1: 0.7rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 2.1rem;
+        --r4: 2.8rem;
+        --r5: 3.5rem;
     }
 }
 @media only screen and (max-width: 530px) {
     :root {
-        --tsi05: 0.25rem;
-        --tsi08: 0.4rem;
-        --tsi1: 0.5rem;
-        --tsi101: 0.8rem;
-        --tsi102: 0.9rem;
-        --tsi103: 1rem;
-        --tsi104: 1.2rem;
-        --tsi105: 1.3rem;
-        --tsi106: 1.4rem;
-        --tsi2: 1.4rem;
-        --tsi3: 1.5rem;
-        --tsi4: 2rem;
-        --tsi5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .find-input {
-        height: var(--tsi101);
+        height: var(--r101);
     }
     body .find-box {
-        height: var(--tsi3);
+        height: var(--r3);
     }
 }
 @media only screen and (max-width: 400px) {
     :root {
-        --tsi05: 0.25rem;
-        --tsi08: 0.4rem;
-        --tsi1: 0.5rem;
-        --tsi101: 0.8rem;
-        --tsi102: 0.9rem;
-        --tsi103: 1rem;
-        --tsi104: 1.2rem;
-        --tsi105: 1.3rem;
-        --tsi106: 1.4rem;
-        --tsi2: 1.4rem;
-        --tsi3: 1.5rem;
-        --tsi4: 2rem;
-        --tsi5: 2.5rem;
+        --r05: 0.25rem;
+        --r08: 0.4rem;
+        --r1: 0.5rem;
+        --r101: 0.8rem;
+        --r102: 0.9rem;
+        --r103: 1rem;
+        --r104: 1.2rem;
+        --r105: 1.3rem;
+        --r106: 1.4rem;
+        --r2: 1.4rem;
+        --r3: 1.5rem;
+        --r4: 2rem;
+        --r5: 2.5rem;
     }
     body .find-input {
-        height: var(--tsi101);
+        height: var(--r101);
     }
     body .find-box {
-        height: var(--tsi3);
+        height: var(--r3);
     }
 }
 /*//////////////////////////////////////
@@ -199,11 +199,11 @@
     direction: ltr;
     position: absolute;
     z-index: 3001;
-    height: calc(var(--tsi2));
+    height: calc(var(--r2));
     display: flex;
     align-items: center;
     box-sizing: border-box !important;
-    padding: var(--tsi05);
+    padding: var(--r05);
     visibility: visible;
     background: #00395f;
     border: 1px solid whitesmoke;
@@ -211,28 +211,28 @@
 }
 
 .find-input {
-    height: var(--tsi101);
-    width: calc(var(--tsi5) * 2);
+    height: var(--r101);
+    width: calc(var(--r5) * 2);
     border: 1px solid #aaa;
     background: #fff;
-    margin-right: var(--tsi05);
+    margin-right: var(--r05);
     border-radius: 2px;
     color: #000;
 }
 
 .find-matches {
-    font-size: var(--tsi1);
+    font-size: var(--r1);
     color: #aaa;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--tsi4);
+    width: var(--r4);
     overflow: hidden;
-    margin-right: calc(var(--tsi05) * 0.5);
+    margin-right: calc(var(--r05) * 0.5);
 }
 
 .find-case {
-    font-size: var(--tsi1);
+    font-size: var(--r1);
     font-weight: 700;
     cursor: pointer;
     user-select: none;
@@ -240,7 +240,7 @@
     padding: 0px 2px;
     border-radius: 2px;
     border: 1px solid transparent;
-    margin-right: calc(var(--tsi05) * 0.5);
+    margin-right: calc(var(--r05) * 0.5);
     display: flex;
     align-items: center;
 }
@@ -249,8 +249,8 @@
     cursor: pointer;
     user-select: none;
     position: relative;
-    height: var(--tsi102);
-    width: var(--tsi102);
+    height: var(--r102);
+    width: var(--r102);
     border-radius: 2px;
     overflow: hidden;
     display: inline-block;
@@ -267,8 +267,8 @@
     cursor: pointer;
     user-select: none;
     position: relative;
-    height: var(--tsi102);
-    width: var(--tsi102);
+    height: var(--r102);
+    width: var(--r102);
     border-radius: 2px;
     overflow: hidden;
     display: inline-block;
@@ -285,8 +285,8 @@
     cursor: pointer;
     user-select: none;
     position: relative;
-    height: var(--tsi102);
-    width: var(--tsi102);
+    height: var(--r102);
+    width: var(--r102);
     overflow: hidden;
     display: inline-block;
     background: #fff;
