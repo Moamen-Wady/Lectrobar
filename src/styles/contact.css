@@ -1,397 +1,281 @@
-
-@media only screen and (min-width: 2001px) {
-    :root {
-        --r05: 1rem;
-        --r08: 1.6rem;
-        --r1: 2rem;
-        --r101: 2.2rem;
-        --r102: 2.4rem;
-        --r103: 2.6rem;
-        --r104: 2.8rem;
-        --r105: 3rem;
-        --r106: 3.2rem;
-        --r2: 4rem;
-        --r3: 6rem;
-        --r4: 8rem;
-        --r5: 10rem;
-    }
-}
-@media only screen and (max-width: 2000px) {
-    :root {
-        --r05: 0.75rem;
-        --r08: 1.2rem;
-        --r1: 1.5rem;
-        --r101: 1.6rem;
-        --r102: 1.7rem;
-        --r103: 1.9rem;
-        --r104: 2rem;
-        --r105: 2.2rem;
-        --r106: 2.3rem;
-        --r2: 3rem;
-        --r3: 4.5rem;
-        --r4: 6rem;
-        --r5: 7.5rem;
-    }
-}
-@media only screen and (max-width: 1670px) {
-    :root {
-        --r05: 0.5rem;
-        --r08: 0.8rem;
-        --r1: 1rem;
-        --r101: 1.1rem;
-        --r102: 1.2rem;
-        --r103: 1.3rem;
-        --r104: 1.4rem;
-        --r105: 1.5rem;
-        --r106: 1.6rem;
-        --r2: 2rem;
-        --r3: 3rem;
-        --r4: 4rem;
-        --r5: 5rem;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    :root {
-        --r05: 0.35rem;
-        --r08: 0.56rem;
-        --r1: 0.7rem;
-        --r101: 0.8rem;
-        --r102: 0.9rem;
-        --r103: 1rem;
-        --r104: 1.2rem;
-        --r105: 1.3rem;
-        --r106: 1.4rem;
-        --r2: 1.4rem;
-        --r3: 2.1rem;
-        --r4: 2.8rem;
-        --r5: 3.5rem;
-    }
-}
-@media only screen and (max-width: 768px) {
-    :root {
-        --r05: 0.25rem;
-        --r08: 0.4rem;
-        --r1: 0.5rem;
-        --r101: 0.55rem;
-        --r102: 0.6rem;
-        --r103: 0.7rem;
-        --r104: 0.7rem;
-        --r105: 0.75rem;
-        --r106: 0.8rem;
-        --r2: 1rem;
-        --r3: 1.5rem;
-        --r4: 2rem;
-        --r5: 2.5rem;
-    }
-}
 @media only screen and (max-width: 530px) {
-    :root {
-        --r05: 0.25rem;
-        --r08: 0.4rem;
-        --r1: 0.5rem;
-        --r101: 0.8rem;
-        --r102: 0.9rem;
-        --r103: 1rem;
-        --r104: 1.2rem;
-        --r105: 1.3rem;
-        --r106: 1.4rem;
-        --r2: 1.4rem;
-        --r3: 1.5rem;
-        --r4: 2rem;
-        --r5: 2.5rem;
-    }
-    body .contactmap {
-        width: 90%;
-        margin-top: var(--r1);
-    }
-    body .contactinfocont {
-        width: 95%;
-    }
-    body .contactinfo {
-        border-radius: 3%;
-        width: 100%;
-    }
-    body .contactinfo > h1 {
-        width: 80%;
-        margin: auto;
-        margin-top: var(--r1);
-    }
-    body .contactinfo > div > a {
-        font-size: var(--r101);
-    }
-    body .contactinfo > div > img.phn {
-        margin-top: var(--r103);
-    }
-    body .contactinfo > div > img.eml {
-        margin-top: var(--r08);
-    }
-    body .contactinfo > div > img {
-        width: 3.9%;
-    }
-    body .contactcform {
-        border-radius: 3%;
-        width: 100%;
-        margin: auto;
-        margin-top: var(--r1);
-    }
-    body .contactform input:nth-last-child(1) {
-        font-size: var(--r101);
-        bottom: 2%;
-    }
-    body .contactcsales {
-        width: 55%;
-    }
-    body .contactcslsrt a {
-        font-size: var(--r101);
-    }
+  body .contactmap {
+    width: 90%;
+    margin-top: var(--r1);
+  }
+  body .contactinfocont {
+    width: 95%;
+  }
+  body .contactinfo {
+    border-radius: 3%;
+    width: 100%;
+  }
+  body .contactinfo > h1 {
+    width: 80%;
+    margin: auto;
+    margin-top: var(--r1);
+  }
+  body .contactinfo > div > a {
+    font-size: var(--r101);
+  }
+  body .contactinfo > div > img.phn {
+    margin-top: var(--r103);
+  }
+  body .contactinfo > div > img.eml {
+    margin-top: var(--r08);
+  }
+  body .contactinfo > div > img {
+    width: 3.9%;
+  }
+  body .contactcform {
+    border-radius: 3%;
+    width: 100%;
+    margin: auto;
+    margin-top: var(--r1);
+  }
+  body .contactform input:nth-last-child(1) {
+    font-size: var(--r101);
+    bottom: 2%;
+  }
+  body .contactcsales {
+    width: 55%;
+  }
+  body .contactcslsrt a {
+    font-size: var(--r101);
+  }
 }
 @media only screen and (max-width: 400px) {
-    :root {
-        --r05: 0.25rem;
-        --r08: 0.4rem;
-        --r1: 0.5rem;
-        --r101: 0.7rem;
-        --r102: 0.9rem;
-        --r103: 1rem;
-        --r104: 1.2rem;
-        --r105: 1.3rem;
-        --r106: 1.4rem;
-        --r2: 1.4rem;
-        --r3: 1.5rem;
-        --r4: 2rem;
-        --r5: 2.5rem;
-    }
-    body .contactmap {
-        width: 90%;
-        margin-top: var(--r1);
-    }
-    body .contactinfocont {
-        width: 95%;
-    }
-    body .contactinfo {
-        border-radius: 3%;
-        width: 100%;
-    }
-    body .contactinfo > h1 {
-        width: 80%;
-        margin: auto;
-        margin-top: var(--r1);
-    }
-    body .contactinfo > div > a {
-        font-size: var(--r101);
-    }
-    body .contactinfo > div > img.lctn {
-        margin-top: calc(var(--r1) * -1);
-    }
-    body .contactinfo > div > img.phn {
-        margin-top: var(--r103);
-    }
-    body .contactinfo > div > img.eml {
-        margin-top: var(--r05);
-    }
-    body .contactinfo > div > img {
-        width: 6%;
-    }
-    body .contactcform {
-        border-radius: 3%;
-        width: 100%;
-        margin: auto;
-        margin-top: var(--r1);
-    }
-    body .contactform input:nth-last-child(1) {
-        font-size: var(--r101);
-        bottom: 2%;
-    }
-    body .contactcsales {
-        width: 70%;
-    }
-    body .contactcslsrt a {
-        font-size: var(--r101);
-    }
+  body .contactmap {
+    width: 90%;
+    margin-top: var(--r1);
+  }
+  body .contactinfocont {
+    width: 95%;
+  }
+  body .contactinfo {
+    border-radius: 3%;
+    width: 100%;
+  }
+  body .contactinfo > h1 {
+    width: 80%;
+    margin: auto;
+    margin-top: var(--r1);
+  }
+  body .contactinfo > div > a {
+    font-size: var(--r101);
+  }
+  body .contactinfo > div > img.lctn {
+    margin-top: calc(var(--r1) * -1);
+  }
+  body .contactinfo > div > img.phn {
+    margin-top: var(--r103);
+  }
+  body .contactinfo > div > img.eml {
+    margin-top: var(--r05);
+  }
+  body .contactinfo > div > img {
+    width: 6%;
+  }
+  body .contactcform {
+    border-radius: 3%;
+    width: 100%;
+    margin: auto;
+    margin-top: var(--r1);
+  }
+  body .contactform input:nth-last-child(1) {
+    font-size: var(--r101);
+    bottom: 2%;
+  }
+  body .contactcsales {
+    width: 70%;
+  }
+  body .contactcslsrt a {
+    font-size: var(--r101);
+  }
 }
 
 .contactmap {
-    width: 85%;
-    margin: auto;
+  width: 85%;
+  margin: auto;
 }
 .contactmap iframe {
-    width: 100%;
-    height: calc(var(--r5) * 5);
+  width: 100%;
+  height: calc(var(--r5) * 5);
 }
 .contactinfocont {
-    width: 90%;
-    display: flex;
-    margin: auto;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: var(--r2);
-    margin-bottom: var(--r2);
-    overflow: visible;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: var(--r2);
+  margin-bottom: var(--r2);
+  overflow: visible;
 }
 .contactinfo {
-    width: 30%;
-    background-color: #00395f;
-    color: white;
-    padding: var(--r05);
+  width: 30%;
+  background-color: #00395f;
+  color: white;
+  padding: var(--r05);
 }
 .contactinfo > h1 {
-    text-align: left;
-    font-size: var(--r2);
-    font-family: "Raleway", sans-serif;
-    margin-left: var(--r1);
-    margin-bottom: 0;
-    padding: 0;
+  text-align: left;
+  font-size: var(--r2);
+  font-family: "Raleway", sans-serif;
+  margin-left: var(--r1);
+  margin-bottom: 0;
+  padding: 0;
 }
 .contactinfo h2 {
-    width: 100%;
-    text-align: left;
-    font-size: var(--r105);
-    font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: left;
+  font-size: var(--r105);
+  font-family: "Raleway", sans-serif;
 }
 .contactinfo > div {
-    width: 80%;
-    margin: auto;
-    border-top: 1px outset whitesmoke;
-    padding: var(--r05);
+  width: 80%;
+  margin: auto;
+  border-top: 1px outset whitesmoke;
+  padding: var(--r05);
 }
 .contactinfo > div > a:hover {
-    color: blue;
+  color: blue;
 }
 .contactinfo > div > a {
-    font-size: var(--r1);
-    display: inline;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    color: white;
+  font-size: var(--r1);
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: white;
 }
 .contactinfo > div > img {
-    width: 10%;
-    filter: invert(1);
-    float: left;
-    margin: var(--r1);
-    margin-top: 0;
-    display: inline;
-    vertical-align: super;
+  width: 10%;
+  filter: invert(1);
+  float: left;
+  margin: var(--r1);
+  margin-top: 0;
+  display: inline;
+  vertical-align: super;
 }
 .contactcform {
-    width: 60%;
+  width: 60%;
 }
 .contactform {
-    display: block;
-    height: calc(var(--r5) * 5);
-    width: 95%;
-    background-color: white;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 2%;
-    border: 1px solid #00395f;
-    margin: auto;
-    padding: var(--r1);
-    position: relative;
+  display: block;
+  height: calc(var(--r5) * 5);
+  width: 95%;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 2%;
+  border: 1px solid #00395f;
+  margin: auto;
+  padding: var(--r1);
+  position: relative;
 }
 .contactform input {
-    display: inline-block;
-    width: 40%;
-    margin: var(--r05);
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-    background-color: #c4dbe9;
-    color: black;
-    height: max-content;
-    font-size: var(--r101);
-    border: 1px solid grey;
-    padding: 1%;
+  display: inline-block;
+  width: 40%;
+  margin: var(--r05);
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  background-color: #c4dbe9;
+  color: black;
+  height: max-content;
+  font-size: var(--r101);
+  border: 1px solid grey;
+  padding: 1%;
 }
 .contactform textarea {
-    display: block;
-    padding: 1%;
-    width: 80%;
-    margin: auto;
-    margin-top: 1%;
-    background-color: #c4dbe9;
-    color: black;
-    height: calc(var(--r2) + var(--r5));
-    font-size: var(--r101);
+  display: block;
+  padding: 1%;
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: #c4dbe9;
+  color: black;
+  height: calc(var(--r2) + var(--r5));
+  font-size: var(--r101);
 }
 .contactform input:nth-last-child(1) {
-    font-size: var(--r104);
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    width: 15%;
-    height: max-content;
-    padding: 1%;
-    background-color: #00395f;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    border-radius: 3%;
-    color: white;
+  font-size: var(--r104);
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  width: 15%;
+  height: max-content;
+  padding: 1%;
+  background-color: #00395f;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  border-radius: 3%;
+  color: white;
 }
 .contactform input:hover {
-    background-color: #a0aec9;
+  background-color: #a0aec9;
 }
 .contactcsales {
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: auto;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-    height: calc(var(--r5) * 5);
-    background-color: #00395f;
-    border-radius: 1%;
-    border: 0;
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+  margin-top: var(--r1);
+  margin-bottom: var(--r1);
+  height: calc(var(--r5) * 5);
+  background-color: #00395f;
+  border-radius: 1%;
+  border: 0;
 }
 .contactcslslt {
-    background-image: url("/ss.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(var(--r5) * 5);
-    width: 54%;
-    border-top-left-radius: 1%;
-    border-bottom-left-radius: 1%;
-    position: relative;
+  background-image: url("/ss.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(var(--r5) * 5);
+  width: 54%;
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
+  position: relative;
 }
 .contactcslslt h1 {
-    font-size: calc(var(--r05) * 5);
-    background: rgb(0, 0, 0, 0.3);
-    width: 100%;
-    color: whitesmoke;
-    margin: auto;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Raleway", sans-serif;
+  font-size: calc(var(--r05) * 5);
+  background: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  color: whitesmoke;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
 }
 .contactcslsrt {
-    width: 46%;
-    height: calc(var(--r5) * 5);
-    border-radius: 1%;
+  width: 46%;
+  height: calc(var(--r5) * 5);
+  border-radius: 1%;
 }
 .contactcslsrt a {
-    font-size: var(--r105);
-    text-align: center;
-    font-family: sans-serif;
-    display: block;
-    padding-left: var(--r05);
-    color: white;
-    width: fit-content;
-    height: 20%;
-    border-radius: 3%;
-    cursor: pointer;
-    transform: translateY(50%);
-    text-decoration: none;
+  font-size: var(--r105);
+  text-align: center;
+  font-family: sans-serif;
+  display: block;
+  padding-left: var(--r05);
+  color: white;
+  width: fit-content;
+  height: 20%;
+  border-radius: 3%;
+  cursor: pointer;
+  transform: translateY(50%);
+  text-decoration: none;
 }
 .contactcslsrt a:hover {
-    color: blue;
+  color: blue;
 }

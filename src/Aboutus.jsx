@@ -438,7 +438,7 @@ export default function Aboutus() {
           </div>
         </div>
       </AnimationOnScroll>
-
+{/* 
       <AnimationOnScroll
         animateOnce={false}
         animateIn="animate__fadeInDown"
@@ -468,7 +468,7 @@ export default function Aboutus() {
             </div>
           </div>
         </div>
-      </AnimationOnScroll>
+      </AnimationOnScroll> */}
 
       <AnimationOnScroll
         animateOnce={false}

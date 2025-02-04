@@ -9,18 +9,14 @@
   width: 100%;
   height: 100%;
 }
-.projshade > img {
-  width: 100%;
-  height: 100%;
-}
-.projshade {
+.projText {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.projshade h1 {
+.projText h1 {
   font-size: var(--r2);
   color: white;
   font-weight: bold;

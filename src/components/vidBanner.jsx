@@ -12,7 +12,7 @@ export default memo(function VidBanner() {
 
   return (
     <div className="vidbanw" id="banw">
-      <header className="vidhead">
+      <header>
         <h1 className="vidh1">About Lectrobar</h1>
         <div className="vidvid" ref={containerRef}>
           <img src="/btw.png" alt="" />

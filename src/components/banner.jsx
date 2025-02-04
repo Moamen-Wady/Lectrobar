@@ -1,11 +1,8 @@
 import { memo } from "react";
 import "./banner.css";
 import { Link } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
-export default memo(function Slidez() {
+export default memo(function Slidez({ Slider }) {
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (

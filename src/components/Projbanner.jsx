@@ -2,13 +2,14 @@ import { memo } from "react";
 import "./projbanner.css";
 export default memo(function Projbanner() {
   return (
-    <div className="projbanner" >
-      <div className="projshade">
-        <img src="/btw.png" alt="" />
+    <div className="projbanner" id="banw">
+        <img src="/btw.png" alt="" className="shade"/>
+      <div className="projText">
         <h1>our National and international projects </h1>
       </div>
       <img src="/projBanner.jpg" alt="" />
-      {/* <img src="/clients/c2.jpg" alt="" />
+      {/*
+       <img src="/clients/c2.jpg" alt="" />
       <img src="/clients/c3.jpg" alt="" />
       <img src="/clients/c4.jpg" alt="" />
       <img src="/clients/c5.jpg" alt="" />

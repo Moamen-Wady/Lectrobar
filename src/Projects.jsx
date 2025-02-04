@@ -164,7 +164,7 @@ export default memo(function Projects({ setHash, all }) {
       </div>
       <AnimationOnScroll
         animateOnce={true}
-        animateIn="fadeInDown"
+        animateIn="animate__fadeIn"
         className="projectscategorycont"
       >
         <div>

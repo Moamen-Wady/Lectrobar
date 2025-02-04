@@ -5,7 +5,7 @@ export default memo(function ContB() {
   return (
     <div className="contbanw" id="banw">
       <img src="/btw.png" className="shade" />
-      <header className="conthead">
+      <header>
         <h1 className="conth1">
           <pre>Contact Lectrobar</pre>
         </h1>
@@ -15,7 +15,7 @@ export default memo(function ContB() {
           </pre>
         </p>
         <div className="contvid">
-          <img src="/1.jpg" alt="" className="contbg" />
+          <img src="/1.jpg" alt="" />
         </div>
       </header>
     </div>

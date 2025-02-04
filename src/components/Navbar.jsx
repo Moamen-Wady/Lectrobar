@@ -145,48 +145,48 @@ export default memo(function Navbar() {
               <div className="projh">
                 <ul>
                   <li>
-                    <Link to="/Education">Education</Link>
+                    <Link to="/Projects/Education">Education</Link>
                   </li>
                   <li>
-                    <Link to="/Gov">Governmental Org</Link>
+                    <Link to="/Projects/Gov">Governmental Org</Link>
                   </li>
                   <li>
-                    <Link to="/Villages">Villages</Link>
+                    <Link to="/Projects/Villages">Villages</Link>
                   </li>
                   <li>
-                    <Link to="/">Exhibitions</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="projh">
-                <ul>
-                  <li>
-                    <Link to="/Factories">Factories</Link>
-                  </li>
-                  <li>
-                    <Link to="/Hotels">Hotels</Link>
-                  </li>
-                  <li>
-                    <Link to="/Towers">Towers</Link>
-                  </li>
-                  <li>
-                    <Link to="/Malls">Malls</Link>
+                    <Link to="#">Exhibitions</Link>
                   </li>
                 </ul>
               </div>
               <div className="projh">
                 <ul>
                   <li>
-                    <Link to="/TechCenters">Tech Centers</Link>
+                    <Link to="/Projects/Factories">Factories</Link>
                   </li>
                   <li>
-                    <Link to="/Hospitals">Hospitals</Link>
+                    <Link to="/Projects/Hotels">Hotels</Link>
                   </li>
                   <li>
-                    <Link to="/Banks">Banks</Link>
+                    <Link to="/Projects/Towers">Towers</Link>
                   </li>
                   <li>
-                    <Link to="/Etc">Etc</Link>
+                    <Link to="/Projects/Malls">Malls</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="projh">
+                <ul>
+                  <li>
+                    <Link to="/Projects/TechCenters">Tech Centers</Link>
+                  </li>
+                  <li>
+                    <Link to="/Projects/Hospitals">Hospitals</Link>
+                  </li>
+                  <li>
+                    <Link to="/Projects/Banks">Banks</Link>
+                  </li>
+                  <li>
+                    <Link to="/Projects/Etc">Etc</Link>
                   </li>
                 </ul>
               </div>
