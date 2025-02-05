@@ -262,10 +262,8 @@ export default memo(function Blog({ Slider, debounce }) {
       ver2.style.height = `${bev2.clientHeight - 1.9 + marginVal}px`;
       ver3.style.height = `${bev3.clientHeight - 1.9 + marginVal}px`;
     }
-    handleLines()
-    const debounceLines = debounce(() => {
-      handleLines();
-    }, 100);
+    handleLines();
+    const debounceLines = debounce(() => handleLines(), 100);
     window.onresize = debounceLines;
     return () => (window.onresize = null);
   }, []);

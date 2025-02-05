@@ -36,7 +36,7 @@ export default memo(function Contact({ notify, debounce }) {
       form.style.height = `${info}px`;
     }
     handleHeight();
-    const debounceHeight = debounce(handleHeight(), 100);
+    const debounceHeight = debounce(() => handleHeight(), 100);
     window.onresize = debounceHeight;
     return () => (window.onresize = null);
   }, []);

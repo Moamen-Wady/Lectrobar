@@ -437,9 +437,9 @@ const Clients = memo(function Clients({ debounce }) {
       }
     }
     handleSlider();
-    const debounceSlider = debounce(handleSlider(), 100);
+    const debounceSlider = debounce(() => handleSlider(), 100);
     window.onresize = debounceSlider;
-    return clearInterval(run), (window.onresize = null);
+    return () => (clearInterval(run), (window.onresize = null));
   }, []);
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">

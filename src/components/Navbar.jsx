@@ -24,29 +24,32 @@ export default memo(function Navbar({ debounce }) {
       addPadding();
       setCorrectHeight();
     }
-    const debounceDimensions = debounce(setUpperDimensions, 100);
+    setUpperDimensions();
+    const debounceDimensions = debounce(() => setUpperDimensions(), 100);
 
     function d() {
-      let s = window.scrollY;
-      let n = document.getElementById("nvb");
-      let ch = document.getElementById("imgch");
-      let edt = document.getElementById("edt");
+      if (window.screen.width > 768) {
+        let s = window.scrollY;
+        let n = document.getElementById("nvb");
+        let ch = document.getElementById("imgch");
+        let edt = document.getElementById("edt");
 
-      if (s > 1) {
-        n.style.background = "#00395f";
-        ch.setAttribute("src", "/logow.png");
-        ch.classList.remove("logoimg");
-        ch.classList.add("replacelogoimg");
-        edt.classList.remove("logoimg");
-        edt.classList.add("replacelogoimg");
-      } else {
-        n.style.background =
-          " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
-        ch.setAttribute("src", "/logow2.png");
-        ch.classList.add("logoimg");
-        ch.classList.remove("replacelogoimg");
-        edt.classList.add("logoimg");
-        edt.classList.remove("replacelogoimg");
+        if (s > 1) {
+          n.style.background = "#00395f";
+          ch.setAttribute("src", "/logow.png");
+          ch.classList.remove("logoimg");
+          ch.classList.add("replacelogoimg");
+          edt.classList.remove("logoimg");
+          edt.classList.add("replacelogoimg");
+        } else {
+          n.style.background =
+            " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
+          ch.setAttribute("src", "/logow2.png");
+          ch.classList.add("logoimg");
+          ch.classList.remove("replacelogoimg");
+          edt.classList.add("logoimg");
+          edt.classList.remove("replacelogoimg");
+        }
       }
     }
 
@@ -86,6 +89,21 @@ export default memo(function Navbar({ debounce }) {
     servmm.style.padding = 0;
   }, []);
 
+  const showMenu = useCallback(() => {
+    document.getElementById("vbtn").style.visibility = "hidden";
+    document.getElementById("hbtn").style.visibility = "visible";
+    let ul = document.getElementById("nvbrul1");
+    ul.style.width = "180px";
+    ul.style.opacity = 1;
+  }, []);
+  const hideMenu = useCallback(() => {
+    document.getElementById("hbtn").style.visibility = "hidden";
+    document.getElementById("vbtn").style.visibility = "visible";
+    let ul = document.getElementById("nvbrul1");
+    ul.style.width = 0;
+    ul.style.opacity = 0;
+  }, []);
+
   return (
     <div className="nvbr" id="nvb">
       <div className="nvbrcont">
@@ -96,7 +114,17 @@ export default memo(function Navbar({ debounce }) {
             </p>
           </Link>
         </span>
-        <ul className="nvbrul1">
+        <span id="vbtn" onClick={showMenu}>
+          <img src="/mbar.png" className="mImg" />
+        </span>
+        <ul className="nvbrul1" id="nvbrul1">
+          <li className="l" id="hbtn" onClick={hideMenu}>
+            <Link to="#" className="lp">
+              <p>
+                <img src="/mbar.png" className="mImg" />
+              </p>
+            </Link>
+          </li>
           <li className="l">
             <Link to="/" className="lp">
               <p>Home</p>
