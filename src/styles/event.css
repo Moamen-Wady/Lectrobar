@@ -25,7 +25,7 @@
   font-size: var(--r3);
   text-align: center;
   color: #00395f;
-  margin: 0 auto var(--r2) auto;
+  margin: var(--r2) auto;
   font-family: "Raleway", sans-serif;
 }
 .eventmain {

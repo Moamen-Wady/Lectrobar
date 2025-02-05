@@ -78,7 +78,7 @@
   background-color: blue;
 }
 .projectssearchwindow {
-  display: none;
+  display: block;
   z-index: 99999;
   position: fixed;
   top: 0;

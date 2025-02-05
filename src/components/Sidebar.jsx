@@ -12,7 +12,7 @@ export default memo(function Sidebar() {
           }}
         >
           <img
-            src="search.png"
+            src="/search.png"
             alt=""
             style={
               visible ? { visibility: "hidden" } : { visibility: "visible" }

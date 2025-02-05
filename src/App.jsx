@@ -1077,7 +1077,7 @@ const ProductsData = {
     ),
   },
   lsba: {
-    name: "Lectrobar Sandwich Busduct (LSB II)",
+    name: "Lectrobar Sandwich Busduct (LSBA)",
     link: "/AluminumCataloglite.pdf",
     img1: "/lsbac.jpeg",
     description1: (
@@ -1129,7 +1129,7 @@ const ProductsData = {
     ),
   },
   lsbpro: {
-    name: "Lectrobar Sandwich Busduct (LSB II)",
+    name: "Lectrobar Sandwich Busduct (LSB PRO)",
     link: "/lsbpro.pdf",
     img1: "/lsbproc.jpeg",
     description1: (
@@ -1172,6 +1172,16 @@ const ProductsData = {
       </span>
     ),
   },
+};
+
+const debounce = (func, delay) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, delay);
+  };
 };
 
 function App() {
@@ -1221,16 +1231,25 @@ function App() {
   }, []);
 
   return (
-    <Suspense fallback={<Loading />}>
-      <Router>
-        <ToastContainer />
-        <Navbar />
-        <Sidebar />
+    <Router>
+      <Suspense fallback={<Loading />}>
+      <ToastContainer />
+      <Navbar debounce={debounce} />
+      <Sidebar />
         <Routes>
-          <Route path="/" element={<Home Slider={Slider} />} />
-          <Route path="/index" element={<Home Slider={Slider} />} />
+          <Route
+            path="/"
+            element={<Home Slider={Slider} debounce={debounce} />}
+          />
+          <Route
+            path="/index"
+            element={<Home Slider={Slider} debounce={debounce} />}
+          />
           <Route path="/Aboutus" element={<Aboutus />} />
-          <Route path="/Contact" element={<Contact notify={notify} />} />
+          <Route
+            path="/Contact"
+            element={<Contact notify={notify} debounce={debounce} />}
+          />
           <Route
             path="/Products/:product"
             element={
@@ -1250,15 +1269,18 @@ function App() {
               />
             }
           />
-          <Route path="/Blog" element={<Blog Slider={Slider} />} />
+          <Route
+            path="/Blog"
+            element={<Blog Slider={Slider} debounce={debounce} />}
+          />
           <Route
             path="/Blog/:event"
             element={<EventPage EventsData={EventsData} />}
           />
         </Routes>
-        <Footer />
-      </Router>
-    </Suspense>
+      </Suspense>
+      <Footer />
+    </Router>
   );
 }
 

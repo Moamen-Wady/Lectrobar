@@ -9,7 +9,7 @@ export default memo(function Footer() {
         <div className="portion">
           <div className="contact">
             <h1>
-              <img className="imx" src="logow2.png" alt="" />
+              <img className="imx" src="/logow2.png" alt="" />
             </h1>
             <div className="content">
               <p>

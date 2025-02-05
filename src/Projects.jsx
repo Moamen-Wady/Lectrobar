@@ -1,18 +1,21 @@
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useState, useRef, useCallback } from "react";
 import Projbanner from "./components/Projbanner";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import "./styles/projects.css";
-import { useRef } from "react";
 
-const Search = memo(function Search({ setHash, ProjectsData }) {
+const Search = memo(function Search({
+  setHash,
+  ProjectsData,
+  hideSearchPanel,
+}) {
   let [allResArr, setAllResArr] = useState([]);
   let [searchBy, setSearchBy] = useState("projectName");
   let [searchIn, setSearchIn] = useState("all");
   let [placeHolder, setPlaceHolder] = useState("Search By Project Name");
   let inputText = useRef();
 
-  function setSBY(e) {
+  const setSBY = useCallback((e) => {
     document.getElementById("sby").reset();
     setSearchBy(e.target.value);
     e.target.checked = true;
@@ -21,14 +24,11 @@ const Search = memo(function Search({ setHash, ProjectsData }) {
     } else {
       setPlaceHolder("Search By Country");
     }
-  }
-  function setSIN(e) {
+  }, []);
+  const setSIN = useCallback((e) => {
     setSearchIn(e.target.value);
-  }
-  function hideSearchPanel() {
-    document.getElementById("searchWindow").style.display = "none";
-  }
-  const searchProjects = () => {
+  }, []);
+  const searchProjects = useCallback(() => {
     let tempRes;
     if (searchIn !== "all") {
       tempRes = ProjectsData[searchIn].filter((x) =>
@@ -53,14 +53,15 @@ const Search = memo(function Search({ setHash, ProjectsData }) {
       }
       setAllResArr(results);
     }
-  };
+  }, []);
   useEffect(() => {
+    document.getElementById("pn").checked = true;
     searchProjects();
   }, [searchBy, searchIn]);
   return (
     <div className="projectssearchwindow" id="searchWindow">
       <img
-        src="close.png"
+        src="/close.png"
         alt=""
         className="projectssearchclosebutton"
         onClick={hideSearchPanel}
@@ -142,17 +143,18 @@ const Search = memo(function Search({ setHash, ProjectsData }) {
 });
 
 export default memo(function Projects({ setHash, ProjectsData }) {
+  let [isShowSearch, setIsShowSearch] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.getElementById("pn").checked = true;
   }, []);
-  function showSearchPanel() {
-    document.getElementById("searchWindow").style.display = "block";
-    let cw = document.getElementById("centeredWindow");
-    cw.focus();
-  }
+  const showSearchPanel = useCallback(() => {
+    setIsShowSearch(true);
+  }, []);
+  const hideSearchPanel = useCallback(() => {
+    setIsShowSearch(false);
+  }, []);
   return (
-    <div>
+    <div >
       <Projbanner />
       <div className="projectssearch">
         <div className="projectssearchstartcont">
@@ -160,7 +162,15 @@ export default memo(function Projects({ setHash, ProjectsData }) {
             Search In Projects
           </button>
         </div>
-        <Search setHash={setHash} ProjectsData={ProjectsData} />
+        {isShowSearch ? (
+          <Search
+            setHash={setHash}
+            ProjectsData={ProjectsData}
+            hideSearchPanel={hideSearchPanel}
+          />
+        ) : (
+          <></>
+        )}
       </div>
       <AnimationOnScroll
         animateOnce={true}
@@ -169,73 +179,73 @@ export default memo(function Projects({ setHash, ProjectsData }) {
       >
         <div>
           <Link to="/Projects/Banks">
-            <img src="proj9.jpg" alt="" />
+            <img src="/proj9.jpg" alt="" />
             <p>Banks</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Education">
-            <img src="proj1.jpg" alt="" />
+            <img src="/proj1.jpg" alt="" />
             <p>education</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Etc">
-            <img src="proj12.jpg" alt="" />
+            <img src="/proj12.jpg" alt="" />
             <p>etc</p>
           </Link>
         </div>
         <div>
           <Link to="">
-            <img src="proj10.jpg" alt="" />
+            <img src="/proj10.jpg" alt="" />
             <p>Exhibitions</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Factories">
-            <img src="proj2.jpg" alt="" />
+            <img src="/proj2.jpg" alt="" />
             <p>factories</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Gov">
-            <img src="proj4.jpg" alt="" />
+            <img src="/proj4.jpg" alt="" />
             <p>governmental org.</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Hospitals">
-            <img src="proj6.jpg" alt="" />
+            <img src="/proj6.jpg" alt="" />
             <p>Hospitals</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Hotels">
-            <img src="proj5.jpg" alt="" />
+            <img src="/proj5.jpg" alt="" />
             <p>Hotels</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Malls">
-            <img src="proj11.jpg" alt="" />
+            <img src="/proj11.jpg" alt="" />
             <p>Malls</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/TechCenters">
-            <img src="proj3.jpg" alt="" />
+            <img src="/proj3.jpg" alt="" />
             <p>Tech Centers</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Towers">
-            <img src="proj8.jpg" alt="" />
+            <img src="/proj8.jpg" alt="" />
             <p>Towers</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Villages">
-            <img src="proj7.jpg" alt="" />
+            <img src="/proj7.jpg" alt="" />
             <p>Villages</p>
           </Link>
         </div>

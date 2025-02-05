@@ -11,7 +11,7 @@ export default function EventPage({ EventsData }) {
   let currentEvent = EventsData[event - 1];
 
   return (
-    <div className="eventcont">
+    <div className="eventcont" >
       <h1>{currentEvent.name}</h1>
       <div className="eventmain">
         <div className="eventtxt">

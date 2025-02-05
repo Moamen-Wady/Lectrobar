@@ -37,7 +37,6 @@ const IntroA = memo(function IntroA({ Slider }) {
       img: "/inan5.jpg",
     },
   ];
-
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
       <div className="homeintrocont">
@@ -77,7 +76,6 @@ const IntroA = memo(function IntroA({ Slider }) {
     </AnimationOnScroll>
   );
 });
-
 const DynCount = memo(function DynCount() {
   let [a, setA] = useState(0);
   let [b, setB] = useState(0);
@@ -190,7 +188,6 @@ const DynCount = memo(function DynCount() {
     </>
   );
 });
-
 const Filter = memo(function Filter() {
   let [filter, setFilter] = useState(0);
   const fsetter = useCallback((e) => {
@@ -204,7 +201,7 @@ const Filter = memo(function Filter() {
       className="homefilterp"
     >
       <div className="homedk">
-        <img src="dk.jpeg" alt="" />
+        <img src="/dk.jpeg" alt="" />
         <p>
           Lectro has manufactured and installed hundreds of thousands of meters
           of busducts for large and small projects since 1975, both for the
@@ -252,7 +249,7 @@ const Filter = memo(function Filter() {
               <div>
                 <div>
                   <Link to="llb">
-                    <img src="llb.jpg" alt="" />
+                    <img src="/llb.jpg" alt="" />
                   </Link>
                 </div>
                 <p>LLB</p>
@@ -260,7 +257,7 @@ const Filter = memo(function Filter() {
               <div>
                 <div>
                   <Link to="/lsba">
-                    <img src="lsba.jpg" alt="" />
+                    <img src="/lsba.jpg" alt="" />
                   </Link>
                 </div>
                 <p>LSB A</p>
@@ -268,7 +265,7 @@ const Filter = memo(function Filter() {
               <div>
                 <div>
                   <Link to="/lsb2">
-                    <img src="lsb2.jpg" alt="" />
+                    <img src="/lsb2.jpg" alt="" />
                   </Link>
                 </div>
                 <p>LSB II</p>
@@ -276,7 +273,7 @@ const Filter = memo(function Filter() {
               <div>
                 <div>
                   <Link to="/lsbpro">
-                    <img src="lsbpro.jpg" alt="" />
+                    <img src="/lsbpro.jpg" alt="" />
                   </Link>
                 </div>
                 <p>LSB PRO</p>
@@ -298,7 +295,7 @@ const Filter = memo(function Filter() {
               </div>
               {/* <div>
                 <div>
-                  <img src="lowv.jpg" alt="" />
+                  <img src="/lowv.jpg" alt="" />
                 </div>
               </div> */}
             </div>
@@ -319,7 +316,7 @@ const Filter = memo(function Filter() {
               </div>
               {/* <div>
                 <div>
-                  <img src="sw.jpg" alt="" />
+                  <img src="/sw.jpg" alt="" />
                 </div>
               </div> */}
             </div>
@@ -343,7 +340,7 @@ const Filter = memo(function Filter() {
     </AnimationOnScroll>
   );
 });
-const Clients = memo(function Clients() {
+const Clients = memo(function Clients({ debounce }) {
   let [cli, setCli] = useState(1);
   const cliprv = () => {
     if (cli == 1) {
@@ -430,14 +427,19 @@ const Clients = memo(function Clients() {
   useEffect(() => {
     const run = setInterval(() => {
       document.getElementById("sleft").click();
+    }, 2000);
+    function handleSlider() {
       let sliderHeight = document.getElementById("sslide1").clientHeight;
       if (sliderHeight) {
         document.getElementById(
           "clientsSlider"
         ).style.height = `${sliderHeight}px`;
       }
-    }, 2000);
-    return () => clearInterval(run);
+    }
+    handleSlider();
+    const debounceSlider = debounce(handleSlider(), 100);
+    window.onresize = debounceSlider;
+    return clearInterval(run), (window.onresize = null);
   }, []);
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
@@ -446,7 +448,7 @@ const Clients = memo(function Clients() {
         <div className="homeclients">
           <div className="homeclientsimg" id="clientsSlider">
             <button id="sleft" className="homebtn" onClick={clifwd}>
-              <img src="l.png" alt=" " />
+              <img src="/l.png" alt=" " />
             </button>
             <div className="sslide" id="sslide1">
               <img src="/clients/c1.jpg" alt="" />
@@ -527,7 +529,7 @@ const Clients = memo(function Clients() {
               <img src="/clients/c31.png" alt="" />
             </div>
             <button id="sright" className="homebtn" onClick={clibwd}>
-              <img src="r.png" alt=" " />
+              <img src="/r.png" alt=" " />
             </button>
           </div>
         </div>
@@ -536,7 +538,7 @@ const Clients = memo(function Clients() {
   );
 });
 
-export default function Home({ Slider }) {
+export default memo(function Home({ Slider, debounce }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -582,19 +584,19 @@ export default function Home({ Slider }) {
                   <div>
                     <p>Maintenance</p>
                   </div>
-                  <img src="servmaint.JPG" alt="" />
+                  <img src="/servmaint.JPG" alt="" />
                 </div>
                 <div className="homeserv2">
                   <div>
                     <p>Supply</p>
                   </div>
-                  <img src="servsupp.JPG" alt="" />
+                  <img src="/servsupp.JPG" alt="" />
                 </div>
                 <div className="homeserv3">
                   <div>
                     <p>Technical Support</p>
                   </div>
-                  <img src="servtech.JPG" alt="" />
+                  <img src="/servtech.JPG" alt="" />
                 </div>
               </div>
               <div>
@@ -602,7 +604,7 @@ export default function Home({ Slider }) {
                   <div>
                     <p>Install</p>
                   </div>
-                  <img src="servinstall.JPG" alt="" />
+                  <img src="/servinstall.JPG" alt="" />
                 </div>
               </div>
               <div>
@@ -610,20 +612,20 @@ export default function Home({ Slider }) {
                   <div>
                     <p>Value Engineering</p>
                   </div>
-                  <img src="servve.JPG" alt="" />
+                  <img src="/servve.JPG" alt="" />
                 </div>
                 <div className="homeserv6">
                   <div>
                     <p>Test and Commisioning</p>
                   </div>
-                  <img src="servtest.JPG" alt="" />
+                  <img src="/servtest.JPG" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </AnimationOnScroll>
-      <Clients />
+      <Clients debounce={debounce} />
     </div>
   );
-}
+});

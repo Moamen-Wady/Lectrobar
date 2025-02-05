@@ -1,23 +1,24 @@
 import { memo } from "react";
 import "./banner.css";
+import { useCallback } from "react";
 
 export default memo(function Slidez({ Slider }) {
-  const PrevArrow = (props) => {
+  const PrevArrow = useCallback((props) => {
     const { onClick } = props;
     return (
       <div className="btnbanner bleft" onClick={onClick}>
         <img src="/l.png" alt="" />
       </div>
     );
-  };
-  const NextArrow = (props) => {
+  }, []);
+  const NextArrow = useCallback((props) => {
     const { onClick } = props;
     return (
       <div className="btnbanner bright" onClick={onClick}>
         <img src="/r.png" alt="" />
       </div>
     );
-  };
+  }, []);
   const settings = {
     infinite: true,
     speed: 500,

@@ -1,12 +1,9 @@
 import "./styles/contact.css";
 import ContB from "./components/ContB";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { memo, useEffect } from "react";
+import { memo, useEffect, useState, useCallback, useLayoutEffect } from "react";
 import api from "./api";
-import { useState } from "react";
-import { useCallback } from "react";
-import { useLayoutEffect } from "react";
-export default memo(function Contact({ notify }) {
+export default memo(function Contact({ notify, debounce }) {
   let [dissub, setDissub] = useState([false, "all", "white", "black"]);
 
   const sForm = useCallback(async (e) => {
@@ -32,11 +29,17 @@ export default memo(function Contact({ notify }) {
       });
   }, []);
 
-useLayoutEffect(()=>{
-  let info = document.getElementById("contactinfo").clientHeight
-  let form = document.getElementById("form")
-  form.style.height = `${info}px`
-})
+  useLayoutEffect(() => {
+    function handleHeight() {
+      let info = document.getElementById("contactinfo").clientHeight;
+      let form = document.getElementById("form");
+      form.style.height = `${info}px`;
+    }
+    handleHeight();
+    const debounceHeight = debounce(handleHeight(), 100);
+    window.onresize = debounceHeight;
+    return () => (window.onresize = null);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -61,19 +64,19 @@ useLayoutEffect(()=>{
             <h1>Information</h1>
             <div>
               <h2>Address</h2>
-              <img src="location.png" alt="location" className="lctn" />
+              <img src="/location.png" alt="location" className="lctn" />
               <a>The 2nd District, Borg El-Arab, Alexandria, Egypt</a>
             </div>
             <div>
               <h2>Phone</h2>
-              <img src="phone.png" alt="phone" className="phn" />
+              <img src="/phone.png" alt="phone" className="phn" />
               <a href="tel:+2011 0321 1875">+2011 0321 1875</a>
               <br />
               <a href="tel:+2010 2994 1145">+2010 2994 1145</a>
             </div>
             <div>
               <h2>E-mail</h2>
-              <img src="mail.png" alt="mail" className="eml" />
+              <img src="/mail.png" alt="mail" className="eml" />
               <a href="mailto:info@lectrobar.com">info@lectrobar.com</a>
             </div>
           </div>
@@ -84,29 +87,39 @@ useLayoutEffect(()=>{
               id="form"
               className="contactform"
             >
-              <input type="text" id="name" name="name" placeholder="Name" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="E-mail"
+                required
               />
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 placeholder="Your Phone Number"
+                required
               />
               <input
                 type="text"
                 id="subject"
                 name="subject"
                 placeholder="Subject"
+                required
               />
               <textarea
                 id="message"
                 name="message"
                 placeholder="Your Message"
+                required
               ></textarea>
               <input
                 type="submit"

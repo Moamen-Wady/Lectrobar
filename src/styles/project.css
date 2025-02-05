@@ -27,7 +27,7 @@
   font-weight: bold;
   font-family: "ubuntu", sans-serif;
   display: block;
-  margin: auto;
+  margin: var(--r2) auto;
   z-index: 30;
   width: 80%;
   text-align: center;

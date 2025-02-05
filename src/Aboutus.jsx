@@ -291,7 +291,7 @@ export default function Aboutus() {
   }, []);
 
   return (
-    <div className="aboutwrap">
+    <div className="aboutwrap" >
       <VidBanner />
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">

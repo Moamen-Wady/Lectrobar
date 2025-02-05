@@ -1,33 +1,30 @@
-import { memo, useLayoutEffect } from "react";
+import { memo, useLayoutEffect, useCallback } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { useCallback } from "react";
 
-export default memo(function Navbar() {
-  const addPadding = useCallback(() => {
-    const padding = document.getElementById("nvb").clientHeight;
-    document.getElementById("root").style.paddingTop = `${padding}px`;
-  }, []);
-
+export default memo(function Navbar({ debounce }) {
   useLayoutEffect(() => {
-    // let nvb = document.getElementById("nvb");
-    // let bnr = document.getElementById("banw");
-    // if (bnr !== null) {
-    //   setTimeout(() => {
-    //     bnr.style.height = `${bnr.clientHeight + nvb.clientHeight}px`;
-    //   }, 500);
-    // }
-    addPadding();
-    let lp = document.querySelectorAll(".lp");
-    lp.forEach((item) => {
-      let padding = window
-        .getComputedStyle(item)
-        .getPropertyValue("padding")
-        .toString()
-        .replace("px", "");
-      let paddingValue = Number(padding);
-      item.style.height = `${nvb.clientHeight - paddingValue * 2}px`;
-    });
+    function addPadding() {
+      const padding = document.getElementById("nvb").clientHeight;
+      document.getElementById("root").style.paddingTop = `${padding}px`;
+    }
+    function setCorrectHeight() {
+      let lp = document.querySelectorAll(".lp");
+      lp.forEach((item) => {
+        let padding = window
+          .getComputedStyle(item)
+          .getPropertyValue("padding")
+          .toString()
+          .replace("px", "");
+        let paddingValue = Number(padding);
+        item.style.height = `${nvb.clientHeight - paddingValue * 2}px`;
+      });
+    }
+    function setUpperDimensions() {
+      addPadding();
+      setCorrectHeight();
+    }
+    const debounceDimensions = debounce(setUpperDimensions, 100);
 
     function d() {
       let s = window.scrollY;
@@ -37,65 +34,68 @@ export default memo(function Navbar() {
 
       if (s > 1) {
         n.style.background = "#00395f";
-        ch.setAttribute("src", "logow.png");
+        ch.setAttribute("src", "/logow.png");
         ch.classList.remove("logoimg");
         ch.classList.add("replacelogoimg");
-        edt.classList.remove("estimg");
-        edt.classList.add("replaceestimg");
+        edt.classList.remove("logoimg");
+        edt.classList.add("replacelogoimg");
       } else {
         n.style.background =
           " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
-        ch.setAttribute("src", "logow2.png");
+        ch.setAttribute("src", "/logow2.png");
         ch.classList.add("logoimg");
         ch.classList.remove("replacelogoimg");
-        edt.classList.add("estimg");
-        edt.classList.remove("replaceestimg");
+        edt.classList.add("logoimg");
+        edt.classList.remove("replacelogoimg");
       }
     }
+
     window.onscroll = d;
-    return () => (window.onscroll = null);
+    window.onresize = debounceDimensions;
+    return () => ((window.onscroll = null), (window.onresize = null));
   }, []);
-  function prodshow() {
+
+  const prodshow = useCallback(() => {
     let prodmm = document.getElementById("prodmm");
     prodmm.style.height = "auto";
     prodmm.style.padding = "1rem";
-  }
-  function prodhide() {
+  }, []);
+  const prodhide = useCallback(() => {
     let prodmm = document.getElementById("prodmm");
     prodmm.style.height = 0;
     prodmm.style.padding = 0;
-  }
-  function projshow() {
+  }, []);
+  const projshow = useCallback(() => {
     let projmm = document.getElementById("projmm");
     projmm.style.height = "auto";
     projmm.style.padding = "1rem";
-  }
-  function projhide() {
+  }, []);
+  const projhide = useCallback(() => {
     let projmm = document.getElementById("projmm");
     projmm.style.height = 0;
     projmm.style.padding = 0;
-  }
-  function servshow() {
+  }, []);
+  const servshow = useCallback(() => {
     let servmm = document.getElementById("servmm");
     servmm.style.height = "auto";
     servmm.style.padding = "1rem";
-  }
-  function servhide() {
+  }, []);
+  const servhide = useCallback(() => {
     let servmm = document.getElementById("servmm");
     servmm.style.height = 0;
     servmm.style.padding = 0;
-  }
+  }, []);
 
   return (
     <div className="nvbr" id="nvb">
       <div className="nvbrcont">
-        <li className="nvbrlogo" id="lcc">
+        <span className="nvbrlogo" id="lcc">
           <Link to="/" className="logop">
             <p>
               <img src="/logow2.png" alt="" id="imgch" className="logoimg" />
             </p>
           </Link>
-        </li>
+        </span>
         <ul className="nvbrul1">
           <li className="l">
             <Link to="/" className="lp">
@@ -236,13 +236,13 @@ export default memo(function Navbar() {
             </Link>
           </li>
         </ul>
-        <li className="l edc" id="edc">
-          <Link to="#" className="rp">
+        <span className="nvbrlogo" id="edc">
+          <Link to="#" className="logop">
             <p>
-              <img src="/edt.png" alt="" id="edt" className="estimg" />
+              <img src="/edt.png" alt="" id="edt" className="logoimg" />
             </p>
           </Link>
-        </li>
+        </span>
       </div>
     </div>
   );

@@ -214,12 +214,9 @@ const Slider4 = memo(function Slider4({ Slider }) {
   );
 });
 
-export default memo(function Blog({ Slider }) {
+export default memo(function Blog({ Slider, debounce }) {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
     function handleLines() {
       let ver1 = document.getElementById("ver1");
       let ver2 = document.getElementById("ver2");
@@ -265,9 +262,12 @@ export default memo(function Blog({ Slider }) {
       ver2.style.height = `${bev2.clientHeight - 1.9 + marginVal}px`;
       ver3.style.height = `${bev3.clientHeight - 1.9 + marginVal}px`;
     }
-    const debounceLines = setTimeout(() => handleLines(), 300);
+    handleLines()
+    const debounceLines = debounce(() => {
+      handleLines();
+    }, 100);
     window.onresize = debounceLines;
-    return () => (clearTimeout(debounceLines), (window.onresize = null));
+    return () => (window.onresize = null);
   }, []);
   return (
     <div>

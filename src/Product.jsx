@@ -11,7 +11,7 @@ export default function ProductPage({ Slider, ProductsData }) {
   let currentProduct = ProductsData[product];
 
   return (
-    <div>
+    <div >
       <Pbanner Slider={Slider} />
       <h1 className="producth1">{currentProduct.name}</h1>
       <div className="productltcont">
