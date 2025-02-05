@@ -53,7 +53,7 @@ const Values = memo(function Values() {
   }, []);
   return (
     <AnimationOnScroll
-      animateOnce={false}
+      animateOnce={true}
       animateIn="animate__fadeInDown"
       className="aboutvalues"
     >
@@ -294,7 +294,7 @@ export default function Aboutus() {
     <div className="aboutwrap">
       <VidBanner />
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutunderbanner">
           <h1>Why Lectrobar?</h1>
           <p>
@@ -311,7 +311,7 @@ export default function Aboutus() {
         </div>
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutfactory">
           <div className="aboutfactorytxt">
             <p>
@@ -325,7 +325,7 @@ export default function Aboutus() {
         </div>
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutdistribution">
           <p>Our Footprints</p>
           <div>
@@ -409,7 +409,7 @@ export default function Aboutus() {
       <Values />
 
       <AnimationOnScroll
-        animateOnce={false}
+        animateOnce={true}
         animateIn="animate__fadeInDown"
         className="aboutcertificates"
       >
@@ -438,9 +438,9 @@ export default function Aboutus() {
           </div>
         </div>
       </AnimationOnScroll>
-{/* 
+      {/* 
       <AnimationOnScroll
-        animateOnce={false}
+        animateOnce={true}
         animateIn="animate__fadeInDown"
         className="aboutmanagerscont"
       >
@@ -470,11 +470,7 @@ export default function Aboutus() {
         </div>
       </AnimationOnScroll> */}
 
-      <AnimationOnScroll
-        animateOnce={false}
-        animateIn="animate__fadeInDown"
-        className="aboutmissioncont"
-      >
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutmission">
           <div>
             <p>

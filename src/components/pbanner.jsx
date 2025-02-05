@@ -26,7 +26,7 @@ export default memo(function Slidez({ Slider }) {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: false,
-    cssEase: "linear",
+    cssEase: "ease",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     pauseOnHover: false,

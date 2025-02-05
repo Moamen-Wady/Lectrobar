@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import "./styles/project1.css";
+import "./styles/project.css";
 import { useParams } from "react-router";
 
-export default function Project({ scrollToProject, add, all }) {
+export default function Project({ scrollToProject, ProjectsData }) {
   useEffect(() => {
     scrollToProject();
-    add(document.getElementById("project1container"));
+    // add(document.getElementById("project1container"));
   }, []);
   const { project } = useParams();
-  let Arr = all[project];
+  let Arr = ProjectsData[project];
   return (
     <>
       <div className="project1container" id="project1container">

@@ -1,50 +1,44 @@
 @media only screen and (max-width: 768px) {
-  body .e4vid iframe {
+  body .eventvid iframe {
     height: calc(var(--r4) * 6);
   }
 }
 @media only screen and (max-width: 530px) {
-  body .e4main {
+  body .eventmain {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  body .e4txt,
-  body .e4vid {
+  body .eventtxt,
+  body .eventvid {
     width: 100%;
   }
-  body .e4pics > div {
+  body .eventpics > div {
     width: 45%;
   }
-  body .e4vid iframe {
+  body .eventvid iframe {
     height: calc(var(--r4) * 8);
   }
 }
-
-.e4cont > h1 {
+.eventcont > h1 {
   width: 80%;
   display: block;
   font-size: var(--r3);
   text-align: center;
   color: #00395f;
-  margin: auto;
-  margin-top: var(--r5);
+  margin: 0 auto var(--r2) auto;
   font-family: "Raleway", sans-serif;
 }
-.e4main {
+.eventmain {
   display: flex;
-  margin: auto;
-  margin-top: var(--r5);
+  margin: 0 auto var(--r2) auto;
   width: 90%;
   align-items: flex-start;
   justify-content: space-evenly;
 }
-.e4txt {
+.eventtxt {
   width: 40%;
 }
-.e4vid {
-  width: 45%;
-}
-.e4txt p {
+.eventtxt p {
   display: block;
   font-size: var(--r103);
   text-align: left;
@@ -52,81 +46,47 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-.e4vid iframe {
+.eventvid {
+  width: 45%;
+}
+.eventslider {
+  width: 100%;
+}
+.eventintroanim {
+  /* height: calc(var(--r4) * 8); */
+  position: relative;
+  overflow: hidden;
+}
+.eventvid iframe {
   border-radius: 3%;
   width: 100%;
   height: calc(var(--r4) * 5);
 }
-.e4pics {
+.eventpics {
   display: block;
-  margin: auto;
-  margin-top: var(--r2);
+  margin: 0 auto var(--r2) auto;
   width: 90%;
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.e4pics > div {
+.eventpics > div {
   border: 1px solid #00395f;
   border-radius: 5%;
   width: 30%;
-  margin: 1% 1%;
+  margin: 1%;
   display: inline-flex;
   padding: 0;
   overflow: hidden;
   height: fit-content;
 }
-.e4img {
+.eventimg {
   all: unset;
   width: 100%;
   object-fit: cover;
   transition: 0.2s all ease-in-out;
 }
-.e4img:hover {
+.eventimg:hover {
   transform: scale(120%);
   cursor: pointer;
 }
-/*//////////*/
-
-.e4slider {
-  width: 100%;
-}
-.e4introanim {
-  height: calc(var(--r4) * 8);
-  position: relative;
-  overflow: hidden;
-}
-/* .e4introanim > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition-property: all;
-  transition-delay: 0s;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-  animation-name: go;
-  animation-delay: 0s;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-}
-.e4introanim > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@keyframes e4come {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0;
-  }
-}
-@keyframes e4go {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-} */

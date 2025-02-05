@@ -19,8 +19,6 @@
   }
 }
 @media only screen and (max-width: 400px) {
-  /* --r * 0.3*/
-
   body .lp {
     padding: var(--r05);
     font-size: var(--r101);

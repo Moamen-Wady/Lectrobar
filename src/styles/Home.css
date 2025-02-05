@@ -1,89 +1,10 @@
-@media only screen and (min-width: 2001px) {
-  body .homeintro > div {
-    width: 50%;
-  }
-  body .homeprodlowv > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodfuse > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 2000px) {
-  body .homeintro > div {
-    width: 50%;
-  }
-  body .homeprodlowv > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodfuse > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 1670px) {
-  body .homeintro > div {
-    width: 50%;
-  }
-  body .homeprodlowv > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodfuse > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  body .homeintro > div {
-    width: 50%;
-  }
-  body .homeprodlowv > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodfuse > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 768px) {
-  body .homeintro > div {
-    width: 50%;
-  }
-  body .homeprodlowv > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodfuse > div > div {
-    height: calc(var(--r4) * 3);
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
-}
 @media only screen and (max-width: 530px) {
-  body .homeprodlowv > div > div {
-    height: auto;
-  }
-  body .homeprodfuse > div > div {
-    height: auto;
-  }
-  body .homeprodbus > div > div {
-    height: auto;
-  }
   body .homeintro > div {
     width: 100%;
   }
-  body .homeintroanim {
+  /* body .homeintroanim {
     height: calc(var(--r4) * 7);
-  }
+  } */
   body .homecoun {
     margin-bottom: var(--r3);
   }
@@ -137,9 +58,6 @@
     width: 80%;
     margin: auto;
   }
-  body .homeprodlowv > div > div {
-    width: 100%;
-  }
   body .homeprodlowv > div > div img {
     width: 100%;
     padding: 0;
@@ -156,11 +74,6 @@
   body .homeprodfuse > div:nth-child(2) {
     width: 80%;
     margin: auto;
-  }
-  body .homeprodfuse > div > div {
-    width: 100%;
-    margin: 0;
-    text-align: center;
   }
   body .homeprodfuse > div > div img {
     width: 100%;
@@ -260,12 +173,6 @@
   }
 }
 @media only screen and (max-width: 375px) {
-  body .homeintro > div {
-    width: 100%;
-  }
-  body .homeintroanim {
-    height: calc(var(--r4) * 7);
-  }
   body .homecoun {
     margin-bottom: var(--r3);
   }
@@ -319,9 +226,6 @@
     width: 80%;
     margin: auto;
   }
-  body .homeprodlowv > div > div {
-    width: 100%;
-  }
   body .homeprodlowv > div > div img {
     width: 100%;
     padding: 0;
@@ -338,11 +242,6 @@
   body .homeprodfuse > div:nth-child(2) {
     width: 80%;
     margin: auto;
-  }
-  body .homeprodfuse > div > div {
-    width: 100%;
-    margin: 0;
-    text-align: center;
   }
   body .homeprodfuse > div > div img {
     width: 100%;
@@ -447,16 +346,12 @@
 }
 .homeintrocont {
   display: block;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   width: 100%;
-  margin-top: var(--r2);
-  margin-bottom: var(--r2);
 }
 .homeintrocont > h1 {
   display: block;
-  margin: auto;
-  margin-top: var(--r102);
-  margin-bottom: var(--r102);
+  margin: 0 auto var(--r2) auto;
   color: #012060;
   font-size: var(--r2);
   text-align: center;
@@ -471,7 +366,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   text-transform: capitalize;
 }
 .homeintro h1 {
@@ -485,52 +380,20 @@
   color: rgb(51, 51, 51);
   font-family: sans-serif;
 }
+.homeintro > div {
+  width: 45%;
+}
 .homeintroanim {
-  height: calc(var(--r4) * 4.5);
+  /* height: calc(var(--r4) * 4.5); */
   position: relative;
   overflow: hidden;
 }
-/* .homeintroanim > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition-property: all;
-  transition-delay: 0s;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-  animation-name: go;
-  animation-delay: 0s;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-}
-.homeintroanim > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-@keyframes come {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0;
-  }
-}
-@keyframes go {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-} */
 .homecoun {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: var(--r3);
+  margin: 0 auto var(--r2) auto;
   width: 90%;
 }
 .homecoun p {
@@ -549,9 +412,7 @@
 }
 .homeproducts {
   width: 90%;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: 0 auto var(--r2) auto;
 }
 .homeproducts h1 {
   font-size: var(--r106);
@@ -566,8 +427,7 @@
   font-family: sans-serif;
 }
 .homedk {
-  margin: auto;
-  margin-bottom: var(--r2);
+  margin: 0 auto var(--r2) auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -587,9 +447,10 @@
 }
 .homesidefcont {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin: 0 auto var(--r2) auto;
 }
 .homesidef {
   margin-left: 5%;
@@ -624,7 +485,7 @@
   align-items: flex-start;
   width: 55%;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   height: max-content;
 }
 .homeprodimg > b {
@@ -634,9 +495,7 @@
 .homeprodimg > div {
   width: 22%;
   height: max-content;
-  margin: 0;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: 0 auto var(--r2) auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -664,9 +523,7 @@
 .homeprodimg div p {
   width: 100%;
   display: block;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: 0 auto var(--r2) auto;
   text-align: center;
   padding: auto;
   color: whitesmoke;
@@ -678,19 +535,20 @@
   align-items: flex-start;
   width: 60%;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   height: max-content;
 }
 .homeprodbus b {
   color: #012060;
   font-size: var(--r2);
   font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 0 auto var(--r2) auto;
 }
 .homeprodbus > div:first-child {
   width: 100%;
   height: max-content;
-  margin: 0;
-  margin-bottom: var(--r1);
+  margin: 0 auto var(--r2) auto;
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -698,9 +556,7 @@
 .homeprodbus > div {
   width: 22%;
   height: max-content;
-  margin: 0;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -725,8 +581,6 @@
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   text-align: left;
   text-align-last: center;
   padding: 0;
@@ -737,8 +591,6 @@
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   text-align: center;
   padding: auto;
   color: whitesmoke;
@@ -750,19 +602,20 @@
   align-items: flex-start;
   width: 60%;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   height: max-content;
 }
 .homeprodlowv b {
+  text-align: center;
   color: #012060;
   font-size: var(--r2);
   font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 0 auto var(--r2) auto;
 }
 .homeprodlowv > div:first-child {
-  width: 76%;
+  width: 100%;
   height: max-content;
-  margin: 0;
-  margin-bottom: var(--r1);
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -770,9 +623,6 @@
 .homeprodlowv > div:nth-child(2) {
   width: 22%;
   height: max-content;
-  margin: 0;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -797,8 +647,6 @@
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   text-align: left;
   text-align-last: center;
   padding: 0;
@@ -810,19 +658,20 @@
   align-items: flex-start;
   width: 60%;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   height: max-content;
 }
 .homeprodfuse b {
+  text-align: center;
   color: #012060;
   font-size: var(--r2);
   font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 0 auto var(--r2) auto;
 }
 .homeprodfuse > div:first-child {
-  width: 76%;
+  width: 100%;
   height: max-content;
-  margin: 0;
-  margin-bottom: var(--r1);
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -830,9 +679,6 @@
 .homeprodfuse > div:nth-child(2) {
   width: 22%;
   height: max-content;
-  margin: 0;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -841,6 +687,7 @@
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  margin: auto;
 }
 .homeprodfuse > div > div {
   width: 100%;
@@ -857,38 +704,15 @@
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
   text-align: left;
   text-align-last: center;
   padding: 0;
   color: rgb(51, 51, 51);
 }
-/* .homeshowall {
-    direction: rtl;
-    margin-left: var(--r5);
-}
-.homeshowalllink {
-    float: right;
-    display: block;
-    width: fit-content;
-    padding: var(--r08);
-    color: white;
-    background-color: #00395f;
-    text-decoration: none;
-    font-size: var(--r101);
-}
-.homeshowalllink:hover {
-    background-color: white;
-    color: #00395f;
-    border: 1px solid #00395f;
-} */
 .homeclients {
   width: 100%;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
-  height: calc(var(--r4) * 4);
+  margin: 0 auto var(--r2) auto;
+  height: max-content;
 }
 .homeclients h1 {
   font-size: var(--r106);
@@ -947,7 +771,7 @@
 }
 .homeserv {
   display: block;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   width: 100%;
 }
 .homeservimg {

@@ -5,6 +5,7 @@ import { memo, useEffect } from "react";
 import api from "./api";
 import { useState } from "react";
 import { useCallback } from "react";
+import { useLayoutEffect } from "react";
 export default memo(function Contact({ notify }) {
   let [dissub, setDissub] = useState([false, "all", "white", "black"]);
 
@@ -31,6 +32,12 @@ export default memo(function Contact({ notify }) {
       });
   }, []);
 
+useLayoutEffect(()=>{
+  let info = document.getElementById("contactinfo").clientHeight
+  let form = document.getElementById("form")
+  form.style.height = `${info}px`
+})
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,7 +45,7 @@ export default memo(function Contact({ notify }) {
   return (
     <div>
       <ContB />
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="contactmap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225027.9150066593!2d42.637496!3d28.205454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145f62b720cf98d5%3A0x912ee6932ca2e223!2sLectrobar!5e0!3m2!1sen!2sus!4v1694504990774!5m2!1sen!2sus"
@@ -48,9 +55,9 @@ export default memo(function Contact({ notify }) {
         </div>
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="contactinfocont">
-          <div className="contactinfo">
+          <div className="contactinfo" id="contactinfo">
             <h1>Information</h1>
             <div>
               <h2>Address</h2>
@@ -70,7 +77,7 @@ export default memo(function Contact({ notify }) {
               <a href="mailto:info@lectrobar.com">info@lectrobar.com</a>
             </div>
           </div>
-          <div className="contactcform">
+          <div className="contactcform" id="contactform">
             <form
               onSubmit={sForm}
               method="post"
@@ -116,16 +123,26 @@ export default memo(function Contact({ notify }) {
         </div>
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="contactcsales">
           <div className="contactcslslt">
-            <h1>Lectrobar Sales</h1>
+            <h1>Lectrobar Sales Representatives</h1>
           </div>
           <div className="contactcslsrt">
-            <a href="tel:+201103211875">+201103211875</a>
-            <a href="tel:+201029941145">+201029941145</a>
-            <a href="tel:+201110012245">+201110012245</a>
-            <a href="tel:+201118605522">+201118605522</a>
+            <ul>
+              <li>
+                <a href="tel:+201103211875">+201103211875</a>
+              </li>
+              <li>
+                <a href="tel:+201029941145">+201029941145</a>
+              </li>
+              <li>
+                <a href="tel:+201110012245">+201110012245</a>
+              </li>
+              <li>
+                <a href="tel:+201118605522">+201118605522</a>
+              </li>
+            </ul>
           </div>
         </div>
       </AnimationOnScroll>

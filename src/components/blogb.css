@@ -64,8 +64,10 @@
 }
 
 .blogbanw {
+  width: 100%;
   position: relative;
   z-index: 29;
+  margin: 0 auto var(--r2) auto;
 }
 .blogvid {
   display: block;

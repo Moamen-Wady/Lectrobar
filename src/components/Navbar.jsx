@@ -1,17 +1,23 @@
 import { memo, useLayoutEffect } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { useCallback } from "react";
 
 export default memo(function Navbar() {
-  useLayoutEffect(() => {
-    let nvb = document.getElementById("nvb");
-    let bnr = document.getElementById("banw");
-    if (bnr !== null) {
-      setTimeout(() => {
-        bnr.style.height = bnr.clientHeight + nvb.clientHeight + "px";
-      }, 500);
-    }
+  const addPadding = useCallback(() => {
+    const padding = document.getElementById("nvb").clientHeight;
+    document.getElementById("root").style.paddingTop = `${padding}px`;
+  }, []);
 
+  useLayoutEffect(() => {
+    // let nvb = document.getElementById("nvb");
+    // let bnr = document.getElementById("banw");
+    // if (bnr !== null) {
+    //   setTimeout(() => {
+    //     bnr.style.height = `${bnr.clientHeight + nvb.clientHeight}px`;
+    //   }, 500);
+    // }
+    addPadding();
     let lp = document.querySelectorAll(".lp");
     lp.forEach((item) => {
       let padding = window
@@ -20,35 +26,34 @@ export default memo(function Navbar() {
         .toString()
         .replace("px", "");
       let paddingValue = Number(padding);
-      item.style.height =
-        (nvb.clientHeight - paddingValue * 2).toString() + "px";
+      item.style.height = `${nvb.clientHeight - paddingValue * 2}px`;
     });
 
     function d() {
-        let s = window.scrollY;
-        let n = document.getElementById("nvb");
-        let ch = document.getElementById("imgch");
-        let edt = document.getElementById("edt");
-  
-        if (s > 1) {
-          n.style.background = "#00395f";
-          ch.setAttribute("src", "logow.png");
-          ch.classList.remove("logoimg");
-          ch.classList.add("replacelogoimg");
-          edt.classList.remove("estimg");
-          edt.classList.add("replaceestimg");
-        } else {
-          n.style.background =
-            " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
-          ch.setAttribute("src", "logow2.png");
-          ch.classList.add("logoimg");
-          ch.classList.remove("replacelogoimg");
-          edt.classList.add("estimg");
-          edt.classList.remove("replaceestimg");
-        }
+      let s = window.scrollY;
+      let n = document.getElementById("nvb");
+      let ch = document.getElementById("imgch");
+      let edt = document.getElementById("edt");
+
+      if (s > 1) {
+        n.style.background = "#00395f";
+        ch.setAttribute("src", "logow.png");
+        ch.classList.remove("logoimg");
+        ch.classList.add("replacelogoimg");
+        edt.classList.remove("estimg");
+        edt.classList.add("replaceestimg");
+      } else {
+        n.style.background =
+          " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
+        ch.setAttribute("src", "logow2.png");
+        ch.classList.add("logoimg");
+        ch.classList.remove("replacelogoimg");
+        edt.classList.add("estimg");
+        edt.classList.remove("replaceestimg");
       }
-      window.onscroll = d;
-  
+    }
+    window.onscroll = d;
+    return () => (window.onscroll = null);
   }, []);
   function prodshow() {
     let prodmm = document.getElementById("prodmm");
@@ -118,16 +123,16 @@ export default memo(function Navbar() {
               <div className="prodh">
                 <h1>Low Voltage:</h1>
                 <h2>Busduct</h2>
-                <Link to="/lsbpro">
+                <Link to="/Products/lsbpro">
                   <strong>-</strong>LSB PRO
                 </Link>
-                <Link to="/lsb2">
+                <Link to="/Products/lsb2">
                   <strong>-</strong>LSB II
                 </Link>
-                <Link to="/lsba">
+                <Link to="/Products/lsba">
                   <strong>-</strong>LSB A
                 </Link>
-                <Link to="/llb">
+                <Link to="/Products/llb">
                   <strong>-</strong>LLB
                 </Link>
                 <h2>Low Voltage Panels</h2>

@@ -64,22 +64,22 @@ export default memo(function Footer() {
           <h1>Products</h1>
           <ul className="ful">
             <li className="xl">
-              <Link to="/lsbpro" className="ll">
+              <Link to="/Products/lsbpro" className="ll">
                 LSB PRO
               </Link>
             </li>
             <li className="xl">
-              <Link to="/lsb2" className="ll">
+              <Link to="/Products/lsb2" className="ll">
                 LSB II
               </Link>
             </li>
             <li className="xl">
-              <Link to="/lsba" className="ll">
+              <Link to="/Products/lsba" className="ll">
                 LSB A
               </Link>
             </li>
             <li className="xl">
-              <Link to="/llb" className="ll">
+              <Link to="/Products/llb" className="ll">
                 LLB
               </Link>
             </li>
@@ -124,57 +124,57 @@ export default memo(function Footer() {
           <h1>Projects</h1>
           <ul className="ful">
             <li className="xl">
-              <Link to="/Education" className="ll">
+              <Link to="/Projects/Education" className="ll">
                 Education
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Hospitals" className="ll">
+              <Link to="/Projects/Hospitals" className="ll">
                 Hospitals
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Malls" className="ll">
+              <Link to="/Projects/Malls" className="ll">
                 Malls
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Factories" className="ll">
+              <Link to="/Projects/Factories" className="ll">
                 Factories
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Gov" className="ll">
+              <Link to="/Projects/Gov" className="ll">
                 Governmental Org.
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Towers" className="ll">
+              <Link to="/Projects/Towers" className="ll">
                 Towers
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Hotels" className="ll">
+              <Link to="/Projects/Hotels" className="ll">
                 Hotels
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Villages" className="ll">
+              <Link to="/Projects/Villages" className="ll">
                 Villages
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Banks" className="ll">
+              <Link to="/Projects/Banks" className="ll">
                 Banks
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Etc" className="ll">
+              <Link to="/Projects/Etc" className="ll">
                 Etc
               </Link>
             </li>
             <li className="xl">
-              <Link to="/TechCenters" className="ll">
+              <Link to="/Projects/TechCenters" className="ll">
                 Tech Centers
               </Link>
             </li>

@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, lazy, Suspense } from "react";
+import { useEffect, useState, useCallback, lazy, Suspense, memo } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/styles.css";
 import "animate.css/animate.min.css";
@@ -8,26 +8,20 @@ import "react-toastify/dist/ReactToastify.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import Loading from "./Loading";
+const ProductPage = lazy(() => import("./Product"));
+const EventPage = lazy(() => import("./Event"));
 const Home = lazy(() => import("./Home"));
 const Projects = lazy(() => import("./Projects"));
 const Project = lazy(() => import("./Project"));
 const Contact = lazy(() => import("./Contact"));
-const Lsba = lazy(() => import("./lsba"));
-const Lsb2 = lazy(() => import("./lsb2"));
-const Llb = lazy(() => import("./llb"));
-const Lsbpro = lazy(() => import("./lsbpro"));
 const Aboutus = lazy(() => import("./Aboutus"));
 const Blog = lazy(() => import("./Blog"));
-const E1 = lazy(() => import("./e1"));
-const E2 = lazy(() => import("./e2"));
-const E3 = lazy(() => import("./e3"));
-const E4 = lazy(() => import("./e4"));
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/footer"));
 const Sidebar = lazy(() => import("./components/Sidebar"));
 
-const all = {
+const ProjectsData = {
   Banks: [
     {
       category: "Banks",
@@ -797,19 +791,390 @@ const all = {
     },
   ],
 };
+const Slidere3 = memo(function Slidere3() {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: false,
+    cssEase: "ease",
+    arrows: false,
+    pauseOnHover: false,
+  };
+  const slides = [
+    {
+      img: "/blog/ve31.jpg",
+    },
+    {
+      img: "/blog/ve32.jpg",
+    },
+    {
+      img: "/blog/ve33.jpg",
+    },
+    {
+      img: "/blog/ve34.jpg",
+    },
+    {
+      img: "/blog/ve35.jpg",
+    },
+  ];
+
+  return (
+    <div className="eventintroanim">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={`SlideImg ${index + 1}`}>
+            <img
+              className="slide-image-body"
+              src={slide.img}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+});
+const Slidere4 = memo(function Slidere4() {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: false,
+    cssEase: "ease",
+    arrows: false,
+    pauseOnHover: false,
+  };
+  const slides = [
+    {
+      img: "/blog/ve41.jpg",
+    },
+    {
+      img: "/blog/ve42.jpg",
+    },
+    {
+      img: "/blog/ve43.jpg",
+    },
+    {
+      img: "/blog/ve44.jpg",
+    },
+    {
+      img: "/blog/ve45.jpg",
+    },
+  ];
+
+  return (
+    <div className="eventintroanim">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={`SlideImg ${index + 1}`}>
+            <img
+              className="slide-image-body"
+              src={slide.img}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+});
+const EventsData = [
+  {
+    name: "CHINT Lectrobar Cairo Seminar",
+    description:
+      "On September 11th, Lectrobar celebrated a strategic partnership with the Chinese company CHNT for the production of low-voltage panels at The Westin Hotel. The event featured distinguished consultants, highlighting collaborative efforts in advancing cutting-edge electrical solutions. This significant collaboration underscores Lectrobar&apos;s commitment to innovation and global partnerships in the field of electrical engineering.",
+    isVideo: true,
+    video:
+      "https://drive.google.com/file/d/1JN8mscx39b_l7Ofb46rwT8g80UsuxK1-/preview",
+    isSlider: false,
+    slider: <></>,
+    images: [
+      "/blog/e11.jpg",
+      "/blog/e12.jpg",
+      "/blog/e13.jpg",
+      "/blog/e14.jpg",
+      "/blog/e15.jpg",
+      "/blog/e16.jpg",
+    ],
+  },
+  {
+    name: "CHINT Lectrobar Borg El-Arab New Factory Opening",
+    description:
+      "On September 7th, Lectrobar and the Chinese company CHNT collaborated to produce low-voltage panels. The Minister of Electricity, the Governor of Alexandria, along with distinguished consultants, gathered to celebrate this significant partnership, marking an important advancement in electrical solutions.",
+    isVideo: true,
+    video:
+      "https://drive.google.com/file/d/1eceLQecgXeWblp3RJ_k3iSRhiz1bjbic/preview",
+    isSlider: false,
+    slider: <></>,
+    images: [
+      "/blog/e21.jpg",
+      "/blog/e22.jpg",
+      "/blog/e23.jpg",
+      "/blog/e24.jpg",
+      "/blog/e25.jpg",
+      "/blog/e26.jpg",
+    ],
+  },
+  {
+    name: "Lectrobar Exhibition 2023",
+    description:
+      " Lectrobar enjoyed a strong presence at the International Manufacturing Convention & Exhibition held in Cairo from October 28th to 30th, drawing eager attendees. Visitors were keen to explore our advanced products, particularly our busbars and low-voltage panels, as we shared insights into our manufacturing history and highlighted our collaboration with the esteemed Chinese company CHNT. The event was further distinguished by the presence of President Abdelfatah El Sisi, underscoring the significance of our contributions to the industry. This provided a unique opportunity for networking and emphasized Lectrobar&apos;s commitment to innovation, solidifying our position as an industry leader.",
+    isVideo: false,
+    video: "",
+    isSlider: true,
+    slider: <Slidere3 />,
+    images: [
+      "/blog/e31.jpg",
+      "/blog/e32.jpg",
+      "/blog/e33.jpg",
+      "/blog/e34.jpg",
+      "/blog/e35.jpg",
+      "/blog/e36.jpg",
+    ],
+  },
+  {
+    name: "Lectrobar Exhibition 2022",
+    description:
+      "Lectrobar left a lasting impression at the Egypt Energy Expo in Cairo from October 28th to 30th, where our flagship product, the busbar, attracted keen interest from attendees. As we delved into our manufacturing history, the event served as a valuable opportunity for networking, emphasizing Lectrobar&apos;s commitment to innovation, and firmly establishing us as a leader in the industry.",
+    isVideo: false,
+    video: "",
+    isSlider: true,
+    slider: <Slidere4 />,
+    images: [
+      "/blog/e41.jpg",
+      "/blog/e42.jpg",
+      "/blog/e43.jpg",
+      "/blog/e44.jpg",
+      "/blog/e45.jpg",
+      "/blog/e46.jpg",
+    ],
+  },
+];
+const ProductsData = {
+  llb: {
+    name: "Lectrobar Sandwich Busduct (LLB)",
+    link: "/LLBCatalog.pdf",
+    img1: "/llbc.jpeg",
+    description1: (
+      <span>
+        Since 1975, Lectro has manufactured and installed hundreds of thousands
+        of meters of busducts for large and small projects , both for the
+        domestic market and for exports around the globe.
+        <br />
+        The production takes place in a state of the art facility, using latest
+        generation precision techniques including CNC, automation systems and
+        robotics. Lectro products have been type tested by DEKRA laboratories of
+        the Netherlands.
+        <br />
+        Lectro busduct systems contain high quality components and are trusted
+        for their high safety factor and long life. Lectro Bimetal range,
+        «series LSB A» busduct provide currents from 250A to 5500A.
+        <br />
+        We pride ourselves in delivering systems which exceed the expectation of
+        our customers, both in terms of quality and in the level of customer
+        service we provide.
+      </span>
+    ),
+    img2: "/llb1.jpeg",
+    description2: (
+      <span>
+        Enclosure: The enclosures are 3 or 6 meters long and are made from a
+        special aluminum profile. They are used as continuous earth and offer a
+        standard degree of protection IP43, IP54, or IP55.
+        <br />
+        Conductors These are copper bars that are double insulated with suitable
+        cross-section.
+        <br />
+        End Box This is used to terminate busduct elbows and is available to
+        meet requirements for quick directional changes.
+        <br />
+        Feed Box It is equipped with a suitable terminal strip according to the
+        size of the conductor and can either be a standard product or come with
+        circuit breakers that have the same rating as the busduct as an option.
+        <br />
+      </span>
+    ),
+    img3: "/llb2.jpeg",
+    description3: (
+      <span>
+        <strong>Assembly:</strong>
+        <br />
+        It describes how busduct enclosures can be connected both mechanically
+        and electrically in a quick manner. Electrical connections are made
+        using a plug connector, as illustrated in the accompanying figure.
+        <br />
+        <strong>Suspension:</strong>
+        <br />
+        The busduct enclosures are supported by adjustable hangers that allow
+        for quick surface mounting along a ceiling or beam. It mentions that the
+        spacing between suspension points is 2 meters. The adjustable nature of
+        the hangers means that the lighting level can be changed even after
+        assembly.
+        <br />
+        <strong>Outlets:</strong>
+        <br />
+        Outlets are distributed regularly at intervals of one meter or as per
+        the client&apos;s requirements. There are two types of socket outlets
+        available, rated up to 16 A 2P+E and up to 32 A 3P+E. The sockets can
+        also be equipped with fuses as an option.
+        <br />
+        The image also shows a graphical representation of how a plug connector
+        is used to establish an electrical connection between components of the
+        busduct system.
+      </span>
+    ),
+  },
+  lsb2: {
+    name: "Lectrobar Sandwich Busduct (LSB II)",
+    link: "/LSBII.pdf",
+    img1: "/lsb2c.jpeg",
+    description1: (
+      <span>
+        Lectro has manufactured and installed hundreds of thousands of meters of
+        busducts for large and small projects since 1975, both for the domestic
+        market and for exports around the globe. The production takes place in a
+        state of the art facility, using latest generation precision techniques
+        including CNC, automation systems and robotics. Lectro products have
+        been type tested by DEKRA laboratories of the Netherlands. Lectro
+        busduct systems contain high quality components and are trusted for
+        their high safety factor and long life. Lectro newest range, The «series
+        LSB II» busduct provide currents from 300A to 6400A. We pride ourselves
+        in delivering systems which exceed the expectation of our customers,
+        both in terms of quality and in the level of customer service we
+        provide.
+      </span>
+    ),
+    img2: "/lsb21.jpeg",
+    description2: (
+      <span>
+        The bolts are insulated with Teflon Coated Fiberglass and passed through
+        the joint in a Teflon tube to eliminate any problems arising from joint
+        bolts. Joint blocks are used to ensure parallel joints of bars and
+        complete mechanical jointing using non-flammable (V -0) Polybutylene
+        Terephthalate UL listed (RTI :140 oC,Dielectric Strength 23kV/mm).
+      </span>
+    ),
+    img3: "/lsb22.jpeg",
+    description3: (
+      <span>
+        Double head bolts are used as optional. One head breaks at the required
+        torque so no need for torque wrenches. Smart bolts can be used also as
+        optional for critical sites. Using smart bolts results in less fatigue
+        for installers, no repeated torque wrench calibration, no sample
+        re-tightening, no turn-of-nut confirmation required. Installers can
+        easily identify and focus on loose bolts to re-tighten. The ability to
+        visually inspect fasteners also creates safer working conditions
+        particularly in elevated structures and areas exposed to hazardous
+        materials.
+      </span>
+    ),
+  },
+  lsba: {
+    name: "Lectrobar Sandwich Busduct (LSB II)",
+    link: "/AluminumCataloglite.pdf",
+    img1: "/lsbac.jpeg",
+    description1: (
+      <span>
+        Since 1975, Lectro has manufactured and installed hundreds of thousands
+        of meters of busducts for large and small projects , both for the
+        domestic market and for exports around the globe.
+        <br />
+        The production takes place in a state of the art facility, using latest
+        generation precision techniques including CNC, automation systems and
+        robotics. Lectro products have been type tested by DEKRA laboratories of
+        the Netherlands.
+        <br />
+        Lectro busduct systems contain high quality components and are trusted
+        for their high safety factor and long life. Lectro Bimetal range,
+        «series LSB A» busduct provide currents from 250A to 5500A.
+        <br />
+        We pride ourselves in delivering systems which exceed the expectation of
+        our customers, both in terms of quality and in the level of customer
+        service we provide.
+      </span>
+    ),
+    img2: "/lsba1.jpeg",
+    description2: (
+      <span>
+        <b>Joints:</b>
+        <br />
+        Joints in all ratings are of a two bolt patent design, which can be
+        checked for tightness without de-energizing the system. This design
+        ensures excellent contact between each set of the busbars and the joint.
+        This method exerts more than two tons of pressure on overlapping bus
+        bars at each bolt. This force is distributed over the contact area by
+        two pairs of large diameter spring steel conical shape washers. These
+        washers ensure maintenance free joint.
+      </span>
+    ),
+    img3: "/lsba2.jpeg",
+    description3: (
+      <span>
+        Joint alignment is made by two bolts instead of one bolt in the single
+        bolt design. This design ensures the correct installation of the busduct
+        joint even with non skilled labor. The joint temperature is less than
+        rest of the busduct due to the specially designed heat sinks and contact
+        surface. Figure A shows the contact resistance at different torque with
+        the washers. The tightening torque of joint bolt does not run down after
+        initial accomodation, and is maintained at a level that ensures
+        stability of contact resistance and temperature rise.
+      </span>
+    ),
+  },
+  lsbpro: {
+    name: "Lectrobar Sandwich Busduct (LSB II)",
+    link: "/lsbpro.pdf",
+    img1: "/lsbproc.jpeg",
+    description1: (
+      <span>
+        Lectro has manufactured and installed hundreds of thousands of meters of
+        busducts for large and small projects since 1975, both for the domestic
+        market and for exports around the globe. The production takes place in a
+        state of the art facility, using latest generation precision techniques
+        including CNC, automation systems and robotics. Lectro products have
+        been type tested by DEKRA laboratories of the Netherlands. Lectro
+        busduct systems contain high quality components and are trusted for
+        their high safety factor and long life. Lectro newest range, The «series
+        LSB PRO» busduct provide currents from 1000A to 6400A. We pride
+        ourselves in delivering systems which exceed the expectation of our
+        customers, both in terms of quality and in the level of customer service
+        we provide.
+      </span>
+    ),
+    img2: "/lsbpro1.jpeg",
+    description2: (
+      <span>
+        <strong>Busbar and Insulation:</strong>
+        <br />
+        Lectrobars are fabricated from high strength pure electrolytic copper
+        with suitable cross section tin coated at contacts ( conductivity better
+        than 99.5%). Tin coating provides surface protection and good contact.
+      </span>
+    ),
+    img3: "/lsbpro2.jpeg",
+    description3: (
+      <span>
+        Lectrobar busducts have a sandwich type non-ventilated configuration.
+        The non-ventilated housing design excludes potential points of
+        penetration by moisture and dust. Busbars for plug-in applications, have
+        full size welded conductor tabs. This design extends the contact
+        surfaces outside of the busduct casing and into the plug-in outlet. By
+        this design, true sandwich configuration is maintained throughout the
+        entire busduct length for both feeder and plug-in. This will eliminate
+        the need to seperate or flare the conductor bars at the plug-in opening.
+      </span>
+    ),
+  },
+};
 
 function App() {
-  useEffect(() => {
-    if (navigator.userAgent.match(/samsung/i)) {
-      alert(
-        "Your browser (Samsung Internet) may not show this website's colors correctly in Dark Mode." +
-          "Consider using a standards-compliant browser." +
-          "We Recommend Google Chrome or Microsoft Edge"
-      );
-    }
-    window.scrollTo(0, 0);
-  }, []);
-
   const [hash, setHash] = useState();
 
   const scrollToProject = useCallback(() => {
@@ -831,28 +1196,6 @@ function App() {
     }
   }, [hash]);
 
-  // const sliding = useCallback((sv, abb, limit, go, come, cb, rcb, to) => {
-  //   setTimeout(() => {
-  //     const x = document.getElementById(sv + abb);
-  //     x.style.animationName = go;
-
-  //     if (sv === limit) {
-  //       const xx = document.getElementById(0 + abb);
-  //       xx.style.animationName = come;
-  //       rcb();
-  //     } else {
-  //       const ss = document.getElementById(sv + 1 + abb);
-  //       ss.style.animationName = come;
-  //       cb();
-  //     }
-  //   }, to);
-  // }, []);
-
-  const addPaddingWhenNoBanner = useCallback((container) => {
-    const padding = document.getElementById("nvb").clientHeight * 1.1;
-    container.style.paddingTop = `${padding}px`;
-  }, []);
-
   const notify = useCallback((e, msg) => {
     toast[e](msg, {
       position: "top-center",
@@ -866,11 +1209,21 @@ function App() {
       transition: Slide,
     });
   }, []);
+  useEffect(() => {
+    if (navigator.userAgent.match(/samsung/i)) {
+      alert(
+        "Your browser (Samsung Internet) may not show this website's colors correctly in Dark Mode." +
+          "Consider using a standards-compliant browser." +
+          "We Recommend Google Chrome or Microsoft Edge"
+      );
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <Router>
-      <ToastContainer />
-      <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
+      <Router>
+        <ToastContainer />
         <Navbar />
         <Sidebar />
         <Routes>
@@ -878,33 +1231,34 @@ function App() {
           <Route path="/index" element={<Home Slider={Slider} />} />
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/Contact" element={<Contact notify={notify} />} />
-          <Route path="/Blog" element={<Blog Slider={Slider} />} />
-          <Route path="/e1" element={<E1 />} />
-          <Route path="/e2" element={<E2 />} />
-          <Route path="/e3" element={<E3 Slider={Slider} />} />
-          <Route path="/e4" element={<E4 Slider={Slider} />} />
-          <Route path="/lsba" element={<Lsba Slider={Slider} />} />
-          <Route path="/lsb2" element={<Lsb2 Slider={Slider} />} />
-          <Route path="/llb" element={<Llb Slider={Slider} />} />
-          <Route path="/lsbpro" element={<Lsbpro Slider={Slider} />} />
+          <Route
+            path="/Products/:product"
+            element={
+              <ProductPage Slider={Slider} ProductsData={ProductsData} />
+            }
+          />
           <Route
             path="/Projects"
-            element={<Projects setHash={setHash} all={all} />}
+            element={<Projects setHash={setHash} ProjectsData={ProjectsData} />}
           />
           <Route
             path="/Projects/:project"
             element={
               <Project
                 scrollToProject={scrollToProject}
-                add={addPaddingWhenNoBanner}
-                all={all}
+                ProjectsData={ProjectsData}
               />
             }
           />
+          <Route path="/Blog" element={<Blog Slider={Slider} />} />
+          <Route
+            path="/Blog/:event"
+            element={<EventPage EventsData={EventsData} />}
+          />
         </Routes>
         <Footer />
-      </Suspense>
-    </Router>
+      </Router>
+    </Suspense>
   );
 }
 

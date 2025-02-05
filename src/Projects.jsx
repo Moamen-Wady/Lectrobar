@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./styles/projects.css";
 import { useRef } from "react";
 
-const Search = memo(function Search({ setHash, all }) {
+const Search = memo(function Search({ setHash, ProjectsData }) {
   let [allResArr, setAllResArr] = useState([]);
   let [searchBy, setSearchBy] = useState("projectName");
   let [searchIn, setSearchIn] = useState("all");
@@ -31,7 +31,7 @@ const Search = memo(function Search({ setHash, all }) {
   const searchProjects = () => {
     let tempRes;
     if (searchIn !== "all") {
-      tempRes = all[searchIn].filter((x) =>
+      tempRes = ProjectsData[searchIn].filter((x) =>
         x[searchBy]
           .toString()
           .toLowerCase()
@@ -41,14 +41,14 @@ const Search = memo(function Search({ setHash, all }) {
     } else {
       let results = [];
       let i;
-      for (i = 0; i < Object.keys(all).length; i++) {
-        tempRes = Object.entries(all)[i][1].filter((x) =>
+      for (i = 0; i < Object.keys(ProjectsData).length; i++) {
+        tempRes = Object.entries(ProjectsData)[i][1].filter((x) =>
           x[searchBy]
             .toString()
             .toLowerCase()
             .includes(inputText.current.value.toString().toLowerCase(), 0)
         );
-        let categorize = [Object.entries(all)[i][0], tempRes];
+        let categorize = [Object.entries(ProjectsData)[i][0], tempRes];
         results = [...results, categorize];
       }
       setAllResArr(results);
@@ -117,7 +117,7 @@ const Search = memo(function Search({ setHash, all }) {
             <p>Search In Category:</p>
             <select id="searchin" onChange={setSIN}>
               <option value="all">All</option>
-              {Object.keys(all).map((key) => {
+              {Object.keys(ProjectsData).map((key) => {
                 return (
                   <option value={key} key={key}>
                     {key}
@@ -141,7 +141,7 @@ const Search = memo(function Search({ setHash, all }) {
   );
 });
 
-export default memo(function Projects({ setHash, all }) {
+export default memo(function Projects({ setHash, ProjectsData }) {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.getElementById("pn").checked = true;
@@ -160,7 +160,7 @@ export default memo(function Projects({ setHash, all }) {
             Search In Projects
           </button>
         </div>
-        <Search setHash={setHash} all={all} />
+        <Search setHash={setHash} ProjectsData={ProjectsData} />
       </div>
       <AnimationOnScroll
         animateOnce={true}

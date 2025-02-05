@@ -1,27 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-
-@media only screen and (min-width: 1701px) {
-  :root {
-    --x: 30rem;
-  }
-}
-@media only screen and (max-width: 1700px) {
-  :root {
-    --x: 25rem;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  :root {
-    --x: 18rem;
-  }
-}
-@media only screen and (max-width: 530px) {
-  :root {
-    --x: 15rem;
-  }
-}
 * {
   text-transform: capitalize;
 }
@@ -46,13 +25,10 @@ body {
   display: block;
 }
 .load img {
-  width: var(--x);
-  height: calc(var(--x) * 2 / 3);
-  animation-name: loadout;
-  animation-duration: 3s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  width: 20vw;
+  height: 20vw;
+  animation: loadout 0.6s ease infinite;
+  animation-direction: alternate;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,11 +39,8 @@ body {
   from {
     opacity: 0;
   }
-  80% {
-    opacity: 1;
-  }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -179,8 +152,8 @@ body {
     --r5: 2.5rem;
   }
 }
-@media only screen and (max-width: 530px) {
-  /* x0.5 */
+/* x0.5 */
+/* @media only screen and (max-width: 530px) {
   :root {
     --r05: 0.25rem;
     --r08: 0.4rem;
@@ -196,9 +169,9 @@ body {
     --r4: 2rem;
     --r5: 2.5rem;
   }
-}
-@media only screen and (max-width: 400px) {
-  /* x0.3 */
+} */
+/* x0.3 */
+/* @media only screen and (max-width: 400px) {
   :root {
     --r05: 0.15rem;
     --r08: 0.24rem;
@@ -214,11 +187,19 @@ body {
     --r4: 1.2rem;
     --r5: 1.5rem;
   }
-}
+} */
 .shade {
   position: absolute;
   width: 100%;
   height: calc(var(--r5) * 5.6);
   z-index: 2;
   opacity: 0.6;
+}
+.slide-image {
+  width: 100%;
+  height: calc(var(--r5) * 5.6);
+}
+.slide-image-body {
+  width: 100%;
+  height: calc(var(--r5) * 4.8);
 }

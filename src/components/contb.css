@@ -66,6 +66,8 @@
 .contbanw {
   position: relative;
   z-index: 29;
+  width: 100%;
+  margin: 0 auto var(--r2) auto;
 }
 .contvid {
   display: block;

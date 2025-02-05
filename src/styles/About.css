@@ -105,9 +105,7 @@
 .aboutunderbanner {
   width: 80%;
   display: block;
-  margin: auto;
-  margin-top: var(--r2);
-  margin-bottom: var(--r3);
+  margin: 0 auto var(--r2) auto;
 }
 .aboutunderbanner h1 {
   display: block;
@@ -134,8 +132,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 90%;
-  margin: auto;
-  margin-bottom: var(--r3);
+  margin: 0 auto var(--r2) auto;
 }
 .aboutfactory > div {
   width: 45%;
@@ -148,7 +145,7 @@
   display: block;
   max-width: fit-content;
   margin: auto;
-  margin-bottom: var(--r4);
+  margin-bottom: var(--r2);
   font-size: var(--r3);
   text-align: center;
   color: #012060;
@@ -164,9 +161,7 @@
   font-size: var(--r105);
   display: block;
   max-width: fit-content;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: var(--r1) auto;
   text-decoration: none;
   text-align: center;
   background: #00395f;
@@ -187,7 +182,7 @@
 .aboutdistribution {
   width: 100%;
   display: block;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   padding: 0;
   overflow: hidden;
 }
@@ -199,8 +194,7 @@
 .aboutdistribution p {
   display: block;
   max-width: fit-content;
-  margin: auto;
-  margin-bottom: var(--r4);
+  margin: 0 auto var(--r2) auto;
   font-size: calc(var(--r101) * 2);
   text-align: center;
   color: #012060;
@@ -238,10 +232,10 @@
   animation-fill-mode: forwards;
 }
 @keyframes ezhar {
-  faboutrom {
+  from {
     opacity: 0;
   }
-  tabouto {
+  to {
     opacity: 1;
   }
 }
@@ -357,135 +351,16 @@
   left: 54.27%;
   top: 70.1%;
 }
-/* .aboutbranchesl {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    margin-bottom: var(--r3);
-}
-.aboutbranchesl > div {
-    width: 45%;
-}
-
-.aboutbranchesltxt p {
-    display: block;
-    max-width: fit-content;
-    margin: auto;
-    margin-bottom: var(--r4);
-    font-size: var(--r103);
-    text-align: left;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    font-family: "Raleway", sans-serif;
-}
-
-.aboutbrancheslcont {
-    width: 90%;
-    margin: auto;
-}
-.aboutbrancheslcont h1 {
-    color: #012060;
-    display: block;
-    max-width: fit-content;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-    font-size: var(--r2);
-    text-decoration: none;
-    text-align: left;
-    font-weight: bold;
-    font-family: "Raleway", sans-serif;
-    padding: var(--r1);
-    padding-left: var(--r3);
-}
-.aboutbranchesl h2 {
-    display: block;
-    max-width: fit-content;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-    font-size: var(--r105);
-    text-decoration: none;
-    text-align: left;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-    padding: var(--r1);
-}
-.aboutbrancheslimg {
-    border-radius: 5%;
-}
-.aboutbrancheslimg img {
-    width: 100%;
-    border-radius: 5%;
-}
-
-.aboutbranchesr {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-    margin-bottom: var(--r3);
-}
-.aboutbranchesr > div {
-    width: 45%;
-}
-.aboutbranchesrtxt p b {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-}
-
-.aboutbranchesrtxt {
-    margin-right: 5%;
-}
-.aboutbranchesrtxt p {
-    display: block;
-    max-width: fit-content;
-    margin: auto;
-    margin-bottom: var(--r4);
-    font-size: var(--r103);
-    text-align: left;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    font-family: "Raleway", sans-serif;
-}
-
-.aboutbranchesr h2 {
-    display: block;
-    max-width: fit-content;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-    font-size: var(--r105);
-    text-decoration: none;
-    text-align: left;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-    padding: var(--r1);
-}
-.aboutbranchesrimg {
-    border-radius: 5%;
-}
-.aboutbranchesrimg img {
-    width: 100%;
-    border-radius: 5%;
-}
- */
 .aboutvalues {
-  width: 90%;
-  margin: auto;
+  width: 95%;
+  margin: 0 auto var(--r2) auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .aboutvalues > div {
-  width: 50%;
+  width: 40%;
 }
 .aboutvalues h1 {
   color: #012060;
@@ -507,11 +382,11 @@
 .aboutcertificates {
   width: 90%;
   display: block;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
 }
 .aboutcertificates h1 {
   display: block;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   color: #012060;
   font-size: calc(var(--r101) * 2);
   font-family: "Raleway", sans-serif;
@@ -524,8 +399,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: var(--r2);
-  margin-bottom: var(--r2);
 }
 .aboutcertificates > div > div {
   width: 45%;
@@ -545,7 +418,7 @@
   text-align: left;
   list-style-type: none;
 }
-.aboutmanagerscont {
+/* .aboutmanagerscont {
   width: 90%;
   margin: auto;
   background-color: #00395f;
@@ -648,18 +521,16 @@
   border-radius: 100%;
   border: 5px solid #5d92b6;
   box-shadow: 5px 5px 8px rgb(51, 51, 51);
-}
+} */
 .aboutmission {
   width: 100%;
   position: relative;
-  margin: auto;
+  margin: 0 auto var(--r2) auto;
   background-image: url("/missionbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: calc(var(--r5) * 5);
-  margin-top: var(--r2);
-  margin-bottom: var(--r2);
 }
 .aboutmission > div {
   position: absolute;

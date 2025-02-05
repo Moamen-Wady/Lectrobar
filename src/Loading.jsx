@@ -1,9 +1,10 @@
-import './styles/styles.css'
+import { memo } from "react";
+import "./styles/styles.css";
 
-export default function Loading() {
-    return (
-        <div className='load' id='load' >
-            <img src='logo.png' />
-        </div>
-    )
-}
+export default memo(function Loading() {
+  return (
+    <div className="load" id="load">
+      <img src="logo.png" />
+    </div>
+  );
+});

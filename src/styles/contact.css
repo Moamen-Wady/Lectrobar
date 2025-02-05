@@ -95,8 +95,8 @@
 }
 
 .contactmap {
-  width: 85%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto var(--r2) auto;
 }
 .contactmap iframe {
   width: 100%;
@@ -166,7 +166,6 @@
 }
 .contactform {
   display: block;
-  height: calc(var(--r5) * 5);
   width: 95%;
   background-color: white;
   text-align: center;
@@ -174,7 +173,7 @@
   border-radius: 2%;
   border: 1px solid #00395f;
   margin: auto;
-  padding: var(--r1);
+  /* padding: var(--r1); */
   position: relative;
 }
 .contactform input {
@@ -220,14 +219,12 @@
   background-color: #a0aec9;
 }
 .contactcsales {
-  width: 40%;
+  width: 90%;
   overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
+  margin: 0 auto var(--r2) auto;
   height: calc(var(--r5) * 5);
   background-color: #00395f;
   border-radius: 1%;
@@ -246,10 +243,11 @@
 }
 .contactcslslt h1 {
   font-size: calc(var(--r05) * 5);
-  background: rgb(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0, 0.7);
   width: 100%;
   color: whitesmoke;
   margin: auto;
+  padding: var(--r1) 0;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -258,14 +256,15 @@
   font-family: "Raleway", sans-serif;
 }
 .contactcslsrt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46%;
   height: calc(var(--r5) * 5);
   border-radius: 1%;
 }
 .contactcslsrt a {
-  font-size: var(--r105);
   text-align: center;
-  font-family: sans-serif;
   display: block;
   padding-left: var(--r05);
   color: white;
@@ -273,9 +272,25 @@
   height: 20%;
   border-radius: 3%;
   cursor: pointer;
-  transform: translateY(50%);
+  /* transform: translateY(50%); */
   text-decoration: none;
 }
 .contactcslsrt a:hover {
   color: blue;
+}
+.contactcslsrt ul {
+  all: unset;
+  font-size: var(--r2);
+  font-family: sans-serif;
+  list-style-type: circle;
+  color: white;
+  width: fit-content;
+}
+.contactcslsrt li {
+  all: unset;
+  height: max-content;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: var(--r1);
 }

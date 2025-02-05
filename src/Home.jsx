@@ -16,7 +16,7 @@ const IntroA = memo(function IntroA({ Slider }) {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: false,
-    cssEase: "linear",
+    cssEase: "ease",
     arrows: false,
     pauseOnHover: false,
   };
@@ -39,7 +39,7 @@ const IntroA = memo(function IntroA({ Slider }) {
   ];
 
   return (
-    <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+    <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
       <div className="homeintrocont">
         <h1>Welcome to Lectrobar</h1>
         <div className="homeintro">
@@ -64,7 +64,7 @@ const IntroA = memo(function IntroA({ Slider }) {
               {slides.map((slide, index) => (
                 <div key={`SlideImg ${index + 1}`}>
                   <img
-                    className="slide-image"
+                    className="slide-image-body"
                     src={slide.img}
                     alt={`Slide ${index + 1}`}
                   />
@@ -199,7 +199,7 @@ const Filter = memo(function Filter() {
   }, []);
   return (
     <AnimationOnScroll
-      animateOnce={false}
+      animateOnce={true}
       animateIn="animate__fadeIn"
       className="homefilterp"
     >
@@ -296,11 +296,11 @@ const Filter = memo(function Filter() {
                   for each circuit in a common enclosure.
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <div>
                   <img src="lowv.jpg" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </>
         )}
@@ -317,23 +317,17 @@ const Filter = memo(function Filter() {
                   not live when switched off.
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <div>
                   <img src="sw.jpg" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </>
         )}
         {filter == 3 && (
           <>
             <div className="homeprodimg">
-              {/* <div><div><img src='maint.jpg' alt='' /></div><p>LSB A</p></div>
-                      <div><div><img src='te.jpg' alt='' /></div><p>LSB PRO</p></div>
-                      <div><div><img src='supp.jpg' alt='' /></div><p>LSB II</p></div>
-                      <div><div><img src='tech.jpg' alt='' /></div><p>LLB</p></div>
-                      <div><div><p style={ { visibility: 'hidden' }'>Low Voltage Panels</p><img src='lowv.jpg' alt='' /></div><p>Low Voltage Panels</p></div>
-                    <div><div><p style={ { visibility: 'hidden' }'>Low Voltage Panels</p><img src='sw.jpg' alt='' /></div><p>Fuses and Switches</p></div> */}
               <b>Coming Soon</b>
             </div>
           </>
@@ -341,12 +335,6 @@ const Filter = memo(function Filter() {
         {filter == 4 && (
           <>
             <div className="homeprodimg">
-              {/* <div><div><img src='tech.jpg' alt='' /></div><p>LLB</p></div>
-                      <div><div><img src='maint.jpg' alt='' /></div><p>LSB A</p></div>
-                      <div><div><img src='te.jpg' alt='' /></div><p>LSB II</p></div>
-                      <div><div><img src='supp.jpg' alt='' /></div><p>LSB PRO</p></div>
-                      <div><div><p style={ { visibility: 'hidden' }'>Low Voltage Panels</p><img src='lowv.jpg' alt='' /></div><p>Low Voltage Panels</p></div>
-                    <div><div><p style={ { visibility: 'hidden' }'>Low Voltage Panels</p><img src='sw.jpg' alt='' /></div><p>Fuses and Switches</p></div> */}
               <b>Coming Soon</b>
             </div>
           </>
@@ -442,15 +430,21 @@ const Clients = memo(function Clients() {
   useEffect(() => {
     const run = setInterval(() => {
       document.getElementById("sleft").click();
+      let sliderHeight = document.getElementById("sslide1").clientHeight;
+      if (sliderHeight) {
+        document.getElementById(
+          "clientsSlider"
+        ).style.height = `${sliderHeight}px`;
+      }
     }, 2000);
     return () => clearInterval(run);
   }, []);
   return (
-    <AnimationOnScroll animateOnce={false} animateIn="animate__fadeInDown">
+    <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
       <div className="homeintrocont">
         <h1>Clients</h1>
         <div className="homeclients">
-          <div className="homeclientsimg">
+          <div className="homeclientsimg" id="clientsSlider">
             <button id="sleft" className="homebtn" onClick={clifwd}>
               <img src="l.png" alt=" " />
             </button>
@@ -554,10 +548,7 @@ export default function Home({ Slider }) {
       <div className="homeintrocont">
         <h1>Products</h1>
         <div className="homeproducts">
-          <AnimationOnScroll
-            animateOnce={false}
-            animateIn="animate__fadeInDown"
-          >
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
             <h1>
               <i>What is a Busduct System?</i>
             </h1>
@@ -581,7 +572,7 @@ export default function Home({ Slider }) {
         </div>
       </div>
 
-      <AnimationOnScroll animateOnce={false} animateIn="animate__fadeIn">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
         <div className="homeintrocont">
           <h1>Services</h1>
           <div className="homeserv">
