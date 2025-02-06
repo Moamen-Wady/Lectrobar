@@ -1,6 +1,5 @@
 import { memo, useEffect, useState, useRef, useCallback } from "react";
 import Projbanner from "./components/Projbanner";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import "./styles/projects.css";
 
@@ -154,7 +153,7 @@ export default memo(function Projects({ setHash, ProjectsData }) {
     setIsShowSearch(false);
   }, []);
   return (
-    <div >
+    <div>
       <Projbanner />
       <div className="projectssearch">
         <div className="projectssearchstartcont">
@@ -172,11 +171,7 @@ export default memo(function Projects({ setHash, ProjectsData }) {
           <></>
         )}
       </div>
-      <AnimationOnScroll
-        animateOnce={true}
-        animateIn="animate__fadeIn"
-        className="projectscategorycont"
-      >
+      <div className="projectscategorycont">
         <div>
           <Link to="/Projects/Banks">
             <img src="/proj9.jpg" alt="" />
@@ -249,7 +244,7 @@ export default memo(function Projects({ setHash, ProjectsData }) {
             <p>Villages</p>
           </Link>
         </div>
-      </AnimationOnScroll>
+      </div>
     </div>
   );
 });

@@ -3,14 +3,22 @@ import "./styles/project.css";
 import { useParams } from "react-router";
 
 export default function Project({ scrollToProject, ProjectsData }) {
-  useEffect(() => {
-    scrollToProject();
-  }, []);
   const { project } = useParams();
   let Arr = ProjectsData[project];
+  useEffect(() => {
+    scrollToProject();
+  }, [project]);
   return (
-    <div className="project1container" >
-      <h1>{project}</h1>
+    <div className="project1container">
+      <h1>
+        {project == "TechCenters" ? (
+          <>Tech Centers</>
+        ) : project == "Gov" ? (
+          <>Governmental Orgs.</>
+        ) : (
+          <>{project}</>
+        )}
+      </h1>
       {Arr.map((item) => {
         return (
           <div

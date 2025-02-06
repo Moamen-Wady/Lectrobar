@@ -1,5 +1,10 @@
 import { useEffect, useState, useCallback, lazy, Suspense, memo } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./styles/styles.css";
 import "animate.css/animate.min.css";
 import { Slide, ToastContainer, toast } from "react-toastify";
@@ -9,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Loading from "./Loading";
+import { useLayoutEffect } from "react";
 const ProductPage = lazy(() => import("./Product"));
 const EventPage = lazy(() => import("./Event"));
 const Home = lazy(() => import("./Home"));
@@ -1103,7 +1109,7 @@ const ProductsData = {
     img2: "/lsba1.jpeg",
     description2: (
       <span>
-        <b>Joints:</b>
+        <strong>Joints:</strong>
         <br />
         Joints in all ratings are of a two bolt patent design, which can be
         checked for tightness without de-energizing the system. This design
@@ -1219,6 +1225,7 @@ function App() {
       transition: Slide,
     });
   }, []);
+
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -1230,12 +1237,41 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  const showMenu = useCallback(() => {
+    document.getElementById("vbtn").style.visibility = "hidden";
+    document.getElementById("hbtn").style.visibility = "visible";
+    let ul = document.getElementById("nvbrul1");
+    ul.style.width = "180px";
+    ul.style.opacity = 1;
+  }, []);
+  const hideMenu = useCallback(() => {
+    document.getElementById("hbtn").style.visibility = "hidden";
+    document.getElementById("vbtn").style.visibility = "visible";
+    let ul = document.getElementById("nvbrul1");
+    ul.style.width = 0;
+    ul.style.opacity = 0;
+  }, []);
+
+  function RouterHandler() {
+    let location = useLocation();
+    useLayoutEffect(() => {
+      function menuHider() {
+        if (window.screen.width <= 768) {
+          hideMenu();
+        }
+      }
+      menuHider();
+    }, [location]);
+    return null;
+  }
+
   return (
     <Router>
       <Suspense fallback={<Loading />}>
-      <ToastContainer />
-      <Navbar debounce={debounce} />
-      <Sidebar />
+        <ToastContainer />
+        <RouterHandler />
+        <Navbar debounce={debounce} showMenu={showMenu} hideMenu={hideMenu} />
+        <Sidebar />
         <Routes>
           <Route
             path="/"

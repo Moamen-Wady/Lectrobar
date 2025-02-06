@@ -1,20 +1,16 @@
 import { memo } from "react";
-import "./contb.css";
+import "./vbanner.css";
 
 export default memo(function ContB() {
   return (
-    <div className="contbanw" id="banw">
-      <img src="/btw.png" className="shade" />
+    <div className="vbanw">
+      <img src="/btw.png" alt="" className="vshade" />
       <header>
-        <h1 className="conth1">
-          <pre>Contact Lectrobar</pre>
-        </h1>
-        <p className="conth1p">
-          <pre>
-            Rigorously Tested Busduct According To <br /> Higest Standards
-          </pre>
+        <h1 className="vh1">Contact Lectrobar</h1>
+        <p className="vh1p">
+          Rigorously Tested Busduct According To The Highest Standards
         </p>
-        <div className="contvid">
+        <div className="vvid">
           <img src="/1.jpg" alt="" />
         </div>
       </header>

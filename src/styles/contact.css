@@ -1,50 +1,78 @@
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 768px) {
   body .contactmap {
-    width: 90%;
+    width: 95%;
     margin-top: var(--r1);
   }
   body .contactinfocont {
     width: 95%;
   }
   body .contactinfo {
-    border-radius: 3%;
+    margin: 0 auto var(--r2) auto;
+    border-radius: var(--r08);
     width: 100%;
   }
+  body .contactinfo h2 {
+    font-size: var(--r2);
+    margin: var(--r1) auto;
+  }
   body .contactinfo > h1 {
+    font-size: var(--r3);
     width: 80%;
     margin: auto;
     margin-top: var(--r1);
   }
   body .contactinfo > div > a {
-    font-size: var(--r101);
+    font-size: var(--r2);
   }
   body .contactinfo > div > img.phn {
     margin-top: var(--r103);
+  }
+  body .phoneBreak {
+    display: none;
+  }
+  body .phoneSpace {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: transparent;
   }
   body .contactinfo > div > img.eml {
     margin-top: var(--r08);
   }
   body .contactinfo > div > img {
+    float: unset;
+    vertical-align: middle;
     width: 3.9%;
   }
-  body .contactcform {
-    border-radius: 3%;
+  body .contactform {
     width: 100%;
-    margin: auto;
-    margin-top: var(--r1);
+  }
+  body .contactcform {
+    border-radius: var(--r08);
+    width: 100%;
   }
   body .contactform input:nth-last-child(1) {
-    font-size: var(--r101);
-    bottom: 2%;
+    width: fit-content;
+    position: static;
+    margin: var(--r2) auto;
+  }
+  body .contactform input:nth-last-child(1),
+  body .contactform input,
+  body .contactform textarea {
+    font-size: var(--r2);
   }
   body .contactcsales {
-    width: 55%;
+    width: 95%;
   }
   body .contactcslsrt a {
-    font-size: var(--r101);
+    font-size: var(--r2);
+  }
+  body .contactcslslt h1 {
+    font-size: var(--r3);
   }
 }
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   body .contactmap {
     width: 90%;
     margin-top: var(--r1);
@@ -93,7 +121,10 @@
     font-size: var(--r101);
   }
 }
-
+ */
+.phoneSpace {
+  display: none;
+}
 .contactmap {
   width: 90%;
   margin: 0 auto var(--r2) auto;
@@ -105,15 +136,14 @@
 .contactinfocont {
   width: 90%;
   display: flex;
-  margin: auto;
+  margin: var(--r2) auto;
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: var(--r2);
-  margin-bottom: var(--r2);
   overflow: visible;
 }
 .contactinfo {
+  border-radius: var(--r08);
   width: 30%;
   background-color: #00395f;
   color: white;
@@ -170,7 +200,7 @@
   background-color: white;
   text-align: center;
   overflow: hidden;
-  border-radius: 2%;
+  border-radius: var(--r08);
   border: 1px solid #00395f;
   margin: auto;
   /* padding: var(--r1); */
@@ -178,6 +208,7 @@
 }
 .contactform input {
   display: inline-block;
+  font-size: var(--r101);
   width: 40%;
   margin: var(--r05);
   margin-top: var(--r1);
@@ -185,7 +216,6 @@
   background-color: #c4dbe9;
   color: black;
   height: max-content;
-  font-size: var(--r101);
   border: 1px solid grey;
   padding: 1%;
 }
@@ -206,13 +236,13 @@
   text-align: center;
   cursor: pointer;
   width: 15%;
+  position: absolute;
   height: max-content;
   padding: 1%;
   background-color: #00395f;
-  position: absolute;
   bottom: 5%;
   left: 5%;
-  border-radius: 3%;
+  border-radius: var(--r05);
   color: white;
 }
 .contactform input:hover {
@@ -227,7 +257,7 @@
   margin: 0 auto var(--r2) auto;
   height: calc(var(--r5) * 5);
   background-color: #00395f;
-  border-radius: 1%;
+  border-radius: var(--r08);
   border: 0;
 }
 .contactcslslt {
@@ -237,8 +267,6 @@
   background-size: cover;
   height: calc(var(--r5) * 5);
   width: 54%;
-  border-top-left-radius: 1%;
-  border-bottom-left-radius: 1%;
   position: relative;
 }
 .contactcslslt h1 {
@@ -261,7 +289,6 @@
   justify-content: center;
   width: 46%;
   height: calc(var(--r5) * 5);
-  border-radius: 1%;
 }
 .contactcslsrt a {
   text-align: center;
@@ -270,9 +297,7 @@
   color: white;
   width: fit-content;
   height: 20%;
-  border-radius: 3%;
   cursor: pointer;
-  /* transform: translateY(50%); */
   text-decoration: none;
 }
 .contactcslsrt a:hover {

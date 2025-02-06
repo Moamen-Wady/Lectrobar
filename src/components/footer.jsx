@@ -15,7 +15,7 @@ export default memo(function Footer() {
               <p>
                 <img src="/location.png" alt="location" />
                 <a>
-                  The 5<sup style={{ textTransform: "lowercase" }}>th</sup>
+                  The 5<sup style={{ textTransform: "lowercase" }}>th </sup>
                   District, Borg El-Arab, Alexandria, Egypt
                 </a>
               </p>

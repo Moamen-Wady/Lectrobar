@@ -1,15 +1,13 @@
 import { memo } from "react";
-import "./blogb.css";
+import "./vbanner.css";
 
 export default memo(function Blogb() {
   return (
-    <div className="blogbanw" id="banw">
-      <img src="/btw.png" className="shade" />
+    <div className="vbanw">
+      <img src="/btw.png" alt="" className="vshade" />
       <header>
-        <h1 className="blogh1">
-          Action Is The Foundational Key To All Success
-        </h1>
-        <div className="blogvid">
+        <h1 className="vh1">Action Is The Foundational Key To All Success</h1>
+        <div className="vvid">
           <img src="/blogb.jpg" alt="" />
         </div>
       </header>

@@ -428,18 +428,7 @@ const Clients = memo(function Clients({ debounce }) {
     const run = setInterval(() => {
       document.getElementById("sleft").click();
     }, 2000);
-    function handleSlider() {
-      let sliderHeight = document.getElementById("sslide1").clientHeight;
-      if (sliderHeight) {
-        document.getElementById(
-          "clientsSlider"
-        ).style.height = `${sliderHeight}px`;
-      }
-    }
-    handleSlider();
-    const debounceSlider = debounce(() => handleSlider(), 100);
-    window.onresize = debounceSlider;
-    return () => (clearInterval(run), (window.onresize = null));
+    return () => clearInterval(run);
   }, []);
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">

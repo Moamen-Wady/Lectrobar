@@ -33,7 +33,11 @@ export default memo(function Contact({ notify, debounce }) {
     function handleHeight() {
       let info = document.getElementById("contactinfo").clientHeight;
       let form = document.getElementById("form");
-      form.style.height = `${info}px`;
+      if (window.screen.width > 768) {
+        form.style.height = `${info}px`;
+      } else {
+        form.style.height = "auto";
+      }
     }
     handleHeight();
     const debounceHeight = debounce(() => handleHeight(), 100);
@@ -48,15 +52,13 @@ export default memo(function Contact({ notify, debounce }) {
   return (
     <div>
       <ContB />
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
-        <div className="contactmap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225027.9150066593!2d42.637496!3d28.205454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145f62b720cf98d5%3A0x912ee6932ca2e223!2sLectrobar!5e0!3m2!1sen!2sus!4v1694504990774!5m2!1sen!2sus"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </AnimationOnScroll>
+      <div className="contactmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225027.9150066593!2d42.637496!3d28.205454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145f62b720cf98d5%3A0x912ee6932ca2e223!2sLectrobar!5e0!3m2!1sen!2sus!4v1694504990774!5m2!1sen!2sus"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="contactinfocont">
@@ -71,8 +73,10 @@ export default memo(function Contact({ notify, debounce }) {
               <h2>Phone</h2>
               <img src="/phone.png" alt="phone" className="phn" />
               <a href="tel:+2011 0321 1875">+2011 0321 1875</a>
-              <br />
-              <a href="tel:+2010 2994 1145">+2010 2994 1145</a>
+              <br className="phoneBreak" />
+              <a href="tel:+2010 2994 1145">
+                <i className="phoneSpace">ss</i>+2010 2994 1145
+              </a>
             </div>
             <div>
               <h2>E-mail</h2>

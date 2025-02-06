@@ -721,7 +721,7 @@
   font-weight: bold;
 }
 .homeclientsimg > div {
-  width: 12%;
+  width: calc(var(--r5) * 2);
   border-radius: 6%;
   margin-left: var(--r05);
   margin-right: var(--r05);
@@ -738,6 +738,7 @@
 }
 .homeclientsimg > div > img {
   width: 100%;
+  height: calc(var(--r5) * 2);
 }
 .homeclientsimg p {
   font-size: var(--r1);
@@ -745,6 +746,7 @@
   text-align: center;
 }
 .homeclientsimg {
+  height: calc(var(--r5) * 2);
   width: 80%;
   display: flex;
   align-items: flex-start;

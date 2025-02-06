@@ -2,7 +2,7 @@ import { memo, useLayoutEffect, useCallback } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
-export default memo(function Navbar({ debounce }) {
+export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
   useLayoutEffect(() => {
     function addPadding() {
       const padding = document.getElementById("nvb").clientHeight;
@@ -87,21 +87,6 @@ export default memo(function Navbar({ debounce }) {
     let servmm = document.getElementById("servmm");
     servmm.style.height = 0;
     servmm.style.padding = 0;
-  }, []);
-
-  const showMenu = useCallback(() => {
-    document.getElementById("vbtn").style.visibility = "hidden";
-    document.getElementById("hbtn").style.visibility = "visible";
-    let ul = document.getElementById("nvbrul1");
-    ul.style.width = "180px";
-    ul.style.opacity = 1;
-  }, []);
-  const hideMenu = useCallback(() => {
-    document.getElementById("hbtn").style.visibility = "hidden";
-    document.getElementById("vbtn").style.visibility = "visible";
-    let ul = document.getElementById("nvbrul1");
-    ul.style.width = 0;
-    ul.style.opacity = 0;
   }, []);
 
   return (

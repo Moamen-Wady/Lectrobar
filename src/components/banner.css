@@ -1,43 +1,43 @@
-@media only screen and (min-width: 2001px) {
+/* @media only screen and (min-width: 2001px) {
   body .banw {
-    height: 43rem;
+    height: 41rem;
   }
 }
 @media only screen and (max-width: 2000px) {
   body .banw {
-    height: 38rem;
+    height: 36rem;
   }
 }
 @media only screen and (max-width: 1670px) {
   body .banw {
-    height: 35rem;
+    height: 33rem;
   }
 }
 @media only screen and (max-width: 1440px) {
   body .banw {
-    height: 31rem;
+    height: 28rem;
   }
 }
 @media only screen and (max-width: 1024px) {
   body .banw {
-    height: 28rem;
+    height: 25rem;
   }
 }
 @media only screen and (max-width: 768px) {
   body .banw {
-    height: 22rem;
+    height: 19rem;
   }
 }
 @media only screen and (max-width: 530px) {
   body .banw {
-    height: 17rem;
+    height: 14rem;
   }
 }
 @media only screen and (max-width: 400px) {
   body .banw {
-    height: 13.3rem;
+    height: 11.3rem;
   }
-}
+} */
 
 .banw {
   position: relative;
@@ -84,22 +84,22 @@
   opacity: 0.6;
 }
 .btmportion {
-  bottom: var(--r2);
-  height: calc(var(--r4));
+  height: var(--r4);
   z-index: 500;
   position: relative;
+  bottom: var(--r2);
   width: 40%;
-  background: #00395f;
   display: flex;
-  margin: auto;
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 2%;
+  margin: auto;
 }
 .leftp1 {
+  background: #00395f;
   height: calc(var(--r4));
   width: 62%;
-  z-index: 31;
+  z-index: 500;
 }
 .leftp1 div {
   padding-top: 7.5%;
@@ -130,9 +130,10 @@
   animation-timing-function: linear;
 }
 .leftp2 {
+  background: #00395f;
   height: calc(var(--r4));
   width: 38%;
-  z-index: 31;
+  z-index: 500;
 }
 .leftp2 a {
   display: block;

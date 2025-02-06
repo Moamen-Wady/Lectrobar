@@ -1,116 +1,150 @@
 @media only screen and (min-width: 2001px) {
-  body .vidbanw {
+  body .vbanw {
     height: 41rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 41rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 41rem;
+  }
+  body .vvid img {
     height: 41rem;
   }
 }
 @media only screen and (max-width: 2000px) {
-  body .vidbanw {
+  body .vbanw {
     height: 36rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 36rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 36rem;
+  }
+  body .vvid img {
     height: 36rem;
   }
 }
 @media only screen and (max-width: 1670px) {
-  body .vidbanw {
+  body .vbanw {
     height: 33rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 33rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 33rem;
+  }
+  body .vvid img {
     height: 33rem;
   }
 }
 @media only screen and (max-width: 1440px) {
-  body .vidbanw {
+  body .vbanw {
     height: 28rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 28rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 28rem;
+  }
+  body .vvid img {
     height: 28rem;
   }
 }
 @media only screen and (max-width: 1024px) {
-  body .vidbanw {
+  body .vbanw {
     height: 25rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 25rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 25rem;
+  }
+  body .vvid img {
     height: 25rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  body .vidbanw {
+  body .vbanw {
     height: 19rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 19rem;
   }
-  body .vidvid img {
+  body .vvid video {
     height: 19rem;
+  }
+  body .vvid img {
+    height: 19rem;
+  }
+  body .vh1p {
+    font-size: var(--r106);
+    top: 70%;
   }
 }
 @media only screen and (max-width: 530px) {
-  body .vidbanw {
+  body .vbanw {
     height: 14rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 14rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 14rem;
+  }
+  body .vvid img {
     height: 14rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  body .vidbanw {
+  body .vbanw {
     height: 11.3rem;
   }
-  body .vidvid video {
+  body .vshade {
     height: 11.3rem;
   }
-  body .vidvid img {
+  body .vvid video {
+    height: 11.3rem;
+  }
+  body .vvid img {
     height: 11.3rem;
   }
 }
-
-.vidbanw {
+.vbanw {
   position: relative;
   z-index: 29;
   width: 100%;
   margin: 0 auto var(--r2) auto;
 }
-.vidvid {
+.vshade {
+  position: absolute;
+  width: 100%;
+  z-index: 29;
+  opacity: 0.6;
+}
+.vvid {
   display: block;
   width: 100%;
   position: relative;
   z-index: 28;
 }
-.vidvid video {
+.vvid video {
   object-fit: cover;
   width: 100%;
   z-index: 27;
 }
-.vidvid img {
+.vvid img {
   position: absolute;
   width: 100%;
   z-index: 26;
 }
-.vidh1 {
-  font-size: var(--r4);
+.vh1 {
+  width: 100%;
+  font-size: var(--r3);
   color: white;
   font-weight: bold;
   font-family: "ubuntu", sans-serif;
@@ -121,4 +155,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vh1p {
+  width: 100%;
+  font-size: var(--r103);
+  color: white;
+  font-weight: bold;
+  font-family: "ubuntu", sans-serif;
+  display: block;
+  margin: auto;
+  z-index: 30;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vh1p pre {
+  margin: 0;
 }

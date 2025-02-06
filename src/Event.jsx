@@ -4,14 +4,14 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useParams } from "react-router";
 
 export default function EventPage({ EventsData }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const { event } = useParams();
   let currentEvent = EventsData[event - 1];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [event]);
 
   return (
-    <div className="eventcont" >
+    <div className="eventcont">
       <h1>{currentEvent.name}</h1>
       <div className="eventmain">
         <div className="eventtxt">
@@ -31,7 +31,7 @@ export default function EventPage({ EventsData }) {
         <div className="eventpics">
           {currentEvent.images.map((img) => {
             return (
-              <div>
+              <div key={img}>
                 <img className="eventimg" src={img} alt="" />
               </div>
             );

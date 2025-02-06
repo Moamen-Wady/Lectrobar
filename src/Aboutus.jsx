@@ -291,7 +291,7 @@ export default function Aboutus() {
   }, []);
 
   return (
-    <div className="aboutwrap" >
+    <div className="aboutwrap">
       <VidBanner />
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
@@ -430,10 +430,8 @@ export default function Aboutus() {
               industries both in Egypt and abroad With four factories and a
               total manufacturing area 30,000 square meters. An industrial
               complex of 4 factories is in Borg El Arab Industrial City:
-              <ul>
-                <li>2.5 factories are up and running</li>
-                <li>1.5 factories are under construction</li>
-              </ul>
+              <li>2.5 factories are up and running</li>
+              <li>1.5 factories are under construction</li>
             </p>
           </div>
         </div>

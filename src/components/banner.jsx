@@ -55,7 +55,7 @@ export default memo(function Slidez({ Slider }) {
   ];
 
   return (
-    <div className="banw" id="banw">
+    <div className="banw">
       <img src="/btw.png" className="shade" />
       <Slider {...settings}>
         {slides.map((slide, index) => (

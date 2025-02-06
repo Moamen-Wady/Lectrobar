@@ -4,7 +4,7 @@
     height: calc(var(--r4) * 1.8);
   }
 }
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
   body .blogevent {
     justify-content: center;
   }
@@ -22,16 +22,13 @@
     margin-left: auto;
   }
 }
-
 .blogevent {
   display: flex;
   width: 90%;
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
   margin: 0 auto var(--r2) auto;
-  /* padding: 5% 0; */
   position: relative;
 }
 .blogcirclecont {
@@ -58,7 +55,6 @@
   border: 1.5px solid #284d97;
   display: inline;
 }
-
 .blogcircle p {
   color: #00395f;
   font-family: "Inter", sans-serif;
@@ -75,7 +71,6 @@
   width: 65%;
 }
 .blogintroanim {
-  /* height: calc(var(--r4) * 8); */
   position: relative;
   overflow: hidden;
 }

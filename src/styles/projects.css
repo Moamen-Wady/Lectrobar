@@ -2,35 +2,18 @@
   body .projctscenteredsearch {
     width: 90vw;
   }
-}
-@media only screen and (max-width: 580px) {
-  body .projctscenteredsearch {
-    width: 90vw;
-    justify-content: center;
-    flex-direction: row-reverse;
+  body .projectscategorycont div a p {
+    font-size: var(--r2);
   }
-  body .projectssearchaction {
-    width: 90%;
-    height: 23vh;
-    display: block;
-    margin: auto;
+  body .projectssearchstart {
+    font-size: var(--r2);
   }
-  body .projectssearchresults {
-    width: 90%;
-    height: 55vh;
-    max-height: 56vh;
-    display: block;
-    margin: auto;
+  body .projectssearchclosebutton {
+    top: 1%;
   }
-}
-@media only screen and (max-width: 530px) {
-  body .projectscategorycont div {
-    width: 47%;
-  }
-}
-@media only screen and (max-width: 400px) {
   body .projectssearchaction {
     font-size: var(--r2);
+    width: 50%;
   }
   body .projectssearchaction select {
     font-size: var(--r2);
@@ -50,6 +33,51 @@
   body .projectssearchresults h4 {
     font-size: var(--r2);
   }
+}
+@media only screen and (min-width: 551px) and (max-width: 650px) {
+  body .projectssearchaction form {
+    padding: var(--r08) 0;
+  }
+  body .projectssearchaction form p {
+    display: block;
+    margin: var(--r2) auto;
+    text-align: center;
+  }
+  body .projectssearchaction form span {
+    margin-left: var(--r2);
+  }
+  body .projectssearchaction > span {
+    padding: var(--r08) 0;
+    display: block;
+    width: 100%;
+    margin: var(--r2) auto;
+  }
+  body .projectssearchaction > span p {
+    display: block;
+    margin: var(--r2) auto;
+    text-align: center;
+  }
+  body .projectssearchaction select {
+    display: block;
+    margin: auto;
+    width: auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body .projectssearchresults {
+    width: 90%;
+    max-height: 55%;
+  }
+  body .projectssearchaction {
+    width: 90%;
+    max-height: 45%;
+  }
+  body .projectscategorycont div {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 400px) {
   body .projectscategorycont div {
     width: 100%;
   }
@@ -119,17 +147,25 @@
   color: #012060;
   font-weight: bold;
 }
-.projectssearchaction p {
+.projectssearchaction form p {
   display: inline-block;
   margin-left: var(--r05);
 }
-.projectssearchaction span p {
+.projectssearchaction form span {
+  display: inline-block;
+  margin-left: var(--r05);
+}
+.projectssearchaction > p {
+  display: inline-block;
+  margin-left: var(--r05);
+}
+.projectssearchaction > span {
+  display: inline-block;
+  margin-left: var(--r05);
+}
+.projectssearchaction > span p {
   display: inline-block;
   margin-left: 0;
-}
-.projectssearchaction span {
-  display: inline-block;
-  margin-left: var(--r05);
 }
 .projectssearchaction select {
   display: inline-block;
@@ -208,15 +244,6 @@
   position: relative;
   height: 33svh;
 }
-.projectssearchlinkshade {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.25);
-  z-index: 1;
-}
 /*////////////////////////////
 //////////////////////////////////
 ////////////////////////*/
@@ -244,7 +271,6 @@
   border-radius: 4%;
   text-decoration: none;
 }
-
 .projectscategorycont div a p {
   width: 100%;
   display: block;
