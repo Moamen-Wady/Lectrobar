@@ -1,4 +1,4 @@
-/* @media only screen and (min-width: 2001px) {
+@media only screen and (min-width: 2001px) {
   body .banw {
     height: 41rem;
   }
@@ -37,7 +37,7 @@
   body .banw {
     height: 11.3rem;
   }
-} */
+}
 
 .banw {
   position: relative;

@@ -1,39 +1,75 @@
-@media only screen and (max-width: 900px) {
-  body .aboutcertificates > div > div img {
-    width: 90%;
-  }
-}
 @media only screen and (max-width: 768px) {
-  body .aboutfactorytxt a {
-    font-size: var(--r103);
+  body .aboutunderbanner {
+    width: 100%;
+  }
+  body .aboutunderbanner h1 {
+    font-size: var(--r3);
+    text-align: center;
+  }
+  body .aboutunderbanner p {
+    width: 95%;
+    font-size: var(--r2);
+    text-align: center;
+    margin: 0 auto var(--r2) auto;
+  }
+  body .aboutdistribution p {
+    font-size: var(--r3);
   }
   body .aboutdistribution {
     width: 100%;
   }
+  body .aboutdistribution > div {
+    width: 100%;
+  }
+  body .aboutdot {
+    width: 2.5%;
+  }
+  body .aboutvalues h1 {
+    font-size: var(--r3);
+    text-align: center;
+  }
+  body .aboutvalues p {
+    font-size: var(--r2);
+  }
   body .aboutvalues > div {
     width: 100%;
   }
-  body .aboutcertificates {
-    margin-top: var(--r2);
-  }
-  body .aboutcertificates > div > div {
-    width: 100%;
-  }
-  body .aboutcertificates > div > div img {
+  body .aboutvalues > div svg {
     width: 70%;
+    display: block;
+    margin: auto;
   }
-  body .aboutmanagers > div {
+  body .aboutcertificates {
     width: 100%;
+  }
+  body .aboutcertificates h1 {
+    font-size: var(--r3);
+  }
+  body .aboutcertificates p {
+    width: 95%;
+    font-size: var(--r2);
+  }
+  body .aboutcertificates > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .aboutcertificates > div > div > div {
+    width: 45%;
+  }
+  body .aboutcertificates img {
+    width: 80%;
+  }
+  body .aboutcertificates p li {
+    margin-left: var(--r3);
   }
   body .aboutmission p {
     width: 90%;
-    max-width: unset;
+    font-size: var(--r2);
   }
 }
-@media only screen and (max-width: 530px) {
-  body .aboutunderbanner {
-    width: 90%;
-  }
+@media only screen and (max-width: 550px) {
   body .aboutfactory > div {
     width: 100%;
   }
@@ -46,57 +82,8 @@
   body .aboutvalues > div {
     width: 100%;
   }
-  body .aboutcertificates {
-    margin-top: var(--r2);
-  }
-  body .aboutcertificates > div > div {
-    width: 100%;
-  }
-  body .aboutmanagers > div {
-    width: 100%;
-  }
-  body .aboutmanagersimg1 {
-    width: 100%;
-  }
-  body .aboutmanagersimg2 {
-    width: 100%;
-  }
-  body .aboutmanagersimg3 {
-    width: 100%;
-  }
   body .aboutmission p {
     width: 90%;
-    max-width: unset;
-  }
-}
-@media only screen and (max-width: 400px) {
-  body .aboutunderbanner {
-    width: 90%;
-  }
-  body .aboutfactory > div {
-    width: 100%;
-  }
-  body .aboutdistribution {
-    width: 100%;
-  }
-  body .aboutdot span {
-    width: calc(var(--r4) * 2);
-  }
-  body .aboutvalues > div {
-    width: 100%;
-  }
-  body .aboutcertificates {
-    margin-top: var(--r2);
-  }
-  body .aboutcertificates > div > div {
-    width: 100%;
-  }
-  body .aboutmanagers > div {
-    width: 100%;
-  }
-  body .aboutmission p {
-    width: 90%;
-    max-width: unset;
   }
 }
 .aboutwrap {
@@ -403,7 +390,7 @@
 .aboutcertificates > div > div {
   width: 45%;
 }
-.aboutcertificates > div > div img {
+.aboutcertificates img {
   width: 70%;
   display: block;
   margin: auto;
@@ -418,110 +405,6 @@
   text-align: left;
   list-style-type: none;
 }
-/* .aboutmanagerscont {
-  width: 90%;
-  margin: auto;
-  background-color: #00395f;
-  border-radius: 2%;
-  padding-bottom: 1%;
-}
-.aboutmanagerscont h1 {
-  color: white;
-  display: block;
-  margin: auto;
-  max-width: fit-content;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
-  font-size: calc(var(--r101) * 2);
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  padding: var(--r1);
-  padding-left: var(--r3);
-}
-.aboutmanagers {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-  margin-bottom: var(--r3);
-}
-.aboutmanagers > div {
-  width: 90%;
-  margin: auto;
-}
-.aboutmanagers h2 {
-  display: block;
-  max-width: fit-content;
-  margin: auto;
-  margin-top: var(--r1);
-  margin-bottom: var(--r1);
-  font-size: var(--r106);
-  text-shadow: 3px 3px 8px #126196;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  padding: var(--r1);
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-}
-.aboutmanagers h3 {
-  display: block;
-  max-width: fit-content;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: var(--r106);
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  color: whitesmoke;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  padding: 0;
-  padding-bottom: 0;
-}
-.aboutmanagersimg p b {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.aboutmanagersimg p {
-  display: block;
-  max-width: fit-content;
-  margin: auto;
-  margin-bottom: var(--r4);
-  font-size: var(--r103);
-  text-align: left;
-  color: rgb(51, 51, 51);
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-}
-.aboutmanagersimg1 {
-  width: fit-content;
-  border-radius: 5%;
-  margin-right: auto;
-}
-.aboutmanagersimg2 {
-  width: fit-content;
-  border-radius: 5%;
-  margin: auto;
-}
-.aboutmanagersimg3 {
-  width: fit-content;
-  border-radius: 5%;
-  margin-left: auto;
-}
-.aboutmanagersimg_cont img {
-  width: calc(var(--r5) * 2.5);
-  display: block;
-  margin: auto;
-  border-radius: 100%;
-  border: 5px solid #5d92b6;
-  box-shadow: 5px 5px 8px rgb(51, 51, 51);
-} */
 .aboutmission {
   width: 100%;
   position: relative;
@@ -549,9 +432,9 @@
   transform: translate(-50%, -50%);
   z-index: 6;
   display: block;
-  max-width: 80%;
   margin: auto;
   font-size: var(--r104);
+  width: 90%;
   color: white;
   font-weight: bold;
   font-family: "Raleway", sans-serif;

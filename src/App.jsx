@@ -1226,6 +1226,7 @@ function App() {
     });
   }, []);
 
+
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(

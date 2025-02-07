@@ -196,8 +196,8 @@ body {
   opacity: 0.6;
 }
 .slide-image {
-  width: 100%;
-  height: calc(var(--r5) * 5.6);
+  width: 33%;
+  /* height: calc(var(--r5) * 5.6); */
 }
 .slide-image-body {
   width: 100%;

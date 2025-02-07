@@ -58,14 +58,14 @@ const Values = memo(function Values() {
       className="aboutvalues"
     >
       <div>
-        <h1>Values Are The Backbone Of A Succeful Organization</h1>
+        <h1>Values Are The Backbone Of A Successful Organization</h1>
         {valueContent}
       </div>
       <div>
         <svg
           id="untitled"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 300 250"
+          viewBox="0 0 250 250"
           shapeRendering="geometricPrecision"
           textRendering="geometricPrecision"
         >
@@ -436,37 +436,6 @@ export default function Aboutus() {
           </div>
         </div>
       </AnimationOnScroll>
-      {/* 
-      <AnimationOnScroll
-        animateOnce={true}
-        animateIn="animate__fadeInDown"
-        className="aboutmanagerscont"
-      >
-        <h1>Our Great Managers!</h1>
-        <div className="aboutmanagers">
-          <div className="aboutmanagersimg_cont">
-            <div className="aboutmanagersimg1">
-              <img src="/fth.jpg" alt="" />
-              <h2>Eng/ Abed El Habashy</h2>
-              <h3>The Founder</h3>
-            </div>
-          </div>
-          <div className="aboutmanagersimg_cont">
-            <div className="aboutmanagersimg2">
-              <img src="/ah.jpg" alt="" />
-              <h2>Dr/ Ahmed El Habashy</h2>
-              <h3>CEO</h3>
-            </div>
-          </div>
-          <div className="aboutmanagersimg_cont">
-            <div className="aboutmanagersimg3">
-              <img src="/th.jpg" alt="" />
-              <h2>Eng/ Tamer Hamido</h2>
-              <h3>General Manager</h3>
-            </div>
-          </div>
-        </div>
-      </AnimationOnScroll> */}
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutmission">

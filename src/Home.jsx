@@ -428,7 +428,26 @@ const Clients = memo(function Clients({ debounce }) {
     const run = setInterval(() => {
       document.getElementById("sleft").click();
     }, 2000);
-    return () => clearInterval(run);
+    function heightHandler() {
+      let sliderHeight = document.getElementById("sslide1").clientHeight;
+      if (sliderHeight) {
+        document.getElementById(
+          "clientsSlider"
+        ).style.height = `${sliderHeight}px`;
+        document.getElementById(
+          "sleft"
+        ).style.height = `${sliderHeight}px`;
+        document.getElementById(
+          "sright"
+        ).style.height = `${sliderHeight}px`;
+      }
+    }
+    heightHandler();
+    const debounceHandler = debounce(() => heightHandler(), 100);
+    window.onresize = debounceHandler;
+    return () => {
+      (window.onresize = null), clearInterval(run);
+    };
   }, []);
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
@@ -583,7 +602,7 @@ export default memo(function Home({ Slider, debounce }) {
                 </div>
                 <div className="homeserv3">
                   <div>
-                    <p>Technical Support</p>
+                    <p>Install</p>
                   </div>
                   <img src="/servtech.JPG" alt="" />
                 </div>
@@ -591,7 +610,7 @@ export default memo(function Home({ Slider, debounce }) {
               <div>
                 <div className="homeserv4">
                   <div>
-                    <p>Install</p>
+                    <p>Technical Support</p>
                   </div>
                   <img src="/servinstall.JPG" alt="" />
                 </div>

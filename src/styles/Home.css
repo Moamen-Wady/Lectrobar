@@ -1,155 +1,74 @@
-@media only screen and (max-width: 530px) {
-  body .homeintro > div {
+@media only screen and (max-width: 768px) {
+  body .homeintro {
     width: 100%;
   }
-  /* body .homeintroanim {
-    height: calc(var(--r4) * 7);
-  } */
+  body .homeintrocont > h1 {
+    font-size: var(--r3);
+  }
+  body .homeintro h1 {
+    font-size: calc(var(--r2) * 1.25);
+  }
+  body .homeintro p {
+    font-size: var(--r2);
+  }
+  body .homeintro > div {
+    width: 95%;
+    margin: auto;
+  }
+  body .homeintroanim .slide-image-body {
+    height: calc(var(--r5) * 10);
+  }
   body .homecoun {
-    margin-bottom: var(--r3);
+    width: 95%;
+    margin: 0 auto var(--r2) auto;
   }
   body .homecoun p {
-    font-size: var(--r101);
+    font-size: var(--r2);
     max-width: 30%;
   }
   body .homecoun p b {
-    font-size: var(--r106);
+    font-size: var(--r3);
   }
-  body .homedk img {
-    display: block;
-    margin: auto;
-    width: 80%;
+  body .homeproducts {
+    width: 95%;
+    margin: 0 auto var(--r2) auto;
+  }
+  body .homedk {
+    width: 100%;
+    margin: 0 auto var(--r2) auto;
   }
   body .homedk p {
-    display: block;
-    width: 90%;
+    margin: 0 auto;
+    width: 75%;
   }
-  body .homesidef {
-    margin-left: 5%;
-    margin-bottom: 5%;
-    display: block;
-    width: 100%;
-    border-right: 1px solid rgb(51, 51, 51, 0.2);
-    border-left: 1px solid rgb(51, 51, 51, 0.2);
+  body .homedk img {
+    width: 20%;
   }
-  body .hometypef {
-    display: block;
+  body .homeproducts h1 {
+    font-size: calc(var(--r2) * 1.25);
+  }
+  body .homeproducts p {
+    font-size: var(--r2);
+  }
+  body .homesidefcont {
     width: 100%;
-    text-align: left;
-    margin: auto;
   }
   body .hometypef p {
     margin: 0;
     padding: var(--r08);
-    font-size: var(--r104);
+    font-size: var(--r2);
     font-family: sans-serif;
     color: #012060;
   }
-  body .homeprodbus {
-    width: 100%;
+  body .homesidef {
+    margin: 0 auto var(--r2) auto;
+    width: 30%;
   }
+  body .homeprodbus,
+  body .homeprodfuse,
+  body .homeprodimg,
   body .homeprodlowv {
-    width: 100%;
-  }
-  body .homeprodlowv > div:first-child {
-    width: 100%;
-  }
-  body .homeprodlowv > div:nth-child(2) {
-    width: 80%;
-    margin: auto;
-  }
-  body .homeprodlowv > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
-  }
-  body .homeprodfuse {
-    display: flex;
-    width: 100%;
-  }
-  body .homeprodfuse > div:first-child {
-    width: 100%;
-  }
-  body .homeprodfuse > div:nth-child(2) {
-    width: 80%;
-    margin: auto;
-  }
-  body .homeprodfuse > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
-  }
-  body .homeservimg {
-    flex-wrap: wrap;
-  }
-  body .homeservimg > div:first-child {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeservimg > div:nth-child(2) {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeservimg > div:nth-child(3) {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeserv1 {
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 30vw;
-    display: block;
-  }
-  body .homeserv2 {
-    font-size: var(--r105);
-    width: 90%;
-    margin-right: 0;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
-    display: block;
-  }
-  body .homeserv3 {
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
-    display: block;
-  }
-  body .homeserv4 {
-    margin: auto;
-    margin-bottom: 0.25vw;
-    font-size: var(--r105);
-    display: block;
-    width: 90%;
-    height: 40vw;
-  }
-  body .homeserv5 {
-    display: block;
-    margin: auto;
-    font-size: var(--r105);
-    width: 90%;
-    height: 35vw;
-    margin-bottom: 0.25vw;
-  }
-  body .homeserv6 {
-    display: block;
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
+    width: 65%;
   }
   body .homeserv1 > div > p,
   body .homeserv2 > div > p,
@@ -162,182 +81,106 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
-    font-size: var(--r105);
+    font-size: var(--r2);
     font-family: "Raleway", sans-serif;
   }
   body .homeclientsimg > div {
-    width: 15%;
+    width: 20%;
+    aspect-ratio: 1;
   }
   body .homeclientsimg {
-    width: 90%;
+    width: 97%;
+  }
+  body .homeclientsimg > div > img {
+    aspect-ratio: 1;
+    height: auto;
+  }
+  body .homebtn > img {
+    width: var(--r3);
+    aspect-ratio: 1;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body .homeintroanim .slide-image-body {
+    height: calc(var(--r5) * 8);
+  }
+  body .homedk img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  body .homedk p {
+    display: block;
+    width: 100%;
+  }
+  body .homesidef {
+    display: block;
+    margin: 0 auto var(--r2) auto ;
+    width: 100%;
+    border-right: 1px solid rgb(51, 51, 51, 0.2);
+    border-left: 1px solid rgb(51, 51, 51, 0.2);
+  }
+  body .hometypef {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+  }
+  body .hometypef p {
+    margin: 0;
+    font-size: var(--r2);
+  }
+  body .homeprodbus,
+  body .homeprodfuse,
+  body .homeprodimg,
+  body .homeprodlowv {
+    width: 100%;
+  }
+  body .homeservimg {
+    flex-wrap: wrap;
+  }
+  body .homeservimg > div:first-child,
+  body .homeservimg > div:nth-child(2),
+  body .homeservimg > div:nth-child(3) {
+    display: contents;
+    border-radius: 0;
+  }
+  body .homeserv1,
+  body .homeserv2,
+  body .homeserv3,
+  body .homeserv4,
+  body .homeserv5,
+  body .homeserv6 {
+    border-radius: var(--r1);
+    width: 95%;
+    height: 30vw;
+    display: block;
+    margin: 0 auto var(--r1) auto;
+  }
+  body .homeserv1 > div > p,
+  body .homeserv2 > div > p,
+  body .homeserv3 > div > p,
+  body .homeserv4 > div > p,
+  body .homeserv5 > div > p,
+  body .homeserv6 > div > p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: var(--r2);
+    font-family: "Raleway", sans-serif;
   }
 }
 @media only screen and (max-width: 375px) {
-  body .homecoun {
-    margin-bottom: var(--r3);
+  body .homeintroanim .slide-image-body {
+    height: calc(var(--r5) * 6);
   }
   body .homecoun p {
-    font-size: var(--r101);
-    max-width: 30%;
+    max-width: 48%;
   }
-  body .homecoun p b {
+  body .homeproducts p{
     font-size: var(--r106);
-  }
-  body .homedk img {
-    display: block;
-    margin: auto;
-    width: 80%;
-  }
-  body .homedk p {
-    display: block;
-    width: 90%;
-  }
-  body .homesidef {
-    margin-left: 5%;
-    margin-bottom: 5%;
-    display: block;
-    width: 100%;
-    border-right: 1px solid rgb(51, 51, 51, 0.2);
-    border-left: 1px solid rgb(51, 51, 51, 0.2);
-  }
-  body .hometypef {
-    display: block;
-    width: 100%;
-    text-align: left;
-    margin: auto;
-  }
-  body .hometypef p {
-    margin: 0;
-    padding: var(--r08);
-    font-size: var(--r104);
-    font-family: sans-serif;
-    color: #012060;
-  }
-  body .homeprodbus {
-    width: 100%;
-  }
-  body .homeprodlowv {
-    width: 100%;
-  }
-  body .homeprodlowv > div:first-child {
-    width: 100%;
-  }
-  body .homeprodlowv > div:nth-child(2) {
-    width: 80%;
-    margin: auto;
-  }
-  body .homeprodlowv > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
-  }
-  body .homeprodfuse {
-    display: flex;
-    width: 100%;
-  }
-  body .homeprodfuse > div:first-child {
-    width: 100%;
-  }
-  body .homeprodfuse > div:nth-child(2) {
-    width: 80%;
-    margin: auto;
-  }
-  body .homeprodfuse > div > div img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
-  }
-  body .homeservimg {
-    flex-wrap: wrap;
-  }
-  body .homeservimg > div:first-child {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeservimg > div:nth-child(2) {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeservimg > div:nth-child(3) {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 4%;
-  }
-  body .homeserv1 {
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 30vw;
-    display: block;
-  }
-  body .homeserv2 {
-    font-size: var(--r105);
-    width: 90%;
-    margin-right: 0;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
-    display: block;
-  }
-  body .homeserv3 {
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
-    display: block;
-  }
-  body .homeserv4 {
-    margin: auto;
-    margin-bottom: 0.25vw;
-    font-size: var(--r105);
-    display: block;
-    width: 90%;
-    height: 40vw;
-  }
-  body .homeserv5 {
-    display: block;
-    margin: auto;
-    font-size: var(--r105);
-    width: 90%;
-    height: 35vw;
-    margin-bottom: 0.25vw;
-  }
-  body .homeserv6 {
-    display: block;
-    font-size: var(--r105);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0.25vw;
-    height: 35vw;
-  }
-  body .homeserv1 > div > p,
-  body .homeserv2 > div > p,
-  body .homeserv3 > div > p,
-  body .homeserv4 > div > p,
-  body .homeserv5 > div > p,
-  body .homeserv6 > div > p {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: whitesmoke;
-    font-size: var(--r105);
-    font-family: "Raleway", sans-serif;
-  }
-  body .homeclientsimg > div {
-    width: 15%;
-  }
-  body .homeclientsimg {
-    width: 90%;
   }
 }
 .homewrap {
@@ -436,7 +279,7 @@
 }
 .homedk img {
   width: calc(var(--r4) * 5);
-  height: calc(var(--r4) * 5);
+  aspect-ratio: 1;
 }
 .homedk p {
   width: 60%;
@@ -738,7 +581,7 @@
 }
 .homeclientsimg > div > img {
   width: 100%;
-  height: calc(var(--r5) * 2);
+  aspect-ratio: 1;
 }
 .homeclientsimg p {
   font-size: var(--r1);
@@ -746,7 +589,6 @@
   text-align: center;
 }
 .homeclientsimg {
-  height: calc(var(--r5) * 2);
   width: 80%;
   display: flex;
   align-items: flex-start;
@@ -767,8 +609,8 @@
 }
 .homebtn > img {
   display: inline;
-  height: var(--r2);
   width: var(--r2);
+  aspect-ratio: 1;
   vertical-align: bottom;
 }
 .homeserv {
