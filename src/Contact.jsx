@@ -1,7 +1,7 @@
 import "./styles/contact.css";
 import ContB from "./components/ContB";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { memo, useEffect, useState, useCallback, useLayoutEffect } from "react";
+import { memo, useEffect, useState, useCallback } from "react";
 import api from "./api";
 export default memo(function Contact({ notify, debounce }) {
   let [dissub, setDissub] = useState([false, "all", "white", "black"]);
@@ -29,7 +29,8 @@ export default memo(function Contact({ notify, debounce }) {
       });
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
     function handleHeight() {
       let info = document.getElementById("contactinfo").clientHeight;
       let form = document.getElementById("form");
@@ -44,11 +45,6 @@ export default memo(function Contact({ notify, debounce }) {
     window.onresize = debounceHeight;
     return () => (window.onresize = null);
   }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div>
       <ContB />

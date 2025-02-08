@@ -14,7 +14,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Loading from "./Loading";
-import { useLayoutEffect } from "react";
 const ProductPage = lazy(() => import("./Product"));
 const EventPage = lazy(() => import("./Event"));
 const Home = lazy(() => import("./Home"));
@@ -1204,8 +1203,6 @@ function App() {
             inline: "center",
           });
         }, 10);
-      } else {
-        window.scrollTo(0, 0);
       }
     } else {
       window.scrollTo(0, 0);
@@ -1226,7 +1223,6 @@ function App() {
     });
   }, []);
 
-
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -1235,7 +1231,6 @@ function App() {
           "We Recommend Google Chrome or Microsoft Edge"
       );
     }
-    window.scrollTo(0, 0);
   }, []);
 
   const showMenu = useCallback(() => {
@@ -1253,9 +1248,9 @@ function App() {
     ul.style.opacity = 0;
   }, []);
 
-  function RouterHandler() {
+  const RouterHandler = memo(function RouterHandler() {
     let location = useLocation();
-    useLayoutEffect(() => {
+    useEffect(() => {
       function menuHider() {
         if (window.screen.width <= 768) {
           hideMenu();
@@ -1264,7 +1259,7 @@ function App() {
       menuHider();
     }, [location]);
     return null;
-  }
+  });
 
   return (
     <Router>
