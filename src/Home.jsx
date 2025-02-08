@@ -38,42 +38,40 @@ const IntroA = memo(function IntroA({ Slider }) {
     },
   ];
   return (
-    <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
-      <div className="homeintrocont">
-        <h1>Welcome to Lectrobar</h1>
-        <div className="homeintro">
-          <div>
-            <h1>
-              <i>
-                We deliver Systems that Exceed our Customers&apos; Expectations!
-              </i>
-            </h1>
-            <p>
-              Lectro Bar Group, which includes Lectro Bar Egypt and Lectro Bar
-              Gulf, is a distinguished manufacturer that specializes in
-              producing high-quality, tested Bus Ducts. These Bus Ducts are
-              rigorously tested according to the new IEC61439 criteria and have
-              earned the prestigious KEMA KEUR quality mark, demonstrating
-              Lectrobar&apos;s commitment to excellence and quality assurance
-              with the date of establishment.
-            </p>
-          </div>
-          <div className="homeintroanim">
-            <Slider {...settings}>
-              {slides.map((slide, index) => (
-                <div key={`SlideImg ${index + 1}`}>
-                  <img
-                    className="slide-image-body"
-                    src={slide.img}
-                    alt={`Slide ${index + 1}`}
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+    <div className="homeintrocont">
+      <h1>Welcome to Lectrobar</h1>
+      <div className="homeintro">
+        <div>
+          <h1>
+            <i>
+              We deliver Systems that Exceed our Customers&apos; Expectations!
+            </i>
+          </h1>
+          <p>
+            Lectro Bar Group, which includes Lectro Bar Egypt and Lectro Bar
+            Gulf, is a distinguished manufacturer that specializes in producing
+            high-quality, tested Bus Ducts. These Bus Ducts are rigorously
+            tested according to the new IEC61439 criteria and have earned the
+            prestigious KEMA KEUR quality mark, demonstrating Lectrobar&apos;s
+            commitment to excellence and quality assurance with the date of
+            establishment.
+          </p>
+        </div>
+        <div className="homeintroanim">
+          <Slider {...settings}>
+            {slides.map((slide, index) => (
+              <div key={`SlideImg ${index + 1}`}>
+                <img
+                  className="slide-image-body"
+                  src={slide.img}
+                  alt={`Slide ${index + 1}`}
+                />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
-    </AnimationOnScroll>
+    </div>
   );
 });
 const DynCount = memo(function DynCount() {
@@ -434,12 +432,8 @@ const Clients = memo(function Clients({ debounce }) {
         document.getElementById(
           "clientsSlider"
         ).style.height = `${sliderHeight}px`;
-        document.getElementById(
-          "sleft"
-        ).style.height = `${sliderHeight}px`;
-        document.getElementById(
-          "sright"
-        ).style.height = `${sliderHeight}px`;
+        document.getElementById("sleft").style.height = `${sliderHeight}px`;
+        document.getElementById("sright").style.height = `${sliderHeight}px`;
       }
     }
     heightHandler();

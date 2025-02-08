@@ -1,49 +1,77 @@
 @media only screen and (min-width: 2001px) {
-  body .banw {
+  body .slide-image-head {
+    height: 41rem;
+  }
+  body .shade {
     height: 41rem;
   }
 }
 @media only screen and (max-width: 2000px) {
-  body .banw {
+  body .slide-image-head {
+    height: 36rem;
+  }
+  body .shade {
     height: 36rem;
   }
 }
 @media only screen and (max-width: 1670px) {
-  body .banw {
+  body .slide-image-head {
+    height: 33rem;
+  }
+  body .shade {
     height: 33rem;
   }
 }
 @media only screen and (max-width: 1440px) {
-  body .banw {
+  body .slide-image-head {
+    height: 28rem;
+  }
+  body .shade {
     height: 28rem;
   }
 }
 @media only screen and (max-width: 1024px) {
-  body .banw {
+  body .slide-image-head {
+    height: 25rem;
+  }
+  body .shade {
     height: 25rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  body .banw {
+  body .slide-image-head {
+    height: 19rem;
+  }
+  body .shade {
     height: 19rem;
   }
 }
 @media only screen and (max-width: 530px) {
-  body .banw {
+  body .slide-image-head {
+    height: 14rem;
+  }
+  body .shade {
     height: 14rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  body .banw {
+  body .slide-image-head {
+    height: 11.3rem;
+  }
+  body .shade {
     height: 11.3rem;
   }
 }
+
 
 .banw {
   position: relative;
   z-index: 25;
   width: 100%;
   margin: 0 auto var(--r2) auto;
+}
+.slide-image-head {
+  width: 100%;
 }
 .btnbanner {
   height: var(--r5);
@@ -79,7 +107,6 @@
 .shade {
   position: absolute;
   width: 100%;
-  height: calc(var(--r5) * 5.6);
   z-index: 2;
   opacity: 0.6;
 }

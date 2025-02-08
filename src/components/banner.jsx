@@ -61,7 +61,7 @@ export default memo(function Slidez({ Slider }) {
         {slides.map((slide, index) => (
           <div key={`SlideImg ${index + 1}`}>
             <img
-              className="slide-image"
+              className="slide-image-head"
               src={slide.img}
               alt={`Slide ${index + 1}`}
             />

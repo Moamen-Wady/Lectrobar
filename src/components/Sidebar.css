@@ -1,187 +1,175 @@
 /* DON'T CHANGE --sbar*/
 @media only screen and (min-width: 2250px) {
-    :root {
-        --sbar135: 3.2rem;
-    }
-    body .sub {
-        padding: 0.9rem;
-    }
-    body .find-box {
-        top: 0.45rem;
-        right: 0.45rem;
-    }
+  :root {
+    --sbar135: 4rem;
+  }
+  body .sub {
+    padding: 0.9rem;
+  }
+  body .find-box {
+    top: 0.45rem;
+    right: 0.45rem;
+  }
 }
 @media only screen and (max-width: 2249px) {
-    :root {
-        --sbar135: 3rem;
-    }
-    body .sub {
-        padding: 0.7rem;
-    }
-    body .find-box {
-        top: 0.35rem;
-        right: 0.35rem;
-    }
+  :root {
+    --sbar135: 3.5rem;
+  }
+  body .sub {
+    padding: 0.7rem;
+  }
+  body .find-box {
+    top: 0.35rem;
+    right: 0.35rem;
+  }
 }
 @media only screen and (max-width: 1999px) {
-    :root {
-        --sbar135: 2.8rem;
-    }
-    body .sub {
-        padding: 0.6rem;
-    }
-    body .find-box {
-        top: 0.3rem;
-        right: 0.3rem;
-    }
+  :root {
+    --sbar135: 3rem;
+  }
+  body .sub {
+    padding: 0.6rem;
+  }
+  body .find-box {
+    top: 0.3rem;
+    right: 0.3rem;
+  }
 }
 @media only screen and (max-width: 1670px) {
-    :root {
-        --sbar135: 2rem;
-    }
-    body .sub {
-        padding: 0.5rem;
-    }
-    body .find-box {
-        top: 0.25rem;
-        right: 0.25rem;
-    }
+  :root {
+    --sbar135: 2.5rem;
+  }
+  body .sub {
+    padding: 0.5rem;
+  }
+  body .find-box {
+    top: 0.25rem;
+    right: 0.25rem;
+  }
 }
 @media only screen and (max-width: 1440px) {
-    :root {
-        --sbar135: 1.7rem;
-    }
-    body .sub {
-        padding: 0.5rem;
-    }
-    body .find-box {
-        top: 0.25rem;
-        right: 0.25rem;
-    }
+  :root {
+    --sbar135: 2.2rem;
+  }
+  body .sub {
+    padding: 0.5rem;
+  }
+  body .find-box {
+    top: 0.25rem;
+    right: 0.25rem;
+  }
 }
 @media only screen and (max-width: 1124px) {
-    :root {
-        --sbar135: 1.35rem;
-    }
-    body .sub {
-        padding: 0.5rem;
-    }
-    body .find-box {
-        top: 0.25rem;
-        right: 0.25rem;
-    }
+  :root {
+    --sbar135: 1.35rem;
+  }
+  body .sub {
+    padding: 0.5rem;
+  }
+  body .find-box {
+    top: 0.25rem;
+    right: 0.25rem;
+  }
 }
 @media only screen and (max-width: 790px) {
-    :root {
-        --sbar135: 1.1rem;
-    }
-    body .sub {
-        padding: 0.5rem;
-    }
-    body .find-box {
-        top: 0.25rem;
-        right: 0.25rem;
-        height: var(--r4);
-    }
-    body .find-input {
-        height: var(--r2);
-    }
-}
-@media only screen and (max-width: 450px) {
-    :root {
-        --sbar135: 0.9rem;
-    }
-    body .sub {
-        padding: 0.4rem;
-    }
-    body .find-box {
-        top: 0.2rem;
-        right: 0.2rem;
-    }
+  :root {
+    --sbar135: 1.2rem;
+  }
+  body .sub {
+    padding: 0.5rem;
+  }
+  body .find-box {
+    top: 0.25rem;
+    right: 0.25rem;
+    height: var(--r4);
+  }
+  body .find-input {
+    height: var(--r2);
+  }
 }
 .sbar {
-    direction: rtl;
-    position: fixed;
-    bottom: 27.8%;
-    right: 3.8%;
-    height: fit-content;
-    width: fit-content;
-    border-radius: 8%;
-    z-index: 90000;
+  direction: rtl;
+  position: fixed;
+  bottom: 27.8%;
+  right: 3.8%;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 8%;
+  z-index: 90000;
 }
 #sub {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 .sub {
-    display: block;
-    width: var(--sbar135);
-    height: var(--sbar135);
-    margin: 0;
-    border: 0;
-    background-color: grey;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0s;
-    transition-timing-function: ease;
-    cursor: pointer;
-    padding: 0.5rem;
+  display: block;
+  width: var(--sbar135);
+  height: var(--sbar135);
+  margin: 0;
+  border: 0;
+  background-color: grey;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  padding: 0.5rem;
 }
 .sub:first-child {
-    border-top-left-radius: 12%;
-    border-top-right-radius: 12%;
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
 }
 .sub:last-child {
-    border-bottom-left-radius: 12%;
-    border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
 }
 .sub > a {
-    position: relative;
-    display: block;
-    margin: auto;
-    width: var(--sbar135);
-    height: fit-content;
-    text-align: center;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: var(--sbar135);
+  height: fit-content;
+  text-align: center;
 }
 .sub > a > img {
-    width: var(--sbar135);
+  width: var(--sbar135);
 }
 .fb,
 .yt,
 .in,
 .lin,
 .srch {
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0s;
-    transition-timing-function: ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
 }
 .fb:hover {
-    border-top-left-radius: 12%;
-    border-bottom-left-radius: 12%;
-    background-color: darkblue;
-    width: calc(var(--sbar135) * 2);
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  background-color: darkblue;
+  width: calc(var(--sbar135) * 2);
 }
 .yt:hover {
-    width: calc(var(--sbar135) * 2);
-    border-top-left-radius: 12%;
-    border-bottom-left-radius: 12%;
-    background-color: red;
+  width: calc(var(--sbar135) * 2);
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  background-color: red;
 }
 .srch:hover {
-    /* width: calc(var(--sbar135) * 2); */
-    border-top-left-radius: 12%;
-    border-bottom-left-radius: 12%;
-    background-color: black;
+  /* width: calc(var(--sbar135) * 2); */
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  background-color: black;
 }
 .in:hover {
-    width: calc(var(--sbar135) * 2);
-    border-top-left-radius: 12%;
-    border-bottom-left-radius: 12%;
-    background-color: purple;
+  width: calc(var(--sbar135) * 2);
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  background-color: purple;
 }
 .lin:hover {
-    border-top-left-radius: 12%;
-    border-bottom-left-radius: 12%;
-    background-color: blue;
-    width: calc(var(--sbar135) * 2);
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  background-color: blue;
+  width: calc(var(--sbar135) * 2);
 }

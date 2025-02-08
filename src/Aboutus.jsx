@@ -294,22 +294,20 @@ export default function Aboutus() {
     <div className="aboutwrap">
       <VidBanner />
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
-        <div className="aboutunderbanner">
-          <h1>Why Lectrobar?</h1>
-          <p>
-            Lectrobar, a pioneering name in type-tested busduct and distribution
-            panels since 1975, boasts four state-of-the-art manufacturing
-            facilities spread across 30,000 square meters. Our top-quality
-            products, known for their remarkable safety and longevity, conform
-            to IEC standards and are recognized globally through rigorous
-            testing, including DEKRA type testing. Our unwavering commitment to
-            customer success is reflected in our dedication to exceptional
-            product quality and service. Choose Lectrobar for dependable,
-            world-class power distribution solutions.
-          </p>
-        </div>
-      </AnimationOnScroll>
+      <div className="aboutunderbanner">
+        <h1>Why Lectrobar?</h1>
+        <p>
+          Lectrobar, a pioneering name in type-tested busduct and distribution
+          panels since 1975, boasts four state-of-the-art manufacturing
+          facilities spread across 30,000 square meters. Our top-quality
+          products, known for their remarkable safety and longevity, conform to
+          IEC standards and are recognized globally through rigorous testing,
+          including DEKRA type testing. Our unwavering commitment to customer
+          success is reflected in our dedication to exceptional product quality
+          and service. Choose Lectrobar for dependable, world-class power
+          distribution solutions.
+        </p>
+      </div>
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
         <div className="aboutfactory">

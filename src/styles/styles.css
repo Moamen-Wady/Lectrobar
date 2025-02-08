@@ -152,53 +152,6 @@ body {
     --r5: 2.5rem;
   }
 }
-/* x0.5 */
-/* @media only screen and (max-width: 530px) {
-  :root {
-    --r05: 0.25rem;
-    --r08: 0.4rem;
-    --r1: 0.5rem;
-    --r101: 0.55rem;
-    --r102: 0.6rem;
-    --r103: 0.65rem;
-    --r104: 0.7rem;
-    --r105: 0.75rem;
-    --r106: 0.8rem;
-    --r2: 1rem;
-    --r3: 1.5rem;
-    --r4: 2rem;
-    --r5: 2.5rem;
-  }
-} */
-/* x0.3 */
-/* @media only screen and (max-width: 400px) {
-  :root {
-    --r05: 0.15rem;
-    --r08: 0.24rem;
-    --r1: 0.3rem;
-    --r101: 0.33rem;
-    --r102: 0.36rem;
-    --r103: 0.39rem;
-    --r104: 0.42rem;
-    --r105: 0.45rem;
-    --r106: 0.48rem;
-    --r2: 0.6rem;
-    --r3: 0.9rem;
-    --r4: 1.2rem;
-    --r5: 1.5rem;
-  }
-} */
-.shade {
-  position: absolute;
-  width: 100%;
-  height: calc(var(--r5) * 5.6);
-  z-index: 2;
-  opacity: 0.6;
-}
-.slide-image {
-  width: 33%;
-  /* height: calc(var(--r5) * 5.6); */
-}
 .slide-image-body {
   width: 100%;
   height: calc(var(--r5) * 4.8);
