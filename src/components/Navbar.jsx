@@ -1,9 +1,10 @@
 import { memo, useCallback } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { useLayoutEffect } from "react";
 
 export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     function addPadding() {
       const padding = document.getElementById("nvb").clientHeight;
       document.getElementById("root").style.paddingTop = `${padding}px`;

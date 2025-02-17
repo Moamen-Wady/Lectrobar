@@ -1,4 +1,12 @@
-import { useEffect, useState, useCallback, lazy, Suspense, memo } from "react";
+import {
+  useEffect,
+  useState,
+  useCallback,
+  lazy,
+  Suspense,
+  memo,
+  useLayoutEffect,
+} from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -1250,7 +1258,7 @@ function App() {
 
   const RouterHandler = memo(function RouterHandler() {
     let location = useLocation();
-    useEffect(() => {
+    useLayoutEffect(() => {
       function menuHider() {
         if (window.screen.width <= 768) {
           hideMenu();
