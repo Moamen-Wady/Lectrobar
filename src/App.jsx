@@ -22,6 +22,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Loading from "./Loading";
+import Errorp from "./Errorp";
+import RouterHandler from "./RouterHandler";
 const ProductPage = lazy(() => import("./Product"));
 const EventPage = lazy(() => import("./Event"));
 const Home = lazy(() => import("./Home"));
@@ -1199,6 +1201,7 @@ const debounce = (func, delay) => {
 
 function App() {
   const [hash, setHash] = useState();
+  const [loading, setLoading] = useState(false);
 
   const scrollToProject = useCallback(() => {
     if (hash !== undefined) {
@@ -1256,70 +1259,70 @@ function App() {
     ul.style.opacity = 0;
   }, []);
 
-  const RouterHandler = memo(function RouterHandler() {
-    let location = useLocation();
-    useLayoutEffect(() => {
-      function menuHider() {
-        if (window.screen.width <= 768) {
-          hideMenu();
-        }
-      }
-      menuHider();
-    }, [location]);
-    return null;
-  });
-
   return (
     <Router>
-      <Suspense fallback={<Loading />}>
-        <ToastContainer />
-        <RouterHandler />
-        <Navbar debounce={debounce} showMenu={showMenu} hideMenu={hideMenu} />
-        <Sidebar />
-        <Routes>
-          <Route
-            path="/"
-            element={<Home Slider={Slider} debounce={debounce} />}
-          />
-          <Route
-            path="/index"
-            element={<Home Slider={Slider} debounce={debounce} />}
-          />
-          <Route path="/Aboutus" element={<Aboutus />} />
-          <Route
-            path="/Contact"
-            element={<Contact notify={notify} debounce={debounce} />}
-          />
-          <Route
-            path="/Products/:product"
-            element={
-              <ProductPage Slider={Slider} ProductsData={ProductsData} />
-            }
-          />
-          <Route
-            path="/Projects"
-            element={<Projects setHash={setHash} ProjectsData={ProjectsData} />}
-          />
-          <Route
-            path="/Projects/:project"
-            element={
-              <Project
-                scrollToProject={scrollToProject}
-                ProjectsData={ProjectsData}
+      <ToastContainer />
+      <RouterHandler setLoading={setLoading} hideMenu={hideMenu} />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Suspense fallback={<Loading />}>
+            <Navbar
+              debounce={debounce}
+              showMenu={showMenu}
+              hideMenu={hideMenu}
+            />
+            <Sidebar />
+            <Routes>
+              <Route path="*" element={<Errorp />} />
+              <Route
+                path="/"
+                element={<Home Slider={Slider} debounce={debounce} />}
               />
-            }
-          />
-          <Route
-            path="/Blog"
-            element={<Blog Slider={Slider} debounce={debounce} />}
-          />
-          <Route
-            path="/Blog/:event"
-            element={<EventPage EventsData={EventsData} />}
-          />
-        </Routes>
-      </Suspense>
-      <Footer />
+              <Route
+                path="/index"
+                element={<Home Slider={Slider} debounce={debounce} />}
+              />
+              <Route path="/Aboutus" element={<Aboutus />} />
+              <Route
+                path="/Contact"
+                element={<Contact notify={notify} debounce={debounce} />}
+              />
+              <Route
+                path="/Products/:product"
+                element={
+                  <ProductPage Slider={Slider} ProductsData={ProductsData} />
+                }
+              />
+              <Route
+                path="/Projects"
+                element={
+                  <Projects setHash={setHash} ProjectsData={ProjectsData} />
+                }
+              />
+              <Route
+                path="/Projects/:project"
+                element={
+                  <Project
+                    scrollToProject={scrollToProject}
+                    ProjectsData={ProjectsData}
+                  />
+                }
+              />
+              <Route
+                path="/Blog"
+                element={<Blog Slider={Slider} debounce={debounce} />}
+              />
+              <Route
+                path="/Blog/:event"
+                element={<EventPage EventsData={EventsData} />}
+              />
+            </Routes>
+          </Suspense>
+          <Footer />
+        </>
+      )}
     </Router>
   );
 }
