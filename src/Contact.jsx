@@ -4,11 +4,11 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { memo, useEffect, useState, useCallback, useLayoutEffect } from "react";
 import api from "./api";
 export default memo(function Contact({ notify, debounce }) {
-  let [dissub, setDissub] = useState([false, "all", "white", "black"]);
+  const [buttonState, setButtonState] = useState([false, "all", "white", "black"]);
 
   const sForm = useCallback(async (e) => {
     e.preventDefault();
-    setDissub([true, "none", "grey", "black"]);
+    setButtonState([true, "none", "grey", "black"]);
     notify("info", "Please Wait...");
     const formData = new FormData(document.getElementById("form"));
     await api
@@ -17,15 +17,15 @@ export default memo(function Contact({ notify, debounce }) {
         if (data.data === "Message sent successfully!") {
           notify("success", "Message Sent Successfully!");
           document.getElementById("form").reset();
-          setDissub([false, "all", "white", "black"]);
+          setButtonState([false, "all", "white", "black"]);
         } else {
           notify("error", "Failed to Send Message, Please Try Again");
-          setDissub([false, "all", "white", "black"]);
+          setButtonState([false, "all", "white", "black"]);
         }
       })
       .catch(() => {
         notify("error", "Server Error, Please Try Again");
-        setDissub([false, "all", "white", "black"]);
+        setButtonState([false, "all", "white", "black"]);
       });
   }, []);
 
@@ -126,11 +126,11 @@ export default memo(function Contact({ notify, debounce }) {
               <input
                 type="submit"
                 value="Submit"
-                disabled={dissub[0]}
+                disabled={buttonState[0]}
                 style={{
-                  backgroundColor: dissub[2],
-                  pointerEvents: dissub[1],
-                  color: dissub[3],
+                  backgroundColor: buttonState[2],
+                  pointerEvents: buttonState[1],
+                  color: buttonState[3],
                 }}
               />
             </form>

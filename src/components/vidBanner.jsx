@@ -1,8 +1,8 @@
-import { memo, useRef } from "react";
+import { useRef } from "react";
 import "./vbanner.css";
 import useIntersectionObserver from "@react-hook/intersection-observer";
 
-export default memo(function VidBanner() {
+export default function VidBanner() {
   const containerRef = useRef();
   const lockRef = useRef(false);
   const { isIntersecting } = useIntersectionObserver(containerRef);
@@ -25,4 +25,4 @@ export default memo(function VidBanner() {
       </header>
     </div>
   );
-});
+};

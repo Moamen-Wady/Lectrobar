@@ -55,9 +55,11 @@
     padding: var(--r2) var(--r105);
   }
 }
-#vbtn,
-#hbtn {
+@media only screen and (min-width: 769px) {
+body #vbtn,
+body #hbtn {
   display: none;
+}
 }
 .nvbrcont {
   position: relative;

@@ -235,7 +235,7 @@ export default memo(function Blog({ Slider, debounce }) {
       let blogcirclecont2 = document.getElementById("blogcirclecont2");
       let blogcircle3 = document.getElementById("blogcircle3");
       let blogcirclecont3 = document.getElementById("blogcirclecont3");
-      let blogcircle4 = document.getElementById("blogcircle4");
+      // let blogcircle4 = document.getElementById("blogcircle4");
       let blogcirclecont4 = document.getElementById("blogcirclecont4");
       let marginVal = Number(
         window

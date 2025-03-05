@@ -1,7 +1,6 @@
-import { memo } from "react";
 import "./vbanner.css";
 
-export default memo(function Projbanner() {
+export default function Projbanner() {
   return (
     <div className="vbanw">
       <img src="/btw.png" alt="" className="vshade" />
@@ -13,4 +12,4 @@ export default memo(function Projbanner() {
       </header>
     </div>
   );
-});
+}

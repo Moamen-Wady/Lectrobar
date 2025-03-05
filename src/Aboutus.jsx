@@ -1,10 +1,10 @@
 import "./styles/About.css";
-import { memo, useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import VidBanner from "./components/vidBanner";
 
-const Values = memo(function Values() {
-  let [valueContent, setValueContent] = useState(
+const Values = function Values() {
+  const [valueContent, setValueContent] = useState(
     <p>Hover Over A Value To Display It!</p>
   );
   const botr = useCallback(function () {
@@ -283,7 +283,7 @@ const Values = memo(function Values() {
       </div>
     </AnimationOnScroll>
   );
-});
+};
 
 export default function Aboutus() {
   useEffect(() => {

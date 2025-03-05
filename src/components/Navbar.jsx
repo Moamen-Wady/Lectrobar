@@ -5,9 +5,9 @@ import { useLayoutEffect } from "react";
 
 export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
   useLayoutEffect(() => {
+    const nvbht = document.getElementById("nvb").clientHeight;
     function addPadding() {
-      const padding = document.getElementById("nvb").clientHeight;
-      document.getElementById("root").style.paddingTop = `${padding}px`;
+      document.getElementById("root").style.paddingTop = `${nvbht}px`;
     }
     function setCorrectHeight() {
       let lp = document.querySelectorAll(".lp");
@@ -18,7 +18,7 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           .toString()
           .replace("px", "");
         let paddingValue = Number(padding);
-        item.style.height = `${nvb.clientHeight - paddingValue * 2}px`;
+        item.style.height = `${nvbht - paddingValue * 2}px`;
       });
     }
     function setUpperDimensions() {

@@ -1,8 +1,8 @@
-import { memo, useState } from "react";
+import { useState } from "react";
 import "./Sidebar.css";
 import { TextSearchInput } from "./TextSearchInput.tsx";
-export default memo(function Sidebar() {
-  let [visible, setVisible] = useState(false);
+export default function Sidebar() {
+  const [visible, setVisible] = useState(false);
   return (
     <div className="sbar" id="sbar">
       <div className="sub srch" id="sbsb">
@@ -58,4 +58,4 @@ export default memo(function Sidebar() {
       </div>
     </div>
   );
-});
+}

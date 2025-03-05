@@ -74,14 +74,14 @@ const IntroA = memo(function IntroA({ Slider }) {
     </div>
   );
 });
-const DynCount = memo(function DynCount() {
-  let [a, setA] = useState(0);
-  let [b, setB] = useState(0);
-  let [c, setC] = useState(0);
-  let [d, setD] = useState(0);
-  let [e, setE] = useState(0);
-  let [f, setF] = useState(0);
-  let [started, setStarted] = useState(false);
+const DynCount = function DynCount() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+  const [c, setC] = useState(0);
+  const [d, setD] = useState(0);
+  const [e, setE] = useState(0);
+  const [f, setF] = useState(0);
+  const [started, setStarted] = useState(false);
   const containerRef = useRef();
   const { isIntersecting } = useIntersectionObserver(containerRef);
   let intervalA,
@@ -185,9 +185,9 @@ const DynCount = memo(function DynCount() {
       </div>
     </>
   );
-});
-const Filter = memo(function Filter() {
-  let [filter, setFilter] = useState(0);
+};
+const Filter = function Filter() {
+  const [filter, setFilter] = useState(0);
   const fsetter = useCallback((e) => {
     const x = e.target;
     setFilter(x.slot);
@@ -337,9 +337,9 @@ const Filter = memo(function Filter() {
       </div>
     </AnimationOnScroll>
   );
-});
+};
 const Clients = memo(function Clients({ debounce }) {
-  let [cli, setCli] = useState(1);
+  const [cli, setCli] = useState(1);
   const cliprv = () => {
     if (cli == 1) {
       document.getElementById(`sslide26`).style.animationName = "gotoleft";

@@ -4,14 +4,11 @@ import {
   useCallback,
   lazy,
   Suspense,
-  memo,
-  useLayoutEffect,
 } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from "react-router-dom";
 import "./styles/styles.css";
 import "animate.css/animate.min.css";
@@ -23,7 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Loading from "./Loading";
 import Errorp from "./Errorp";
-import RouterHandler from "./RouterHandler";
+import RouteChangeHandler from "./RouteChangeHandler";
 const ProductPage = lazy(() => import("./Product"));
 const EventPage = lazy(() => import("./Event"));
 const Home = lazy(() => import("./Home"));
@@ -806,7 +803,7 @@ const ProjectsData = {
     },
   ],
 };
-const Slidere3 = memo(function Slidere3() {
+const Slidere3 = function Slidere3() {
   const settings = {
     infinite: true,
     speed: 500,
@@ -852,8 +849,8 @@ const Slidere3 = memo(function Slidere3() {
       </Slider>
     </div>
   );
-});
-const Slidere4 = memo(function Slidere4() {
+};
+const Slidere4 = function Slidere4() {
   const settings = {
     infinite: true,
     speed: 500,
@@ -899,7 +896,7 @@ const Slidere4 = memo(function Slidere4() {
       </Slider>
     </div>
   );
-});
+};
 const EventsData = [
   {
     name: "CHINT Lectrobar Cairo Seminar",
@@ -1262,7 +1259,7 @@ function App() {
   return (
     <Router>
       <ToastContainer />
-      <RouterHandler setLoading={setLoading} hideMenu={hideMenu} />
+      <RouteChangeHandler setLoading={setLoading} hideMenu={hideMenu} />
       {loading ? (
         <Loading />
       ) : (

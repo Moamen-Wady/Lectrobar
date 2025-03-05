@@ -8,10 +8,10 @@ const Search = memo(function Search({
   ProjectsData,
   hideSearchPanel,
 }) {
-  let [allResArr, setAllResArr] = useState([]);
-  let [searchBy, setSearchBy] = useState("projectName");
-  let [searchIn, setSearchIn] = useState("all");
-  let [placeHolder, setPlaceHolder] = useState("Search By Project Name");
+  const [allResArr, setAllResArr] = useState([]);
+  const [searchBy, setSearchBy] = useState("projectName");
+  const [searchIn, setSearchIn] = useState("all");
+  const [placeHolder, setPlaceHolder] = useState("Search By Project Name");
   let inputText = useRef();
 
   const setSBY = useCallback((e) => {
@@ -142,7 +142,7 @@ const Search = memo(function Search({
 });
 
 export default memo(function Projects({ setHash, ProjectsData }) {
-  let [isShowSearch, setIsShowSearch] = useState(false);
+  const [isShowSearch, setIsShowSearch] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

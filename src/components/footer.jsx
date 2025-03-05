@@ -1,8 +1,7 @@
-import { memo } from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
-export default memo(function Footer() {
+export default function Footer() {
   return (
     <footer className="ff">
       <div className="xcon">
@@ -188,4 +187,4 @@ export default memo(function Footer() {
       </div>
     </footer>
   );
-});
+}
