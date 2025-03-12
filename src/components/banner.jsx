@@ -1,7 +1,6 @@
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import "./banner.css";
 import { Link } from "react-router-dom";
-import { useCallback } from "react";
 
 export default memo(function Slidez({ Slider }) {
   const PrevArrow = useCallback((props) => {

@@ -18,7 +18,7 @@ export default function VidBanner() {
           <img src="/btw.png" alt="" />
           {lockRef.current && (
             <video autoPlay muted loop>
-              <source src="lectro.mp4" type="video/mp4"></source>
+              <source src="/lectro.mp4" type="video/mp4"></source>
             </video>
           )}
         </div>

@@ -1,15 +1,5 @@
-import {
-  useEffect,
-  useState,
-  useCallback,
-  lazy,
-  Suspense,
-} from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { useEffect, useState, useCallback, lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/styles.css";
 import "animate.css/animate.min.css";
 import { Slide, ToastContainer, toast } from "react-toastify";
@@ -1249,11 +1239,15 @@ function App() {
     ul.style.opacity = 1;
   }, []);
   const hideMenu = useCallback(() => {
-    document.getElementById("hbtn").style.visibility = "hidden";
-    document.getElementById("vbtn").style.visibility = "visible";
-    let ul = document.getElementById("nvbrul1");
-    ul.style.width = 0;
-    ul.style.opacity = 0;
+    const hbtn = document.getElementById("hbtn") || null;
+    const vbtn = document.getElementById("vbtn") || null;
+    const ul = document.getElementById("nvbrul1") || null;
+    if (hbtn && vbtn && ul) {
+      hbtn.style.visibility = "hidden";
+      vbtn.style.visibility = "visible";
+      ul.style.width = 0;
+      ul.style.opacity = 0;
+    }
   }, []);
 
   return (

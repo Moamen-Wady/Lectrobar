@@ -53,6 +53,12 @@
   body .shade {
     height: 14rem;
   }
+  body .leftp2 a {
+    margin-top: 5%;
+  }
+  body .leftp1 pre {
+    top: 65%;
+  }
 }
 @media only screen and (max-width: 400px) {
   body .slide-image-head {
@@ -61,6 +67,10 @@
   body .shade {
     height: 11.3rem;
   }
+  body .btmportion {
+    width: 70%;
+    height: var(--r5);
+  }  
 }
 
 
@@ -111,11 +121,11 @@
   opacity: 0.6;
 }
 .btmportion {
+  width: 40%;
   height: var(--r4);
   z-index: 500;
   position: relative;
   bottom: var(--r2);
-  width: 40%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

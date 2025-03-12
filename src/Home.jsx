@@ -1,11 +1,9 @@
 import "./styles/Home.css";
 import Banner from "./components/banner";
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useState, useCallback, useRef } from "react";
 import useIntersectionObserver from "@react-hook/intersection-observer";
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { useCallback } from "react";
 
 const IntroA = memo(function IntroA({ Slider }) {
   const settings = {
@@ -75,112 +73,98 @@ const IntroA = memo(function IntroA({ Slider }) {
   );
 });
 const DynCount = function DynCount() {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(0);
-  const [c, setC] = useState(0);
-  const [d, setD] = useState(0);
-  const [e, setE] = useState(0);
-  const [f, setF] = useState(0);
+  const [counts, setCounts] = useState({
+    a: 0,
+    b: 0,
+    c: 0,
+    d: 0,
+    e: 0,
+    f: 0,
+  });
+
   const [started, setStarted] = useState(false);
   const containerRef = useRef();
   const { isIntersecting } = useIntersectionObserver(containerRef);
-  let intervalA,
-    intervalB,
-    intervalC,
-    intervalD,
-    intervalE,
-    intervalF,
-    valueA = 0,
-    valueB = 0,
-    valueC = 0,
-    valueD = 0,
-    valueE = 0,
-    valueF = 0;
-  const frameA = useCallback(() => {
-    if (valueA >= 600) {
-      clearInterval(intervalA);
-      setA(600);
-    } else {
-      valueA = valueA + 6;
-      setA(valueA);
+
+  const targetValues = {
+    a: 600,
+    b: 10000,
+    c: 1000,
+    d: 15000,
+    e: 3000,
+    f: 19,
+  };
+
+  const stepValues = {
+    a: 6,
+    b: 100,
+    c: 10,
+    d: 150,
+    e: 30,
+    f: 1,
+  };
+
+  const animateCount = useCallback(() => {
+    let startTime;
+
+    function updateCount(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      let updated = false;
+
+      setCounts((prevCounts) => {
+        const newCounts = { ...prevCounts };
+
+        Object.keys(targetValues).forEach((key) => {
+          if (prevCounts[key] < targetValues[key]) {
+            newCounts[key] = Math.min(
+              prevCounts[key] + stepValues[key],
+              targetValues[key]
+            );
+            updated = true;
+          }
+        });
+
+        return updated ? newCounts : prevCounts;
+      });
+
+      if (updated) {
+        requestAnimationFrame(updateCount);
+      }
     }
+
+    requestAnimationFrame(updateCount);
   }, []);
-  const frameB = useCallback(() => {
-    if (valueB >= 10000) {
-      clearInterval(intervalB);
-      setB(10000);
-    } else {
-      valueB = valueB + 100;
-      setB(valueB);
+
+  useEffect(() => {
+    if (isIntersecting && !started) {
+      setStarted(true);
+      animateCount();
     }
-  }, []);
-  const frameC = useCallback(() => {
-    if (valueC >= 1000) {
-      clearInterval(intervalC);
-      setC(1000);
-    } else {
-      valueC = valueC + 10;
-      setC(valueC);
-    }
-  }, []);
-  const frameD = useCallback(() => {
-    if (valueD >= 15000) {
-      clearInterval(intervalD);
-      setD(15000);
-    } else {
-      valueD = valueD + 150;
-      setD(valueD);
-    }
-  }, []);
-  const frameE = useCallback(() => {
-    if (valueE >= 3000) {
-      clearInterval(intervalE);
-      setE(3000);
-    } else {
-      valueE = valueE + 30;
-      setE(valueE);
-    }
-  }, []);
-  const frameF = useCallback(() => {
-    if (valueF >= 19) {
-      clearInterval(intervalF);
-      setF(19);
-    } else {
-      valueF = valueF + 1;
-      setF(valueF);
-    }
-  }, []);
-  if (isIntersecting && started == false) {
-    setStarted(true);
-    intervalA = setInterval(frameA, 10);
-    intervalB = setInterval(frameB, 10);
-    intervalC = setInterval(frameC, 10);
-    intervalD = setInterval(frameD, 10);
-    intervalE = setInterval(frameE, 10);
-    intervalF = setInterval(frameF, 100);
-  }
+    return setStarted(false);
+  }, [isIntersecting, started, animateCount, counts]);
 
   return (
     <>
-      <hr ref={containerRef} style={{ width: 90 + "%", color: "darkblue" }} />
+      <hr ref={containerRef} style={{ width: "90%", color: "darkblue" }} />
       <div className="homecoun">
         <p>
-          <b>{b}+</b>Succefully Completed Projects
+          <b>{counts.b}+</b> Successfully Completed Projects
         </p>
         <p>
-          <b>{a}+</b>Highly Specialised & Skilled Workforce
+          <b>{counts.a}+</b> Highly Specialised & Skilled Workforce
         </p>
         <p>
-          <b>{c}+</b>Projects outside Egypt
+          <b>{counts.c}+</b> Projects outside Egypt
         </p>
         <p>
-          <b>{d}+</b>Meters Produced Per Month
+          <b>{counts.d}+</b> Meters Produced Per Month
         </p>
         <p>
-          <b>{e}+</b>Meters Exported Annually
+          <b>{counts.e}+</b> Meters Exported Annually
         </p>
         <p>
-          <b>{f}+</b>Countries We Export To
+          <b>{counts.f}+</b> Countries We Export To
         </p>
       </div>
     </>
@@ -338,8 +322,36 @@ const Filter = function Filter() {
     </AnimationOnScroll>
   );
 };
-const Clients = memo(function Clients({ debounce }) {
-  const [cli, setCli] = useState(1);
+const Clients = function Clients() {
+  const images = [
+    "/clients/c1.jpg",
+    "/clients/c2.jpg",
+    "/clients/c3.jpg",
+    "/clients/c4.jpg",
+    "/clients/c5.jpg",
+    "/clients/c6.jpg",
+    "/clients/c7.jpeg",
+    "/clients/c8.jpeg",
+    "/clients/c9.jpeg",
+    "/clients/c10.jpeg",
+    "/clients/c11.jpeg",
+    "/clients/c12.jpeg",
+    "/clients/c13.jpeg",
+    "/clients/c14.jpeg",
+    "/clients/c15.jpeg",
+    "/clients/c26.png",
+    "/clients/c27.jpg",
+    "/clients/c18.jpeg",
+    "/clients/c19.jpeg",
+    "/clients/c30.png",
+    "/clients/c21.jpeg",
+    "/clients/c29.png",
+    "/clients/c23.jpeg",
+    "/clients/c24.jpeg",
+    "/clients/c25.jpeg",
+    "/clients/c31.png",
+  ];
+  let [cli, setCli] = useState(1);
   const cliprv = () => {
     if (cli == 1) {
       document.getElementById(`sslide26`).style.animationName = "gotoleft";
@@ -423,11 +435,8 @@ const Clients = memo(function Clients({ debounce }) {
     nclidcr();
   };
   useEffect(() => {
-    const run = setInterval(() => {
-      document.getElementById("sleft").click();
-    }, 2000);
     function heightHandler() {
-      let sliderHeight = document.getElementById("sslide1").clientHeight;
+      let sliderHeight = document.getElementById("sslide1")?.clientHeight;
       if (sliderHeight) {
         document.getElementById(
           "clientsSlider"
@@ -436,111 +445,35 @@ const Clients = memo(function Clients({ debounce }) {
         document.getElementById("sright").style.height = `${sliderHeight}px`;
       }
     }
-    heightHandler();
-    const debounceHandler = debounce(() => heightHandler(), 100);
-    window.onresize = debounceHandler;
-    return () => {
-      (window.onresize = null), clearInterval(run);
-    };
-  }, []);
+    const run = setInterval(() => {
+      clifwd();
+      heightHandler();
+    }, 2000);
+    return () => clearInterval(run);
+  }, [cli]);
   return (
-    <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
-      <div className="homeintrocont">
-        <h1>Clients</h1>
-        <div className="homeclients">
-          <div className="homeclientsimg" id="clientsSlider">
-            <button id="sleft" className="homebtn" onClick={clifwd}>
-              <img src="/l.png" alt=" " />
-            </button>
-            <div className="sslide" id="sslide1">
-              <img src="/clients/c1.jpg" alt="" />
+    <div className="homeintrocont">
+      <h1>Clients</h1>
+      <div className="homeclients">
+        <div className="homeclientsimg" id="clientsSlider">
+          <button id="sleft" className="homebtn" onClick={clifwd}>
+            <img src="/l.png" alt=" " />
+          </button>
+          {images.map((img, i) => (
+            <div key={i} className="sslide" id={`sslide${i + 1}`}>
+              <img src={img} alt={`Client ${i + 1}`} />
             </div>
-            <div className="sslide" id="sslide2">
-              <img src="/clients/c2.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide3">
-              <img src="/clients/c3.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide4">
-              <img src="/clients/c4.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide5">
-              <img src="/clients/c5.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide6">
-              <img src="/clients/c6.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide7">
-              <img src="/clients/c7.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide8">
-              <img src="/clients/c8.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide9">
-              <img src="/clients/c9.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide10">
-              <img src="/clients/c10.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide11">
-              <img src="/clients/c11.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide12">
-              <img src="/clients/c12.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide13">
-              <img src="/clients/c13.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide14">
-              <img src="/clients/c14.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide15">
-              <img src="/clients/c15.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide16">
-              <img src="/clients/c26.png" alt="" />
-            </div>
-            <div className="sslide" id="sslide17">
-              <img src="/clients/c27.jpg" alt="" />
-            </div>
-            <div className="sslide" id="sslide18">
-              <img src="/clients/c18.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide19">
-              <img src="/clients/c19.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide20">
-              <img src="/clients/c30.png" alt="" />
-            </div>
-            <div className="sslide" id="sslide21">
-              <img src="/clients/c21.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide22">
-              <img src="/clients/c29.png" alt="" />
-            </div>
-            <div className="sslide" id="sslide23">
-              <img src="/clients/c23.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide24">
-              <img src="/clients/c24.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide25">
-              <img src="/clients/c25.jpeg" alt="" />
-            </div>
-            <div className="sslide" id="sslide26">
-              <img src="/clients/c31.png" alt="" />
-            </div>
-            <button id="sright" className="homebtn" onClick={clibwd}>
-              <img src="/r.png" alt=" " />
-            </button>
-          </div>
+          ))}
+          <button id="sright" className="homebtn" onClick={clibwd}>
+            <img src="/r.png" alt=" " />
+          </button>
         </div>
       </div>
-    </AnimationOnScroll>
+    </div>
   );
-});
+};
 
-export default memo(function Home({ Slider, debounce }) {
+export default memo(function Home({ Slider }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -627,7 +560,7 @@ export default memo(function Home({ Slider, debounce }) {
           </div>
         </div>
       </AnimationOnScroll>
-      <Clients debounce={debounce} />
+      <Clients />
     </div>
   );
 });

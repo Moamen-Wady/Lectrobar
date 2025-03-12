@@ -1,7 +1,6 @@
-import { memo, useCallback } from "react";
+import { memo, useCallback, useLayoutEffect } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { useLayoutEffect } from "react";
 
 export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
   useLayoutEffect(() => {
