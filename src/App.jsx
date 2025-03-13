@@ -1232,10 +1232,11 @@ function App() {
   }, []);
 
   const showMenu = useCallback(() => {
-    document.getElementById("vbtn").style.visibility = "hidden";
-    document.getElementById("hbtn").style.visibility = "visible";
+    document.getElementById("vbtn").style.display = "none";
+    document.getElementById("hbtn").style.display = "flex";
     let ul = document.getElementById("nvbrul1");
-    ul.style.width = "180px";
+    ul.style.overflow = "visible";
+    ul.style.width = "150px";
     ul.style.opacity = 1;
   }, []);
   const hideMenu = useCallback(() => {
@@ -1243,8 +1244,9 @@ function App() {
     const vbtn = document.getElementById("vbtn") || null;
     const ul = document.getElementById("nvbrul1") || null;
     if (hbtn && vbtn && ul) {
-      hbtn.style.visibility = "hidden";
-      vbtn.style.visibility = "visible";
+      hbtn.style.display = "none";
+      vbtn.style.display = "flex";
+      ul.style.overflow = "hidden";
       ul.style.width = 0;
       ul.style.opacity = 0;
     }

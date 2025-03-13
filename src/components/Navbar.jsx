@@ -56,37 +56,74 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
     window.onscroll = d;
     window.onresize = debounceDimensions;
     return () => ((window.onscroll = null), (window.onresize = null));
-  }, []);
+  }, [window.screen.width, window.innerWidth]);
 
   const prodshow = useCallback(() => {
-    let prodmm = document.getElementById("prodmm");
-    prodmm.style.height = "auto";
-    prodmm.style.padding = "1rem";
+    if (window.screen.width > 768) {
+      let prodmm = document.getElementById("prodmm");
+      prodmm.style.height = "auto";
+      prodmm.style.padding = "1rem";
+    }
   }, []);
   const prodhide = useCallback(() => {
-    let prodmm = document.getElementById("prodmm");
-    prodmm.style.height = 0;
-    prodmm.style.padding = 0;
+    if (window.screen.width > 768) {
+      let prodmm = document.getElementById("prodmm");
+      prodmm.style.height = 0;
+      prodmm.style.padding = 0;
+    }
   }, []);
   const projshow = useCallback(() => {
-    let projmm = document.getElementById("projmm");
-    projmm.style.height = "auto";
-    projmm.style.padding = "1rem";
+    if (window.screen.width > 768) {
+      let projmm = document.getElementById("projmm");
+      projmm.style.height = "auto";
+      projmm.style.padding = "1rem";
+    }
   }, []);
   const projhide = useCallback(() => {
-    let projmm = document.getElementById("projmm");
-    projmm.style.height = 0;
-    projmm.style.padding = 0;
+    if (window.screen.width > 768) {
+      let projmm = document.getElementById("projmm");
+      projmm.style.height = 0;
+      projmm.style.padding = 0;
+    }
   }, []);
   const servshow = useCallback(() => {
-    let servmm = document.getElementById("servmm");
-    servmm.style.height = "auto";
-    servmm.style.padding = "1rem";
+    if (window.screen.width > 768) {
+      let servmm = document.getElementById("servmm");
+      servmm.style.height = "auto";
+      servmm.style.padding = "1rem";
+    }
   }, []);
   const servhide = useCallback(() => {
-    let servmm = document.getElementById("servmm");
-    servmm.style.height = 0;
-    servmm.style.padding = 0;
+    if (window.screen.width > 768) {
+      let servmm = document.getElementById("servmm");
+      servmm.style.height = 0;
+      servmm.style.padding = 0;
+    }
+  }, []);
+  const mobprodtrigger = useCallback(() => {
+    if (window.screen.width <= 768) {
+      let prodmm = document.getElementById("prodmm");
+      let projmm = document.getElementById("projmm");
+      projmm.style.display = "none";
+      if (prodmm.computedStyleMap().get("display").value == "none") {
+        prodmm.style.display = "flex";
+      } else {
+        prodmm.style.display = "none";
+      }
+    }
+  }, []);
+  const mobprojtrigger = useCallback((e) => {
+    if (window.screen.width <= 768) {
+      e.preventDefault();
+      let projmm = document.getElementById("projmm");
+      let prodmm = document.getElementById("prodmm");
+      prodmm.style.display = "none";
+      if (projmm.computedStyleMap().get("display").value == "none") {
+        projmm.style.display = "flex";
+      } else {
+        projmm.style.display = "none";
+      }
+    }
   }, []);
 
   return (
@@ -122,10 +159,17 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
               <img src="/bluebg.png" alt="" />
             </Link>
           </li>
-          <li className="l" onMouseEnter={prodshow} onMouseLeave={prodhide}>
+          <li
+            className="l prodmmcont"
+            onMouseEnter={prodshow}
+            onMouseLeave={prodhide}
+          >
             <Link to="#" className="lp">
               <p>Products</p>
               <img src="/bluebg.png" alt="" />
+              <button id="nvbprod" className="nvbrbtn" onClick={mobprodtrigger}>
+                <img src="/r.png" alt=" " />
+              </button>
             </Link>
             <div className="prodmm" id="prodmm">
               <div className="prodh">
@@ -153,10 +197,21 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
               </div>
             </div>
           </li>
-          <li className="l" onMouseEnter={projshow} onMouseLeave={projhide}>
+          <li
+            className="l projmmcont"
+            onMouseEnter={projshow}
+            onMouseLeave={projhide}
+          >
             <Link to="/Projects" className="lp">
               <p>Projects</p>
               <img src="/bluebg.png" alt="" />
+              <button
+                id="nvbproj"
+                className="nvbrbtn"
+                onClick={(e) => mobprojtrigger(e)}
+              >
+                <img src="/r.png" alt=" " />
+              </button>
             </Link>
             <div className="projmm" id="projmm">
               <h1>National & International</h1>
