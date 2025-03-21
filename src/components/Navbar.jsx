@@ -132,31 +132,31 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
         <span className="nvbrlogo" id="lcc">
           <Link to="/" className="logop">
             <p>
-              <img loading="lazy" src="/logow2.webp" alt="" id="imgch" className="logoimg" />
+              <img loading="eager" src="/logow2.webp" alt="" id="imgch" className="logoimg" />
             </p>
           </Link>
         </span>
         <span id="vbtn" onClick={showMenu}>
-          <img loading="lazy" src="/mbar.webp" className="mImg" />
+          <img loading="eager" src="/mbar.webp" className="mImg" />
         </span>
         <ul className="nvbrul1" id="nvbrul1">
           <li className="l" id="hbtn" onClick={hideMenu}>
             <Link to="#" className="lp">
               <p>
-                <img loading="lazy" src="/mbar.webp" className="mImg" />
+                <img loading="eager" src="/mbar.webp" className="mImg" />
               </p>
             </Link>
           </li>
           <li className="l">
             <Link to="/" className="lp">
               <p>Home</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li className="l">
             <Link to="/Aboutus" className="lp">
               <p>About Us</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li
@@ -166,9 +166,9 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           >
             <Link to="#" className="lp">
               <p>Products</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
               <button id="nvbprod" className="nvbrbtn" onClick={mobprodtrigger}>
-                <img loading="lazy" src="/r.webp" alt=" " />
+                <img loading="eager" src="/r.webp" alt=" " />
               </button>
             </Link>
             <div className="prodmm" id="prodmm">
@@ -204,13 +204,13 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           >
             <Link to="/Projects" className="lp">
               <p>Projects</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
               <button
                 id="nvbproj"
                 className="nvbrbtn"
                 onClick={(e) => mobprojtrigger(e)}
               >
-                <img loading="lazy" src="/r.webp" alt=" " />
+                <img loading="eager" src="/r.webp" alt=" " />
               </button>
             </Link>
             <div className="projmm" id="projmm">
@@ -268,7 +268,7 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           <li className="l" onMouseEnter={servshow} onMouseLeave={servhide}>
             <Link to="#" className="lp">
               <p>Services</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
             </Link>
             <div className="servmm" id="servmm">
               <div className="servh">
@@ -294,20 +294,20 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           <li className="l">
             <Link to="/Blog" className="lp">
               <p>Blog</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li className="l">
             <Link to="/Contact" className="lp">
               <p>Contact</p>
-              <img loading="lazy" src="/bluebg.webp" alt="" />
+              <img loading="eager" src="/bluebg.webp" alt="" />
             </Link>
           </li>
         </ul>
         <span className="nvbrlogo" id="edc">
           <Link to="#" className="logop">
             <p>
-              <img loading="lazy" src="/edt.webp" alt="" id="edt" className="logoimg" />
+              <img loading="eager" src="/edt.webp" alt="" id="edt" className="logoimg" />
             </p>
           </Link>
         </span>
