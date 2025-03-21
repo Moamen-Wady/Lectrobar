@@ -60,7 +60,7 @@ const Search = memo(function Search({
   return (
     <div className="projectssearchwindow" id="searchWindow">
       <img
-        src="/close.png"
+        src="/close.webp"
         alt=""
         className="projectssearchclosebutton"
         onClick={hideSearchPanel}
@@ -174,73 +174,73 @@ export default memo(function Projects({ setHash, ProjectsData }) {
       <div className="projectscategorycont">
         <div>
           <Link to="/Projects/Banks">
-            <img src="/proj9.jpg" alt="" />
+            <img loading="lazy" src="/proj9.webp" alt="" />
             <p>Banks</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Education">
-            <img src="/proj1.jpg" alt="" />
+            <img loading="lazy" src="/proj1.webp" alt="" />
             <p>education</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Etc">
-            <img src="/proj12.jpg" alt="" />
+            <img loading="lazy" src="/proj12.webp" alt="" />
             <p>etc</p>
           </Link>
         </div>
         <div>
           <Link to="">
-            <img src="/proj10.jpg" alt="" />
+            <img loading="lazy" src="/proj10.webp" alt="" />
             <p>Exhibitions</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Factories">
-            <img src="/proj2.jpg" alt="" />
+            <img loading="lazy" src="/proj2.webp" alt="" />
             <p>factories</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Gov">
-            <img src="/proj4.jpg" alt="" />
+            <img loading="lazy" src="/proj4.webp" alt="" />
             <p>governmental org.</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Hospitals">
-            <img src="/proj6.jpg" alt="" />
+            <img loading="lazy" src="/proj6.webp" alt="" />
             <p>Hospitals</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Hotels">
-            <img src="/proj5.jpg" alt="" />
+            <img loading="lazy" src="/proj5.webp" alt="" />
             <p>Hotels</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Malls">
-            <img src="/proj11.jpg" alt="" />
+            <img loading="lazy" src="/proj11.webp" alt="" />
             <p>Malls</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/TechCenters">
-            <img src="/proj3.jpg" alt="" />
+            <img loading="lazy" src="/proj3.webp" alt="" />
             <p>Tech Centers</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Towers">
-            <img src="/proj8.jpg" alt="" />
+            <img loading="lazy" src="/proj8.webp" alt="" />
             <p>Towers</p>
           </Link>
         </div>
         <div>
           <Link to="/Projects/Villages">
-            <img src="/proj7.jpg" alt="" />
+            <img loading="lazy" src="/proj7.webp" alt="" />
             <p>Villages</p>
           </Link>
         </div>

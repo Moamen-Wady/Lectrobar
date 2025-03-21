@@ -19,22 +19,28 @@ const Slider1 = memo(function Slider1({ Slider }) {
   };
   const slides = [
     {
-      img: "/blog/blog31.jpg",
+      img: "/blog/blog31.webp",
+      loading: "eager",
     },
     {
-      img: "/blog/blog32.jpg",
+      img: "/blog/blog32.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog33.jpg",
+      img: "/blog/blog33.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog34.jpg",
+      img: "/blog/blog34.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog35.jpg",
+      img: "/blog/blog35.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog36.jpg",
+      img: "/blog/blog36.webp",
+      loading: "lazy",
     },
   ];
 
@@ -47,6 +53,7 @@ const Slider1 = memo(function Slider1({ Slider }) {
               className="slide-image-body"
               src={slide.img}
               alt={`Slide ${index + 1}`}
+              loading={slide.loading}
             />
           </div>
         ))}
@@ -70,22 +77,28 @@ const Slider2 = memo(function Slider2({ Slider }) {
   };
   const slides = [
     {
-      img: "/blog/blog1.jpg",
+      img: "/blog/blog1.webp",
+      loading: "eager",
     },
     {
-      img: "/blog/blog2.jpg",
+      img: "/blog/blog2.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog3.jpg",
+      img: "/blog/blog3.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog4.jpg",
+      img: "/blog/blog4.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog5.jpg",
+      img: "/blog/blog5.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog6.jpg",
+      img: "/blog/blog6.webp",
+      loading: "lazy",
     },
   ];
 
@@ -99,6 +112,7 @@ const Slider2 = memo(function Slider2({ Slider }) {
                 className="slide-image-body"
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
+                loading={slide.loading}
               />
             </div>
           ))}
@@ -123,22 +137,28 @@ const Slider3 = memo(function Slider3({ Slider }) {
   };
   const slides = [
     {
-      img: "/blog/blog21.jpg",
+      img: "/blog/blog21.webp",
+      loading: "eager",
     },
     {
-      img: "/blog/blog22.jpg",
+      img: "/blog/blog22.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog23.jpg",
+      img: "/blog/blog23.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog24.jpg",
+      img: "/blog/blog24.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog25.jpg",
+      img: "/blog/blog25.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog26.jpg",
+      img: "/blog/blog26.webp",
+      loading: "lazy",
     },
   ];
 
@@ -152,6 +172,7 @@ const Slider3 = memo(function Slider3({ Slider }) {
                 className="slide-image-body"
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
+                loading={slide.loading}
               />
             </div>
           ))}
@@ -176,22 +197,28 @@ const Slider4 = memo(function Slider4({ Slider }) {
   };
   const slides = [
     {
-      img: "/blog/blog41.jpg",
+      img: "/blog/blog41.webp",
+      loading: "eager",
     },
     {
-      img: "/blog/blog42.jpg",
+      img: "/blog/blog42.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog43.jpg",
+      img: "/blog/blog43.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog44.jpg",
+      img: "/blog/blog44.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog45.jpg",
+      img: "/blog/blog45.webp",
+      loading: "lazy",
     },
     {
-      img: "/blog/blog46.jpg",
+      img: "/blog/blog46.webp",
+      loading: "lazy",
     },
   ];
 
@@ -205,6 +232,7 @@ const Slider4 = memo(function Slider4({ Slider }) {
                 className="slide-image-body"
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
+                loading={slide.loading}
               />
             </div>
           ))}

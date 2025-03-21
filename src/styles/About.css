@@ -409,7 +409,7 @@
   width: 100%;
   position: relative;
   margin: 0 auto var(--r2) auto;
-  background-image: url("/missionbg.jpg");
+  background-image: url("/missionbg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

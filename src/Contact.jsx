@@ -64,12 +64,12 @@ export default memo(function Contact({ notify, debounce }) {
             <h1>Information</h1>
             <div>
               <h2>Address</h2>
-              <img src="/location.png" alt="location" className="lctn" />
+              <img loading="lazy" src="/location.webp" alt="location" className="lctn" />
               <a>The 2nd District, Borg El-Arab, Alexandria, Egypt</a>
             </div>
             <div>
               <h2>Phone</h2>
-              <img src="/phone.png" alt="phone" className="phn" />
+              <img loading="lazy" src="/phone.webp" alt="phone" className="phn" />
               <a href="tel:+2011 0321 1875">+2011 0321 1875</a>
               <br className="phoneBreak" />
               <a href="tel:+2010 2994 1145">
@@ -78,7 +78,7 @@ export default memo(function Contact({ notify, debounce }) {
             </div>
             <div>
               <h2>E-mail</h2>
-              <img src="/mail.png" alt="mail" className="eml" />
+              <img loading="lazy" src="/mail.webp" alt="mail" className="eml" />
               <a href="mailto:info@lectrobar.com">info@lectrobar.com</a>
             </div>
           </div>

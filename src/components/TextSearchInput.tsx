@@ -253,7 +253,7 @@ export function TextSearchInput(props: TextSearchInputProps) {
                 className={`find-back ${state.isLocked ? "lock" : "unlock"}`}
                 onClick={handleBackClick}
             >
-                <img src="/r.png" alt="" />
+                <img loading="lazy" src="/r.webp" alt="" />
             </div>
             <div
                 className={`${"find-forward"} ${
@@ -261,10 +261,10 @@ export function TextSearchInput(props: TextSearchInputProps) {
                 }`}
                 onClick={handleForwardClick}
             >
-                <img src="/r.png" alt="" />
+                <img loading="lazy" src="/r.webp" alt="" />
             </div>
             <div className={"find-close"} onClick={handleCloseClick}>
-                <img src="/close.png" alt="" />
+                <img loading="lazy" src="/close.webp" alt="" />
             </div>
         </div>
     );

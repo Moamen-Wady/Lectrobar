@@ -12,7 +12,7 @@ export default function Sidebar() {
           }}
         >
           <img
-            src="/search.png"
+            src="/search.webp"
             alt=""
             style={
               visible ? { visibility: "hidden" } : { visibility: "visible" }
@@ -37,7 +37,7 @@ export default function Sidebar() {
           href="https://www.facebook.com/Lectroegypt?mibextid=LQQJ4d"
           target="_blank"
         >
-          <img src="/fb.png" alt="" />
+          <img loading="lazy" src="/fb.webp" alt="" />
         </a>
       </div>
       <div className="sub lin">
@@ -45,7 +45,7 @@ export default function Sidebar() {
           href="https://www.linkedin.com/company/lectro-egypt-for-electrical-products-&-contracting-co/"
           target="_blank"
         >
-          <img src="/lin.png" alt="" />
+          <img loading="lazy" src="/lin.webp" alt="" />
         </a>
       </div>
       <div className="sub yt">
@@ -53,7 +53,7 @@ export default function Sidebar() {
           href="https://youtube.com/@lectrobar-nh5fp?si=i5zcQIOzurqQiwEU"
           target="_blank"
         >
-          <img src="/yt.png" alt="" />
+          <img loading="lazy" src="/yt.webp" alt="" />
         </a>
       </div>
     </div>

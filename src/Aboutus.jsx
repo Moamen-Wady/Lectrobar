@@ -318,7 +318,7 @@ export default function Aboutus() {
             <a href="/profile.ppsx">Download Lectro Profile</a>
           </div>
           <div className="aboutfactoryimg">
-            <img src="/factory.jpg" alt="" />
+            <img loading="lazy" src="/factory.webp" alt="" />
           </div>
         </div>
       </AnimationOnScroll>
@@ -327,77 +327,77 @@ export default function Aboutus() {
         <div className="aboutdistribution">
           <p>Our Footprints</p>
           <div>
-            <img src="/distribution.png" alt="" className="aboutwmap" />
+            <img loading="lazy" src="/distribution.webp" alt="" className="aboutwmap" />
             <div className="aboutdot aboutdot22">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Zambia</span>
             </div>
             <div className="aboutdot aboutdot20">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Chad</span>
             </div>
             <div className="aboutdot aboutdot19">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>UAE</span>
             </div>
             <div className="aboutdot aboutdot18">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Qatar</span>
             </div>
             <div className="aboutdot aboutdot17">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Bahrain</span>
             </div>
             <div className="aboutdot aboutdot16">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Korea</span>
             </div>
             <div className="aboutdot aboutdot15">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Zimbabwe</span>
             </div>
             <div className="aboutdot aboutdot14">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Tanzania</span>
             </div>
             <div className="aboutdot aboutdot13">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Nigeria</span>
             </div>
             <div className="aboutdot aboutdot11">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>North Sudan</span>
             </div>
             <div className="aboutdot aboutdot10">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Algeria</span>
             </div>
             <div className="aboutdot aboutdot9">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Egypt</span>
             </div>
             <div className="aboutdot aboutdot8">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Oman</span>
             </div>
             <div className="aboutdot aboutdot6">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Iraq</span>
             </div>
             <div className="aboutdot aboutdot5">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Saudi Arabia</span>
             </div>
             <div className="aboutdot aboutdot3">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>China</span>
             </div>
             <div className="aboutdot aboutdot2">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>Norway</span>
             </div>
             <div className="aboutdot aboutdot1">
-              <img src="/dot.png" alt="" />
+              <img loading="lazy" src="/dot.webp" alt="" />
               <span>United Kingdom</span>
             </div>
           </div>
@@ -415,10 +415,10 @@ export default function Aboutus() {
         <div>
           <div>
             <div>
-              <img src="/dkr.png" alt="" />
+              <img loading="lazy" src="/dkr.webp" alt="" />
             </div>
             <div>
-              <img src="/kk.jpeg" alt="" />
+              <img loading="lazy" src="/kk.jpeg" alt="" />
             </div>
           </div>
           <div>

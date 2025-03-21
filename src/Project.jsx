@@ -27,18 +27,18 @@ export default function Project({ scrollToProject, ProjectsData }) {
             key={item.projectName}
           >
             <div className="project1imgcont">
-              <img className="project1mainimg" src={item.mainImg} alt="" />
+              <img loading="lazy" className="project1mainimg" src={item.mainImg} alt="" />
             </div>
             <div className="project1datacont">
               <h2> {item.projectName}</h2>
               <ul>
                 <li>
                   -{item.consultantName}
-                  <img src={item.consultantImg} alt="" />
+                  <img loading="lazy" src={item.consultantImg} alt="" />
                 </li>
                 <li>
                   -{item.constructorName}
-                  <img src={item.constructorImg} alt="" />
+                  <img loading="lazy" src={item.constructorImg} alt="" />
                 </li>
                 <li>-{item.meters} Meters</li>
                 <li>-{item.type + `( ${item.country} )`}</li>

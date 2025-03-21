@@ -7,7 +7,7 @@ export default memo(function Slidez({ Slider }) {
     const { onClick } = props;
     return (
       <div className="btnbanner bleft" onClick={onClick}>
-        <img src="/l.png" alt="" />
+        <img src="/l.webp" alt="" />
       </div>
     );
   }, []);
@@ -15,7 +15,7 @@ export default memo(function Slidez({ Slider }) {
     const { onClick } = props;
     return (
       <div className="btnbanner bright" onClick={onClick}>
-        <img src="/r.png" alt="" />
+        <img src="/r.webp" alt="" />
       </div>
     );
   }, []);
@@ -34,28 +34,34 @@ export default memo(function Slidez({ Slider }) {
   };
   const slides = [
     {
-      img: "/1.jpg",
+      img: "/1.webp",
+      loading: "eager",
     },
     {
-      img: "/2.jpg",
+      img: "/2.webp",
+      loading: "lazy",
     },
     {
-      img: "/3.jpg",
+      img: "/3.webp",
+      loading: "lazy",
     },
     {
-      img: "/4.jpg",
+      img: "/4.webp",
+      loading: "lazy",
     },
     {
-      img: "/5.jpg",
+      img: "/5.webp",
+      loading: "lazy",
     },
     {
-      img: "/6.jpg",
+      img: "/6.webp",
+      loading: "lazy",
     },
   ];
 
   return (
     <div className="banw">
-      <img src="/btw.png" className="shade" />
+      <img src="/btw.webp" className="shade" />
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={`SlideImg ${index + 1}`}>
@@ -63,6 +69,7 @@ export default memo(function Slidez({ Slider }) {
               className="slide-image-head"
               src={slide.img}
               alt={`Slide ${index + 1}`}
+              loading={slide.loading}
             />
           </div>
         ))}

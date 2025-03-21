@@ -8,22 +8,22 @@ export default function Footer() {
         <div className="portion">
           <div className="contact">
             <h1>
-              <img className="imx" src="/logow2.png" alt="" />
+              <img loading="lazy" className="imx" src="/logow2.webp" alt="" />
             </h1>
             <div className="content">
               <p>
-                <img src="/location.png" alt="location" />
+                <img loading="lazy" src="/location.webp" alt="location" />
                 <a>
                   The 5<sup style={{ textTransform: "lowercase" }}>th </sup>
                   District, Borg El-Arab, Alexandria, Egypt
                 </a>
               </p>
               <p>
-                <img src="/phone.png" alt="phone" />
+                <img loading="lazy" src="/phone.webp" alt="phone" />
                 <a href="tel:+2011 0321 1875">+2011 0321 1875</a>
               </p>
               <p>
-                <img src="/mail.png" alt="mail" />
+                <img loading="lazy" src="/mail.webp" alt="mail" />
                 <a href="mailto:info@lectrobar.com">info@lectrobar.com</a>
               </p>
             </div>

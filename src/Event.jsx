@@ -32,7 +32,7 @@ export default function EventPage({ EventsData }) {
           {currentEvent.images.map((img) => {
             return (
               <div key={img}>
-                <img className="eventimg" src={img} alt="" />
+                <img loading="lazy" className="eventimg" src={img} alt="" />
               </div>
             );
           })}

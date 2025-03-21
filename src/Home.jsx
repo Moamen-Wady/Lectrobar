@@ -20,19 +20,24 @@ const IntroA = memo(function IntroA({ Slider }) {
   };
   const slides = [
     {
-      img: "/inan1.jpg",
+      img: "/inan1.webp",
+      loading: "eager",
     },
     {
-      img: "/inan2.jpg",
+      img: "/inan2.webp",
+      loading: "lazy",
     },
     {
-      img: "/inan3.jpg",
+      img: "/inan3.webp",
+      loading: "lazy",
     },
     {
-      img: "/inan4.jpg",
+      img: "/inan4.webp",
+      loading: "lazy",
     },
     {
-      img: "/inan5.jpg",
+      img: "/inan5.webp",
+      loading: "lazy",
     },
   ];
   return (
@@ -63,6 +68,7 @@ const IntroA = memo(function IntroA({ Slider }) {
                   className="slide-image-body"
                   src={slide.img}
                   alt={`Slide ${index + 1}`}
+                  loading={slide.loading}
                 />
               </div>
             ))}
@@ -183,7 +189,7 @@ const Filter = function Filter() {
       className="homefilterp"
     >
       <div className="homedk">
-        <img src="/dk.jpeg" alt="" />
+        <img loading="lazy" src="/dk.jpeg" alt="" />
         <p>
           Lectro has manufactured and installed hundreds of thousands of meters
           of busducts for large and small projects since 1975, both for the
@@ -231,7 +237,7 @@ const Filter = function Filter() {
               <div>
                 <div>
                   <Link to="llb">
-                    <img src="/llb.jpg" alt="" />
+                    <img loading="lazy" src="/llb.webp" alt="" />
                   </Link>
                 </div>
                 <p>LLB</p>
@@ -239,7 +245,7 @@ const Filter = function Filter() {
               <div>
                 <div>
                   <Link to="/lsba">
-                    <img src="/lsba.jpg" alt="" />
+                    <img loading="lazy" src="/lsba.webp" alt="" />
                   </Link>
                 </div>
                 <p>LSB A</p>
@@ -247,7 +253,7 @@ const Filter = function Filter() {
               <div>
                 <div>
                   <Link to="/lsb2">
-                    <img src="/lsb2.jpg" alt="" />
+                    <img loading="lazy" src="/lsb2.webp" alt="" />
                   </Link>
                 </div>
                 <p>LSB II</p>
@@ -255,7 +261,7 @@ const Filter = function Filter() {
               <div>
                 <div>
                   <Link to="/lsbpro">
-                    <img src="/lsbpro.jpg" alt="" />
+                    <img loading="lazy" src="/lsbpro.webp" alt="" />
                   </Link>
                 </div>
                 <p>LSB PRO</p>
@@ -277,7 +283,7 @@ const Filter = function Filter() {
               </div>
               {/* <div>
                 <div>
-                  <img src="/lowv.jpg" alt="" />
+                  <img loading="lazy" src="/lowv.webp" alt="" />
                 </div>
               </div> */}
             </div>
@@ -298,7 +304,7 @@ const Filter = function Filter() {
               </div>
               {/* <div>
                 <div>
-                  <img src="/sw.jpg" alt="" />
+                  <img loading="lazy" src="/sw.webp" alt="" />
                 </div>
               </div> */}
             </div>
@@ -324,12 +330,12 @@ const Filter = function Filter() {
 };
 const Clients = function Clients() {
   const images = [
-    "/clients/c1.jpg",
-    "/clients/c2.jpg",
-    "/clients/c3.jpg",
-    "/clients/c4.jpg",
-    "/clients/c5.jpg",
-    "/clients/c6.jpg",
+    "/clients/c1.webp",
+    "/clients/c2.webp",
+    "/clients/c3.webp",
+    "/clients/c4.webp",
+    "/clients/c5.webp",
+    "/clients/c6.webp",
     "/clients/c7.jpeg",
     "/clients/c8.jpeg",
     "/clients/c9.jpeg",
@@ -339,17 +345,17 @@ const Clients = function Clients() {
     "/clients/c13.jpeg",
     "/clients/c14.jpeg",
     "/clients/c15.jpeg",
-    "/clients/c26.png",
-    "/clients/c27.jpg",
+    "/clients/c26.webp",
+    "/clients/c27.webp",
     "/clients/c18.jpeg",
     "/clients/c19.jpeg",
-    "/clients/c30.png",
+    "/clients/c30.webp",
     "/clients/c21.jpeg",
-    "/clients/c29.png",
+    "/clients/c29.webp",
     "/clients/c23.jpeg",
     "/clients/c24.jpeg",
     "/clients/c25.jpeg",
-    "/clients/c31.png",
+    "/clients/c31.webp",
   ];
   let [cli, setCli] = useState(1);
   const cliprv = () => {
@@ -457,15 +463,15 @@ const Clients = function Clients() {
       <div className="homeclients">
         <div className="homeclientsimg" id="clientsSlider">
           <button id="sleft" className="homebtn" onClick={clifwd}>
-            <img src="/l.png" alt=" " />
+            <img loading="lazy" src="/l.webp" alt=" " />
           </button>
           {images.map((img, i) => (
             <div key={i} className="sslide" id={`sslide${i + 1}`}>
-              <img src={img} alt={`Client ${i + 1}`} />
+              <img loading="lazy" src={img} alt={`Client ${i + 1}`} />
             </div>
           ))}
           <button id="sright" className="homebtn" onClick={clibwd}>
-            <img src="/r.png" alt=" " />
+            <img loading="lazy" src="/r.webp" alt=" " />
           </button>
         </div>
       </div>
@@ -519,19 +525,19 @@ export default memo(function Home({ Slider }) {
                   <div>
                     <p>Maintenance</p>
                   </div>
-                  <img src="/servmaint.JPG" alt="" />
+                  <img loading="lazy" src="/servmaint.webp" alt="" />
                 </div>
                 <div className="homeserv2">
                   <div>
                     <p>Supply</p>
                   </div>
-                  <img src="/servsupp.JPG" alt="" />
+                  <img loading="lazy" src="/servsupp.webp" alt="" />
                 </div>
                 <div className="homeserv3">
                   <div>
                     <p>Install</p>
                   </div>
-                  <img src="/servtech.JPG" alt="" />
+                  <img loading="lazy" src="/servtech.webp" alt="" />
                 </div>
               </div>
               <div>
@@ -539,7 +545,7 @@ export default memo(function Home({ Slider }) {
                   <div>
                     <p>Technical Support</p>
                   </div>
-                  <img src="/servinstall.JPG" alt="" />
+                  <img loading="lazy" src="/servinstall.webp" alt="" />
                 </div>
               </div>
               <div>
@@ -547,13 +553,13 @@ export default memo(function Home({ Slider }) {
                   <div>
                     <p>Value Engineering</p>
                   </div>
-                  <img src="/servve.JPG" alt="" />
+                  <img loading="lazy" src="/servve.webp" alt="" />
                 </div>
                 <div className="homeserv6">
                   <div>
                     <p>Test and Commisioning</p>
                   </div>
-                  <img src="/servtest.JPG" alt="" />
+                  <img loading="lazy" src="/servtest.webp" alt="" />
                 </div>
               </div>
             </div>

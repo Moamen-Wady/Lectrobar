@@ -36,7 +36,7 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
 
         if (s > 1) {
           n.style.background = "#00395f";
-          ch.setAttribute("src", "/logow.png");
+          ch.setAttribute("src", "/logow.webp");
           ch.classList.remove("logoimg");
           ch.classList.add("replacelogoimg");
           edt.classList.remove("logoimg");
@@ -44,7 +44,7 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
         } else {
           n.style.background =
             " radial-gradient(rgba(44, 44, 44, 0.5), rgb(128, 128, 128 ))";
-          ch.setAttribute("src", "/logow2.png");
+          ch.setAttribute("src", "/logow2.webp");
           ch.classList.add("logoimg");
           ch.classList.remove("replacelogoimg");
           edt.classList.add("logoimg");
@@ -132,31 +132,31 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
         <span className="nvbrlogo" id="lcc">
           <Link to="/" className="logop">
             <p>
-              <img src="/logow2.png" alt="" id="imgch" className="logoimg" />
+              <img loading="lazy" src="/logow2.webp" alt="" id="imgch" className="logoimg" />
             </p>
           </Link>
         </span>
         <span id="vbtn" onClick={showMenu}>
-          <img src="/mbar.png" className="mImg" />
+          <img loading="lazy" src="/mbar.webp" className="mImg" />
         </span>
         <ul className="nvbrul1" id="nvbrul1">
           <li className="l" id="hbtn" onClick={hideMenu}>
             <Link to="#" className="lp">
               <p>
-                <img src="/mbar.png" className="mImg" />
+                <img loading="lazy" src="/mbar.webp" className="mImg" />
               </p>
             </Link>
           </li>
           <li className="l">
             <Link to="/" className="lp">
               <p>Home</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li className="l">
             <Link to="/Aboutus" className="lp">
               <p>About Us</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li
@@ -166,9 +166,9 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           >
             <Link to="#" className="lp">
               <p>Products</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
               <button id="nvbprod" className="nvbrbtn" onClick={mobprodtrigger}>
-                <img src="/r.png" alt=" " />
+                <img loading="lazy" src="/r.webp" alt=" " />
               </button>
             </Link>
             <div className="prodmm" id="prodmm">
@@ -204,13 +204,13 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           >
             <Link to="/Projects" className="lp">
               <p>Projects</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
               <button
                 id="nvbproj"
                 className="nvbrbtn"
                 onClick={(e) => mobprojtrigger(e)}
               >
-                <img src="/r.png" alt=" " />
+                <img loading="lazy" src="/r.webp" alt=" " />
               </button>
             </Link>
             <div className="projmm" id="projmm">
@@ -268,46 +268,46 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
           <li className="l" onMouseEnter={servshow} onMouseLeave={servhide}>
             <Link to="#" className="lp">
               <p>Services</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
             </Link>
             <div className="servmm" id="servmm">
               <div className="servh">
                 <a>Supply</a>
-                <img src="/supply.png" alt="" />
+                <img loading="lazy" src="/supply.webp" alt="" />
                 <a>Test And Commisioning</a>
-                <img src="/test.png" alt="" />
+                <img loading="lazy" src="/test.webp" alt="" />
               </div>
               <div className="servh">
                 <a>Install</a>
-                <img src="/install.png" alt="" />
+                <img loading="lazy" src="/install.webp" alt="" />
                 <a>Value Engineering</a>
-                <img src="/valueEngineering.png" alt="" />
+                <img loading="lazy" src="/valueEngineering.webp" alt="" />
               </div>
               <div className="servh">
                 <a>Maintenance</a>
-                <img src="/maintenance.png" alt="" />
+                <img loading="lazy" src="/maintenance.webp" alt="" />
                 <a>Technical Support</a>
-                <img src="/technicalSupport.png" alt="" />
+                <img loading="lazy" src="/technicalSupport.webp" alt="" />
               </div>
             </div>
           </li>
           <li className="l">
             <Link to="/Blog" className="lp">
               <p>Blog</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
             </Link>
           </li>
           <li className="l">
             <Link to="/Contact" className="lp">
               <p>Contact</p>
-              <img src="/bluebg.png" alt="" />
+              <img loading="lazy" src="/bluebg.webp" alt="" />
             </Link>
           </li>
         </ul>
         <span className="nvbrlogo" id="edc">
           <Link to="#" className="logop">
             <p>
-              <img src="/edt.png" alt="" id="edt" className="logoimg" />
+              <img loading="lazy" src="/edt.webp" alt="" id="edt" className="logoimg" />
             </p>
           </Link>
         </span>

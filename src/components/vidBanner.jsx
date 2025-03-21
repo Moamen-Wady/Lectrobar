@@ -15,10 +15,10 @@ export default function VidBanner() {
       <header>
         <h1 className="vh1">About Lectrobar</h1>
         <div className="vvid" ref={containerRef}>
-          <img src="/btw.png" alt="" />
+          <img loading="lazy" src="/btw.webp" alt="" />
           {lockRef.current && (
             <video autoPlay muted loop>
-              <source src="/lectro.mp4" type="video/mp4"></source>
+              <source src="/lectro.webm" type="video/mp4"></source>
             </video>
           )}
         </div>
