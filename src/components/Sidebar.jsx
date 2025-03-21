@@ -7,7 +7,9 @@ export default function Sidebar() {
     <div className="sbar" id="sbar">
       <div className="sub srch" id="sbsb">
         <a
-          onClick={() => {
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
             setVisible(true);
           }}
         >

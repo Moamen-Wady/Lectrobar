@@ -61,7 +61,7 @@ export default memo(function Slidez({ Slider }) {
 
   return (
     <div className="banw">
-      <img src="/btw.webp" className="shade" />
+      <img src="/btw.webp" className="shade" alt="" />
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={`SlideImg ${index + 1}`}>

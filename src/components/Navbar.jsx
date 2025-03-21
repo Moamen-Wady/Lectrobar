@@ -132,18 +132,24 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
         <span className="nvbrlogo" id="lcc">
           <Link to="/" className="logop">
             <p>
-              <img loading="eager" src="/logow2.webp" alt="" id="imgch" className="logoimg" />
+              <img
+                loading="eager"
+                src="/logow2.webp"
+                alt=""
+                id="imgch"
+                className="logoimg"
+              />
             </p>
           </Link>
         </span>
         <span id="vbtn" onClick={showMenu}>
-          <img loading="eager" src="/mbar.webp" className="mImg" />
+          <img loading="eager" src="/mbar.webp" className="mImg" alt="" />
         </span>
         <ul className="nvbrul1" id="nvbrul1">
           <li className="l" id="hbtn" onClick={hideMenu}>
             <Link to="#" className="lp">
               <p>
-                <img loading="eager" src="/mbar.webp" className="mImg" />
+                <img loading="eager" src="/mbar.webp" className="mImg" alt="" />
               </p>
             </Link>
           </li>
@@ -174,8 +180,8 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
             <div className="prodmm" id="prodmm">
               <div className="prodh">
                 <h1>Medium Voltage:</h1>
-                <a>Ring</a>
-                <a>Transformer</a>
+                <a href="#">Ring</a>
+                <a href="#">Transformer</a>
               </div>
               <div className="prodh">
                 <h1>Low Voltage:</h1>
@@ -272,21 +278,21 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
             </Link>
             <div className="servmm" id="servmm">
               <div className="servh">
-                <a>Supply</a>
+                <a href="#">Supply</a>
                 <img loading="lazy" src="/supply.webp" alt="" />
-                <a>Test And Commisioning</a>
+                <a href="#">Test And Commisioning</a>
                 <img loading="lazy" src="/test.webp" alt="" />
               </div>
               <div className="servh">
-                <a>Install</a>
+                <a href="#">Install</a>
                 <img loading="lazy" src="/install.webp" alt="" />
-                <a>Value Engineering</a>
+                <a href="#">Value Engineering</a>
                 <img loading="lazy" src="/valueEngineering.webp" alt="" />
               </div>
               <div className="servh">
-                <a>Maintenance</a>
+                <a href="#">Maintenance</a>
                 <img loading="lazy" src="/maintenance.webp" alt="" />
-                <a>Technical Support</a>
+                <a href="#">Technical Support</a>
                 <img loading="lazy" src="/technicalSupport.webp" alt="" />
               </div>
             </div>
@@ -307,7 +313,13 @@ export default memo(function Navbar({ debounce, showMenu, hideMenu }) {
         <span className="nvbrlogo" id="edc">
           <Link to="#" className="logop">
             <p>
-              <img loading="eager" src="/edt.webp" alt="" id="edt" className="logoimg" />
+              <img
+                loading="eager"
+                src="/edt.webp"
+                alt=""
+                id="edt"
+                className="logoimg"
+              />
             </p>
           </Link>
         </span>

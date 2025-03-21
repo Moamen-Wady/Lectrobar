@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="content">
               <p>
                 <img loading="lazy" src="/location.webp" alt="location" />
-                <a>
+                <a href="#">
                   The 5<sup style={{ textTransform: "lowercase" }}>th </sup>
                   District, Borg El-Arab, Alexandria, Egypt
                 </a>
