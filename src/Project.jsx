@@ -27,7 +27,7 @@ export default function Project({ scrollToProject, ProjectsData }) {
             key={item.projectName}
           >
             <div className="project1imgcont">
-              <img loading="lazy" className="project1mainimg" src={item.mainImg} alt="" />
+              <img loading="eager" className="project1mainimg" src={item.mainImg} alt="" />
             </div>
             <div className="project1datacont">
               <h2> {item.projectName}</h2>
