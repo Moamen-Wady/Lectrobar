@@ -178,10 +178,13 @@ const DynCount = function DynCount() {
 };
 const Filter = function Filter() {
   const [filter, setFilter] = useState(0);
-  const fsetter = useCallback((e) => {
-    const x = e.target;
-    setFilter(x.slot);
-  }, []);
+  const fsetter = useCallback(
+    (e) => {
+      const x = e.target;
+      setFilter(x.slot);
+    },
+    [filter]
+  );
   return (
     <AnimationOnScroll
       animateOnce={true}

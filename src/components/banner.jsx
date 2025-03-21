@@ -1,24 +1,24 @@
-import { memo, useCallback } from "react";
+import { memo } from "react";
 import "./banner.css";
 import { Link } from "react-router-dom";
 
 export default memo(function Slidez({ Slider }) {
-  const PrevArrow = useCallback((props) => {
+  const PrevArrow = memo((props) => {
     const { onClick } = props;
     return (
       <div className="btnbanner bleft" onClick={onClick}>
         <img src="/l.webp" alt="" />
       </div>
     );
-  }, []);
-  const NextArrow = useCallback((props) => {
+  });
+  const NextArrow = memo((props) => {
     const { onClick } = props;
     return (
       <div className="btnbanner bright" onClick={onClick}>
         <img src="/r.webp" alt="" />
       </div>
     );
-  }, []);
+  });
   const settings = {
     infinite: true,
     speed: 500,

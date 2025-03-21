@@ -14,19 +14,25 @@ const Search = memo(function Search({
   const [placeHolder, setPlaceHolder] = useState("Search By Project Name");
   let inputText = useRef();
 
-  const setSBY = useCallback((e) => {
-    document.getElementById("sby").reset();
-    setSearchBy(e.target.value);
-    e.target.checked = true;
-    if (e.target.value == "projectName") {
-      setPlaceHolder("Search By Project Name");
-    } else {
-      setPlaceHolder("Search By Country");
-    }
-  }, []);
-  const setSIN = useCallback((e) => {
-    setSearchIn(e.target.value);
-  }, []);
+  const setSBY = useCallback(
+    (e) => {
+      document.getElementById("sby").reset();
+      setSearchBy(e.target.value);
+      e.target.checked = true;
+      if (e.target.value == "projectName") {
+        setPlaceHolder("Search By Project Name");
+      } else {
+        setPlaceHolder("Search By Country");
+      }
+    },
+    [searchBy]
+  );
+  const setSIN = useCallback(
+    (e) => {
+      setSearchIn(e.target.value);
+    },
+    [searchIn]
+  );
   const searchProjects = useCallback(() => {
     let tempRes;
     if (searchIn !== "all") {
@@ -52,7 +58,7 @@ const Search = memo(function Search({
       }
       setAllResArr(results);
     }
-  }, []);
+  }, [allResArr, searchBy, searchIn]);
   useEffect(() => {
     document.getElementById("pn").checked = true;
     searchProjects();
@@ -60,6 +66,7 @@ const Search = memo(function Search({
   return (
     <div className="projectssearchwindow" id="searchWindow">
       <img
+        loading="lazy"
         src="/close.webp"
         alt=""
         className="projectssearchclosebutton"
@@ -148,10 +155,10 @@ export default memo(function Projects({ setHash, ProjectsData }) {
   }, []);
   const showSearchPanel = useCallback(() => {
     setIsShowSearch(true);
-  }, []);
+  }, [isShowSearch]);
   const hideSearchPanel = useCallback(() => {
     setIsShowSearch(false);
-  }, []);
+  }, [isShowSearch]);
   return (
     <div>
       <Projbanner />

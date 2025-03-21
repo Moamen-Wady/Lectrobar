@@ -12,6 +12,7 @@ export default function Sidebar() {
           }}
         >
           <img
+            loading="lazy"
             src="/search.webp"
             alt=""
             style={
